@@ -1,0 +1,50 @@
+.footer_buffer {
+  width: 850px;
+  height: 0px; }
+
+.footer_container {
+  width: 850px;
+  height: 185px;
+  border-top: 1px solid #FFC300; }
+  .footer_container .footer_left_portion {
+    float: left; }
+    .footer_container .footer_left_portion .logo {
+      width: 147px;
+      margin-top: 15px;
+      float: left; }
+    .footer_container .footer_left_portion .text_container {
+      clear: both;
+      position: relative;
+      top: 15px; }
+      .footer_container .footer_left_portion .text_container .text {
+        font-size: 14px;
+        line-height: 21px;
+        font-family: trade_gothic, sans-serif; }
+        .footer_container .footer_left_portion .text_container .text b {
+          font-family: trade_gothic_bold, sans-serif;
+          font-weight: normal; }
+  .footer_container .footer_right_portion {
+    float: right;
+    margin-top: 27px; }
+    .footer_container .footer_right_portion .links {
+      float: right;
+      font-family: trade_gothic_bold, sans-serif;
+      font-size: 18px; }
+      .footer_container .footer_right_portion .links .about:hover {
+        color: #E22134;
+        cursor: pointer; }
+      .footer_container .footer_right_portion .links .supporters:hover {
+        color: #009347;
+        cursor: pointer; }
+      .footer_container .footer_right_portion .links .contact:hover {
+        color: #0082B8;
+        cursor: pointer; }
+      .footer_container .footer_right_portion .links .links_:hover {
+        color: #6F3296;
+        cursor: pointer; }
+    .footer_container .footer_right_portion .spacer {
+      height: 58px;
+      width: 30px;
+      float: right; }
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,199 @@
+.top_buffer {
+    width: auto;
+    height: 150px;
+}
+
+.not_accessible {
+    width: 850px;
+    height: 600px;
+    border-top: 1px solid #000000;
+    font-family: league_gothic, sans-serif;
+    font-size: 30px;
+
+    .sorry_text {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 600px; 
+    }
+}
+
+.accessible {
+    position:relative;
+    width: 850px;
+    border-top: 1px solid #000000;
+    display: block;
+
+    .artist_index_table {
+        width: 850px;
+        height: 100px;
+        //background-color: red;
+        display: table;
+
+        .artist_index_table_cell_container {
+            display: table-row;
+
+            .artist_index_table_cell_left_margin, .artist_index_table_cell_right_margin {
+                width: 1.8%;
+                display: table-cell;
+                //background-color: green;
+            }
+
+            .artist_index_table_contents {
+                //width: 11.3%;
+                display: table-cell;
+
+                .artist_index_table_title {
+                    //width: 11.3%;
+                    display: table;
+                    //background-color: purple;
+
+                    .artist_index_title {
+                        font-family: league_gothic, sans-serif;
+                        font-size: 30px;
+                        margin-top: 11px;
+                        color: #000;
+                        display: inline-block;
+                    }
+
+                    .artist_index_title_spacer {
+                        width: 30px;
+                        display: inline-block;
+                    }
+
+                    .artist_alpha {
+                        font-family: trade_gothic_bold, sans-serif;
+                        font-size: 18px;
+                        margin-top: 11px;
+                        color: #A29F9F;
+                        display: inline-block;
+                    }
+
+
+                }
+
+                .artist_index_spacer {
+                    width: 100%;
+                    height: 30px;
+                    display: table;
+                }
+
+                .artist_index_spacer_below {
+                    width: 100%;
+                    height: 45px;
+                    display: table;
+                }
+
+                .alpha_bar{
+                    width: 100%;
+                    display: table;
+                    font-family: trade_gothic, sans-serif;
+                    font-size: 14px;
+
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        cursor: pointer;
+                    }
+
+                    .alpha_list_entry {
+                        position: relative;
+                        float: left;
+                        margin-right: 10px;
+                        margin-top: 9px;
+
+                        span {
+                            font-weight: normal !important;
+                            font-family: trade_gothic, sans-serif;
+                            line-height: 20px;
+                            background: #D8D8D8;
+                            color: #000;
+                            letter-spacing: -0.01em;
+                            text-decoration: none;
+                            border: none !important;
+                            //padding: 5px 5px 7px;
+                            border-radius: 0;
+                            padding: 5px 5px 2px 5px;
+                            margin-bottom: 11px;
+                        }
+
+                        span:hover {
+                            background: #FFC300;
+                            cursor: pointer;
+                        }
+
+                        .activate {
+                            background: #FFC300;
+                        }
+                    }
+
+                    .alpha_list_entry:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .artist_index_table_filmmaker {
+                    display: table;
+                                    
+                        .filmmaker_cell_spacer {
+                            width: 30px;
+                            display: table-cell;
+                        }
+
+                        .filmmaker_cell_four {
+                            
+                            width: 22.3%;
+                            display: table-cell;
+                            font-family: trade_gothic_bold, sans-serif;
+                            font-size: 14px;
+                            line-height: 30px;
+
+                            a {
+                                text-decoration: none;
+                                color: #000;
+                            }
+
+                            a:hover {
+                                color: #009347;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .filmmaker_cell {
+                            
+                            width: 30.9%;
+                            display: table-cell;
+                            font-family: trade_gothic_bold, sans-serif;
+                            font-size: 14px;
+                            line-height: 30px;
+
+                            a {
+                                text-decoration: none;
+                                color: #000;
+                            }
+
+                            a:hover {
+                                color: #009347;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .table_end_buffer {
+                        display: table;
+                        width: 100%;
+                        height: 75px;
+                    }
+
+                    .no_artist {
+                        font-family: trade_gothic_bold, sans-serif;
+                        font-size: 14px;
+                        color: #000;
+                        display: inline-block;
+                    }
+                }
+        }
+    }
+}

@@ -1,0 +1,295 @@
+@mixin input-space($width) {
+    position: relative;
+    width: $width;
+    height: 30px;
+
+    input {
+        position: relative;
+        top: 12px;
+        border: none;
+        width: $width;
+        height: 30px;
+        line-height: normal;
+        background-color: transparent;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .border_line {
+        border-bottom: 1px solid #000000;
+        width: $width;
+        position: relative;
+        top: 4px;
+    }      
+
+    .border_line_incomplete {
+        border-bottom: 1px solid #E22134;
+        width: $width;
+        position: relative;
+        top: 4px;
+    }               
+}
+
+@mixin link($color) {
+    color: $color;
+    cursor: pointer;
+}
+
+.top_buffer {
+    width: auto;
+    height: 150px;
+}
+
+.table_end_buffer {
+    display: table;
+    width: 100%;
+    height: 75px;
+}
+
+.acct_type {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    position: relative;
+    border: 1px solid #000;
+    float: left;
+}
+
+.acct_type label {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    position: absolute;
+}
+
+.acct_type input[type=radio]:checked + label{
+    background: #FFC300;
+}
+
+input {
+    font-family: trade_gothic, sans-serif;
+}
+
+.table {
+    width: 850px;
+    height: 100px;
+    border-top: 1px solid #000000;
+    display: table;
+    //background-color: red;
+
+    .table_cell_container {
+        display: table-row;
+
+        .table_cell_left_margin, .table_cell_right_margin {
+            width: 1.8%;
+            display: table-cell;
+            //background-color: green;
+        }
+
+
+
+        .table_contents {
+            //width: 11.3%;
+            display: table-cell;
+
+            .table_title {
+                //width: 11.3%;
+                display: table;
+                //background-color: purple;
+
+                .title {
+                    font-family: league_gothic, sans-serif;
+                    font-size: 30px;
+                    margin-top: 11px;
+                    color: #000;
+                    display: inline-block;
+                }
+
+            }
+
+            .legend {
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+
+                b {
+                    font-weight: normal;
+                    font-family: trade_gothic_bold, sans-serif;
+                }
+            }
+
+            .spacer {
+                width: 100%;
+                height: 30px;
+                display: table;
+            }
+
+            .spacer_acct_type {
+                width: 100%;
+                height: 45px;
+                display: table;
+            }
+
+            .request_acct_table { 
+                width: 65.45%;
+                display: table;
+            }
+
+            .request_acct_sub_table { 
+                height: 100%;
+                width: 100%;
+                display: table;
+            }
+
+            .request_acct_row {
+                display: table;
+                width: 536px;
+            }
+
+            .request_acct_row_row {
+                display: table;
+                //height: 34px;
+                width: 700px;
+            }
+
+            .request_acct_cell {
+                display: table-cell;
+                width: auto;
+            }
+
+            .request_acct_cell_left {
+                display: table-cell;
+                width: 350px;
+            }
+
+            .request_acct_cell_right {
+                display: table-cell;
+                width: auto;
+            }
+
+            .request_acct_cell_spacer {
+                display: table-cell;
+                width: 30px;
+            }
+
+            .request_acct_label {
+                width: 100px;
+                height: 30px;
+                display: table-cell;
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+
+                b {
+                    font-weight: normal;
+                    font-family: trade_gothic_bold, sans-serif;
+                }
+            }
+
+            .request_acct_type_heading {
+                width: 210px;
+                height: 30px;
+                display: table-cell;
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+
+                b {
+                    font-weight: normal;
+                    font-family: trade_gothic_bold, sans-serif;
+                }
+            }
+
+
+            .request_acct_type_label {
+                width: 25px;
+                height: 30px;
+                display: table-cell;
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+
+                b {
+                    font-weight: normal;
+                    font-family: trade_gothic_bold, sans-serif;
+                }
+            }
+
+            .request_acct_type_label_text {
+                width: 300px;
+                height: 30px;
+                display: table-cell;
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+
+                b {
+                    font-weight: normal;
+                    font-family: trade_gothic_bold, sans-serif;
+                }
+            }
+
+            // .request_acct_type_label_text {
+            //     top: 14px;
+            //     position: relative;
+            // }
+
+            .request_acct_spacer {
+                width: 15px;
+                height: 30px;
+                display: table-cell;
+            }
+
+            .request_acct_label_text {
+                top: 14px;
+                position: relative;
+            }
+
+            .request_acct_input_large{
+                @include input-space(220px); 
+            }
+
+            .request_acct_input_small{
+                @include input-space(80px); 
+            }
+
+            .request_acct_input {
+                height: 30px;
+                display: table-cell;
+            }
+
+            button {
+                background-color: #000;
+                width: 85px;
+                height: 30px;
+                text-align: center;
+                float: left;
+                border-radius: 2px;
+                border: none;
+
+                span {
+                    //top: 4px;
+                    position: relative;
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+
+            button:hover span {
+                @include link(#0082B8);
+            }
+
+        }
+
+    }
+
+}

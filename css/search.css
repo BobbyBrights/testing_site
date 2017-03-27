@@ -1,0 +1,193 @@
+.top_buffer {
+  width: auto;
+  height: 150px; }
+
+.not_accessible {
+  width: 850px;
+  height: 600px;
+  border-top: 1px solid #000000;
+  font-family: league_gothic, sans-serif;
+  font-size: 30px; }
+  .not_accessible .sorry_text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px; }
+
+.accessible {
+  position: relative;
+  width: 850px;
+  border-top: 1px solid #000000;
+  display: block; }
+  .accessible .search_table {
+    width: 850px;
+    height: 100px;
+    display: table; }
+    .accessible .search_table .search_table_cell_container {
+      display: table-row; }
+      .accessible .search_table .search_table_cell_container .search_table_cell_left_margin, .accessible .search_table .search_table_cell_container .search_table_cell_right_margin {
+        width: 1.8%;
+        display: table-cell; }
+      .accessible .search_table .search_table_cell_container .search_table_title {
+        width: 11.3%;
+        display: table-cell; }
+        .accessible .search_table .search_table_cell_container .search_table_title .search_title {
+          font-family: league_gothic, sans-serif;
+          font-size: 30px;
+          margin-top: 11px;
+          color: #000; }
+      .accessible .search_table .search_table_cell_container .search_table_content {
+        width: 85.1%;
+        display: table-cell;
+        vertical-align: top; }
+        .accessible .search_table .search_table_cell_container .search_table_content .query_str {
+          width: 100%;
+          display: table;
+          margin-top: 25px; }
+          .accessible .search_table .search_table_cell_container .search_table_content .query_str .query_str_container {
+            width: 100%;
+            color: #A29F9F;
+            font-size: 18px;
+            font-family: trade_gothic_bold, sans-serif;
+            line-height: 27px; }
+        .accessible .search_table .search_table_cell_container .search_table_content .search_spacer {
+          width: 100%;
+          height: 30px;
+          display: table; }
+        .accessible .search_table .search_table_cell_container .search_table_content .noresults {
+          width: 100%;
+          display: table;
+          color: #000;
+          font-size: 18px;
+          font-family: trade_gothic_bold, sans-serif; }
+        .accessible .search_table .search_table_cell_container .search_table_content .info_bar {
+          width: 100%;
+          display: table; }
+          .accessible .search_table .search_table_cell_container .search_table_content .info_bar .preview_element_container {
+            float: left; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .preview_element_container .preview_text {
+              font-size: 14px;
+              font-family: trade_gothic, sans-serif;
+              display: inline-block; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .preview_element_container .preview_spacer {
+              width: 15px;
+              display: inline-block; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .preview_element_container .preview_marker {
+              display: inline-block;
+              vertical-align: top;
+              border-radius: 50%;
+              width: 10px;
+              height: 10px;
+              background-color: #E22134;
+              margin-top: 6px; }
+          .accessible .search_table .search_table_cell_container .search_table_content .info_bar .page_mover {
+            float: right;
+            font-size: 14px; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .page_mover a {
+              text-decoration: none;
+              color: #000; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .page_mover a:hover {
+              color: #009347;
+              cursor: pointer; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .page_mover .left_arrow, .accessible .search_table .search_table_cell_container .search_table_content .info_bar .page_mover .right_arrow {
+              font-family: trade_gothic_bold, sans-serif;
+              display: inline-block; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .page_mover .text {
+              font-family: trade_gothic, sans-serif;
+              display: inline-block; }
+            .accessible .search_table .search_table_cell_container .search_table_content .info_bar .page_mover .spacer {
+              width: 15px;
+              display: inline-block; }
+        .accessible .search_table .search_table_cell_container .search_table_content .film_title {
+          width: 86.7%;
+          display: table; }
+          .accessible .search_table .search_table_cell_container .search_table_content .film_title .preview_spacer {
+            width: 15px;
+            display: inline-block; }
+          .accessible .search_table .search_table_cell_container .search_table_content .film_title .preview_marker {
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #E22134;
+            margin-top: 6px; }
+          .accessible .search_table .search_table_cell_container .search_table_content .film_title .title {
+            font-size: 18px;
+            font-family: trade_gothic_bold, sans-serif;
+            display: inline-block; }
+          .accessible .search_table .search_table_cell_container .search_table_content .film_title a {
+            text-decoration: none;
+            color: #000; }
+          .accessible .search_table .search_table_cell_container .search_table_content .film_title a:hover {
+            color: #0082B8;
+            cursor: pointer; }
+        .accessible .search_table .search_table_cell_container .search_table_content .generic_spacer {
+          width: 86.7%;
+          display: table;
+          height: 5px; }
+        .accessible .search_table .search_table_cell_container .search_table_content .generic_spacer_genre_cat {
+          width: 86.7%;
+          display: table;
+          height: 10px; }
+        .accessible .search_table .search_table_cell_container .search_table_content .filmmaker {
+          width: 86.7%;
+          display: table;
+          font-size: 14px;
+          font-family: trade_gothic, sans-serif; }
+          .accessible .search_table .search_table_cell_container .search_table_content .filmmaker a {
+            text-decoration: none;
+            color: #000; }
+          .accessible .search_table .search_table_cell_container .search_table_content .filmmaker a:hover {
+            color: #009347;
+            cursor: pointer; }
+          .accessible .search_table .search_table_cell_container .search_table_content .filmmaker b {
+            font-size: 14px;
+            font-family: trade_gothic_bold, sans-serif;
+            font-weight: normal; }
+        .accessible .search_table .search_table_cell_container .search_table_content .filmdetails {
+          width: 86.7%;
+          display: table;
+          font-size: 14px;
+          font-family: trade_gothic, sans-serif; }
+        .accessible .search_table .search_table_cell_container .search_table_content .filmdescription {
+          width: 86.7%;
+          display: table;
+          font-size: 14px;
+          font-family: trade_gothic, sans-serif; }
+          .accessible .search_table .search_table_cell_container .search_table_content .filmdescription b {
+            font-size: 14px;
+            font-family: trade_gothic_bold, sans-serif;
+            font-weight: normal; }
+        .accessible .search_table .search_table_cell_container .search_table_content .end_buffer {
+          width: 86.7%;
+          height: 75px;
+          display: table; }
+        .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_heading {
+          width: 86.7%;
+          display: table;
+          font-size: 14px;
+          font-family: trade_gothic_bold, sans-serif; }
+        .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table {
+          width: 86.7%;
+          display: table;
+          font-family: trade_gothic, sans-serif;
+          font-size: 14px; }
+          .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table .genre_category_list_entry {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            margin-top: 9px; }
+            .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table .genre_category_list_entry span {
+              font-weight: normal !important;
+              font-family: trade_gothic, sans-serif;
+              background: #FFC300;
+              line-height: 20px;
+              color: #000;
+              letter-spacing: -0.01em;
+              text-decoration: none;
+              border: none !important;
+              border-radius: 0;
+              padding: 5px 5px 2px 5px;
+              margin-bottom: 11px; }
+
+/*# sourceMappingURL=search.css.map */

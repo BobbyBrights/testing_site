@@ -1,0 +1,123 @@
+.top_buffer {
+  width: auto;
+  height: 150px; }
+
+.not_accessible {
+  width: 850px;
+  height: 600px;
+  border-top: 1px solid #000000;
+  font-family: league_gothic, sans-serif;
+  font-size: 30px; }
+  .not_accessible .sorry_text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px; }
+
+.accessible {
+  position: relative;
+  width: 850px;
+  border-top: 1px solid #000000;
+  display: block; }
+  .accessible .filmmaker_table {
+    width: 850px;
+    display: table;
+    table-layout: fixed; }
+    .accessible .filmmaker_table .filmmaker_table_cell_container {
+      display: table-row; }
+      .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_left_margin, .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_right_margin {
+        width: 1.8%;
+        display: table-cell; }
+      .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_spacer {
+        height: 30px;
+        display: table-row; }
+      .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_sub_head_bio_spacer {
+        height: 15px;
+        display: table-row; }
+      .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_sub_head_filmmography_spacer {
+        height: 15px;
+        display: table-row; }
+      .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre {
+        width: 96.4%;
+        display: table-row; }
+        .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_end_buffer {
+          width: 100%;
+          height: 75px;
+          display: table; }
+        .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row {
+          display: table; }
+          .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row .filmmaker_table_filmmaker_title_cell {
+            width: 65.45%;
+            display: table-row; }
+            .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row .filmmaker_table_filmmaker_title_cell .filmmaker {
+              font-family: league_gothic, sans-serif;
+              font-size: 30px;
+              margin-top: 11px; }
+          .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row .filmmaker_table_bio_heading_title_cell {
+            width: 65.45%;
+            display: table-row; }
+            .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row .filmmaker_table_bio_heading_title_cell .bio_heading {
+              font-family: trade_gothic_bold, sans-serif;
+              font-size: 14px; }
+          .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row .filmmaker_table_biography_title_cell {
+            width: 536.69px;
+            display: table-row; }
+            .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row .filmmaker_table_biography_title_cell .biography {
+              width: 536.69px;
+              font-family: trade_gothic, sans-serif;
+              font-size: 14px; }
+          .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_info_row .filmmaker_table_filmmaker_spacer_cell {
+            width: 34.55%;
+            display: table; }
+        .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography {
+          display: table; }
+          .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row {
+            display: table-row; }
+            .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_title_cell {
+              width: 100%;
+              display: table-row; }
+              .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_title_cell .filmography_heading {
+                font-family: trade_gothic_bold, sans-serif;
+                font-size: 14px; }
+            .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell_spacer {
+              width: 30px; }
+            .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell {
+              width: 30.9%;
+              display: table-cell; }
+              .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a:hover {
+                color: #009347;
+                cursor: pointer; }
+                .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a:hover .film_still_container {
+                  border: 2px solid; }
+              .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a {
+                color: #000;
+                text-decoration: none;
+                /* no underline */ }
+                .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_still_container {
+                  width: 253px;
+                  height: 188px;
+                  background-color: #D8D8D8;
+                  overflow: hidden;
+                  position: relative; }
+                  .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_still_container .film_still_container_child {
+                    position: absolute;
+                    top: -9999px;
+                    bottom: -9999px;
+                    left: -9999px;
+                    right: -9999px;
+                    margin: auto;
+                    z-index: 0; }
+                .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_still_container:hover {
+                  border: 2px solid; }
+                .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_details {
+                  width: 100%;
+                  font-family: trade_gothic, sans-serif;
+                  font-size: 14px; }
+                  .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_details b {
+                    font-weight: normal;
+                    font-family: trade_gothic_bold, sans-serif; }
+                .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_pre_spacer {
+                  height: 15px; }
+                .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_post_spacer {
+                  height: 30px; }
+
+/*# sourceMappingURL=filmmaker.css.map */

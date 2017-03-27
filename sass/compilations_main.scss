@@ -1,0 +1,160 @@
+@mixin color_container($name, $color) {
+
+    .#{$name}{
+        width: 253px;
+        height: 188px;
+        border: 2px solid #fff;
+        display: table-cell;
+        color: $color;
+        position: relative;
+        overflow: hidden;
+        background: #D8D8D8;
+
+        .film_still_container_child {
+                position: absolute;
+                top: -9999px;
+                bottom: -9999px;
+                left: -9999px;
+                right: -9999px;
+                margin: auto;
+            }
+
+        .table_compilation_container_center {
+            margin: auto;
+            margin-top: 6%;
+            width: 87%;
+            height: 84%;
+            //background-color: purple; 
+            vertical-align:middle;
+            display: table;
+            text-align: center;
+            position: relative;
+            
+            //background: $color;
+
+            
+
+
+            .text {
+                vertical-align:middle;
+                display: table-cell;
+                
+            }
+        }
+    }
+
+    .#{$name}:hover {
+        border: 2px solid $color;
+        color: $color;
+        cursor: pointer;
+    }
+}
+
+.top_buffer {
+    width: auto;
+    height: 150px;
+}
+
+.accessible {
+    position:relative;
+    width: 850px;
+    border-top: 1px solid #000000;
+    display: block;
+
+    .filmmaker_table_end_buffer {
+        width: 100%;
+        height: 75px;
+        display: table;
+    }
+
+    .table {
+        width: 850px;
+        height: 100px;
+        //background-color: red;
+        display: table;
+
+        .table_cell_container {
+            display: table-row;
+
+            .table_cell_left_margin, .table_cell_right_margin {
+                width: 1.8%;
+                display: table-cell;
+                //background-color: green;
+            }
+
+            .table_title {
+                width: 11.3%;
+                display: table;
+                //background-color: purple;
+
+                .title {
+                    font-family: league_gothic, sans-serif;
+                    font-size: 30px;
+                    margin-top: 11px;
+                    color: #000;
+                }
+            }
+
+            .table_content {
+                width: 85.1%;
+                display: table-cell;
+                vertical-align: top;
+                //background-color: blue;
+
+                .table_spacer {
+                    height: 30px;
+                    width: 100%;
+                    display: table;
+                }
+
+                .table_compilation_cell{
+                    width: 100%;
+                    height: 188px;
+                    font-family: trade_gothic_bold, sans-serif;
+                    font-size: 16px;
+                    display: table;
+
+                    .table_compilation_row {
+                        display: table-row;
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        position: absolute;
+
+                        @include color_container(red_container, #E22134);
+                        @include color_container(yellow_container, #FFC300);
+                        @include color_container(green_container, #009347);
+                        @include color_container(blue_container, #0082B8);
+                        @include color_container(orange_container, #F56F02);
+                        @include color_container(purple_container, #6F3296);
+                        @include color_container(black_container, #000);
+                        @include color_container(grey_container, #D8D8D8);
+                    }
+
+                    a:hover {
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+
+                    .table_compilation_container_empty{
+                        width: 253px;
+                        //height: 188px;
+                        display: table-cell;
+                    }
+
+                    .table_compilation_spacer{
+                        width: 30px;
+                        //height: 188px;
+                        display: table-cell;
+                    }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+

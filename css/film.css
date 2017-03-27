@@ -1,0 +1,215 @@
+.top_buffer {
+  width: auto;
+  height: 150px; }
+
+.jw-icon-rewind {
+  display: none; }
+
+.not_accessible {
+  width: 850px;
+  height: 600px;
+  border-top: 1px solid #000000;
+  font-family: league_gothic, sans-serif;
+  font-size: 30px; }
+  .not_accessible .sorry_text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px; }
+
+.accessible {
+  position: relative;
+  width: 850px;
+  border-top: 1px solid #000000;
+  display: block; }
+  .accessible .title {
+    font-family: league_gothic, sans-serif;
+    font-size: 30px;
+    margin-top: 11px;
+    width: 380px; }
+  .accessible .film_table {
+    width: 850px;
+    display: table;
+    z-index: 1;
+    height: 1px; }
+    .accessible .film_table .film_row_generic {
+      display: table-cell; }
+    .accessible .film_table .film_table_left_right_margin {
+      width: 15px;
+      height: 1px;
+      display: table-cell;
+      float: left; }
+    .accessible .film_table .film_table_content_left, .accessible .film_table .film_table_content_right {
+      width: 380px;
+      display: table-row;
+      vertical-align: top;
+      float: left; }
+    .accessible .film_table .film_table_centre {
+      width: 60px;
+      height: 1px;
+      display: table-cell;
+      float: left; }
+    .accessible .film_table .film_table_inner_table {
+      width: 380px;
+      display: table; }
+      .accessible .film_table .film_table_inner_table .film_table_end_buffer {
+        width: 380px;
+        height: 75px;
+        display: table-row; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_row_title {
+        width: 380px;
+        display: table-row; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_row_title_spacer {
+        width: 380px;
+        height: 30px;
+        display: table-row; }
+      .accessible .film_table .film_table_inner_table .film_table_text {
+        width: 380px;
+        display: table-row;
+        font-family: trade_gothic, sans-serif;
+        font-size: 14px;
+        line-height: 21px; }
+        .accessible .film_table .film_table_inner_table .film_table_text b {
+          font-family: trade_gothic_bold, sans-serif;
+          font-weight: normal; }
+        .accessible .film_table .film_table_inner_table .film_table_text a {
+          color: #000;
+          text-decoration: none;
+          /* no underline */ }
+        .accessible .film_table .film_table_inner_table .film_table_text a:hover {
+          color: #009347;
+          text-decoration: none;
+          /* no underline */ }
+        .accessible .film_table .film_table_inner_table .film_table_text .inquire {
+          color: #000; }
+        .accessible .film_table .film_table_inner_table .film_table_text .inquire:hover {
+          color: #E22134; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_row_text_spacer {
+        width: 380px;
+        height: 30px;
+        display: table-row; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_row_list_spacer {
+        width: 380px;
+        height: 10px;
+        display: table-row; }
+      .accessible .film_table .film_table_inner_table .film_table_genre_row {
+        width: 380px;
+        font-family: trade_gothic, sans-serif;
+        font-size: 14px; }
+        .accessible .film_table .film_table_inner_table .film_table_genre_row .genre_category_list_entry {
+          position: relative;
+          float: left;
+          margin-right: 10px;
+          margin-top: 9px; }
+          .accessible .film_table .film_table_inner_table .film_table_genre_row .genre_category_list_entry span {
+            font-weight: normal !important;
+            font-family: trade_gothic, sans-serif;
+            background: #FFC300;
+            line-height: 20px;
+            color: #000;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+            border: none !important;
+            border-radius: 0;
+            padding: 5px 5px 2px 5px;
+            margin-bottom: 11px; }
+      .accessible .film_table .film_table_inner_table .film_table_category_row {
+        width: 380px;
+        font-family: trade_gothic, sans-serif;
+        font-size: 14px; }
+        .accessible .film_table .film_table_inner_table .film_table_category_row .genre_category_list_entry {
+          position: relative;
+          float: left;
+          margin-right: 10px;
+          margin-top: 9px; }
+          .accessible .film_table .film_table_inner_table .film_table_category_row .genre_category_list_entry span {
+            font-weight: normal !important;
+            font-family: trade_gothic, sans-serif;
+            background: #FFC300;
+            line-height: 20px;
+            color: #000;
+            letter-spacing: -0.01em;
+            text-decoration: none;
+            border: none !important;
+            border-radius: 0;
+            padding: 5px 5px 2px 5px;
+            margin-bottom: 11px; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_row_top_image_spacer {
+        width: 380px;
+        height: 87px;
+        display: table-row; }
+        .accessible .film_table .film_table_inner_table .film_table_inner_row_top_image_spacer a {
+          float: right;
+          font-family: trade_gothic_bold, sans-serif;
+          font-size: 14px;
+          color: #000;
+          text-decoration: none;
+          /* no underline */ }
+          .accessible .film_table .film_table_inner_table .film_table_inner_row_top_image_spacer a .glyph_container {
+            margin-top: 21px;
+            margin-right: 8px;
+            float: right; }
+          .accessible .film_table .film_table_inner_table .film_table_inner_row_top_image_spacer a .link {
+            margin-top: 29px;
+            float: right; }
+        .accessible .film_table .film_table_inner_table .film_table_inner_row_top_image_spacer a:hover {
+          color: #009347;
+          cursor: pointer; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_still {
+        width: 380px;
+        display: table-row; }
+      .accessible .film_table .film_table_inner_table .film_still_container {
+        width: 380px;
+        height: 265px;
+        background-color: #D8D8D8;
+        overflow: hidden;
+        position: relative; }
+        .accessible .film_table .film_table_inner_table .film_still_container .film_still_container_child {
+          position: absolute;
+          top: -9999px;
+          bottom: -9999px;
+          left: -9999px;
+          right: -9999px;
+          margin: auto; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_video {
+        width: 380px;
+        height: 265px;
+        display: table-row;
+        position: absolute; }
+        .accessible .film_table .film_table_inner_table .film_table_inner_video .film_table_inner_video_clip, .accessible .film_table .film_table_inner_table .film_table_inner_video #film_table_inner_video_clip {
+          width: 380px;
+          height: 265px;
+          z-index: 1;
+          position: absolute;
+          top: 0px; }
+        .accessible .film_table .film_table_inner_table .film_table_inner_video .film_table_inner_video_preview, .accessible .film_table .film_table_inner_table .film_table_inner_video #film_table_inner_video_preview {
+          width: 380px;
+          height: 265px;
+          z-index: 2;
+          position: absolute;
+          top: 0px; }
+      .accessible .film_table .film_table_inner_table .film_table_inner_video_placeholder {
+        width: 380px;
+        height: 265px;
+        z-index: 0; }
+      .accessible .film_table .film_table_inner_table .video_links {
+        width: 380px; }
+        .accessible .film_table .film_table_inner_table .video_links b {
+          font-family: trade_gothic_bold, sans-serif;
+          font-weight: normal; }
+        .accessible .film_table .film_table_inner_table .video_links .clip_link {
+          float: left;
+          font-size: 12px;
+          margin-top: 8px;
+          color: #000; }
+        .accessible .film_table .film_table_inner_table .video_links .full_preview {
+          float: right;
+          font-size: 12px;
+          margin-top: 8px;
+          color: #000; }
+        .accessible .film_table .film_table_inner_table .video_links .clip_link:hover, .accessible .film_table .film_table_inner_table .video_links .full_preview:hover {
+          cursor: pointer;
+          color: #0082B8; }
+        .accessible .film_table .film_table_inner_table .video_links .link_on {
+          color: #0082B8; }
+
+/*# sourceMappingURL=film.css.map */

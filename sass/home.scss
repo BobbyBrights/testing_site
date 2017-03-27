@@ -1,0 +1,15 @@
+.top_buffer {
+    width: auto;
+    height: 150px;
+}
+
+.featured_films {
+    width: auto;
+    height: 340px;
+    //background-color: purple; 
+    overflow: hidden;
+
+    img {
+        width: 850px;
+    }
+}

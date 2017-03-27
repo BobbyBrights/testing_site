@@ -1,0 +1,130 @@
+.top_buffer {
+  width: auto;
+  height: 150px; }
+
+.not_accessible {
+  width: 850px;
+  height: 600px;
+  border-top: 1px solid #000000;
+  font-family: league_gothic, sans-serif;
+  font-size: 30px; }
+  .not_accessible .sorry_text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px; }
+
+.accessible {
+  position: relative;
+  width: 850px;
+  border-top: 1px solid #000000;
+  display: block; }
+  .accessible .artist_index_table {
+    width: 850px;
+    height: 100px;
+    display: table; }
+    .accessible .artist_index_table .artist_index_table_cell_container {
+      display: table-row; }
+      .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_cell_left_margin, .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_cell_right_margin {
+        width: 1.8%;
+        display: table-cell; }
+      .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents {
+        display: table-cell; }
+        .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_title {
+          display: table; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_title .artist_index_title {
+            font-family: league_gothic, sans-serif;
+            font-size: 30px;
+            margin-top: 11px;
+            color: #000;
+            display: inline-block; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_title .artist_index_title_spacer {
+            width: 30px;
+            display: inline-block; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_title .artist_alpha {
+            font-family: trade_gothic_bold, sans-serif;
+            font-size: 18px;
+            margin-top: 11px;
+            color: #A29F9F;
+            display: inline-block; }
+        .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_spacer {
+          width: 100%;
+          height: 30px;
+          display: table; }
+        .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_spacer_below {
+          width: 100%;
+          height: 45px;
+          display: table; }
+        .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar {
+          width: 100%;
+          display: table;
+          font-family: trade_gothic, sans-serif;
+          font-size: 14px; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar a {
+            color: #000;
+            text-decoration: none; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar a:hover {
+            cursor: pointer; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar .alpha_list_entry {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            margin-top: 9px; }
+            .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar .alpha_list_entry span {
+              font-weight: normal !important;
+              font-family: trade_gothic, sans-serif;
+              line-height: 20px;
+              background: #D8D8D8;
+              color: #000;
+              letter-spacing: -0.01em;
+              text-decoration: none;
+              border: none !important;
+              border-radius: 0;
+              padding: 5px 5px 2px 5px;
+              margin-bottom: 11px; }
+            .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar .alpha_list_entry span:hover {
+              background: #FFC300;
+              cursor: pointer; }
+            .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar .alpha_list_entry .activate {
+              background: #FFC300; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .alpha_bar .alpha_list_entry:hover {
+            cursor: pointer; }
+        .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker {
+          display: table; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker .filmmaker_cell_spacer {
+            width: 30px;
+            display: table-cell; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker .filmmaker_cell_four {
+            width: 22.3%;
+            display: table-cell;
+            font-family: trade_gothic_bold, sans-serif;
+            font-size: 14px;
+            line-height: 30px; }
+            .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker .filmmaker_cell_four a {
+              text-decoration: none;
+              color: #000; }
+            .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker .filmmaker_cell_four a:hover {
+              color: #009347;
+              cursor: pointer; }
+          .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker .filmmaker_cell {
+            width: 30.9%;
+            display: table-cell;
+            font-family: trade_gothic_bold, sans-serif;
+            font-size: 14px;
+            line-height: 30px; }
+            .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker .filmmaker_cell a {
+              text-decoration: none;
+              color: #000; }
+            .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_table_filmmaker .filmmaker_cell a:hover {
+              color: #009347;
+              cursor: pointer; }
+        .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .table_end_buffer {
+          display: table;
+          width: 100%;
+          height: 75px; }
+        .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .no_artist {
+          font-family: trade_gothic_bold, sans-serif;
+          font-size: 14px;
+          color: #000;
+          display: inline-block; }
+
+/*# sourceMappingURL=artist_index.css.map */

@@ -1,0 +1,290 @@
+.top_buffer {
+    width: auto;
+    height: 150px;
+}
+
+.not_accessible {
+    width: 850px;
+    height: 600px;
+    border-top: 1px solid #000000;
+    font-family: league_gothic, sans-serif;
+    font-size: 30px;
+
+    .sorry_text {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 600px; 
+    }
+}
+
+.accessible {
+    position:relative;
+    width: 850px;
+    border-top: 1px solid #000000;
+    display: block;
+
+    .search_table {
+        width: 850px;
+        height: 100px;
+        //background-color: red;
+        display: table;
+
+        .search_table_cell_container {
+            display: table-row;
+
+            .search_table_cell_left_margin, .search_table_cell_right_margin {
+                width: 1.8%;
+                display: table-cell;
+                //background-color: green;
+            }
+
+            .search_table_title {
+                width: 11.3%;
+                display: table-cell;
+                //background-color: purple;
+
+                .search_title {
+                    font-family: league_gothic, sans-serif;
+                    font-size: 30px;
+                    margin-top: 11px;
+                    color: #000;
+                }
+            }
+
+            .search_table_content {
+                width: 85.1%;
+                display: table-cell;
+                vertical-align: top;
+                //background-color: blue;
+
+                .query_str {
+                    width: 100%;
+                    display: table;
+                    margin-top: 25px;
+
+                    .query_str_container {
+                        width: 100%;
+                        color: #A29F9F;
+                        font-size: 18px;
+                        font-family: trade_gothic_bold, sans-serif;
+                        line-height: 27px;
+                    }
+                }
+
+                .search_spacer {
+                    width: 100%;
+                    height: 30px;
+                    display: table;
+                }
+
+                .noresults {
+                    width: 100%;
+                    display: table;
+                    color: #000;
+                    font-size: 18px;
+                    font-family: trade_gothic_bold, sans-serif;
+                }
+
+                .info_bar{
+                    width: 100%;
+                    display: table;
+
+                    .preview_element_container{
+                        float: left;
+
+                        .preview_text{
+                            font-size: 14px;
+                            font-family: trade_gothic, sans-serif;
+                            display:inline-block;
+                        }
+
+                        .preview_spacer {
+                            width: 15px;
+                            display:inline-block;
+                        }
+
+                        .preview_marker {
+                            display:inline-block;
+                            vertical-align:top;
+                            border-radius: 50%;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #E22134;
+                            margin-top: 6px;
+                        }
+
+                    }
+
+                    .page_mover{
+                        float: right;
+                        font-size: 14px;
+
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                        }
+
+                        a:hover {
+                            color: #009347;
+                            cursor: pointer;
+                        }
+
+                        .left_arrow, .right_arrow{
+                            font-family: trade_gothic_bold, sans-serif;
+                            display:inline-block;
+                        }
+
+                        .text{
+                            font-family: trade_gothic, sans-serif;
+                            display:inline-block;
+                        }
+
+                        .spacer {
+                            width: 15px;
+                            display:inline-block;
+                        }
+                    }
+
+                }
+
+                .film_title {
+                    width: 86.7%;
+                    display: table;
+
+                    .preview_spacer {
+                        width: 15px;
+                        display:inline-block;
+                    }
+
+                    .preview_marker {
+                        display:inline-block;
+                        vertical-align:top;
+                        border-radius: 50%;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #E22134;
+                        margin-top: 6px;
+                    }
+
+                    .title {
+                        font-size: 18px;
+                        font-family: trade_gothic_bold, sans-serif;
+                        display:inline-block;
+                        
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+                    a:hover {
+                        color: #0082B8;
+                        cursor: pointer;
+                    }
+                }
+
+                .generic_spacer {
+                    width: 86.7%;
+                    display: table;
+                    height: 5px;
+                }
+
+                .generic_spacer_genre_cat {
+                    width: 86.7%;
+                    display: table;
+                    height: 10px;
+                }
+
+                .filmmaker {
+                    width: 86.7%;
+                    display: table;
+
+                    font-size: 14px;
+                    font-family: trade_gothic, sans-serif;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+                    a:hover {
+                        color: #009347;
+                        cursor: pointer;
+                    }
+
+                    b {
+                        font-size: 14px;
+                        font-family: trade_gothic_bold, sans-serif;
+                        font-weight: normal;
+                    }
+                }
+
+                .filmdetails {
+                    width: 86.7%;
+                    display: table;
+
+                    font-size: 14px;
+                    font-family: trade_gothic, sans-serif;
+                }
+
+                .filmdescription {
+                    width: 86.7%;
+                    display: table;
+
+                    font-size: 14px;
+                    font-family: trade_gothic, sans-serif;
+
+                    b {
+                        font-size: 14px;
+                        font-family: trade_gothic_bold, sans-serif;
+                        font-weight: normal;
+                    }
+                }
+
+                .end_buffer {
+                    width: 86.7%;
+                    height: 75px;
+                    display: table;
+                }
+
+                .genre_cat_heading {
+                    width: 86.7%;
+                    display: table;
+
+                    font-size: 14px;
+                    font-family: trade_gothic_bold, sans-serif;
+                }
+
+                .genre_cat_table {
+                    width: 86.7%;
+                    display: table;
+                    font-family: trade_gothic, sans-serif;
+                    font-size: 14px;
+
+                    .genre_category_list_entry {
+                        position: relative;
+                        float: left;
+                        margin-right: 10px;
+                        margin-top: 9px;
+
+                        span {
+                            font-weight: normal !important;
+                            font-family: trade_gothic, sans-serif;
+                            background: #FFC300;
+                            line-height: 20px;
+                            color: #000;
+                            letter-spacing: -0.01em;
+                            text-decoration: none;
+                            border: none !important;
+                            //padding: 5px 5px 7px;
+                            border-radius: 0;
+                            padding: 5px 5px 2px 5px;
+                            margin-bottom: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

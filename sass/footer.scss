@@ -1,0 +1,76 @@
+@mixin link($color) {
+    color: $color;
+    cursor: pointer;
+}
+
+.footer_buffer {
+    width: 850px;
+    height: 0px;
+}
+
+.footer_container {
+    width: 850px;
+    height: 185px;
+    border-top: 1px solid #FFC300;
+
+    .footer_left_portion {
+        float: left;
+
+        .logo {
+            width: 147px;
+            margin-top: 15px;
+            float: left;
+        }
+
+        .text_container {
+            clear: both;
+            position: relative;
+            top: 15px;
+            .text {
+                font-size: 14px;
+                line-height: 21px;
+                font-family: trade_gothic, sans-serif;
+
+                b {
+                    font-family: trade_gothic_bold, sans-serif;
+                    font-weight: normal;
+                }
+                
+            }
+        }
+    }
+
+    .footer_right_portion {
+        float: right;
+        margin-top: 27px;
+
+        .links {
+            float: right;
+            font-family: trade_gothic_bold, sans-serif;
+            font-size: 18px;
+
+            .about:hover {
+                @include link(#E22134);
+            }
+
+            .supporters:hover {
+                @include link(#009347);
+            }
+
+            .contact:hover {
+                @include link(#0082B8);
+            }
+
+            .links_:hover {
+                @include link(#6F3296);
+            }
+        }
+
+        .spacer {
+            height: 58px;
+            width: 30px;
+            float: right;
+        }
+    }
+}
+

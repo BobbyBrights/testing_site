@@ -1,0 +1,326 @@
+.top_buffer {
+    width: auto;
+    height: 150px;
+}
+
+.jw-icon-rewind {
+    display: none;
+}
+
+.not_accessible {
+    width: 850px;
+    height: 600px;
+    border-top: 1px solid #000000;
+    font-family: league_gothic, sans-serif;
+    font-size: 30px;
+
+    .sorry_text {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 600px; 
+    }
+}
+
+
+.accessible {
+    position:relative;
+    width: 850px;
+    //
+    border-top: 1px solid #000000;
+    display: block;
+    //position: absolute;
+
+
+    .title {
+        font-family: league_gothic, sans-serif;
+        font-size: 30px;
+        margin-top: 11px;
+        width: 380px
+    }
+
+    .film_table {
+        width: 850px;
+        display: table;
+        z-index: 1;
+        height: 1px;
+        
+        .film_row_generic {
+            display: table-cell;
+            
+        }
+
+        .film_table_left_right_margin {
+            width: 15px;
+            height: 1px;
+            display: table-cell;
+            float: left;
+        }
+
+        .film_table_content_left, .film_table_content_right {
+            width: 380px;
+            display: table-row;
+            vertical-align:top;
+            float: left;
+        }
+
+
+        .film_table_centre {
+            width: 60px;
+            height: 1px;
+            // background-color: blue;
+            display: table-cell;
+            float: left;
+        }
+
+        .film_table_inner_table {
+            width: 380px;
+            display: table;
+            //position: absolute;
+
+            .film_table_end_buffer {
+                width: 380px;
+                height: 75px;
+                display: table-row;
+            }
+
+            .film_table_inner_row_title {
+                width: 380px;
+                display: table-row;
+            }
+
+            .film_table_inner_row_title_spacer {
+                width: 380px;
+                height: 30px;
+                // background-color: purple;
+                display: table-row;
+            }
+
+            .film_table_text {
+                width: 380px;
+                
+                display: table-row;
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+                line-height: 21px;
+
+                b {
+                    font-family: trade_gothic_bold, sans-serif;
+                    font-weight: normal;
+                }
+
+                a
+                {
+                    color: #000;
+                    text-decoration: none; /* no underline */
+
+                    
+                }
+
+                a:hover
+                {
+                    color: #009347;
+                    text-decoration: none; /* no underline */
+                    
+                }
+
+                .inquire {
+                    color: #000;
+                }
+
+                .inquire:hover {
+                        color: #E22134;
+                    }
+            }
+
+            .film_table_inner_row_text_spacer {
+                width: 380px;
+                height: 30px;
+                // background-color: purple;
+                display: table-row;
+            }
+
+            .film_table_inner_row_list_spacer {
+                width: 380px;
+                height: 10px;
+                // background-color: purple;
+                display: table-row;
+            }
+
+            .film_table_genre_row {
+                width: 380px;
+                
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+
+                .genre_category_list_entry {
+                    position: relative;
+                    float: left;
+                    margin-right: 10px;
+                    margin-top: 9px;
+
+                    span {
+                        font-weight: normal !important;
+                        font-family: trade_gothic, sans-serif;
+                        background: #FFC300;
+                        line-height: 20px;
+                        color: #000;
+                        letter-spacing: -0.01em;
+                        text-decoration: none;
+                        border: none !important;
+                        //padding: 5px 5px 7px;
+                        border-radius: 0;
+                        padding: 5px 5px 2px 5px;
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+
+            .film_table_category_row {
+                width: 380px;
+                
+                font-family: trade_gothic, sans-serif;
+                font-size: 14px;
+
+                .genre_category_list_entry {
+                    position: relative;
+                    float: left;
+                    margin-right: 10px;
+                    margin-top: 9px;
+
+                    span {
+                        font-weight: normal !important;
+                        font-family: trade_gothic, sans-serif;
+                        background: #FFC300;
+                        line-height: 20px;
+                        color: #000;
+                        letter-spacing: -0.01em;
+                        text-decoration: none;
+                        border: none !important;
+                        //padding: 5px 5px 7px;
+                        border-radius: 0;
+                        padding: 5px 5px 2px 5px;
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+
+            .film_table_inner_row_top_image_spacer {
+                width: 380px;
+                height: 87px;
+                display: table-row;
+
+                a {
+                    float: right;
+                    font-family: trade_gothic_bold, sans-serif;
+                    font-size: 14px;
+                    color: #000;
+                    text-decoration: none; /* no underline */
+                    
+                    .glyph_container{
+                        margin-top: 21px;
+                        margin-right: 8px;
+                        float: right;
+                    }
+
+                    .link {
+                        margin-top: 29px;
+                        float: right;
+                    }
+                }
+
+                a:hover {
+                    color: #009347;
+                    cursor: pointer;
+                }
+            }
+
+            .film_table_inner_still {
+                width: 380px;
+                
+                display: table-row;
+            }
+
+            .film_still_container {
+                width: 380px;
+                height: 265px;
+                background-color: #D8D8D8;
+                overflow: hidden;
+                position: relative;
+
+                .film_still_container_child {
+                    position: absolute;
+                    top: -9999px;
+                    bottom: -9999px;
+                    left: -9999px;
+                    right: -9999px;
+                    margin: auto;
+                }
+            }
+
+            .film_table_inner_video {
+                width: 380px;
+                height: 265px;
+                display: table-row;
+                position:absolute;
+
+                .film_table_inner_video_clip, #film_table_inner_video_clip{
+                    width: 380px;
+                    height: 265px;
+                    z-index: 1;
+                    position:absolute;
+                    top: 0px;
+                }
+
+                .film_table_inner_video_preview, #film_table_inner_video_preview {
+                    width: 380px;
+                    height: 265px;
+                    z-index: 2;
+                    position: absolute;
+                    top: 0px;
+                }
+
+                
+            }
+
+            .film_table_inner_video_placeholder{
+                    width: 380px;
+                    height: 265px;
+                    z-index: 0;
+                }
+
+            .video_links {
+                width: 380px;
+                
+
+                b {
+                    font-family: trade_gothic_bold, sans-serif;
+                    font-weight: normal;
+                }
+
+                .clip_link {
+                    float: left;
+                    font-size: 12px;
+                    margin-top: 8px;
+                    color: #000;
+                }
+
+                .full_preview {
+                    float: right;
+                    font-size: 12px;
+                    margin-top: 8px;
+                    color: #000;
+                }
+
+                .clip_link:hover, .full_preview:hover {
+                    cursor: pointer;
+                    color: #0082B8;
+                }
+
+                .link_on {
+                    color: #0082B8;
+                }
+
+            }
+        }
+    }
+}

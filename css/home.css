@@ -1,0 +1,12 @@
+.top_buffer {
+  width: auto;
+  height: 150px; }
+
+.featured_films {
+  width: auto;
+  height: 340px;
+  overflow: hidden; }
+  .featured_films img {
+    width: 850px; }
+
+/*# sourceMappingURL=home.css.map */
