@@ -64,6 +64,11 @@
                 font-family: trade_gothic, sans-serif;
                 vertical-align: middle;
             }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
         }
 
         .page_table_end_buffer {

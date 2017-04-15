@@ -45,6 +45,9 @@
       .accessible .page_table table td, .accessible_generic .page_table table td {
         font-family: trade_gothic, sans-serif;
         vertical-align: middle; }
+      .accessible .page_table table th, .accessible .page_table table td, .accessible_generic .page_table table th, .accessible_generic .page_table table td {
+        padding: 8px;
+        text-align: left; }
     .accessible .page_table .page_table_end_buffer, .accessible_generic .page_table .page_table_end_buffer {
       display: table;
       width: 100%;
