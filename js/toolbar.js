@@ -1,4 +1,4 @@
-/**
+ /**
  * Convert a string to HTML entities
  */
 String.prototype.toHtmlEntities = function() {
@@ -197,8 +197,8 @@ toolbar_contents += '			</div>\
 				</div>\
 				<div class="sub_links_container">\
 					<div class="sub_link_container">\
-						<div class="sales_rentals_link">\
-							<a href="">Previews</a>\
+						<div id="previews" class="sales_rentals_link">\
+							<a href="'+web_host+'previews">Previews</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\

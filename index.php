@@ -75,6 +75,10 @@ $router->map('GET','/faq/', 'src/faq.php', 'faq_faq');
 $router->map('GET','/submitnow', 'src/submitnow.php', 'submitnow');
 $router->map('GET','/submitnow/', 'src/submitnow.php', 'submitnow_submitnow');
 
+// Previews Page
+$router->map('GET','/previews', 'src/previews.php', 'previews');
+$router->map('GET','/previews/', 'src/previews.php', 'previews_previews');
+
 // API Routes
 //$router->map('GET','/api/[*:key]/[*:name]/', 'src/json.php', 'api');
 /* Match the current request */
