@@ -38,6 +38,8 @@
       float: top; }
     .accessible .page_table table, .accessible_generic .page_table table {
       width: 537px; }
+      .accessible .page_table table th, .accessible_generic .page_table table th {
+        font-family: trade_gothic_bold, sans-serif; }
     .accessible .page_table .page_table_end_buffer, .accessible_generic .page_table .page_table_end_buffer {
       display: table;
       width: 100%;
