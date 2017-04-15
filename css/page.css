@@ -73,7 +73,9 @@
           .accessible .page_table .page_table_cell_container .page_table_contents .generic_table h1, .accessible_generic .page_table .page_table_cell_container .page_table_contents .generic_table h1 {
             font-weight: normal;
             font-size: 16px;
-            font-family: trade_gothic_bold, sans-serif; }
+            font-family: trade_gothic_bold, sans-serif;
+            padding: 0px;
+            margin: 0px; }
           .accessible .page_table .page_table_cell_container .page_table_contents .generic_table .generic_table_title, .accessible_generic .page_table .page_table_cell_container .page_table_contents .generic_table .generic_table_title {
             display: table; }
             .accessible .page_table .page_table_cell_container .page_table_contents .generic_table .generic_table_title .generic_title, .accessible_generic .page_table .page_table_cell_container .page_table_contents .generic_table .generic_table_title .generic_title {
