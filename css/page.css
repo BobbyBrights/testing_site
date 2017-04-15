@@ -40,6 +40,7 @@
       width: 477px;
       font-size: 14px; }
       .accessible .page_table table th, .accessible_generic .page_table table th {
+        font-weight: normal;
         font-family: trade_gothic_bold, sans-serif;
         vertical-align: middle; }
       .accessible .page_table table td, .accessible_generic .page_table table td {
