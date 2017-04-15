@@ -211,8 +211,8 @@ toolbar_contents += '			</div>\
 					<div class="sub_link_spacer">\
 					</div>\
 					<div class="sub_link_container">\
-						<div class="sales_rentals_link">\
-							<a href="">Rent a Film</a>\
+						<div id="rentafilm" class="sales_rentals_link">\
+							<a href="'+web_host+'rentafilm">Rent a Film</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\

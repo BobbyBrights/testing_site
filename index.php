@@ -83,6 +83,10 @@ $router->map('GET','/previews/', 'src/previews.php', 'previews_previews');
 $router->map('GET','/feeschedule', 'src/feeschedule.php', 'feeschedule');
 $router->map('GET','/feeschedule/', 'src/feeschedule.php', 'feeschedule_feeschedule');
 
+// Rent a Film Page
+$router->map('GET','/rentafilm', 'src/rentafilm.php', 'rentafilm');
+$router->map('GET','/rentafilm/', 'src/rentafilm.php', 'rentafilm_rentafilm');
+
 // API Routes
 //$router->map('GET','/api/[*:key]/[*:name]/', 'src/json.php', 'api');
 /* Match the current request */
