@@ -16,4 +16,4 @@ else {
 }
 
 </script>
-<script src="<?=$web_host?>js/previews.js" type="text/javascript"></script>
+<script src="<?=$web_host?>js/feeschedule.js" type="text/javascript"></script>
