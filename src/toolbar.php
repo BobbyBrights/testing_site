@@ -35,6 +35,7 @@ if (!$data) {
 <script type="text/javascript"> 
 categories_genre_obj = JSON.parse('<?php echo json_encode($json_categories_genre); ?>');
 </script>
+<script src="https://use.fontawesome.com/86506fc691.js"></script>
 <script src="<?=$web_host?>js/toolbar.js"
         type="text/javascript"></script>
     <?php

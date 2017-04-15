@@ -1,0 +1,217 @@
+.top_buffer {
+    width: auto;
+    height: 210px;
+}
+
+.accessible {
+    border-top: 1px solid #000000;
+}
+
+.accessible, .accessible_generic {
+    position:relative;
+    width: 850px;
+    display: block;
+
+    .page_table {
+        width: 850px;
+        //height: 100px;
+        //background-color: red;
+        display: table;
+        font-size: 14px;
+        font-family: trade_gothic, sans-serif;
+
+        a, a:hover {
+            color: #FFC300;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: #A29F9F;
+        }
+
+        b {
+            font-weight: normal;
+            font-family: trade_gothic_bold, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0; 
+            padding: 0;
+            margin-left: 30px; 
+        }
+
+        li::before {
+            content: "•"; 
+            color: #FFC300;
+            display: inline-block; 
+            width: 1.5em;
+            margin-left: -1.5em;
+            float: top;
+        }
+
+        .page_table_end_buffer {
+            display: table;
+            width: 100%;
+            height: 75px;
+        }
+
+        .page_table_cell_container {
+            display: table-row;
+
+            .page_table_cell_left_margin, .page_table_cell_right_margin {
+                width: 1.8%;
+                display: table-cell;
+                //background-color: green;
+            }
+
+            .page_table_contents {
+                //width: 11.3%;
+                display: table-cell;
+
+                .contents_spacer {
+                    width: 100%;
+                    height: 30px;
+                    display: table;
+                }
+
+                .contents_end_buffer {
+                    display: table;
+                    width: 100%;
+                    height: 75px;
+                }
+
+                .generic_table {
+                    display: table;
+
+                    .generic_table_title {
+                        //width: 11.3%;
+                        display: table;
+                        //background-color: purple;
+
+                        .generic_title {
+                            font-family: league_gothic, sans-serif;
+                            font-size: 30px;
+                            margin-top: 11px;
+                            color: #000;
+                            display: inline-block;
+                        }
+
+                        .generic_sub_title {
+                            font-family: trade_gothic_bold, sans-serif;
+                            font-size: 18px;
+                            margin-top: 11px;
+                            color: #000;
+                            display: inline-block;
+                        }
+
+                    }
+
+                    .generic_spacer {
+                        width: 100%;
+                        height: 30px;
+                        display: table;
+                    }
+
+                    .generic_spacer_page {
+                        width: 100%;
+                        height: 30px;
+                        display: table;
+                    }
+
+                    .generic_info_table {
+                        display: table;
+
+                        .generic_info_image {
+                            width: 253px;
+                            height:188px;
+                            display: inline-block;
+                            float: right;
+                            //background-color: green;
+
+                            .img_container {
+                                width: 253px;
+                                height:188px;
+                                background-color: #fff;
+                                overflow:hidden;
+                                position: relative;
+                                //margin-left: auto; 
+                                //margin-right: auto;
+                                //display: table;
+
+                                .img_container_child {
+                                    //max-width: 188px;
+                                    position: absolute;
+                                    top: -9999px;
+                                    bottom: -9999px;
+                                    left: -9999px;
+                                    right: -9999px;
+                                    margin: auto;
+                                    z-index: 0;
+                                }
+                            }
+                        }
+
+                        .generic_info_image_page {
+                            width: 253px;
+                            height:188px;
+                            display: inline-block;
+                            float: left;
+                            //background-color: green;
+
+                            .img_container {
+                                width: 253px;
+                                height:188px;
+                                background-color: #fff;
+                                overflow:hidden;
+                                position: relative;
+                                //margin-left: auto; 
+                                //margin-right: auto;
+                                //display: table;
+
+                                .img_container_child {
+                                    //max-width: 188px;
+                                    position: absolute;
+                                    top: -9999px;
+                                    bottom: -9999px;
+                                    left: -9999px;
+                                    right: -9999px;
+                                    margin: auto;
+                                    z-index: 0;
+                                }
+                            }
+                        }
+
+                        .generic_info_spacer {
+                            width: 30px;
+                            display: inline-block;
+                            float: right;
+                        }
+
+                        .generic_info {
+                            width: 537px;
+                            display: inline-block;
+                            float: left;
+                            font-size: 14px;
+                            font-family: trade_gothic, sans-serif;
+                            color: #000;
+                            //background-color: green;
+                        }
+
+                        .generic_info_page {
+                            width: 537px;
+                            display: inline-block;
+                            float: right;
+                            font-size: 16px;
+                            font-family: trade_gothic, sans-serif;
+                            color: #000;
+                            line-height: 26px;
+                            //background-color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

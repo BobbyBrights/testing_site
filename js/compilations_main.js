@@ -5,13 +5,16 @@ $(document).ready(function() {
 
     document.title = "Compilations" + " | Canadian Filmmakers Distribution Centre"
 
+    $("#compilations").addClass("catalogue_link_selected")
+    $(".catalogue").css("color", "#E22134")
+
     $(".contents").append("<div class='accessible'></div>")
     $(".accessible").append("<div class='table'></div>")
     $(".table").append("<div class='table_cell_container'></div>")
     $(".table_cell_container").append("<div class='table_cell_left_margin'></div>")
     $(".table_cell_container").append("<div class='table_content'></div>")
     $(".table_cell_container").append("<div class='table_cell_right_margin'></div>")
-    $(".table_content").append("<div class='table_title'><div class='title'>COMPILATIONS</div></div>")
+    $(".table_content").append("<div class='table_title'><div class='title'>Compilations</div></div>")
     $(".table_content").append("<div class='table_spacer'></div>")
     getCompilations()
     $(".accessible").append("<div class='filmmaker_table_end_buffer'></div>")

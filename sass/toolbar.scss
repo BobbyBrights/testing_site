@@ -1,5 +1,68 @@
 $host: "http://s219085.gridserver.com/";
 
+@mixin sub_list_menu($name, $color, $right) {
+    .#{$name}_sub_links {
+        position: absolute;
+        width: 850px;
+        background-color: rgba(256,256,256,0.85);
+        z-index: 1;
+        @include init-menu(-100%);
+
+        .#{$name}_link {
+            a, a:hover {
+                text-decoration: none;
+                color: #000;
+            }
+
+            a:hover {
+                color: $color;
+                cursor: pointer;
+            }
+        }
+
+        .#{$name}_link_selected {
+            a, a:hover {
+                text-decoration: none;
+                color: $color;
+                cursor: pointer;
+            }
+        }
+
+        .sub_links_header {
+            height: 28px;
+        }
+
+        .sub_links_footer {
+            height: 45px;
+        }
+
+        .sub_links_container {
+            margin-right: $right;
+            opacity: 0;
+            transition-delay: 60ms;
+
+            .sub_link_container {
+                font-family: trade_gothic_bold, sans-serif;
+                font-size: 16px;
+                //color: #A29F9F;
+                text-align: right;
+            }
+
+            .sub_link_spacer {
+                height: 8px;
+            }
+
+        }
+
+        .sub_links_container_on {
+            opacity: 1;
+            transition-property: opacity; 
+            transition-duration: 1s;
+            transition-delay: 60ms;
+        }        
+    }
+}
+
 @mixin drop-menu($drop) {
     -webkit-transform: translateY($drop);
     -ms-transform: translateY($drop);
@@ -12,6 +75,7 @@ $host: "http://s219085.gridserver.com/";
     transform: translateY($drop);
     -webkit-transition: -webkit-transform .2s linear;
     transition: transform .2s linear;
+    transition-delay: 60ms;
 }
 
 @mixin link($color) {
@@ -293,6 +357,8 @@ $host: "http://s219085.gridserver.com/";
                 float: right;
             }
 
+            
+
             .remove {
                 //position:relative;
                 //background-color:red;
@@ -344,7 +410,7 @@ $host: "http://s219085.gridserver.com/";
         font-family: trade_gothic_bold, sans-serif;
         font-size: 18px;
         width: 850px;
-        height: 150px;
+        height: 210px;
         margin-left: auto;
         margin-right: auto;
 
@@ -355,18 +421,35 @@ $host: "http://s219085.gridserver.com/";
         .upper_portion {
             position: relative;
             background-color: white;
-            height: 90px;
+            height: 150px;
             z-index: 2000;
 
             .logo {
-                width:263px;
+                width:276px;
                 height: auto;
-                bottom: 0px;
+                top: 13px;
+                left: -12px;
+                // width:268px;
+                // height: auto;
+                // top: 15px;
+                // left: -9px;
                 position: absolute;
+                //background-image: url($host + "img/toolbar/CFMDC_logo_50th_blk_css.jpg");
+            }
+
+            .logo:hover {
+                cursor:pointer;
+            }
+
+            .logo_up {
+                top: -50px;
+                opacity: 0;
+                transition-property: top, opacity;
+                transition-duration: 200ms, 1000ms;
             }
 
             .right_links {
-                height: 58px;
+                height: 85px;
                 position: absolute;
                 bottom: 0px;
                 right: 0px;
@@ -397,6 +480,27 @@ $host: "http://s219085.gridserver.com/";
 
                 }
 
+                .facebook_logo {
+                    color: #A29F9F;
+                    font-size: 19px;
+                    position: relative;
+                    float:right;
+                    width: auto;
+                    top: 33px;
+
+                    a {    
+                        color: #A29F9F;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: #0082B8;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
+                }
+
                 .signin {
                     color: #A29F9F;
                     position: relative;
@@ -407,11 +511,11 @@ $host: "http://s219085.gridserver.com/";
 
                     span {
                         position: relative;
-                        top: 20px;
+                        top: 35px;
                     }
 
                     span:hover {
-                        @include link(#0082B8);
+                        @include link(#FFC300);
                     }
 
                 }
@@ -425,7 +529,38 @@ $host: "http://s219085.gridserver.com/";
             bottom: 0px;
             z-index: 1000;
 
+            .mini_logo {
+                //width: 152px;
+                width: 165px;
+                height: auto;
+                top: 5px;
+                opacity: 0;
+                //left: 2px;
+                // width:268px;
+                // height: auto;
+                // top: 15px;
+                // left: -9px;
+                position: absolute;
+            }
+
+            .mini_logo:hover {
+                cursor:pointer;
+            }
+
+            .mini_logo_show {
+                opacity: 1;
+                transition-property: opacity;
+                transition-duration: 1000ms;
+            }
+
             .spacer {
+                //background-color: grey;
+                height: 58px;
+                width: 30px;
+                float: right;
+            }
+
+            .spacer_special {
                 //background-color: grey;
                 height: 58px;
                 width: 30px;
@@ -462,24 +597,63 @@ $host: "http://s219085.gridserver.com/";
                 float:right;
                 width: auto;
                 height: 58px;
+                top: 2px;
 
                 span {
                     position: relative;
-                    top: 20px;
+                    top: 18px;
                 }
             }
         }
         .hidden_container {
             position: relative;
 
+            @include sub_list_menu(educators, #FFC300, 415px);
+            @include sub_list_menu(sales_rentals, #009347, 269px);
+            @include sub_list_menu(submit_film, #0082B8, 153px);
+            @include sub_list_menu(catalogue, #E22134, 49px);
+
+            // .sub_links {
+            //     position: absolute;
+            //     width: 850px;
+            //     background-color: rgba(256,256,256,0.8);
+            //     z-index: 1;
+            //     //@include init-menu(-100%);
+
+            //     .sub_links_header {
+            //         height: 19px;
+            //     }
+
+            //     .sub_links_footer {
+            //         height: 30px;
+            //     }
+
+            //     .sub_links_container {
+            //         margin-right: 415px;
+
+            //         .sub_link_container {
+            //             font-family: trade_gothic_bold, sans-serif;
+            //             font-size: 16px;
+            //             //color: #A29F9F;
+            //             text-align: right;
+            //         }
+
+            //         .sub_link_spacer {
+            //             height: 8px;
+            //         }
+
+            //     }
+            // }
+
             .search_portion {
 
                 position: absolute;
-                background-color: rgb(256, 256, 256);
-                //background-color: rgba(256, 256, 256, 0.9);
-                height: 320px;
+                //background-color: rgb(256, 256, 256);
+                background-color: rgba(256, 256, 256, 0.85);
+                //background-color: green;
+                height: 341px;
                 width: 100%;
-                top: 0px;
+                top: -1px;
                 z-index: 1;
                 font-family: trade_gothic, sans-serif;
                 font-size: 14px;
@@ -502,7 +676,7 @@ $host: "http://s219085.gridserver.com/";
 
                 .upper_search_container {
                     //background-color: yellow;
-                    height: 233px;
+                    height: 263px;
                     width: #{380 * 2 + 60}px;
                     margin-left: auto;
                     margin-right: auto;
@@ -586,6 +760,10 @@ $host: "http://s219085.gridserver.com/";
                             visibility: hidden;
                         }
 
+                        .generic_table {
+                            display: table;
+                        }
+
                         .new_aquisition_text{
                             float: left;
                             position: relative;
@@ -626,6 +804,50 @@ $host: "http://s219085.gridserver.com/";
                         .new_aquisition_checkbox input[type=checkbox]:checked + label {
                             background: #FFC300;
                         }
+
+                        .celluloid_only_text{
+                            float: left;
+                            position: relative;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                        }
+
+                        .celluloid_only_parens {
+                            float: left;
+                            position: relative;
+                            margin-left: 27px;
+                            font-size: 12px;
+                            margin-top: 15px;
+                        }
+
+                        .celluloid_only_checkbox {
+                            width: 12px;
+                            height: 12px;
+                            margin-top: 15px;
+                            border-radius: 100%;
+                            position: relative;
+                            border: 1px solid #000;
+                            float: left;
+                        }
+
+                        .celluloid_only_checkbox label {
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 10px;
+
+                            transition: all .5s ease;
+                            cursor: pointer;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            z-index: 1;
+                        }
+
+                        .celluloid_only_checkbox input[type=checkbox]:checked + label {
+                            background: #FFC300;
+                        }
+
                     }
 
                     .spacer {
@@ -793,7 +1015,7 @@ $host: "http://s219085.gridserver.com/";
                         text-align: center;
                         position: relative;
                         line-height: 0px;
-                        top: 50%;
+                        top: 40%;
                     }
 
                     .search_button:hover {
@@ -846,7 +1068,30 @@ $host: "http://s219085.gridserver.com/";
             .search_down {
                 @include drop-menu(0%);
             }
+
+            .sub_down {
+                @include drop-menu(0%);
+            }
         }
+
+
+        #educators:hover {
+            @include link(#FFC300);
+        }
+
+        #sales_rentals:hover {
+            @include link(#009347);
+        }
+
+        #submit_film:hover {
+            @include link(#0082B8);
+        }
+
+        #catalogue:hover {
+            @include link(#E22134);
+        }
+
+
         .links {
             color: #000;
             text-align: center;
@@ -896,5 +1141,6 @@ $host: "http://s219085.gridserver.com/";
 }
 
 .bar_up {
-    @include drop-menu(-100%);
+    @include drop-menu(-74%);
+    // 76
 }

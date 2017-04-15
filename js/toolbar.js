@@ -18,6 +18,14 @@ String.fromHtmlEntities = function(string) {
 
 var web_host = "http://s219085.gridserver.com/";
 
+//var logo_ims = ["CFMDC_logo_50th_blk.jpg", "CFMDC_logo_50th_blk_gld.jpg", "CFMDC_logo_50th_blu.jpg"]
+
+//var randomnumber=Math.floor(Math.random()*3)
+
+var logo_ims = ["CFMDC_logo_50th_blk_gld_all_sm_sm.jpg"]
+
+var randomnumber=Math.floor(Math.random()*1)
+
 var toolbar_contents = '\
 <div class="message">\
 	<div class="alert_table">\
@@ -91,8 +99,15 @@ var toolbar_contents = '\
 	</div>\
 	<div class="toolbar">\
 		<div class="upper_portion">\
-			<img class="logo" src="'+web_host+'img/toolbar/cfmdc_logo.jpg"></img>\
-			<div class="right_links">';
+			<a href="' + web_host + '">\
+			<img class="logo" src="' + web_host + 'img/toolbar/' + logo_ims[randomnumber] + '">\
+			</a>\
+			<div class="right_links">\
+							<div class="facebook_logo">\
+				<a href="https://www.facebook.com/cfmdcmembers/" target="_blank" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>\
+			</div>\
+			<div class="spacer"></div>'
+			//<img class="logo" src="'+web_host+'img/toolbar/CFMDC_logo_50th_blk.jpg"></img>\
 				// <div class="hamburger">\
 				// 	<span class="glyphicon glyphicon-menu-hamburger"></span>\
 				// </div>\
@@ -100,46 +115,164 @@ var toolbar_contents = '\
 
 if (logged_in == 1) {
 	toolbar_contents += '<div id="toolbar_signout" class="signin">\
-					<span>SIGN OUT</span>\
+					<span>Sign Out</span>\
 				</div>'
 }
 else {
 	toolbar_contents += '<div id="toolbar_signin" class="signin">\
-					<span>SIGN IN</span>\
+					<span>Sign In</span>\
 				</div>'
 }
-toolbar_contents += '</div>\
+toolbar_contents += '			</div>\
 		</div> \
 		<div class="lower_portion">\
+			<a href="' + web_host + '">\
+			<img class="mini_logo" src="' + web_host + 'img/toolbar/cfmdc_logo_gld_sm_brt.jpg">\
+			</a>\
 			<div class="search">\
 				<span class="glyphicon glyphicon-search"></span>\
 			</div>\
-			<div class="spacer"></div>\
-			<div class="links">\
+			<div class="spacer_special"></div>\
+			<div id="catalogue" class="links">\
 				<div class="catalogue">\
 					<span>Catalogue</span>\
 				</div>\
 			</div>\
 			<div class="spacer"></div>\
-			<div class="links">\
+			<div id="submit_film" class="links">\
 				<div class="submit_film">\
 					<span>Submit Film</span>\
 				</div>\
 			</div>\
 			<div class="spacer"></div>\
-			<div class="links">\
+			<div id="sales_rentals" class="links">\
 				<div class="sales_rentals">\
 					<span>Sales + Rentals</span>\
 				</div>\
 			</div>\
 			<div class="spacer"></div>\
-			<div class="links">\
+			<div id="educators" class="links">\
 				<div class="educators">\
 					<span>Educators</span>\
 				</div>\
 			</div>\
 		</div>\
 		<div class="hidden_container">\
+			<div id="educators_sub_links" class="educators_sub_links">\
+				<div class="sub_links_header">\
+				</div>\
+				<div class="sub_links_container">\
+					<div class="sub_link_container">\
+						<div class="educators_link">\
+							<a href="">Films For The Classroom</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div class="educators_link">\
+							<a href="">Educational Services</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div class="educators_link">\
+							<a href="https://cfmdcresidentscholar.wordpress.com/2015/12/02/welcome-to-cfmdc-scholar-in-residence/" target="_blank">Scholar In Residence</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div class="educators_link">\
+							<a href="">Study Guides</a>\
+						</div>\
+					</div>\
+				</div>\
+				<div class="sub_links_footer">\
+				</div>\
+			</div>\
+			<div id="sales_rentals_sub_links" class="sales_rentals_sub_links">\
+				<div class="sub_links_header">\
+				</div>\
+				<div class="sub_links_container">\
+					<div class="sub_link_container">\
+						<div class="sales_rentals_link">\
+							<a href="">Previews</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div class="sales_rentals_link">\
+							<a href="">Fee Schedule</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div class="sales_rentals_link">\
+							<a href="">Rent a Film</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div class="sales_rentals_link">\
+							<a href="">Rentals Shipping/Returns</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div class="sales_rentals_link">\
+							<a href="">Buy a Film</a>\
+						</div>\
+					</div>\
+				</div>\
+				<div class="sub_links_footer">\
+				</div>\
+			</div>\
+			<div id="submit_film_sub_links" class="submit_film_sub_links">\
+				<div class="sub_links_header">\
+				</div>\
+				<div class="sub_links_container">\
+					<div class="sub_link_container">\
+						<div id="faq" class="submit_film_link">\
+							<a href="'+web_host+'faq">F.A.Q.</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div id="submitnow" class="submit_film_link">\
+							<a href="'+web_host+'submitnow">Submit Now</a>\
+						</div>\
+					</div>\
+				</div>\
+				<div class="sub_links_footer">\
+				</div>\
+			</div>\
+			<div id="catalogue_sub_links" class="catalogue_sub_links">\
+				<div class="sub_links_header">\
+				</div>\
+				<div class="sub_links_container">\
+					<div class="sub_link_container">\
+						<div id="artist_index" class="catalogue_link">\
+							<a href="'+web_host+'artistindex">Artist Index</a>\
+						</div>\
+					</div>\
+					<div class="sub_link_spacer">\
+					</div>\
+					<div class="sub_link_container">\
+						<div id="compilations" class="catalogue_link">\
+							<a href="'+web_host+'compilations">Compilations</a>\
+						</div>\
+					</div>\
+				</div>\
+				<div class="sub_links_footer">\
+				</div>\
+			</div>\
 			<div class="search_portion">\
 				<div class="upper_search_container">\
 					<div class="right_search">\
@@ -169,12 +302,22 @@ toolbar_contents += '</div>\
 					<div class="spacer">\
 					</div>\
 					<div class="left_search">\
-						<div class="new_aquisition_checkbox">\
-							<input type="checkbox" value="1" id="new_aquisition_checkbox_input" name="new_aquisition_checkbox_input" />\
-							<label for="new_aquisition_checkbox_input"></label>\
+						<div class="generic_table">\
+							<div class="new_aquisition_checkbox">\
+								<input type="checkbox" value="1" id="new_aquisition_checkbox_input" name="new_aquisition_checkbox_input" />\
+								<label for="new_aquisition_checkbox_input"></label>\
+							</div>\
+							<div class="new_aquisition_text"><b>New Aquisitions</b></div>\
+							<div class="new_aquisition_parens">(acquired within the last year)</div>\
 						</div>\
-						<div class="new_aquisition_text"><b>New Aquisitions</b></div>\
-						<div class="new_aquisition_parens">(acquired within the last year)</div>\
+						<div class="generic_table">\
+							<div class="celluloid_only_checkbox">\
+								<input type="checkbox" value="1" id="celluloid_only_checkbox_input" name="celluloid_only_checkbox_input" />\
+								<label for="celluloid_only_checkbox_input"></label>\
+							</div>\
+							<div class="celluloid_only_text"><b>Celluloid Only</b></div>\
+							<div class="celluloid_only_parens">(restricted to Super 8, 16mm, and 32mm)</div>\
+						</div>\
 						<div class="input_table">\
 							<div class="input_row">\
 								<div class="input_label">\
@@ -322,6 +465,7 @@ $( document ).ready(function() {
 	$('body').append("<div class='toolbar_container'></div>")
     $('.toolbar_container').append(toolbar_contents)
 	oldScrollbarPos = newScrollbarPos = $(window).scrollTop()
+	$(".mini_logo").hide()
 
 	// $(".glyphicon-menu-hamburger").click(function() {
 	// 	if ($(".hidden_portion").hasClass("portion_down")){
@@ -420,7 +564,60 @@ $( document ).ready(function() {
 	$(".signin_form > .button").click(function() {
 		initiateLogin();
 	})
+
+	generalSubDrop("educators")	
+	generalSubDrop("sales_rentals")	
+	generalSubDrop("submit_film")	
+	generalSubDrop("catalogue")	
+
+// setTimeout(alert("Hello "), 2000);
+
 })
+
+function generalSubDrop(id) {
+	$("#" + id + "_sub_links").mouseenter(function() {
+		$("#" + id + "_sub_links").addClass("sub_down")
+		$("#" + id + "_sub_links").addClass("hovered")
+		if (!$("#" + id + "_sub_links > .sub_links_container").hasClass("sub_links_container_on")) {
+			$("#" + id + "_sub_links > .sub_links_container").addClass("sub_links_container_on")
+		}
+		collapseToolbar()
+	})
+
+	$("#" + id + "_sub_links").mouseleave(function() {
+		if (!$("#" + id).hasClass("hovered")) {
+			$("#" + id + "_sub_links").removeClass("sub_down")
+			$("#" + id + "_sub_links > .sub_links_container").removeClass("sub_links_container_on")
+		}
+		$("#" + id + "_sub_links").removeClass("hovered")
+		
+	})
+
+
+	$("#" + id).mouseenter(function() {
+		$("#" + id + "_sub_links").addClass("sub_down")
+		$("#" + id).addClass("hovered")
+
+		
+		if (!$("#" + id + "_sub_links > .sub_links_container").hasClass("sub_links_container_on")) {
+			$("#" + id + "_sub_links > .sub_links_container").addClass("sub_links_container_on")
+		}
+		setTimeout(function() {
+			if ($("#" + id).hasClass("hovered")) {
+				collapseToolbar()
+			}
+		}, 200)
+	})
+
+	$("#" + id).mouseleave(function() {
+		$("#" + id).removeClass("hovered")
+			if (!$("#" + id + "_sub_links").hasClass("hovered")) {
+				$("#" + id + "_sub_links").removeClass("sub_down")
+				$("#" + id + "_sub_links > .sub_links_container").removeClass("sub_links_container_on")
+			}
+	})
+
+} 
 
 $(document).keypress(function(e) {
     if(e.which == 13) {
@@ -439,6 +636,26 @@ $(document).keypress(function(e) {
 });
 
 $( window ).scroll(function() {
+	curpos = $(window).scrollTop()
+	//if (curpos > 210) {
+	if (curpos > 190) {
+		$(".bar").addClass("bar_up")
+		$(".upper_portion").find(".logo").addClass("logo_up")
+		$(".upper_portion").find(".logo").on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+			$(this).hide()
+		});
+		$(".mini_logo").show()
+		$(".lower_portion").find(".mini_logo").addClass("mini_logo_show")
+		//collapseToolbar()
+	}
+	else {
+		$(".bar").removeClass("bar_down");
+		$(".bar").removeClass("bar_up")
+		$(".upper_portion").find(".logo").show()
+		$(".upper_portion").find(".logo").removeClass("logo_up")
+		$(".lower_portion").find(".mini_logo").removeClass("mini_logo_show")
+		$(".mini_logo").hide()
+	}
 	checkScrollDirection();
 })
 
@@ -477,6 +694,16 @@ function isSearchEmpty() {
 	})
 
 	if (new_aquisition_str) {
+		return false;
+	}
+
+	// Celluloid Only
+	celluloid_only_str = ""
+	$.each($("input[name='celluloid_only_checkbox_input']:checked"), function(){
+		celluloid_only_str = "1"
+	})
+
+	if (celluloid_only_str) {
 		return false;
 	}
 
@@ -530,6 +757,12 @@ function getSearchData() {
 	new_aquisition_str = ""
 	$.each($("input[name='new_aquisition_checkbox_input']:checked"), function(){
 		new_aquisition_str = "1"
+	})
+
+	// Celluloid Only
+	celluloid_only_str = ""
+	$.each($("input[name='celluloid_only_checkbox_input']:checked"), function(){
+		celluloid_only_str = "1"
 	})
 
 	// Artist
@@ -589,7 +822,7 @@ function getSearchData() {
 		}
 	})
 
-	query_str = new_aquisition_str + "(&)" + artist_str + "(&)" + title_str + "(&)" + country_str + "(&)" + year_str + "(&)" + genre_str + "(&)" + category_str
+	query_str = new_aquisition_str + "(&)" + celluloid_only_str + "(&)" + artist_str + "(&)" + title_str + "(&)" + country_str + "(&)" + year_str + "(&)" + genre_str + "(&)" + category_str
 	query_str = encodeURIComponent(query_str)
 
 	return query_str
@@ -663,7 +896,8 @@ function checkScrollDirection() {
 }
 
 function collapseToolbar() {
-	$(".bar").removeClass("bar_down");
+	//$(".bar").removeClass("bar_down");
+	//$(".bar").addClass("bar_up")
 	
 	$(".hidden_portion").removeClass("portion_down");
 	$(".search_portion").removeClass("search_down")
@@ -675,6 +909,6 @@ function collapseToolbar() {
 
 function expandToolbar() {
 	if ($(".bar").hasClass("bar_up")) {
-		$(".bar").removeClass("bar_up");
+		//$(".bar").removeClass("bar_up");
 	}
 }

@@ -10,22 +10,30 @@
 
 .footer_container {
     width: 850px;
-    height: 185px;
+    //height: 350px;
+    height: 302px;
     border-top: 1px solid #FFC300;
+
+    a:hover {
+        cursor: pointer;
+    }
 
     .footer_left_portion {
         float: left;
+        //height: 243px;
+        height: 195px;
 
         .logo {
             width: 147px;
-            margin-top: 15px;
+            margin-top: 20px;
             float: left;
         }
 
         .text_container {
             clear: both;
             position: relative;
-            top: 15px;
+            //top: 20px;
+            top: 27px;
             .text {
                 font-size: 14px;
                 line-height: 21px;
@@ -49,20 +57,89 @@
             font-family: trade_gothic_bold, sans-serif;
             font-size: 18px;
 
-            .about:hover {
-                @include link(#E22134);
-            }
+            // .about:hover {
+            //     @include link(#E22134);
+            // }
 
             .supporters:hover {
                 @include link(#009347);
             }
 
-            .contact:hover {
-                @include link(#0082B8);
+            // .contact:hover {
+            //     @include link(#0082B8);
+            // }
+
+            // .links_:hover {
+            //     @include link(#FFC300);
+            // }
+
+            .contact {
+                a, a:hover {
+                    color: #000;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #0082B8;
+                }
             }
 
-            .links_:hover {
-                @include link(#6F3296);
+            .contact_selected {
+                a, a:hover {
+                    color: #0082B8;
+                    text-decoration: none;
+                }
+            }
+
+            .about {
+                a, a:hover {
+                    color: #000;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #E22134;
+                }
+            }
+
+            .about_selected {
+                a, a:hover {
+                    color: #E22134;
+                    text-decoration: none;
+                }
+            }
+
+
+            .staffboard {
+                a, a:hover {
+                    color: #000;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #009347;
+                }
+            }
+
+            .staffboard_selected {
+                a, a:hover {
+                    color: #009347;
+                    text-decoration: none;
+                }
+            }
+
+            .links_ {
+                a, a:hover {
+                    color: #000;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: #FFC300;
+                }
+            }
+
+            .links_selected {
+                a, a:hover {
+                    color: #FFC300;
+                    text-decoration: none;
+                }
             }
         }
 
@@ -70,6 +147,29 @@
             height: 58px;
             width: 30px;
             float: right;
+        }
+    }
+
+    .supporters_container {
+        clear: both;
+        width: 850px;
+
+        .left_logo {
+            float:left;
+            width: 241px;
+            display: inline-block;
+        }
+
+        .centre_logo {
+            width: 219px;
+            margin-left: 125px;
+            display: inline-block;
+        }
+
+        .right_logo {
+            float:right;
+            width: 135px;
+            display: inline-block;
         }
     }
 }

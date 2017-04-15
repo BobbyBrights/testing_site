@@ -1,0 +1,195 @@
+.top_buffer {
+    width: auto;
+    height: 210px;
+}
+
+.accessible, .accessible_board {
+    border-top: 1px solid #000000;
+}
+
+.accessible, .accessible_board {
+    position:relative;
+    width: 850px;
+    display: block;
+
+    .staffboard_table {
+        width: 850px;
+        height: 100px;
+        //background-color: red;
+        display: table;
+        font-size: 14px;
+        font-family: trade_gothic, sans-serif;
+
+        .staffboard_table_end_buffer {
+            display: table;
+            width: 100%;
+            height: 75px;
+        }
+
+        .staffboard_table_cell_container {
+            display: table-row;
+
+            .staffboard_table_cell_left_margin, .staffboard_table_cell_right_margin {
+                width: 1.8%;
+                display: table-cell;
+                //background-color: green;
+            }
+
+            .staffboard_table_contents {
+                //width: 11.3%;
+                display: table-cell;
+
+                .contents_spacer {
+                    width: 100%;
+                    height: 30px;
+                    display: table;
+                }
+
+                .contents_end_buffer {
+                    display: table;
+                    width: 100%;
+                    height: 75px;
+                }
+
+                .generic_table {
+                    display: table;
+
+                    .generic_table_title {
+                        //width: 11.3%;
+                        display: table;
+                        //background-color: purple;
+
+                        .generic_title {
+                            font-family: league_gothic, sans-serif;
+                            font-size: 30px;
+                            margin-top: 11px;
+                            color: #000;
+                            display: inline-block;
+                        }
+
+                    }
+
+                    .generic_spacer {
+                        width: 100%;
+                        height: 30px;
+                        display: table;
+                    }
+
+                    .generic_info_table {
+                        display: table;
+
+                        .generic_info_image {
+                            width: 253px;
+                            //height:100px;
+                            display: inline-block;
+                            float: left;
+                            //background-color: green;
+
+                            .portrait_container, .landscape_container {
+                                width: 188px;
+                                height: 188px;
+                                background-color: #fff;
+                                overflow-x :hidden;
+                                overflow-y: hidden;
+                                position: relative;
+                                //margin-left: auto; 
+                                margin-right: auto;
+                                //display: table;
+
+                                .portrait_container_child, .landscape_container_child {
+                                    max-width: 188px;
+                                    position: absolute;
+                                    top: -9999px;
+                                    bottom: -9999px;
+                                    left: -9999px;
+                                    right: -9999px;
+                                    margin: auto;
+                                    z-index: 0;
+                                }
+                            }
+
+                            // .landscape_container {
+                            //     width: 253px;
+                            //     height: 188px;
+                            //     background-color: #fff;
+                            //     overflow: hidden;
+                            //     position: relative;
+                            //     margin-left: auto; 
+                            //     margin-right: auto;
+
+                            //     .landscape_container_child {
+                            //         max-width: 253px;
+                            //         position: absolute;
+                            //         top: -9999px;
+                            //         bottom: -9999px;
+                            //         left: -9999px;
+                            //         right: -9999px;
+                            //         margin: auto;
+                            //         z-index: 0;
+                            //     }
+                            // }
+                        }
+
+                        .generic_info_spacer {
+                            width: 30px;
+                            display: inline-block;
+                            float: right;
+                        }
+
+                        .generic_info {
+                            width: 537px;
+                            display: inline-block;
+                            float: right;
+                            font-size: 14px;
+                            font-family: trade_gothic, sans-serif;
+                            color: #000;
+                            //position: absolute;
+                            //background-color: yellow;
+
+                            .spacer {
+                                height: 8px;
+                                display: table;
+                            }
+
+                            .name {
+                                display: table;
+                                font-family: trade_gothic_bold, sans-serif;
+                                //position: absolute;
+                            }
+
+                            .email {
+                                display: table;
+                                // font-family: trade_gothic_bold, sans-serif;
+                                color: #FFC300;
+                                //position: absolute;
+
+                                a, a:hover {
+                                    color: #FFC300;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                }
+
+                                a:hover {
+                                    color: #A29F9F;
+                                }
+                            }
+
+                            .text {
+                                display: table;
+                                //position: absolute;
+                                font-family: trade_gothic, sans-serif;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

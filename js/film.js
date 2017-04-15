@@ -198,9 +198,9 @@ $(document).ready(function() {
                 }
             }
 
-            $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_end_buffer'></div>")
-
         }
+
+        $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_end_buffer'></div>")
     }
 })
 

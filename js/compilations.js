@@ -1,6 +1,9 @@
 $(document).ready(function() {
     $(".contents").append("<div class='top_buffer'></div>")
 
+    $("#compilations").addClass("catalogue_link_selected")
+    $(".catalogue").css("color", "#E22134")
+
     if (!filmmaker_obj) {
         $(".contents").append("<div class='not_accessible'></div>")
         $(".not_accessible").append("<div class='sorry_text'>SORRY. THIS PAGE DOES NOT EXIST.</div>")
@@ -26,7 +29,7 @@ $(document).ready(function() {
         $('.filmmaker_table_cell_centre').append("<div class='filmmaker_table_filmmaker_info_row'></div>")
         $('.filmmaker_table_cell_centre').append("<div class='filmmaker_table_filmmaker_filmography'></div>")
         $('.filmmaker_table_filmmaker_info_row').append("<div class='filmmaker_table_filmmaker_title_cell'></div>")
-        $('.filmmaker_table_filmmaker_title_cell').append("<div class='filmmaker'>" + filmmaker_obj['title'].toUpperCase() + "</div>")
+        $('.filmmaker_table_filmmaker_title_cell').append("<div class='filmmaker'>" + filmmaker_obj['title'] + "</div>")
 
 
         // biography

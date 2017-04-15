@@ -1,0 +1,119 @@
+.top_buffer {
+    width: auto;
+    height: 210px;
+}
+
+.not_accessible {
+    width: 850px;
+    height: 600px;
+    border-top: 1px solid #000000;
+    font-family: league_gothic, sans-serif;
+    font-size: 30px;
+
+    .sorry_text {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 600px; 
+    }
+}
+
+.accessible {
+    position:relative;
+    width: 850px;
+    border-top: 1px solid #000000;
+    display: block;
+
+    .news_table {
+        width: 850px;
+        display: table;
+        table-layout: fixed;
+
+        .news_table_cell_container {
+            display: table-row;
+
+            .news_table_cell_left_margin {
+                width: 1.8%;
+                height: 100px;
+                display: table-cell;
+                //background-color: pink;
+            }
+
+            .news_table_cell_right_margin {
+                width: 35.06%;
+                display: table-cell;
+                //background-color: blue;
+            }
+
+            .news_table_cell_centre {
+                width: 63.14%;
+                display: table-row;
+                //background-color: green;
+
+                .news_table_end_buffer {
+                    width: 100%;
+                    height: 75px;
+                    display: table;
+                }
+
+                .news_table_spacer {
+                    height: 30px;
+                    display: table;
+                }
+
+                .news_table_news_info_row {
+                    display: table;
+
+                    .news_table_news_title_cell {
+                        display: table-row;
+
+                        .news_title {
+                            font-family: league_gothic, sans-serif;
+                            font-size: 30px;
+                            margin-top: 11px;
+                        }
+                    }
+                }
+
+                .news_table_news_details_row {
+                    display: table;
+
+                    .news_table_news_text_cell {
+                        display: table-row;
+
+                        .news_text {
+                            font-family: trade_gothic, sans-serif;
+                            font-size: 14px;
+
+                            b {
+                                font-weight: normal;
+                                font-family: trade_gothic_bold, sans-serif;
+                            }
+
+                            i {
+                                font-weight: normal;
+                                font-family: trade_gothic_italic, sans-serif;
+                            }
+
+                            a {
+                                color: #000;
+                                text-decoration: none;
+                                font-family: trade_gothic_bold, sans-serif;
+                            }
+
+                            img {
+                                max-width: 537px;
+                            }
+
+                            a:hover {
+                                cursor: pointer;
+                                color: #009347;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

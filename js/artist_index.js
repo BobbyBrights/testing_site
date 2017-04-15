@@ -11,6 +11,9 @@ $(document).ready(function() {
 
         document.title = "Artist Index | " + alpha.toUpperCase() + " | Canadian Filmmakers Distribution Centre"
 
+        $("#artist_index").addClass("catalogue_link_selected")
+        $(".catalogue").css("color", "#E22134")
+
         links = alpha_links()
 
         $(".contents").append("<div class='accessible'></div>")
@@ -19,7 +22,7 @@ $(document).ready(function() {
         $(".artist_index_table_cell_container").append("<div class='artist_index_table_cell_left_margin'></div>")
         $(".artist_index_table_cell_container").append("<div class='artist_index_table_contents'></div>")
         $(".artist_index_table_contents").append("<div class='artist_index_table_title'></div>")
-        $(".artist_index_table_title").append("<div class='artist_index_title'>ARTIST INDEX</div>")
+        $(".artist_index_table_title").append("<div class='artist_index_title'>Artist Index</div>")
         $(".artist_index_table_title").append("<div class='artist_index_title_spacer'></div>")
         $(".artist_index_table_title").append("<div class='artist_alpha'>" + alpha.toUpperCase() + "</div>")
         $(".artist_index_table_cell_container").append("<div class='artist_index_table_cell_right_margin'></div>")

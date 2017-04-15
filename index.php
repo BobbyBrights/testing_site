@@ -47,8 +47,36 @@ $router->map('GET','/compilations/', 'src/compilations.php', 'compilations_compi
 $router->map('GET','/compilations/[*:nid]', 'src/compilations_nid.php', 'compilations_nid');
 $router->map('GET','/compilations/[*:nid]/', 'src/compilations_nid.php', 'compilations_nid_compilations_nid');
 
+// News Page
+$router->map('GET','/news/[*:nid]', 'src/news.php', 'news');
+$router->map('GET','/news/[*:nid]/', 'src/news.php', 'news_news');
+
+// Links Page
+$router->map('GET','/links', 'src/links.php', 'links');
+$router->map('GET','/links/', 'src/links.php', 'links_links');
+
+// Staff + Board Page
+$router->map('GET','/staffboard', 'src/staffboard.php', 'staffboard');
+$router->map('GET','/staffboard/', 'src/staffboard.php', 'staffboard_staffboard');
+
+// About Page
+$router->map('GET','/about', 'src/about.php', 'about');
+$router->map('GET','/about/', 'src/about.php', 'about_about');
+
+// Contact Page
+$router->map('GET','/contact', 'src/contact.php', 'contact');
+$router->map('GET','/contact/', 'src/contact.php', 'contact_contact');
+
+// FAQ Page
+$router->map('GET','/faq', 'src/faq.php', 'faq');
+$router->map('GET','/faq/', 'src/faq.php', 'faq_faq');
+
+// Submit Now Page
+$router->map('GET','/submitnow', 'src/submitnow.php', 'submitnow');
+$router->map('GET','/submitnow/', 'src/submitnow.php', 'submitnow_submitnow');
+
 // API Routes
-$router->map('GET','/api/[*:key]/[*:name]/', 'src/json.php', 'api');
+//$router->map('GET','/api/[*:key]/[*:name]/', 'src/json.php', 'api');
 /* Match the current request */
 $match = $router->match();
 

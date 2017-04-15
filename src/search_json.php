@@ -1,7 +1,5 @@
 <?php
 
-//echo getSearchJson("(%26)(%26)(%26)(%26)2016..2017(%26)(%26)", "1", 20);
-
 function getSearchJson($query_str, $page_number, $increment) {
 
     $split_query = explode("(%26)" , $query_str);
@@ -9,7 +7,7 @@ function getSearchJson($query_str, $page_number, $increment) {
     $categories_genre = getCategoriesGenre();
 
     // is this an incorrect query and/or non number page
-    if ($categories_genre == '' || count($split_query) != 7 || !is_numeric($page_number) || query_empty($split_query)) {
+    if ($categories_genre == '' || count($split_query) != 8 || !is_numeric($page_number) || query_empty($split_query)) {
         return "";
     }
 
@@ -18,8 +16,6 @@ function getSearchJson($query_str, $page_number, $increment) {
     $fmpro_search_url = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_film&-script=full_search&-script.param=" . $query_str . "&-max=1000&-findall";
 
     $data_fmpro = simplexml_load_string(file_get_contents_retry($fmpro_search_url));
-
-    //print_r ($data_fmpro);
 
     if (!$data_fmpro | $data_fmpro->resultset['count'] == 0) {
 
@@ -35,20 +31,13 @@ function getSearchJson($query_str, $page_number, $increment) {
         $json_search['record_count'] = (string) $data_fmpro->resultset['count'];
 
         $film_records = getRecords($data_fmpro->resultset->record);
-        
-        //print_r($film_records);
 
         $json_search['records'] = array_slice($film_records, (((int) $page_number) - 1) * $increment, $increment);
 
-        //print_r($json_search['records']);
-
         $json_search['query_str'] = $query_text;
-
-        //echo json_encode($json_search);
 
         return utf8_decode(json_encode(utf8ize($json_search), JSON_UNESCAPED_UNICODE));
     }
-
 
 }
 
@@ -98,10 +87,15 @@ function str_from_query($query_array, $categories_genre) {
             if ($i == 0) {
                 $str .= "New Aquisitions" . ", "; 
             }
-            else if (($i==1 || $i==2 || $i==3)) {
+
+            else if ($i == 1) {
+                $str .= "Celluloid Only" . ", "; 
+            }
+
+            else if (($i==2 || $i==3 || $i==4)) {
                 $str .= stripslashes(urldecode ($query_array[$i])) . ", ";
             }
-            else if ($i==4) {
+            else if ($i==5) {
                 $split_year = explode("..", $query_array[$i]);
                 if (count($split_year) == 2) {
                     if (is_numeric($split_year[0]) && is_numeric($split_year[1])) {
@@ -114,7 +108,7 @@ function str_from_query($query_array, $categories_genre) {
                     }
                 }
             } 
-            else if ($i==5) {
+            else if ($i==6) {
                 $split_genre = explode("(%7C)", $query_array[$i]);
                 if (allNumbers_all_range($split_genre, $categories_genre['genre'])) {
                     $genre_str = "";
@@ -127,7 +121,7 @@ function str_from_query($query_array, $categories_genre) {
                     $str .= "Genre (" . $genre_str . ")" . ", ";
                 }
             }
-            else if ($i==6) {
+            else if ($i==7) {
                 $split_category = explode("(%7C)", $query_array[$i]);
                 if (allNumbers_all_range($split_category, $categories_genre['category'])) {
                     $category_str = "";
