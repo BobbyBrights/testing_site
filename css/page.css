@@ -37,9 +37,12 @@
       margin-left: -1.5em;
       float: top; }
     .accessible .page_table table, .accessible_generic .page_table table {
-      width: 537px; }
+      width: 537px;
+      font-size: 14px; }
       .accessible .page_table table th, .accessible_generic .page_table table th {
         font-family: trade_gothic_bold, sans-serif; }
+      .accessible .page_table table td, .accessible_generic .page_table table td {
+        font-family: trade_gothic, sans-serif; }
     .accessible .page_table .page_table_end_buffer, .accessible_generic .page_table .page_table_end_buffer {
       display: table;
       width: 100%;
