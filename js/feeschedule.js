@@ -15,7 +15,7 @@ $(document).ready(function() {
     $(".page_table_cell_container").last().append("<div class='page_table_cell_right_margin'></div>")
 
     $(".page_table_contents").last().append("<div class='generic_table'></div>")
-    $(".generic_table").last().append("<div class='generic_table_title'><div class='generic_title'>Previews</div></div>")
+    $(".generic_table").last().append("<div class='generic_table_title'><div class='generic_title'>Fee Schedule</div></div>")
     $(".generic_table").last().append("<div class='generic_spacer'></div>")
 
     $(".contents").append("<div class='accessible_generic'></div>")
