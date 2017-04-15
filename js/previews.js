@@ -1,8 +1,8 @@
 $(document).ready(function() {
     document.title = "Previews | Canadian Filmmakers Distribution Centre"
     
-    $("#previews").addClass("submit_film_link_selected")
-    $(".sales_rentals").css("color", "#0082B8")
+    $("#previews").addClass("sales_rentals_link_selected")
+    $(".sales_rentals").css("color", "#009347")
     
     $(".contents").append("<div class='top_buffer'></div>")
 
