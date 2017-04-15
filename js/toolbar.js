@@ -217,9 +217,9 @@ toolbar_contents += '			</div>\
 					</div>\
 					<div class="sub_link_spacer">\
 					</div>\
-					<div class="sub_link_container">\
+					<div id="rentalshippingreturns" class="sub_link_container">\
 						<div class="sales_rentals_link">\
-							<a href="">Rentals Shipping/Returns</a>\
+							<a href="'+web_host+'rentalshippingreturns">Rentals Shipping/Returns</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\
