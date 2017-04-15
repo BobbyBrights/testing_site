@@ -1,6 +1,6 @@
 .top_buffer {
   width: auto;
-  height: 150px; }
+  height: 210px; }
 
 .not_accessible {
   width: 850px;
@@ -48,7 +48,7 @@
             display: inline-block; }
         .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_spacer {
           width: 100%;
-          height: 30px;
+          height: 26px;
           display: table; }
         .accessible .artist_index_table .artist_index_table_cell_container .artist_index_table_contents .artist_index_spacer_below {
           width: 100%;

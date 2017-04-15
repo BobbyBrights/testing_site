@@ -4,18 +4,21 @@
 
 .footer_container {
   width: 850px;
-  height: 185px;
+  height: 302px;
   border-top: 1px solid #FFC300; }
+  .footer_container a:hover {
+    cursor: pointer; }
   .footer_container .footer_left_portion {
-    float: left; }
+    float: left;
+    height: 195px; }
     .footer_container .footer_left_portion .logo {
       width: 147px;
-      margin-top: 15px;
+      margin-top: 20px;
       float: left; }
     .footer_container .footer_left_portion .text_container {
       clear: both;
       position: relative;
-      top: 15px; }
+      top: 27px; }
       .footer_container .footer_left_portion .text_container .text {
         font-size: 14px;
         line-height: 21px;
@@ -30,21 +33,59 @@
       float: right;
       font-family: trade_gothic_bold, sans-serif;
       font-size: 18px; }
-      .footer_container .footer_right_portion .links .about:hover {
-        color: #E22134;
-        cursor: pointer; }
       .footer_container .footer_right_portion .links .supporters:hover {
         color: #009347;
         cursor: pointer; }
-      .footer_container .footer_right_portion .links .contact:hover {
+      .footer_container .footer_right_portion .links .contact a, .footer_container .footer_right_portion .links .contact a:hover {
+        color: #000;
+        text-decoration: none; }
+      .footer_container .footer_right_portion .links .contact a:hover {
+        color: #0082B8; }
+      .footer_container .footer_right_portion .links .contact_selected a, .footer_container .footer_right_portion .links .contact_selected a:hover {
         color: #0082B8;
-        cursor: pointer; }
-      .footer_container .footer_right_portion .links .links_:hover {
-        color: #6F3296;
-        cursor: pointer; }
+        text-decoration: none; }
+      .footer_container .footer_right_portion .links .about a, .footer_container .footer_right_portion .links .about a:hover {
+        color: #000;
+        text-decoration: none; }
+      .footer_container .footer_right_portion .links .about a:hover {
+        color: #E22134; }
+      .footer_container .footer_right_portion .links .about_selected a, .footer_container .footer_right_portion .links .about_selected a:hover {
+        color: #E22134;
+        text-decoration: none; }
+      .footer_container .footer_right_portion .links .staffboard a, .footer_container .footer_right_portion .links .staffboard a:hover {
+        color: #000;
+        text-decoration: none; }
+      .footer_container .footer_right_portion .links .staffboard a:hover {
+        color: #009347; }
+      .footer_container .footer_right_portion .links .staffboard_selected a, .footer_container .footer_right_portion .links .staffboard_selected a:hover {
+        color: #009347;
+        text-decoration: none; }
+      .footer_container .footer_right_portion .links .links_ a, .footer_container .footer_right_portion .links .links_ a:hover {
+        color: #000;
+        text-decoration: none; }
+      .footer_container .footer_right_portion .links .links_ a:hover {
+        color: #FFC300; }
+      .footer_container .footer_right_portion .links .links_selected a, .footer_container .footer_right_portion .links .links_selected a:hover {
+        color: #FFC300;
+        text-decoration: none; }
     .footer_container .footer_right_portion .spacer {
       height: 58px;
       width: 30px;
       float: right; }
+  .footer_container .supporters_container {
+    clear: both;
+    width: 850px; }
+    .footer_container .supporters_container .left_logo {
+      float: left;
+      width: 241px;
+      display: inline-block; }
+    .footer_container .supporters_container .centre_logo {
+      width: 219px;
+      margin-left: 125px;
+      display: inline-block; }
+    .footer_container .supporters_container .right_logo {
+      float: right;
+      width: 135px;
+      display: inline-block; }
 
 /*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,104 @@
+.top_buffer {
+  width: auto;
+  height: 210px; }
+
+.accessible, .accessible_board {
+  border-top: 1px solid #000000; }
+
+.accessible, .accessible_board {
+  position: relative;
+  width: 850px;
+  display: block; }
+  .accessible .staffboard_table, .accessible_board .staffboard_table {
+    width: 850px;
+    height: 100px;
+    display: table;
+    font-size: 14px;
+    font-family: trade_gothic, sans-serif; }
+    .accessible .staffboard_table .staffboard_table_end_buffer, .accessible_board .staffboard_table .staffboard_table_end_buffer {
+      display: table;
+      width: 100%;
+      height: 75px; }
+    .accessible .staffboard_table .staffboard_table_cell_container, .accessible_board .staffboard_table .staffboard_table_cell_container {
+      display: table-row; }
+      .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_cell_left_margin, .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_cell_right_margin, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_cell_left_margin, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_cell_right_margin {
+        width: 1.8%;
+        display: table-cell; }
+      .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents {
+        display: table-cell; }
+        .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .contents_spacer, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .contents_spacer {
+          width: 100%;
+          height: 30px;
+          display: table; }
+        .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .contents_end_buffer, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .contents_end_buffer {
+          display: table;
+          width: 100%;
+          height: 75px; }
+        .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table {
+          display: table; }
+          .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_table_title, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_table_title {
+            display: table; }
+            .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_table_title .generic_title, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_table_title .generic_title {
+              font-family: league_gothic, sans-serif;
+              font-size: 30px;
+              margin-top: 11px;
+              color: #000;
+              display: inline-block; }
+          .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_spacer, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_spacer {
+            width: 100%;
+            height: 30px;
+            display: table; }
+          .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table {
+            display: table; }
+            .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image {
+              width: 253px;
+              display: inline-block;
+              float: left; }
+              .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .portrait_container, .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .landscape_container, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .portrait_container, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .landscape_container {
+                width: 188px;
+                height: 188px;
+                background-color: #fff;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                position: relative;
+                margin-right: auto; }
+                .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .portrait_container .portrait_container_child, .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .portrait_container .landscape_container_child, .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .landscape_container .portrait_container_child, .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .landscape_container .landscape_container_child, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .portrait_container .portrait_container_child, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .portrait_container .landscape_container_child, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .landscape_container .portrait_container_child, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_image .landscape_container .landscape_container_child {
+                  max-width: 188px;
+                  position: absolute;
+                  top: -9999px;
+                  bottom: -9999px;
+                  left: -9999px;
+                  right: -9999px;
+                  margin: auto;
+                  z-index: 0; }
+            .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_spacer, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info_spacer {
+              width: 30px;
+              display: inline-block;
+              float: right; }
+            .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info {
+              width: 537px;
+              display: inline-block;
+              float: right;
+              font-size: 14px;
+              font-family: trade_gothic, sans-serif;
+              color: #000; }
+              .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .spacer, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .spacer {
+                height: 8px;
+                display: table; }
+              .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .name, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .name {
+                display: table;
+                font-family: trade_gothic_bold, sans-serif; }
+              .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email {
+                display: table;
+                color: #FFC300; }
+                .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email a, .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email a:hover, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email a, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email a:hover {
+                  color: #FFC300;
+                  text-decoration: none;
+                  cursor: pointer; }
+                .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email a:hover, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .email a:hover {
+                  color: #A29F9F; }
+              .accessible .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .text, .accessible_board .staffboard_table .staffboard_table_cell_container .staffboard_table_contents .generic_table .generic_info_table .generic_info .text {
+                display: table;
+                font-family: trade_gothic, sans-serif; }
+
+/*# sourceMappingURL=staffboard.css.map */
