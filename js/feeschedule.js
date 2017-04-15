@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    document.title = "Previews | Canadian Filmmakers Distribution Centre"
+    document.title = "Fee Schedule | Canadian Filmmakers Distribution Centre"
     
     $("#feeschedule").addClass("sales_rentals_link_selected")
     $(".sales_rentals").css("color", "#009347")
