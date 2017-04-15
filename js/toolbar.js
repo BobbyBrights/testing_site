@@ -204,8 +204,8 @@ toolbar_contents += '			</div>\
 					<div class="sub_link_spacer">\
 					</div>\
 					<div class="sub_link_container">\
-						<div class="sales_rentals_link">\
-							<a href="">Fee Schedule</a>\
+						<div id="feeschedule" class="sales_rentals_link">\
+							<a href="'+web_host+'feeschedule">Fee Schedule</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\
