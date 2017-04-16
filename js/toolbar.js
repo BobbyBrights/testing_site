@@ -217,16 +217,16 @@ toolbar_contents += '			</div>\
 					</div>\
 					<div class="sub_link_spacer">\
 					</div>\
-					<div id="rentalshippingreturns" class="sub_link_container">\
-						<div class="sales_rentals_link">\
+					<div class="sub_link_container">\
+						<div id="rentalshippingreturns" class="sales_rentals_link">\
 							<a href="'+web_host+'rentalshippingreturns">Rentals Shipping/Returns</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\
 					</div>\
 					<div class="sub_link_container">\
-						<div class="sales_rentals_link">\
-							<a href="">Buy a Film</a>\
+						<div id="buyafilm" class="sales_rentals_link">\
+							<a href="'+web_host+'buyafilm">Buy a Film</a>\
 						</div>\
 					</div>\
 				</div>\

@@ -91,6 +91,10 @@ $router->map('GET','/rentafilm/', 'src/rentafilm.php', 'rentafilm_rentafilm');
 $router->map('GET','/rentalshippingreturns', 'src/rentalshippingreturns.php', 'rentalshippingreturns');
 $router->map('GET','/rentalshippingreturns/', 'src/rentalshippingreturns.php', 'rentalshippingreturns_rentalshippingreturns');
 
+// RENTAL SHIPPING/RETURNS Page
+$router->map('GET','/buyafilm', 'src/buyafilm.php', 'buyafilm');
+$router->map('GET','/buyafilm/', 'src/buyafilm.php', 'buyafilm_buyafilm');
+
 // API Routes
 //$router->map('GET','/api/[*:key]/[*:name]/', 'src/json.php', 'api');
 /* Match the current request */
