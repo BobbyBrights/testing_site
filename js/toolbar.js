@@ -184,8 +184,8 @@ toolbar_contents += '			</div>\
 					<div class="sub_link_spacer">\
 					</div>\
 					<div class="sub_link_container">\
-						<div class="educators_link">\
-							<a href="">Study Guides</a>\
+						<div id="studyguides" class="educators_link">\
+							<a href="'+web_host+'studyguides">Study Guides</a>\
 						</div>\
 					</div>\
 				</div>\

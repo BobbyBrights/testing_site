@@ -99,6 +99,10 @@ $router->map('GET','/buyafilm/', 'src/buyafilm.php', 'buyafilm_buyafilm');
 $router->map('GET','/educationalservices', 'src/educationalservices.php', 'educationalservices');
 $router->map('GET','/educationalservices/', 'src/educationalservices.php', 'educationalservices_educationalservices');
 
+// Buy a Film Page
+$router->map('GET','/studyguides', 'src/studyguides.php', 'studyguides');
+$router->map('GET','/studyguides/', 'src/studyguides.php', 'studyguides_studyguides');
+
 // API Routes
 //$router->map('GET','/api/[*:key]/[*:name]/', 'src/json.php', 'api');
 /* Match the current request */
