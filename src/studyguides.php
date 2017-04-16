@@ -1,6 +1,6 @@
 <?php
 require 'src/pages_json.php';
-$page_json = getPagesJson(2655);
+$page_json = getPagesJson(2652);
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?=$web_host?>css/page.css">
