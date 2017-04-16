@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    document.title = "Rentals Shipping/Returns | Canadian Filmmakers Distribution Centre"
+    document.title = "Buy a Film | Canadian Filmmakers Distribution Centre"
     
     $("#buyafilm").addClass("sales_rentals_link_selected")
     $(".sales_rentals").css("color", "#009347")
