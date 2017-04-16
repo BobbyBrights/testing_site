@@ -171,7 +171,7 @@ toolbar_contents += '			</div>\
 					</div>\
 					<div class="sub_link_container">\
 						<div id="educationalservices" class="educators_link">\
-							<a href="">Educational Services</a>\
+							<a href="'+web_host+'educationalservices">Educational Services</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\
