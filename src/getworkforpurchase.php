@@ -55,9 +55,9 @@ function getVolumeFilmIdsStr($volume_references) {
 
         $data_cms = simplexml_load_string(file_get_contents_retry($cms_work_for_purchase_url));
 
-        $volumes_contents = $data_cms->item->field_volume_contents;
+        print_r($data_cms);
 
-        print_r($volumes_contents);
+        $volumes_contents = $data_cms->item->field_volume_contents;
 
         for ($j=0; $j < count($volumes_contents); $j++) {
             $film_id = (string) $volumes_contents[$j]->field_film_id_volume->value;
