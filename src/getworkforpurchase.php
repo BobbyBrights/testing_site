@@ -1,6 +1,6 @@
 <?php
 //require "film_json.php";
-getWorkForPurchaseJson(4153);
+//getWorkForPurchaseJson(4153);
 
 function getWorkForPurchaseJson($film_number) {
     $host = "http://s219085.gridserver.com/";
@@ -33,7 +33,7 @@ function getWorkForPurchaseJson($film_number) {
 
         $films_id_str =  getVolumeFilmIdsStr($volume_references);
 
-        echo $films_id_str;
+        //echo $films_id_str;
 
         $fmp_film_id_link = str_replace("+", "%2B", $films_id_str);
         //echo $fmp_film_id_link;
@@ -53,7 +53,7 @@ function getWorkForPurchaseJson($film_number) {
             $film_array['volumes'][] = getVolume($nid, $combined_data);
         }
 
-        print_r($film_array);
+        //print_r($film_array);
 
         return utf8_decode(json_encode(utf8ize($film_array), JSON_UNESCAPED_UNICODE));
     }  
