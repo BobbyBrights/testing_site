@@ -46,7 +46,23 @@ function getVolume($nid) {
 
     $data_cms = simplexml_load_string(file_get_contents_retry($cms_work_for_purchase_url));
 
-    print_r($data_cms);
+    $additional_text = (string) $data_cms->item->field_additional_text->value; 
+    $volume_title = (string) $data_cms->item->field_volume_title->value; 
+    $link_colour = (string) $data_cms->item->field_list_colour->value; 
+
+    // get study guides
+    $study_guides = $data_cms->item->field_study_guides;
+    $study_guides_array = array();
+
+    for ($j=0; $j < count($study_guides); $j++) {
+        $study_guide_array = array();
+        $study_guide_array['link'] = (string) $study_guides->field_link_text->value;
+        $study_guide_array['url'] = (string) $study_guides->field_study_guide_file->url;
+        $study_guides_array[] = $study_guide_array;
+    }
+
+    print_r($study_guides_array);
+
 }
 
 function file_get_contents_retry($url) {
