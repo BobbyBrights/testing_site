@@ -45,11 +45,12 @@ function getWorkForPurchaseJson($film_number) {
 
         $cms_film_url = $host . "cms/api/film_stills/" . $films_id_str . "?_format=xml";
         $data_cms_stills = simplexml_load_string(file_get_contents_retry($cms_film_url));
-        
-    }
+        combine_data($data_fmp, $data_cms_stills);
+    }  
+}
 
-    
-
+function combine_data($data_fmp, $data_cms_stills) {
+    print_r($data_fmp);
 }
 
 function getVolumeFilmIdsStr($volume_references) {
