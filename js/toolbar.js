@@ -178,7 +178,7 @@ toolbar_contents += '			</div>\
 					</div>\
 					<div class="sub_link_container">\
 						<div class="educators_link">\
-							<a href="https://cfmdcresidentscholar.wordpress.com/2015/12/02/welcome-to-cfmdc-scholar-in-residence/" target="_blank">Scholar In Residence</a>\
+							<a href="https://cfmdcresidentscholar.wordpress.com/2015/12/02/welcome-to-cfmdc-scholar-in-residence/">Scholar In Residence</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\
