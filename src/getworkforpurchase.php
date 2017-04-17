@@ -108,10 +108,10 @@ function combine_data($data_fmp, $still_data) {
 
         $combined_data[$film_id_number]["film_title"] = $film_title;
         $combined_data[$film_id_number]["client_id_number"] = $client_id_number;
-        $combined_data[$film_id_number]["filmmaker_name"] = getMainFilmmakerName($filmmaker_name);
-        if ($secondary_filmmaker) {
-            $combined_data[$film_id_number]["secondary_filmmaker"] = getFilmmakerName($secondary_filmmaker);
-        }
+        // $combined_data[$film_id_number]["filmmaker_name"] = getMainFilmmakerName($filmmaker_name);
+        // if ($secondary_filmmaker) {
+        //     $combined_data[$film_id_number]["secondary_filmmaker"] = getFilmmakerName($secondary_filmmaker);
+        // }
         $combined_data[$film_id_number]["film_synopsis"] = $regex_string_result;
         $combined_data[$film_id_number]["year"] = $year;
 
