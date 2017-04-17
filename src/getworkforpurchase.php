@@ -31,12 +31,6 @@ function getWorkForPurchaseJson($film_number) {
         $volume_references =  $data_cms->item->field_volume_references;
         $film_array['volumes'] = array();
 
-        // for ($i=0; $i < count($volume_references); $i++) {
-        // //for ($i=0; $i < 1; $i++) {
-        //     $nid = $volume_references[$i]->field_volume_reference->target_id;
-        //     $film_array['volumes'][] = getVolume($nid);
-        // }
-
         $films_id_str =  getVolumeFilmIdsStr($volume_references);
 
         $fmp_film_id_link = str_replace("+", "%2B", $films_id_str);
@@ -46,7 +40,14 @@ function getWorkForPurchaseJson($film_number) {
         $cms_film_url = $host . "cms/api/film_stills/" . $films_id_str . "?_format=xml";
         $data_cms_stills = simplexml_load_string(file_get_contents_retry($cms_film_url));
         $still_data = getStillData($data_cms_stills);
-        print_r(combine_data($data_fmp, $still_data));
+        $combined_data = combine_data($data_fmp, $still_data);
+
+        for ($i=0; $i < count($volume_references); $i++) {
+            $nid = $volume_references[$i]->field_volume_reference->target_id;
+            $film_array['volumes'][] = getVolume($nid, $combined_data);
+        }
+
+        print_r($film_array);
     }  
 }
 
@@ -187,16 +188,7 @@ function getFilmIdsStr($film_records) {
 }
 
 
-
-
-
-
-
-
-
-
-
-function getVolume($nid) {
+function getVolume($nid, $combined_data) {
     $host = "http://s219085.gridserver.com/";
 
     $cms_work_for_purchase_url = $host . "cms/api/work_for_purchase_volume/" . $nid . "?_format=xml";
@@ -237,38 +229,38 @@ function getVolume($nid) {
         $image_url = (string) $volumes_contents[$j]->field_thumbnail->url;
         $sound = (string) $volumes_contents[$j]->field_sound->url;
 
-        // if ($film_id) {
-        //     $film_obj = getFilmJson($film_id);
-        //     $film_obj = json_decode($film_obj);
+        if ($film_id && $combined_data[$film_id]) {
 
-        //     if (!$country) {
-        //         $country = $film_obj->country;
-        //     }
+            $film_obj = $combined_data[$film_id];
 
-        //     if (!$description) {
-        //         $description = $film_obj->film_synopsis;
-        //     }
+            if (!$country) {
+                $country = $film_obj['country'];
+            }
 
-        //     if (!$title) {
-        //         $title = $film_obj->film_title;
-        //     }
+            if (!$description) {
+                $description = $film_obj['film_synopsis'];
+            }
 
-        //     if (!$length) {
-        //         $length = $film_obj->length;
-        //     }
+            if (!$title) {
+                $title = $film_obj['film_title'];
+            }
 
-        //     if (!$year) {
-        //         $year = $film_obj->year;
-        //     }
+            if (!$length) {
+                $length = $film_obj['length'];
+            }
 
-        //     if (!$image_url) {
-        //         $image_url = $film_obj->still;
-        //     }
+            if (!$year) {
+                $year = $film_obj['year'];
+            }
 
-        //     if (!$sound) {
-        //         $sound = $film_obj->sound;
-        //     }
-        // }
+            if (!$image_url) {
+                $image_url = $film_obj['still'];
+            }
+
+            if (!$sound) {
+                $sound = $film_obj['sound'];
+            }
+        }
 
         $volume_contents_array['country'] = $country;
         $volume_contents_array['description'] = $description;
