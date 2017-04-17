@@ -94,27 +94,27 @@ function getVolume($nid) {
             }
 
             if (!$description) {
-                $description = $film_obj['film_synopsis'];
+                $description = $film_obj->film_synopsis;
             }
 
             if (!$title) {
-                $title = $film_obj['film_title'];
+                $title = $film_obj->film_title;
             }
 
             if (!$length) {
-                $length = $film_obj['length'];
+                $length = $film_obj->length;
             }
 
             if (!$year) {
-                $year = $film_obj['year'];
+                $year = $film_obj->year;
             }
 
             if (!$image_url) {
-                $image_url = $film_obj['still'];
+                $image_url = $film_obj->still;
             }
 
             if (!$sound) {
-                $image_url = $film_obj['sound'];
+                $image_url = $film_obj->sound;
             }
         }
 
