@@ -1,5 +1,5 @@
 <?php
-require 'src/getComp.php';
+require 'src/getClassComp.php';
 $filmmaker_json = getComp($match['params']['nid']);
 ?>
 

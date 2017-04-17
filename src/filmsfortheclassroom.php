@@ -1,5 +1,5 @@
 <?php
-require 'src/getCompLinks.php';
+require 'src/getClassCompLinks.php';
 
 $links = getCompLinks();
 ?>

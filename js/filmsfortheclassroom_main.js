@@ -51,7 +51,7 @@ function getCompilations() {
             $(".table_compilation_cell").append("<div class='table_compilation_row'></div>")
         }
 
-        $(".table_compilation_row").last().append("<a href='" + web_host +  "compilations/" + comp_obj[i]['nid'] + "'><div class='" + container + "'></div></a>")
+        $(".table_compilation_row").last().append("<a href='" + web_host +  "filmsfortheclassroom/" + comp_obj[i]['nid'] + "'><div class='" + container + "'></div></a>")
         if (comp_obj[i]['still_width']) {
             getStill(container, comp_obj[i])
         }
