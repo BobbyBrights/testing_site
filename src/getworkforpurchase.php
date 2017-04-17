@@ -31,8 +31,8 @@ function getWorkForPurchaseJson($film_number) {
         $volume_references =  $data_cms->item->field_volume_references;
         $film_array['volumes'] = array();
 
-        //for ($i=0; $i < count($volume_references); $i++) {
-        for ($i=0; $i < 1; $i++) {
+        for ($i=0; $i < count($volume_references); $i++) {
+        //for ($i=0; $i < 1; $i++) {
             $nid = $volume_references[$i]->field_volume_reference->target_id;
             $film_array['volumes'][] = getVolume($nid);
         }
