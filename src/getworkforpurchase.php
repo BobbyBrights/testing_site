@@ -34,6 +34,7 @@ function getWorkForPurchaseJson($film_number) {
         $films_id_str =  getVolumeFilmIdsStr($volume_references);
 
         $fmp_film_id_link = str_replace("+", "%2B", $films_id_str);
+        echo $fmp_film_id_link;
         $fmp_link = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_film&-script=multi_search_film_id&-script.param=" . $fmp_film_id_link . "&-max=1000&-findall";
         $data_fmp = simplexml_load_string(file_get_contents_retry($fmp_link));
 
@@ -41,14 +42,14 @@ function getWorkForPurchaseJson($film_number) {
         $data_cms_stills = simplexml_load_string(file_get_contents_retry($cms_film_url));
         $still_data = getStillData($data_cms_stills);
         $combined_data = combine_data($data_fmp, $still_data);
-        print_r($combined_data);
+        //print_r($combined_data);
 
         for ($i=0; $i < count($volume_references); $i++) {
             $nid = $volume_references[$i]->field_volume_reference->target_id;
             $film_array['volumes'][] = getVolume($nid, $combined_data);
         }
 
-        print_r($film_array);
+        //print_r($film_array);
 
         return utf8_decode(json_encode(utf8ize($film_array), JSON_UNESCAPED_UNICODE));
     }  
