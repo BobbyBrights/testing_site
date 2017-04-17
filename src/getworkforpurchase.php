@@ -45,7 +45,7 @@ function getWorkForPurchaseJson($film_number) {
 }
 
 function getVolumeFilmIdsStr($volume_references) {
-
+    $host = "http://s219085.gridserver.com/";
     $film_ids = array();
 
     for ($i=0; $i < count($volume_references); $i++) {
@@ -55,7 +55,7 @@ function getVolumeFilmIdsStr($volume_references) {
 
         $data_cms = simplexml_load_string(file_get_contents_retry($cms_work_for_purchase_url));
 
-        print_r($data_cms);
+        //print_r($data_cms);
 
         $volumes_contents = $data_cms->item->field_volume_contents;
 
