@@ -9,7 +9,7 @@ function getWorkForPurchaseJson($film_number) {
 
     $data_cms = simplexml_load_string(file_get_contents_retry($cms_work_for_purchase_url));
 
-    print_r($data_cms)
+    print_r($data_cms);
 
 }
 
