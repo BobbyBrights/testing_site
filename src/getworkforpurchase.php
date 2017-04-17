@@ -87,6 +87,8 @@ function getVolume($nid) {
             $film_obj = getFilmJson($film_id);
             $film_obj = json_decode($film_obj);
 
+            print_r($film_obj);
+
             if (!$country) {
                 $country = $film_obj['country'];
             }
