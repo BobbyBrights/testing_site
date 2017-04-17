@@ -57,6 +57,8 @@ function getVolumeFilmIdsStr($volume_references) {
 
         $volumes_contents = $data_cms->item->field_volume_contents;
 
+        print_r($volumes_contents);
+
         for ($j=0; $j < count($volumes_contents); $j++) {
             $film_id = (string) $volumes_contents[$j]->field_film_id_volume->value;
             $film_ids[] = $film_id;
