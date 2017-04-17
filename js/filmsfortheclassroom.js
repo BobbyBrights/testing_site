@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $(".contents").append("<div class='top_buffer'></div>")
 
-    $("#compilations").addClass("catalogue_link_selected")
-    $(".catalogue").css("color", "#E22134")
+    $("#filmsfortheclassroom").addClass("educators_link_selected")
+    $(".educators").css("color", "#FFC300")
 
     if (!filmmaker_obj) {
         $(".contents").append("<div class='not_accessible'></div>")

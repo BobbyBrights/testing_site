@@ -163,8 +163,8 @@ toolbar_contents += '			</div>\
 				</div>\
 				<div class="sub_links_container">\
 					<div class="sub_link_container">\
-						<div class="educators_link">\
-							<a href="">Films For The Classroom</a>\
+						<div id="filmsfortheclassroom" class="educators_link">\
+							<a href="'+web_host+'filmsfortheclassroom">Films For The Classroom</a>\
 						</div>\
 					</div>\
 					<div class="sub_link_spacer">\

@@ -5,8 +5,8 @@ $(document).ready(function() {
 
     document.title = "Films For The Classroom" + " | Canadian Filmmakers Distribution Centre"
 
-    $("#compilations").addClass("catalogue_link_selected")
-    $(".catalogue").css("color", "#E22134")
+    $("#filmsfortheclassroom").addClass("educators_link_selected")
+    $(".educators").css("color", "#FFC300")
 
     $(".contents").append("<div class='accessible'></div>")
     $(".accessible").append("<div class='table'></div>")
