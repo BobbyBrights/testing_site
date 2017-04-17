@@ -1,8 +1,7 @@
 $(document).ready(function() {
     $(".contents").append("<div class='top_buffer'></div>")
 
-    $("#filmsfortheclassroom").addClass("educators_link_selected")
-    $(".educators").css("color", "#FFC300")
+    
 
     if (!filmmaker_obj) {
         $(".contents").append("<div class='not_accessible'></div>")
@@ -11,7 +10,8 @@ $(document).ready(function() {
 
     else {
         document.title = filmmaker_obj['title'] + " | Canadian Filmmakers Distribution Centre"
-        $(".catalogue").css("color", "#E22134")
+        $("#filmsfortheclassroom").addClass("educators_link_selected")
+        $(".educators").css("color", "#FFC300")
         $(".contents").append("<div class='accessible'></div>")
         $(".accessible").append("\
         <div class='filmmaker_table'>\
