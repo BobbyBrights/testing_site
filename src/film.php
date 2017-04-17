@@ -1,6 +1,6 @@
 <?php
 require 'src/film_json.php';
-require 'src/getworkforpurchase';
+require 'src/getworkforpurchase.php';
 
 $purchase_json = getWorkForPurchaseJson($film_number);
 
