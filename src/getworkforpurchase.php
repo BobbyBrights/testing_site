@@ -30,7 +30,8 @@ function getWorkForPurchaseJson($film_number) {
 
         $volume_references =  $data_cms->item->field_volume_references;
 
-        for ($i=0; $i < count($volume_references); $i++) {
+        //for ($i=0; $i < count($volume_references); $i++) {
+        for ($i=0; $i < 1; $i++) {
             $nid = $volume_references[$i]->field_volume_reference->target_id;
             getVolume($nid);
         }
@@ -39,7 +40,13 @@ function getWorkForPurchaseJson($film_number) {
 }
 
 function getVolume($nid) {
-    echo $nid;
+    $host = "http://s219085.gridserver.com/";
+
+    $cms_work_for_purchase_url = $host . "cms/api/work_for_purchase_volume/" . $nid . "?_format=xml";
+
+    $data_cms = simplexml_load_string(file_get_contents_retry($cms_work_for_purchase_url));
+
+    print_r($data_cms);
 }
 
 function file_get_contents_retry($url) {
