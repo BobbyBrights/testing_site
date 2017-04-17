@@ -76,7 +76,7 @@ function getStillData($data) {
 }
 
 function combine_data($data_fmp, $still_data) {
-    print_r($data_fmp);
+    echo count($data_fmp->reesultset);
 }
 
 function getVolumeFilmIdsStr($volume_references) {
