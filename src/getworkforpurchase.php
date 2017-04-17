@@ -112,7 +112,7 @@ function getVolume($nid) {
             }
 
             if (!$sound) {
-                $image_url = $film_obj->sound;
+                $sound = $film_obj->sound;
             }
         }
 
