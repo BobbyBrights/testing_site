@@ -53,7 +53,7 @@ function getWorkForPurchaseJson($film_number) {
             $film_array['volumes'][] = getVolume($nid, $combined_data);
         }
 
-        //print_r($film_array);
+        print_r($film_array);
 
         return utf8_decode(json_encode(utf8ize($film_array), JSON_UNESCAPED_UNICODE));
     }  
