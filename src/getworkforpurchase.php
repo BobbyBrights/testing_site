@@ -227,6 +227,8 @@ function getVolume($nid, $combined_data) {
         $length = (string) $volumes_contents[$j]->field_length->value;
         $year = (string) $volumes_contents[$j]->field_year->value;
         $image_url = (string) $volumes_contents[$j]->field_thumbnail->url;
+        $image_width = (string) $volumes_contents[$j]->field_thumbnail->width;
+        $image_height = (string) $volumes_contents[$j]->field_thumbnail->height;
         $sound = (string) $volumes_contents[$j]->field_sound->url;
 
         if ($film_id && $combined_data[$film_id]) {
@@ -255,6 +257,8 @@ function getVolume($nid, $combined_data) {
 
             if (!$image_url) {
                 $image_url = $film_obj['still'];
+                $image_height = $film_obj['still_height'];
+                $image_width = $film_obj['still_width'];
             }
 
             if (!$sound) {
@@ -268,6 +272,8 @@ function getVolume($nid, $combined_data) {
         $volume_contents_array['title'] = $title;
         $volume_contents_array['length'] = $length;
         $volume_contents_array['image_url'] = $image_url;
+        $volume_contents_array['still_width'] = $image_width;
+        $volume_contents_array['still_height'] = $image_height;
         $volume_contents_array['sound'] = $sound;
 
         $volumes_contents_array[] = $volume_contents_array;
