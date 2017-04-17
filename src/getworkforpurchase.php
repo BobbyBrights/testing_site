@@ -11,6 +11,26 @@ function getWorkForPurchaseJson($film_number) {
 
     print_r($data_cms);
 
+    if (!$data_cms) {
+        return "";
+    } else {
+        $film_array = array();
+
+        $film_description = (string) $data_cms->item->field_work_description; 
+        $large_image_url = (string) $data_cms->item->field_large_image->url; 
+        $large_image_width = (string) $data_cms->item->field_large_image->width; 
+        $large_image_height = (string) $data_cms->item->field_large_image->height;
+
+        $film_array['film_description'] = $film_description;
+        $film_array['large_image_url'] = $large_image_url;
+        $film_array['large_image_width'] = $large_image_width;
+        $film_array['large_image_height'] = $large_image_height;
+
+        print_r ($film_array);
+
+        $volume_references =  $data_cms->item->field_volume_references;
+    }
+
 }
 
 function file_get_contents_retry($url) {
