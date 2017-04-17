@@ -16,11 +16,11 @@
     font-size: 14px;
     font-family: trade_gothic, sans-serif; }
     .accessible .page_table a, .accessible .page_table a:hover, .accessible_generic .page_table a, .accessible_generic .page_table a:hover {
-      color: #009347;
+      color: #A29F9F;
       text-decoration: none;
       cursor: pointer; }
     .accessible .page_table a:hover, .accessible_generic .page_table a:hover {
-      color: #A29F9F; }
+      color: #FFC300; }
     .accessible .page_table b, .accessible_generic .page_table b {
       font-weight: normal;
       font-family: trade_gothic_bold, sans-serif; }
