@@ -45,12 +45,33 @@ function getWorkForPurchaseJson($film_number) {
 
         $cms_film_url = $host . "cms/api/film_stills/" . $films_id_str . "?_format=xml";
         $data_cms_stills = simplexml_load_string(file_get_contents_retry($cms_film_url));
-        getStillData($data_cms_stills);
+        print_r(getStillData($data_cms_stills));
     }  
 }
 
 function getStillData($data) {
-    print_r($data);
+    $film_stills = array();
+    for ($i=0; $i<count($data->item); $i++) {
+        $film_id = (string) $data->item[$i]->field_filemaker_film_id->value;
+        $film_stills[$film_id] = array();
+        $old_still = (string) $data->item[$i]->field_old_web_still_optional_->url;
+        $medium_still = (string) $data->item[$i]->field_medium_film_still_740_x_41->url;
+
+        if ($medium_still && file_exists_($medium_still)) {
+            $film_stills[$film_id]['still'] = $medium_still;
+            $image_size = getimagesize($film_stills[$film_id]['still']);
+            $film_stills[$film_id]['still_width'] = (string) $image_size[0];
+            $film_stills[$film_id]['still_height'] = (string) $image_size[1];
+        }
+
+        else if ($old_still && file_exists_($old_still)) {
+            $film_stills[$film_id]['still'] = $old_still;
+            $image_size = getimagesize($film_stills[$film_id]['still']);
+            $film_stills[$film_id]['still_width'] = (string) $image_size[0];
+            $film_stills[$film_id]['still_height'] = (string) $image_size[1];
+        }
+    }
+    return $film_stills;
 }
 
 function combine_data($data_fmp, $data_cms_stills) {
