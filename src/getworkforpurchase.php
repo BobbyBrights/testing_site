@@ -26,9 +26,11 @@ function getWorkForPurchaseJson($film_number) {
         $film_array['large_image_width'] = $large_image_width;
         $film_array['large_image_height'] = $large_image_height;
 
-        print_r ($film_array);
+        //print_r ($film_array);
 
         $volume_references =  $data_cms->item->field_volume_references;
+
+        print_r($volume_references);
     }
 
 }
