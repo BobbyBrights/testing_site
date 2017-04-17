@@ -379,4 +379,51 @@ function getTimeString($length) {
         return $hours_int . ":" . $mins_str . ":" . $seconds_str;
     }
 }
+
+function getMainFilmmakerName($filmmaker) {
+    $init_exp = explode(",", $filmmaker);
+    if (count($init_exp) > 1) {
+        return "<b>" . trim($init_exp[1]) . " " . trim($init_exp[0]) . "</b>";
+    }
+    else {
+        return "<b>" . $filmmaker . "</b>";
+    }
+}
+
+function getFilmmakerName($filmmaker) {
+    $filmmaker = preg_replace("/\([^)]+\)/","", $filmmaker);
+
+    $name_exp_semi_colon = explode(";", $filmmaker);
+    $name_exp_ampersand = explode("&", $filmmaker);
+	$name_exp_and = explode(" and", $filmmaker);
+
+    $init_exp = (count($name_exp_semi_colon) > count($name_exp_ampersand) ? $name_exp_semi_colon : $name_exp_ampersand);
+	$init_exp = (count($init_exp) > count($name_exp_and) ? $init_exp : $name_exp_and);
+
+    if (strpos($filmmaker, ';') === false && strpos($filmmaker, '&') === false && strpos($filmmaker, ' and') === false) {
+        $name_exp_comma = explode(",", $filmmaker);
+        if (count($name_exp_comma) > 1) {
+            $first_words = count(explode(" ",trim($name_exp_comma[0])));
+            $second_words = count(explode(" ",trim($name_exp_comma[1])));
+            if($first_words > 1 && $second_words > 1) {
+                $init_exp = explode(",", $filmmaker);
+            }
+        }
+    }
+
+    $final_str = "";
+
+    for ($i=0; $i<count($init_exp); $i++) {
+        $name_exp = explode(",", $init_exp[$i]);
+
+        if (count($name_exp) < 2) {
+            $final_str .= ($i > 0 ? " & <b>" . trim($name_exp[0]) . '</b>': "<b>" . trim($name_exp[0]) . '</b>');
+        }
+        else {
+            $final_str .= ($i > 0 ? " & <b>" . trim($name_exp[1]) . " " . trim($name_exp[0]) . '</b>': "<b>" . trim($name_exp[1]) . " " . trim($name_exp[0]) . '</b>');
+        }
+    }
+	
+    return $final_str;
+}
 ?>
