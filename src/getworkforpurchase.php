@@ -38,7 +38,7 @@ function getWorkForPurchaseJson($film_number) {
         }
     }
 
-    //print_r($film_array);
+    print_r($film_array);
 
 }
 
