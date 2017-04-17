@@ -46,7 +46,7 @@ function getWorkForPurchaseJson($film_number) {
         $cms_film_url = $host . "cms/api/film_stills/" . $films_id_str . "?_format=xml";
         $data_cms_stills = simplexml_load_string(file_get_contents_retry($cms_film_url));
         $still_data = getStillData($data_cms_stills);
-        combine_data($data_fmp, $still_data);
+        print_r(combine_data($data_fmp, $still_data));
     }  
 }
 
@@ -76,7 +76,65 @@ function getStillData($data) {
 }
 
 function combine_data($data_fmp, $still_data) {
-    print_r($data_fmp->resultset->record[0]);
+    $combined_data = array();
+    for ($i=0; $i < count($data_fmp->resultset->record); $i++) {
+
+        $film_title = (string) $data_fmp->resultset->record[$i]->field[0]->data;
+        $client_id_number = (string) $data_fmp->resultset->record[$i]->field[1]->data;
+        $filmmaker_name = (string) $data_fmp->resultset->record[$i]->field[2]->data;
+        $secondary_filmmaker = (string) $data_fmp->resultset->record[$i]->field[3]->data;
+
+        $film_synopsis = (string) $data_fmp->resultset->record[$i]->field[4]->data;
+        $year = (string) $data_fmp->resultset->record[$i]->field[5]->data;
+        $length = (string) $data_fmp->resultset->record[$i]->field[6]->data;
+        $country = (string) $data_fmp->resultset->record[$i]->field[7]->data;
+
+        $sound = (string) $data_fmp->resultset->record[$i]->field[8]->data;
+        $language = (string) $data_fmp->resultset->record[$i]->field[9]->data;
+        $colour = (string) $data_fmp->resultset->record[$i]->field[10]->data;
+        $genre = strtolower((string) $data_fmp->resultset->record[$i]->field[11]->data);
+
+        $film_id_number = (string) $data_fmp->resultset->record[$i]->field[12]->data;
+
+        $combined_data[$film_id_number] = array();
+
+        $film_title_regex = preg_replace("|/|", "\/", $film_title);
+        
+        $sanitized_synopsis = convertQuotes($film_synopsis);
+        $regex_string_result = preg_replace('/(?i)([\'"\“\‘]'.$film_title_regex.'[\'"\”\’])/', "---*---*---",$sanitized_synopsis);
+        $regex_string_result = preg_replace('/('.preg_quote("---*---*---").')/', "<b>$film_title</b>",$regex_string_result);
+        $regex_string_result = preg_replace("/([\n\r]+$)/", '', $regex_string_result);
+        $regex_string_result = preg_replace("/([\n\r])/", '<br/>', $regex_string_result);
+
+        $combined_data[$film_id_number]["film_title"] = $film_title;
+        $combined_data[$film_id_number]["client_id_number"] = $client_id_number;
+        $combined_data[$film_id_number]["filmmaker_name"] = getMainFilmmakerName($filmmaker_name);
+        if ($secondary_filmmaker) {
+            $combined_data[$film_id_number]["secondary_filmmaker"] = getFilmmakerName($secondary_filmmaker);
+        }
+        $combined_data[$film_id_number]["film_synopsis"] = $regex_string_result;
+        $combined_data[$film_id_number]["year"] = $year;
+
+        if (strpos($length, ':') === false && !ctype_alpha($length)) {
+            $combined_data[$film_id_number]["length"] = getTimeString($length);
+        } 
+        else {
+            $combined_data[$film_id_number]["length"] = $length;
+        } 
+        
+        $combined_data[$film_id_number]["country"] = $country;
+        $combined_data[$film_id_number]["sound"] = $sound;
+        $combined_data[$film_id_number]["language"] = $language;
+        $combined_data[$film_id_number]["colour"] = $colour;
+
+        if ($still_data[$film_id_number]) {
+            $combined_data[$film_id_number]["still"] = $still_data[$film_id_number]["still"];
+            $combined_data[$film_id_number]["still_width"] = $still_data[$film_id_number]["still_width"];
+            $combined_data[$film_id_number]["still_height"] = $still_data[$film_id_number]["still_height"];
+        }
+    }
+
+    return $combined_data;
 }
 
 function getVolumeFilmIdsStr($volume_references) {
@@ -267,4 +325,58 @@ function file_exists_($file_path) {
     }
 }
 
+function convert_accent($string)
+{
+    echo($string);
+    return htmlspecialchars_decode(htmlentities(utf8_decode($string)));
+}
+
+function convertQuotes($str) {
+    $str = str_replace("‘", "'", $str);
+    $str = str_replace("’", "'", $str);
+    $str = str_replace("“", '"', $str);
+    $str = str_replace("”", '"', $str);
+    $str = str_replace("–", "-", $str);
+    $str = str_replace("…", "...", $str);
+    return $str;
+}
+
+function getTimeString($length) {
+    $time_explode = explode(".", $length);
+    
+    if (count($time_explode) == 1) {
+        $mins = $time_explode[0];
+        $seconds = "0";
+    }
+    else {
+        $mins = $time_explode[0];
+        $seconds = $time_explode[1];
+    }
+
+    $mins_int = intval($mins);
+    $hours_int = floor($mins_int/60);
+
+    //echo $hours_int;
+
+    if (intval($seconds) < 10) {
+        $seconds_str = "0" . intval($seconds);
+    }
+    else {
+        $seconds_str = $seconds;
+    }
+
+    if ($hours_int == 0) {
+        return $mins . ":" . $seconds_str;
+    }
+    else {
+        $mins_int = $mins_int - ($hours_int * 60);
+         if (intval($mins_int) < 10) {
+            $mins_str = "0" . $mins_int;
+        }
+        else {
+            $mins_str = $mins_int;
+    }
+        return $hours_int . ":" . $mins_str . ":" . $seconds_str;
+    }
+}
 ?>
