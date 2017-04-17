@@ -26,7 +26,7 @@ $(document).ready(function() {
         $('.filmmaker_table_cell_centre').append("<div class='filmmaker_table_filmmaker_info_row'></div>")
         $('.filmmaker_table_cell_centre').append("<div class='filmmaker_table_filmmaker_filmography'></div>")
         $('.filmmaker_table_filmmaker_info_row').append("<div class='filmmaker_table_filmmaker_title_cell'></div>")
-        $('.filmmaker_table_filmmaker_title_cell').append("<div class='filmmaker'>" + filmmaker_obj['filmmaker_name'].toUpperCase() + "</div>")
+        $('.filmmaker_table_filmmaker_title_cell').append("<div class='filmmaker'>" + filmmaker_obj['filmmaker_name'] + "</div>")
 
 
         // biography
