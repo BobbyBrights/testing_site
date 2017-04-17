@@ -5,7 +5,7 @@ require 'src/getworkforpurchase.php';
 $purchase_json = getWorkForPurchaseJson($match['params']['film_id']);
 
 if ($purchase_json) {
-    echo "";
+    echo "hhhhhhelelklekjel";
 }
 else {
     $film_json = getFilmJson($match['params']['film_id']);
