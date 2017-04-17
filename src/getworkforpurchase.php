@@ -90,7 +90,7 @@ function getVolume($nid) {
             print_r($film_obj);
 
             if (!$country) {
-                $country = $film_obj['country'];
+                $country = $film_obj->country;
             }
 
             if (!$description) {
