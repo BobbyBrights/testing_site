@@ -33,12 +33,14 @@ function getWorkForPurchaseJson($film_number) {
 
         $films_id_str =  getVolumeFilmIdsStr($volume_references);
 
+        echo $films_id_str;
+
         $fmp_film_id_link = str_replace("+", "%2B", $films_id_str);
         //echo $fmp_film_id_link;
         $fmp_link = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_film&-script=multi_search_film_id&-script.param=" . $fmp_film_id_link . "&-max=1000&-findall";
         $data_fmp = simplexml_load_string(file_get_contents_retry($fmp_link));
 
-        print_r($data_fmp);
+        //print_r($data_fmp);
 
         $cms_film_url = $host . "cms/api/film_stills/" . $films_id_str . "?_format=xml";
         $data_cms_stills = simplexml_load_string(file_get_contents_retry($cms_film_url));
@@ -170,7 +172,7 @@ function getVolumeFilmIdsStr($volume_references) {
     $film_ids_str = "";
 
     for ($i=0; $i < count($film_ids); $i++) {
-        if ($i != count($film_ids) - 1) {
+        if ($i != (count($film_ids) - 1)) {
             $film_ids_str .= $film_ids[$i] . "+";
         }
         else {
