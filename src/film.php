@@ -5,7 +5,21 @@ require 'src/getworkforpurchase.php';
 $purchase_json = getWorkForPurchaseJson($match['params']['film_id']);
 
 if ($purchase_json) {
-    echo $purchase_json;
+?>
+    <link rel="stylesheet" type="text/css" href="<?=$web_host?>css/film_purchase.css">
+    <script type="text/javascript">
+    json_string = '<?php echo addslashes($purchase_json); ?>'
+    if (json_string) {
+        film_obj = JSON.parse('<?php echo addslashes($purchase_json); ?>')
+    }
+    else {
+        film_obj = '';
+    }
+    </script>
+    <script src="<?=$web_host?>js/film_purchase.js" type="text/javascript"></script>
+    <script src="https://content.jwplatform.com/libraries/2d2HEAIU.js" type="text/javascript"></script>
+
+<?php
 }
 else {
     $film_json = getFilmJson($match['params']['film_id']);
