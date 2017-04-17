@@ -5,7 +5,7 @@
 function getComp($nid) {
     $host = "http://s219085.gridserver.com/";
 
-    $cms_comp_url = $host . "cms/api/comps?_format=xml";
+    $cms_comp_url = $host . "cms/api/classcomps?_format=xml";
 
     $data_cms = simplexml_load_string(file_get_contents_retry($cms_comp_url));
 
@@ -70,7 +70,7 @@ function getFilmRecords($filmrecords, $cmsrecords, $comp_records) {
 
 function findID($film_id, $comp_records) {
     for ($j=0; $j<count($comp_records); $j++) {
-        if (intval($comp_records[$j]->field_film_id->value) == $film_id) {
+        if (intval($comp_records[$j]->field_classroom_id->value) == $film_id) {
             return $j;
         }
     }
@@ -90,7 +90,7 @@ function getMainFilmmakerName($filmmaker) {
 function getCMSrecord($filmrecord, $records, $compRecord) {
     $record = array();
 
-    $record['description'] = (string) $compRecord->field_film_description->value;
+    $record['description'] = (string) $compRecord->field_film_description_classroom->value;
     $record['description'] = preg_replace ("/<p>(\s*)/", "", $record['description']);
     $record['description'] = preg_replace ("/(\s*)<\/p>(\s*)/", "<br><br>", $record['description']);
     $record['description'] = preg_replace ("/<br><br>$/", "", $record['description']);
@@ -229,7 +229,7 @@ function getTimeString($length) {
 function getFilmIdsStr($film_records) {
     $film_number_str = "";
     for ($i=0; $i<count($film_records); $i++) {
-        $film_number_str .= (string) $film_records[$i]->field_film_id->value . "+";
+        $film_number_str .= (string) $film_records[$i]->field_classroom_id->value . "+";
     }
     if (!empty($film_number_str)) {
         $film_number_str = substr(trim($film_number_str), 0, -1);
@@ -255,14 +255,14 @@ function getCompDetails($records, $nid) {
     for ($i=0; $i<count($records); $i++) {
         if ((int) $records[$i]->nid->value == (int) $nid) {
             $record['title'] = (string) $records[$i]->title->value;
-            $record['description'] = (string) $records[$i]->field_compilation_description->value;
+            $record['description'] = (string) $records[$i]->field_classroom_description->value;
 
             $record['description'] = preg_replace ("/<p>(\s*)/", "", $record['description']);
             $record['description'] = preg_replace ("/(\s*)<\/p>(\s*)/", "<br><br>", $record['description']);
             $record['description'] = preg_replace ("/<br><br>$/", "", $record['description']);
             $record['description'] = convertQuotes($record['description']);
 
-            $record['films'] = $records[$i]->field_compilation_fol;
+            $record['films'] = $records[$i]->field_compilation_films;
         }
     }
     return $record;

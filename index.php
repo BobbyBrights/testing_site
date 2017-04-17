@@ -103,6 +103,14 @@ $router->map('GET','/educationalservices/', 'src/educationalservices.php', 'educ
 $router->map('GET','/studyguides', 'src/studyguides.php', 'studyguides');
 $router->map('GET','/studyguides/', 'src/studyguides.php', 'studyguides_studyguides');
 
+// Compilations Main Page
+$router->map('GET','/filmsfortheclassroom', 'src/filmsfortheclassroom.php', 'filmsfortheclassroom');
+$router->map('GET','/filmsfortheclassroom/', 'src/filmsfortheclassroom.php', 'filmsfortheclassroom_filmsfortheclassroom');
+
+// Compilations Individual Page
+$router->map('GET','/filmsfortheclassroom/[*:nid]', 'src/filmsfortheclassroom_nid.php', 'filmsfortheclassroom_nid');
+$router->map('GET','/filmsfortheclassroom/[*:nid]/', 'src/filmsfortheclassroom_nid.php', 'filmsfortheclassroom_nid_filmsfortheclassroom_nid');
+
 // API Routes
 //$router->map('GET','/api/[*:key]/[*:name]/', 'src/json.php', 'api');
 /* Match the current request */
