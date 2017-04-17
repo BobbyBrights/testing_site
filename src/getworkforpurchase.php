@@ -1,6 +1,6 @@
 <?php
 //require "film_json.php";
-getWorkForPurchaseJson(3678);
+getWorkForPurchaseJson(368);
 
 function getWorkForPurchaseJson($film_number) {
     $host = "http://s219085.gridserver.com/";
