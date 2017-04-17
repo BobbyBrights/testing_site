@@ -83,38 +83,38 @@ function getVolume($nid) {
         $image_url = (string) $volumes_contents[$j]->field_thumbnail->url;
         $sound = (string) $volumes_contents[$j]->field_sound->url;
 
-        if ($film_id) {
-            $film_obj = getFilmJson($film_id);
-            $film_obj = json_decode($film_obj);
+        // if ($film_id) {
+        //     $film_obj = getFilmJson($film_id);
+        //     $film_obj = json_decode($film_obj);
 
-            if (!$country) {
-                $country = $film_obj->country;
-            }
+        //     if (!$country) {
+        //         $country = $film_obj->country;
+        //     }
 
-            if (!$description) {
-                $description = $film_obj->film_synopsis;
-            }
+        //     if (!$description) {
+        //         $description = $film_obj->film_synopsis;
+        //     }
 
-            if (!$title) {
-                $title = $film_obj->film_title;
-            }
+        //     if (!$title) {
+        //         $title = $film_obj->film_title;
+        //     }
 
-            if (!$length) {
-                $length = $film_obj->length;
-            }
+        //     if (!$length) {
+        //         $length = $film_obj->length;
+        //     }
 
-            if (!$year) {
-                $year = $film_obj->year;
-            }
+        //     if (!$year) {
+        //         $year = $film_obj->year;
+        //     }
 
-            if (!$image_url) {
-                $image_url = $film_obj->still;
-            }
+        //     if (!$image_url) {
+        //         $image_url = $film_obj->still;
+        //     }
 
-            if (!$sound) {
-                $sound = $film_obj->sound;
-            }
-        }
+        //     if (!$sound) {
+        //         $sound = $film_obj->sound;
+        //     }
+        // }
 
         $volume_contents_array['country'] = $country;
         $volume_contents_array['description'] = $description;
