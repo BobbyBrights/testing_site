@@ -10,10 +10,10 @@ if ($purchase_json) {
     <script type="text/javascript">
     json_string = '<?php echo addslashes($purchase_json); ?>'
     if (json_string) {
-        film_obj = JSON.parse('<?php echo addslashes($purchase_json); ?>')
+        film_purchase_obj = JSON.parse('<?php echo addslashes($purchase_json); ?>')
     }
     else {
-        film_obj = '';
+        film_purchase_obj = '';
     }
     </script>
     <script src="<?=$web_host?>js/film_purchase.js" type="text/javascript"></script>

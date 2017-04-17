@@ -1,0 +1,20 @@
+.top_buffer {
+    width: auto;
+    height: 210px;
+}
+
+.accessible {
+    position:relative;
+    width: 850px;
+    border-top: 1px solid #000000;
+    display: block;
+    //position: absolute;
+
+
+    .title {
+        font-family: league_gothic, sans-serif;
+        font-size: 30px;
+        margin-top: 11px;
+        width: 380px
+    }
+}
