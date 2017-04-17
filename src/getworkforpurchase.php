@@ -30,9 +30,16 @@ function getWorkForPurchaseJson($film_number) {
 
         $volume_references =  $data_cms->item->field_volume_references;
 
-        print_r($volume_references[2]);
+        for ($i=0; $i < count($volume_references); $i++) {
+            $nid = $volume_references[$i]->field_volume_reference->target_id;
+            getVolume($nid);
+        }
     }
 
+}
+
+function getVolume($nid) {
+    echo $nid;
 }
 
 function file_get_contents_retry($url) {
