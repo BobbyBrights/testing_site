@@ -30,7 +30,7 @@ function getWorkForPurchaseJson($film_number) {
 
         $volume_references =  $data_cms->item->field_volume_references;
 
-        print_r($volume_references);
+        print_r($volume_references[2]);
     }
 
 }
