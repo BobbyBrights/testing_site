@@ -1,6 +1,6 @@
 <?php
 //require "film_json.php";
-getWorkForPurchaseJson(3678);
+//getWorkForPurchaseJson(3678);
 
 function getWorkForPurchaseJson($film_number) {
     $host = "http://s219085.gridserver.com/";
@@ -47,7 +47,7 @@ function getWorkForPurchaseJson($film_number) {
             $film_array['volumes'][] = getVolume($nid, $combined_data);
         }
 
-        print_r($film_array);
+        return utf8_decode(json_encode(utf8ize($film_array), JSON_UNESCAPED_UNICODE));
     }  
 }
 
@@ -284,97 +284,97 @@ function getVolume($nid, $combined_data) {
     return $volume_array;
 }
 
-function file_get_contents_retry($url) {
-    $a = false;
-    $i = 0;
-    while($a == false && $i < 10)
-    {
-        $a = @file_get_contents($url);
-        $i++;
-        if ($a == false) {
-            usleep(10);
-        }
-    }
-    return $a;
-}
+// function file_get_contents_retry($url) {
+//     $a = false;
+//     $i = 0;
+//     while($a == false && $i < 10)
+//     {
+//         $a = @file_get_contents($url);
+//         $i++;
+//         if ($a == false) {
+//             usleep(10);
+//         }
+//     }
+//     return $a;
+// }
 
-function utf8ize($d) {
-    if (is_array($d)) {
-        foreach ($d as $k => $v) {
-            $d[$k] = utf8ize($v);
-        }
-    } else if (is_string ($d)) {
-        $d = str_replace("\xe2\x80\xa8", '\\u2028', $d);
-        $d = str_replace("\xe2\x80\xa9", '\\u2029', $d);
-        return utf8_encode($d);
-    }
-    return $d;
-}
+// function utf8ize($d) {
+//     if (is_array($d)) {
+//         foreach ($d as $k => $v) {
+//             $d[$k] = utf8ize($v);
+//         }
+//     } else if (is_string ($d)) {
+//         $d = str_replace("\xe2\x80\xa8", '\\u2028', $d);
+//         $d = str_replace("\xe2\x80\xa9", '\\u2029', $d);
+//         return utf8_encode($d);
+//     }
+//     return $d;
+// }
 
-function file_exists_($file_path) {
-    $file_headers = @get_headers($file_path);
+// function file_exists_($file_path) {
+//     $file_headers = @get_headers($file_path);
     
-    if( strpos($file_headers[0], '404 Not Found') !== false){
-        return false;
-    } else if (strpos($file_headers[0], '302 Found') !== false && strpos($file_headers[7], '404 Not Found') !== false){
-        return false;
-    } else {
-        return true;
-    }
-}
+//     if( strpos($file_headers[0], '404 Not Found') !== false){
+//         return false;
+//     } else if (strpos($file_headers[0], '302 Found') !== false && strpos($file_headers[7], '404 Not Found') !== false){
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
 
-function convert_accent($string)
-{
-    echo($string);
-    return htmlspecialchars_decode(htmlentities(utf8_decode($string)));
-}
+// function convert_accent($string)
+// {
+//     echo($string);
+//     return htmlspecialchars_decode(htmlentities(utf8_decode($string)));
+// }
 
-function convertQuotes($str) {
-    $str = str_replace("‘", "'", $str);
-    $str = str_replace("’", "'", $str);
-    $str = str_replace("“", '"', $str);
-    $str = str_replace("”", '"', $str);
-    $str = str_replace("–", "-", $str);
-    $str = str_replace("…", "...", $str);
-    return $str;
-}
+// function convertQuotes($str) {
+//     $str = str_replace("‘", "'", $str);
+//     $str = str_replace("’", "'", $str);
+//     $str = str_replace("“", '"', $str);
+//     $str = str_replace("”", '"', $str);
+//     $str = str_replace("–", "-", $str);
+//     $str = str_replace("…", "...", $str);
+//     return $str;
+// }
 
-function getTimeString($length) {
-    $time_explode = explode(".", $length);
+// function getTimeString($length) {
+//     $time_explode = explode(".", $length);
     
-    if (count($time_explode) == 1) {
-        $mins = $time_explode[0];
-        $seconds = "0";
-    }
-    else {
-        $mins = $time_explode[0];
-        $seconds = $time_explode[1];
-    }
+//     if (count($time_explode) == 1) {
+//         $mins = $time_explode[0];
+//         $seconds = "0";
+//     }
+//     else {
+//         $mins = $time_explode[0];
+//         $seconds = $time_explode[1];
+//     }
 
-    $mins_int = intval($mins);
-    $hours_int = floor($mins_int/60);
+//     $mins_int = intval($mins);
+//     $hours_int = floor($mins_int/60);
 
-    //echo $hours_int;
+//     //echo $hours_int;
 
-    if (intval($seconds) < 10) {
-        $seconds_str = "0" . intval($seconds);
-    }
-    else {
-        $seconds_str = $seconds;
-    }
+//     if (intval($seconds) < 10) {
+//         $seconds_str = "0" . intval($seconds);
+//     }
+//     else {
+//         $seconds_str = $seconds;
+//     }
 
-    if ($hours_int == 0) {
-        return $mins . ":" . $seconds_str;
-    }
-    else {
-        $mins_int = $mins_int - ($hours_int * 60);
-         if (intval($mins_int) < 10) {
-            $mins_str = "0" . $mins_int;
-        }
-        else {
-            $mins_str = $mins_int;
-    }
-        return $hours_int . ":" . $mins_str . ":" . $seconds_str;
-    }
-}
+//     if ($hours_int == 0) {
+//         return $mins . ":" . $seconds_str;
+//     }
+//     else {
+//         $mins_int = $mins_int - ($hours_int * 60);
+//          if (intval($mins_int) < 10) {
+//             $mins_str = "0" . $mins_int;
+//         }
+//         else {
+//             $mins_str = $mins_int;
+//     }
+//         return $hours_int . ":" . $mins_str . ":" . $seconds_str;
+//     }
+// }
 ?>

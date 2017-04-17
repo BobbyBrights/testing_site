@@ -1,5 +1,9 @@
 <?php
 require 'src/film_json.php';
+require 'src/getworkforpurchase';
+
+$purchase_json = getWorkForPurchaseJson($film_number);
+
 $film_json = getFilmJson($match['params']['film_id']);
 ?>
 
