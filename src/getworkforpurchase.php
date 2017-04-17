@@ -131,6 +131,7 @@ function combine_data($data_fmp, $still_data) {
             $combined_data[$film_id_number]["length"] = $length;
         } 
         
+        $combined_data[$film_id_number]["film_id_number"] = $film_id_number;
         $combined_data[$film_id_number]["country"] = $country;
         $combined_data[$film_id_number]["sound"] = $sound;
         $combined_data[$film_id_number]["language"] = $language;
@@ -274,6 +275,8 @@ function getVolume($nid, $combined_data) {
             if (!$sound) {
                 $sound = $film_obj['sound'];
             }
+
+            $volume_contents_array['film_id'] = $film_id;
         }
 
         $volume_contents_array['country'] = $country;
