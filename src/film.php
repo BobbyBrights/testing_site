@@ -2,7 +2,7 @@
 require 'src/film_json.php';
 require 'src/getworkforpurchase.php';
 
-$purchase_json = getWorkForPurchaseJson($film_number);
+$purchase_json = getWorkForPurchaseJson($match['params']['film_id']);
 
 $film_json = getFilmJson($match['params']['film_id']);
 ?>
