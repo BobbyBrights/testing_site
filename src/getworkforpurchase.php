@@ -16,7 +16,7 @@ function getWorkForPurchaseJson($film_number) {
     } else {
         $film_array = array();
 
-        $film_description = (string) $data_cms->item->field_work_description; 
+        $film_description = (string) $data_cms->item->field_work_description->value; 
         $large_image_url = (string) $data_cms->item->field_large_image->url; 
         $large_image_width = (string) $data_cms->item->field_large_image->width; 
         $large_image_height = (string) $data_cms->item->field_large_image->height;
