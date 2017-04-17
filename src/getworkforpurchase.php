@@ -65,16 +65,16 @@ function getVolumeFilmIdsStr($volume_references) {
         }
     }
 
-    print_r($film_ids);
+    //print_r($film_ids);
 
     $film_ids_str = "";
 
     for ($i=0; $i < count($film_ids); $i++) {
         if ($i != count($film_ids) - 1) {
-            $film_ids_str .= $film_ids . "+";
+            $film_ids_str .= $film_ids[$i] . "+";
         }
         else {
-            $film_ids_str .= $film_ids;
+            $film_ids_str .= $film_ids[$i];
         }
     }
 
