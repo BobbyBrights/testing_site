@@ -112,6 +112,7 @@ function addRecentAquisitionCarousels() {
         details = film_details(recent_aquisitions_json[i])
 
         if (parseInt(recent_aquisitions_json[i]['client_id']) == 1) {
+            filmmaker = recent_aquisitions_json[i]['filmmaker_name']
             $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker)
         }
         else {
