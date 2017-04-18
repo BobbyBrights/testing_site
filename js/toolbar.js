@@ -22,7 +22,7 @@ var web_host = "http://s219085.gridserver.com/";
 
 //var randomnumber=Math.floor(Math.random()*3)
 
-var logo_ims = ["CFMDC_logo_50th_blk_gld_all_sm_sm_sm.jpg"]
+var logo_ims = ["CFMDC_logo_50th_blk_gld_all_sm_sm.jpg"]
 
 var randomnumber=Math.floor(Math.random()*1)
 
