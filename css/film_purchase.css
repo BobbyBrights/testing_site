@@ -102,6 +102,7 @@
                 background-color: #fff;
                 position: relative; }
                 .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container .img_container_child, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container .img_container_child {
+                  position: absolute;
                   top: -9999px;
                   bottom: -9999px;
                   left: -9999px;
@@ -110,7 +111,6 @@
                   z-index: 0; }
                 .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container .img_container_child_portrait, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container .img_container_child_portrait {
                   max-width: 253px;
-                  position: absolute;
                   top: -9999px;
                   bottom: -9999px;
                   left: -9999px;
