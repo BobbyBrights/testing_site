@@ -1,6 +1,6 @@
 <?php
 //require "film_json.php";
-//getWorkForPurchaseJson(4428);
+getWorkForPurchaseJson(4428);
 
 function getWorkForPurchaseJson($film_number) {
     $host = "http://s219085.gridserver.com/";
@@ -50,6 +50,7 @@ function getWorkForPurchaseJson($film_number) {
         if (false) {
             for ($i=0; $i < count($volume_references); $i++) {
                 $nid = $volume_references[$i]->field_volume_reference->target_id;
+                echo($nid);
                 $film_array['volumes'][] = getVolume($nid, $combined_data);
             }
         }
