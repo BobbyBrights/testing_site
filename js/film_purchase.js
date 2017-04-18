@@ -56,8 +56,8 @@ function getVolume(volumes) {
         for (j=0; j<volumes[i]['volumes_contents'].length; j++) {
             $(".films_container").last().append("<div class='film_container'></div>")
             $(".film_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_img'></div>")
-            if (volumes[i]['volumes_contents'][j]['still']) {
-                $("." + getContainerClass(volumes[i]['link_colour']) + "_img").last.append("<img src='" + volumes[i]['volumes_contents'][j]['still'] + "'>" )
+            if (volumes[i]['volumes_contents'][j]['image_url']) {
+                $("." + getContainerClass(volumes[i]['link_colour']) + "_img").last.append("<img src='" + volumes[i]['volumes_contents'][j]['image_url'] + "'>" )
             }
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
