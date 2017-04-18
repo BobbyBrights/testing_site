@@ -19,6 +19,7 @@ function getRecentAquisitions() {
         $final_record = array();
 
         for ($k=0; $k<count($fmpro_cms->resultset->record); $k++) {
+            print_r($fmpro_cms->resultset->record[$k]);
             $final_record[] = getCMSrecord($fmpro_cms->resultset->record[$k], $data_cms->item);
         }
 
