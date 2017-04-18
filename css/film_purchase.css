@@ -99,7 +99,6 @@
               float: left; }
               .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container {
                 width: 253px;
-                height: 188px;
                 background-color: #fff;
                 overflow: hidden;
                 position: relative; }
