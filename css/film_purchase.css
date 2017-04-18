@@ -406,7 +406,8 @@
           .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container {
             display: table; }
             .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container .film_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container .film_container {
-              width: 820px; }
+              width: 820px;
+              display: table; }
               .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container .film_container .film_text_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container .film_container .film_text_container {
                 width: 537px; }
         .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer {
