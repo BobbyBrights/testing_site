@@ -126,8 +126,8 @@ display: block;
                                 //margin-right: auto;
                                 //display: table;
 
-                                .img_container_child_portrait {
-                                    max-width: 253px;
+                                .img_container_child {
+                                    //max-width: 188px;
                                     position: absolute;
                                     top: -9999px;
                                     bottom: -9999px;
@@ -136,6 +136,8 @@ display: block;
                                     margin: auto;
                                     z-index: 0;
                                 }
+
+
                             }
                         }
 
@@ -158,6 +160,17 @@ display: block;
 
                                 .img_container_child {
                                     //max-width: 188px;
+                                    position: absolute;
+                                    top: -9999px;
+                                    bottom: -9999px;
+                                    left: -9999px;
+                                    right: -9999px;
+                                    margin: auto;
+                                    z-index: 0;
+                                }
+
+                                .img_container_child_portrait {
+                                    max-width: 253px;
                                     position: absolute;
                                     top: -9999px;
                                     bottom: -9999px;
