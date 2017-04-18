@@ -74,7 +74,6 @@
           .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table {
             display: table; }
             .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_text, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_text {
-              float: left;
               font-size: 14px;
               font-family: trade_gothic, sans-serif; }
               .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_text b, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_text b {
