@@ -82,6 +82,13 @@ function getVolume(volumes) {
                 $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volumes[i]['volumes_contents'][j]['filmmakers'])
             }
+
+            volume_film_details = film_details(volumes[i]['volumes_contents'][j])
+
+            if (volume_film_details) {
+                $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
+                $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volume_film_details)
+            }
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
     }
@@ -108,6 +115,24 @@ function getStill(film_object, img_container) {
         $('.' + img_container).css("background-color", "#fff")
     }
 
+}
+
+function film_details(film_obj) {
+    film_details = [film_obj['country'], film_obj['length'], film_obj['year'], film_obj['sound'], film_obj['colour'], film_obj['language']]
+    film_detail_str = "";
+    film_detail_first_string_found = false;
+    for (i = 0; i < film_details.length; i++) { 
+        if (film_details[i]) {
+            if (i == 0 || !film_detail_first_string_found) {
+                film_detail_first_string_found = true
+                film_detail_str += film_details[i]
+            }
+            else {
+                film_detail_str += " / " + film_details[i]
+            }
+        }
+    }
+    return film_detail_str
 }
 
 function getContainerClass(colour) {
