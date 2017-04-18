@@ -103,16 +103,18 @@ function getVolume(volumes) {
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volumes[i]['volumes_contents'][j]['description'])
             }
         }
-        $(".generic_table").last().append("<div class='generic_spacer'></div>")
-
+        
         if (volumes[i]['study_guides']) {
             for (j=0; j<volumes[i]['study_guides'].length; j++) {
+                $(".volume_container").last().append("<div class='generic_spacer'></div>")
                 $(".volume_container").last().append("<div class='generic_text'></div>")
                 $(".generic_text").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append("<a href='" + volumes[i]['study_guides'][j]['url'] + "'></a>")
                 $("a").last().append(volumes[i]['study_guides'][j]['link'])
             }
         }
+
+        $(".generic_table").last().append("<div class='generic_spacer'></div>")
     }
 
     
