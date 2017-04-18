@@ -41,10 +41,11 @@ $(document).ready(function() {
 
 function getVolume(volumes) {
 
-    alert(volumes.length)
-    // for (i=0; i<volumes.length; i++) {
-
-    // }
+    for (i=0; i<volumes.length; i++) {
+        $(".generic_table").last().append("<div class='volume_container'></div>")
+        $(".volume_container").last().append("<div class='volume_title_container'></div>")
+        $(".volume_title_container").last().append("<div class='volume_title'>" + volumes[i]['volume_title'] + "</div>")
+    }
 }
 
 function getContainerClass(colour) {
