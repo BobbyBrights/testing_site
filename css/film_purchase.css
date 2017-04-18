@@ -571,6 +571,12 @@ a:hover .grey_container_img {
               display: inline-block;
               float: left;
               clear: both; }
+              .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase a, .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase a:hover, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase a, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase a:hover {
+                cursor: pointer;
+                text-decoration: none;
+                color: #000; }
+              .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase a:hover, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase a:hover {
+                color: #009347; }
               .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase .img_container_child_landscape, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase .img_container_child_landscape {
                 max-width: 537px;
                 margin: auto;

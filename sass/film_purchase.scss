@@ -321,6 +321,16 @@ display: block;
                             clear: both;
                             //background-color: green;
 
+                            a, a:hover {
+                                cursor: pointer;
+                                text-decoration: none;
+                                color: #000;
+                            }
+
+                            a:hover {
+                                color: #009347;
+                            }
+
                             .img_container_child_landscape {
                                 max-width: 537px;
                                 //position: absolute;
