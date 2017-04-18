@@ -84,7 +84,7 @@ function getVolume(volumes) {
             }
 
             volume_film_details = film_details(volumes[i]['volumes_contents'][j])
-
+            alert(volumes[i]['link_colour'])
             alert(volume_film_details)
             alert(volumes[i]['link_colour'])
 
