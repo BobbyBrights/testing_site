@@ -104,14 +104,15 @@ function getVolume(volumes) {
             }
         }
         
-        alert(volumes[i]['study_guides'].length)
         if (volumes[i]['study_guides'].length > 0) {
             for (j=0; j<volumes[i]['study_guides'].length; j++) {
-                $(".volume_container").last().append("<div class='generic_spacer'></div>")
-                $(".volume_container").last().append("<div class='generic_text'></div>")
-                $(".generic_text").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
-                $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append("<a href='" + volumes[i]['study_guides'][j]['url'] + "'></a>")
-                $("a").last().append(volumes[i]['study_guides'][j]['link'])
+                if (volumes[i]['study_guides'][j]['url'] && volumes[i]['study_guides'][j]['link']) {
+                    $(".volume_container").last().append("<div class='generic_spacer'></div>")
+                    $(".volume_container").last().append("<div class='generic_text'></div>")
+                    $(".generic_text").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
+                    $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append("<a href='" + volumes[i]['study_guides'][j]['url'] + "'></a>")
+                    $("a").last().append(volumes[i]['study_guides'][j]['link'])
+                }
             }
         }
 
