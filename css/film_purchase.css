@@ -100,10 +100,8 @@
               .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container {
                 width: 253px;
                 background-color: #fff;
-                overflow: hidden;
                 position: relative; }
                 .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container .img_container_child, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container .img_container_child {
-                  position: absolute;
                   top: -9999px;
                   bottom: -9999px;
                   left: -9999px;
