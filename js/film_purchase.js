@@ -89,7 +89,7 @@ function getVolume(volumes) {
 
             if (volume_film_detail) {
                 $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
-                $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volume_film_details)
+                $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volume_film_detail)
             }
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
@@ -120,7 +120,7 @@ function getStill(film_object, img_container) {
 }
 
 function film_details(film_obj) {
-    film_detail = [film_obj['country'], film_obj['length'], film_obj['year'], film_obj['sound'], film_obj['colour'], film_obj['language']]
+    //film_detail = [film_obj['country'], film_obj['length'], film_obj['year'], film_obj['sound'], film_obj['colour'], film_obj['language']]
     film_detail_str = "";
     film_detail_first_string_found = false;
     for (i = 0; i < film_detail.length; i++) { 
