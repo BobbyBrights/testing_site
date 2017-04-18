@@ -276,6 +276,7 @@ function getVolume($nid, $combined_data) {
                 $sound = $film_obj['sound'];
             }
 
+            $volume_contents_array['colour'] = $film_obj['colour'];
             $volume_contents_array['film_id'] = $film_id;
         }
 
