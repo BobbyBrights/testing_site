@@ -74,12 +74,10 @@ function getStill(film_object, img_container) {
     containerw = 253
     containerh = 188
     if (film_object['still_width'] < containerw || film_object['still_height'] < containerh) {
-        $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "'>")
-        $('.' + img_container + " > img").load(function() {
-            $('.' + img_container).last().width($('.' + img_container + " > img").last().width())
-            $('.' + img_container).last().height($('.' + img_container + " > img").last().height())
-        })
-        
+        $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "' class='film_still_container_child'>")
+        $('.' + img_container).last().width(film_object['still_width'])
+        $('.' + img_container).last().height(film_object['still_height'])
+                
     }
     else if (film_object['still_width'] == 740) {
         $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "' class='film_still_container_child'>")
