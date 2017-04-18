@@ -164,6 +164,17 @@ display: block;
                             display: table;
                             .film_text_container {
                                 width: 537px;
+                                float: right;
+
+                                .text {
+                                    font-family: trade_gothic, sans-serif;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                }
+
+                                .text_spacer {
+                                    height: 15px;
+                                }
                             }
                         }
                     }
