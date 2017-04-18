@@ -280,6 +280,7 @@ function getVolume($nid, $combined_data) {
             $volume_contents_array['film_id'] = $film_id;
         }
 
+        $volume_contents_array['year'] = $year;
         $volume_contents_array['country'] = $country;
         $volume_contents_array['description'] = $description;
         $volume_contents_array['filmmakers'] = $filmmakers;
