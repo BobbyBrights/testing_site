@@ -45,7 +45,13 @@
     text-align: center;
     position: relative; }
 
-.red_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #E22134;
   color: #E22134;
   cursor: pointer; }
@@ -89,7 +95,13 @@
     text-align: center;
     position: relative; }
 
-.yellow_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #FFC300;
   color: #FFC300;
   cursor: pointer; }
@@ -133,7 +145,13 @@
     text-align: center;
     position: relative; }
 
-.green_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #009347;
   color: #009347;
   cursor: pointer; }
@@ -177,7 +195,13 @@
     text-align: center;
     position: relative; }
 
-.blue_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #0082B8;
   color: #0082B8;
   cursor: pointer; }
@@ -221,7 +245,13 @@
     text-align: center;
     position: relative; }
 
-.orange_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #F56F02;
   color: #F56F02;
   cursor: pointer; }
@@ -265,7 +295,13 @@
     text-align: center;
     position: relative; }
 
-.purple_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #6F3296;
   color: #6F3296;
   cursor: pointer; }
@@ -309,7 +345,13 @@
     text-align: center;
     position: relative; }
 
-.black_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #000;
   color: #000;
   cursor: pointer; }
@@ -353,7 +395,13 @@
     text-align: center;
     position: relative; }
 
-.grey_container_img:hover {
+a, a:hover {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; }
+
+a:hover {
   border: 2px solid #D8D8D8;
   color: #D8D8D8;
   cursor: pointer; }
