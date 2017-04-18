@@ -35,4 +35,41 @@ $(document).ready(function() {
     }
 
     $(".generic_table").last().append("<div class='generic_spacer'></div>")
+
+    getVolume(film_purchase_obj['volumes'])
 })
+
+function getVolume(volumes) {
+
+    alert(volumes.length)
+    // for (i=0; i<volumes.length; i++) {
+
+    // }
+}
+
+function getContainerClass(colour) {
+    if (colour == "Blue") {
+        return "blue_container"
+    }
+    else if (colour == "Grey") {
+        return "grey_container"
+    }
+    else if (colour == "Orange") {
+        return "orange_container"
+    }
+    else if (colour == "Yellow") {
+        return "yellow_container"
+    }
+    else if (colour == "Green") {
+        return "green_container"
+    }
+    else if (colour == "Purple") {
+        return "purple_container"
+    }
+    else if (colour == "Red") {
+        return "red_container"
+    }
+    else {
+        return "black_container"
+    }
+}

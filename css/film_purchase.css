@@ -6,6 +6,278 @@
 .accessible {
   border-top: 1px solid #000000; }
 
+.red_container {
+  color: #E22134; }
+
+.red_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #E22134;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .red_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .red_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.red_container_img:hover {
+  border: 1px solid #E22134;
+  color: #E22134;
+  cursor: pointer; }
+
+.yellow_container {
+  color: #FFC300; }
+
+.yellow_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #FFC300;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .yellow_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .yellow_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.yellow_container_img:hover {
+  border: 1px solid #FFC300;
+  color: #FFC300;
+  cursor: pointer; }
+
+.green_container {
+  color: #009347; }
+
+.green_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #009347;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .green_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .green_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.green_container_img:hover {
+  border: 1px solid #009347;
+  color: #009347;
+  cursor: pointer; }
+
+.blue_container {
+  color: #0082B8; }
+
+.blue_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #0082B8;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .blue_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .blue_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.blue_container_img:hover {
+  border: 1px solid #0082B8;
+  color: #0082B8;
+  cursor: pointer; }
+
+.orange_container {
+  color: #F56F02; }
+
+.orange_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #F56F02;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .orange_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .orange_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.orange_container_img:hover {
+  border: 1px solid #F56F02;
+  color: #F56F02;
+  cursor: pointer; }
+
+.purple_container {
+  color: #6F3296; }
+
+.purple_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #6F3296;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .purple_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .purple_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.purple_container_img:hover {
+  border: 1px solid #6F3296;
+  color: #6F3296;
+  cursor: pointer; }
+
+.black_container {
+  color: #000; }
+
+.black_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .black_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .black_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.black_container_img:hover {
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer; }
+
+.grey_container {
+  color: #D8D8D8; }
+
+.grey_container_img {
+  width: 253px;
+  height: 188px;
+  display: table-cell;
+  color: #D8D8D8;
+  position: relative;
+  overflow: hidden;
+  background: #D8D8D8;
+  float: left; }
+  .grey_container_img .film_still_container_child {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto; }
+  .grey_container_img .table_purchase_container_center {
+    margin: auto;
+    margin-top: 6%;
+    width: 87%;
+    height: 84%;
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    position: relative; }
+
+.grey_container_img:hover {
+  border: 1px solid #D8D8D8;
+  color: #D8D8D8;
+  cursor: pointer; }
+
 .accessible, .accessible_generic {
   position: relative;
   width: 850px;
