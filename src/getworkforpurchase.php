@@ -47,10 +47,11 @@ function getWorkForPurchaseJson($film_number) {
         $still_data = getStillData($data_cms_stills);
         $combined_data = combine_data($data_fmp, $still_data);
         //print_r($combined_data);
-
-        for ($i=0; $i < count($volume_references); $i++) {
-            $nid = $volume_references[$i]->field_volume_reference->target_id;
-            $film_array['volumes'][] = getVolume($nid, $combined_data);
+        if (!empty($volume_references)) {
+            for ($i=0; $i < count($volume_references); $i++) {
+                $nid = $volume_references[$i]->field_volume_reference->target_id;
+                $film_array['volumes'][] = getVolume($nid, $combined_data);
+            }
         }
 
         //print_r($film_array);
