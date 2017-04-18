@@ -73,10 +73,12 @@ function getVolume(volumes) {
 function getStill(film_object, img_container) {
     containerw = 253
     containerh = 188
-    if (film_object['still_width'] < containerw || film_object['still_height'] < containerh) {
+    
+    if (film_object['still_width'] < containerw) {
         $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "' class='film_still_container_child'>")
         $('.' + img_container).last().width(film_object['still_width'])
         $('.' + img_container).last().height(film_object['still_height'])
+        $('.' + img_container).last().css('margin-left', (537 - parseInt(film_object['still_width']))/2.0 + "px")
                 
     }
     else if (film_object['still_width'] == 740) {
