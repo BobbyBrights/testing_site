@@ -106,12 +106,24 @@
                   right: -9999px;
                   margin: auto;
                   z-index: 0; }
+            .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase {
+              display: inline-block;
+              float: left;
+              clear: both; }
+              .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase .img_container_child_landscape, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_landscape_purchase .img_container_child_landscape {
+                max-width: 537px;
+                margin: auto;
+                z-index: 0; }
             .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase {
               width: 253px;
               display: inline-block;
               float: left; }
               .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container_child_portrait, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container_child_portrait {
                 max-width: 253px;
+                margin: auto;
+                z-index: 0; }
+              .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container_child_landscape, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container_child_landscape {
+                max-width: 537px;
                 margin: auto;
                 z-index: 0; }
               .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_image_purchase .img_container {

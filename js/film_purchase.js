@@ -18,10 +18,19 @@ $(document).ready(function() {
     $(".generic_info_table").last().append("<div class='generic_text'>by <b><a href='" + web_host + "filmmaker/1'> CFMDC Special Edition</a></b></div>")
     $(".generic_info_table").last().append("<div class='generic_text_spacer'></div>")
 
-    $(".generic_table").last().append("<div class='generic_info_table'></div>")
+    if (parseInt(film_purchase_obj['large_image_height']) > parseInt(film_purchase_obj['large_image_width'])) {
 
-    $(".generic_info_table").last().append("<div class='generic_info_purchase'>" + film_purchase_obj['film_description'] + "</div>")
-    $(".generic_info_table").last().append("<div class='generic_info_spacer'></div>")
-    $(".generic_info_table").last().append("<div class='generic_info_image_purchase'></div>")
-    $(".generic_info_image_purchase").last().append("<img src='" + film_purchase_obj['large_image_url'] + "' class='img_container_child_portrait'>")
+        $(".generic_table").last().append("<div class='generic_info_table'></div>")
+
+        $(".generic_info_table").last().append("<div class='generic_info_purchase'>" + film_purchase_obj['film_description'] + "</div>")
+        $(".generic_info_table").last().append("<div class='generic_info_spacer'></div>")
+        $(".generic_info_table").last().append("<div class='generic_info_image_purchase'></div>")
+        $(".generic_info_image_purchase").last().append("<img src='" + film_purchase_obj['large_image_url'] + "' class='img_container_child_portrait'>")
+    }
+    else {
+        $(".generic_table").last().append("<div class='generic_info_table'></div>")
+        $(".generic_info_table").last().append("<div class='generic_info_image_landscape_purchase'></div>")
+        $(".generic_info_image_landscape_purchase").last().append("<img src='" + film_purchase_obj['large_image_url'] + "' class='img_container_child_landscape'>")
+        $(".generic_info_table").last().append("<div class='generic_info_purchase'>" + film_purchase_obj['film_description'] + "</div>")
+    }
 })
