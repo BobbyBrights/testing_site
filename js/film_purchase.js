@@ -87,10 +87,10 @@ function getVolume(volumes) {
 
             //volume_film_detail = film_details(cur_film)
 
-            if (volume_film_detail) {
+            //if (volume_film_detail) {
                 $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volume_film_detail)
-            }
+            //}
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
     }
