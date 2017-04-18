@@ -17,6 +17,13 @@ if ($purchase_json) {
     else {
         film_purchase_obj = '';
     }
+    json_string = '<?php echo addslashes($film_json); ?>'
+    if (json_string) {
+        film_obj = JSON.parse('<?php echo addslashes($film_json); ?>')
+    }
+    else {
+        film_obj = '';
+    }
     </script>
     <script src="<?=$web_host?>js/film_purchase.js" type="text/javascript"></script>
     <script src="https://content.jwplatform.com/libraries/2d2HEAIU.js" type="text/javascript"></script>
