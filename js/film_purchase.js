@@ -85,12 +85,12 @@ function getVolume(volumes) {
 
             cur_film = volumes[i]['volumes_contents'][j]
 
-            //volume_film_detail = film_details(cur_film)
+            volume_film_detail = film_details(cur_film)
 
-            //if (volume_film_detail) {
+            if (volume_film_detail) {
                 $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volume_film_detail)
-            //}
+            }
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
     }
@@ -124,14 +124,14 @@ function film_details(film_obj) {
     film_detail = []
     film_detail_str = "";
     film_detail_first_string_found = false;
-    for (i = 0; i < film_detail.length; i++) { 
-        if (film_detail[i]) {
-            if (i == 0 || !film_detail_first_string_found) {
+    for (k = 0; k < film_detail.length; k++) { 
+        if (film_detail[k]) {
+            if (k == 0 || !film_detail_first_string_found) {
                 film_detail_first_string_found = true
-                film_detail_str += film_detail[i]
+                film_detail_str += film_detail[k]
             }
             else {
-                film_detail_str += " / " + film_detail[i]
+                film_detail_str += " / " + film_detail[k]
             }
         }
     }
