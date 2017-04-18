@@ -1,5 +1,20 @@
 @mixin color_container($name, $color) {
 
+    .#{$name}_text {
+        color: #000;
+
+        a, a:hover {
+            text-decoration: none;
+            color:#000;
+            font-family: trade_gothic_bold, sans-serif;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: $color;
+        }
+    }
+
     .#{$name} {
         color: $color;
     }
@@ -122,6 +137,12 @@ display: block;
                             font-family: trade_gothic_bold, sans-serif;
                             font-size: 18px;
                         }
+                    }
+
+                    .volume_additional_text_container {
+                        font-family: trade_gothic, sans-serif;
+                        font-size: 14px;
+                        display: table;
                     }
 
                 }
@@ -342,6 +363,16 @@ display: block;
                             color: #000;
                             line-height: 24px;
                             //background-color: green;
+
+                             a, a:hover {
+                                cursor: pointer;
+                                text-decoration: none;
+                                color: #000;
+                            }
+
+                            a:hover {
+                                color: #009347;
+                            }
                         }
 
                         .generic_info_landscape_purchase {

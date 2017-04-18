@@ -6,6 +6,16 @@
 .accessible {
   border-top: 1px solid #000000; }
 
+.red_container_text {
+  color: #000; }
+  .red_container_text a, .red_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .red_container_text a:hover {
+    color: #E22134; }
+
 .red_container {
   color: #E22134; }
 
@@ -39,6 +49,16 @@
   border: 1px solid #E22134;
   color: #E22134;
   cursor: pointer; }
+
+.yellow_container_text {
+  color: #000; }
+  .yellow_container_text a, .yellow_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .yellow_container_text a:hover {
+    color: #FFC300; }
 
 .yellow_container {
   color: #FFC300; }
@@ -74,6 +94,16 @@
   color: #FFC300;
   cursor: pointer; }
 
+.green_container_text {
+  color: #000; }
+  .green_container_text a, .green_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .green_container_text a:hover {
+    color: #009347; }
+
 .green_container {
   color: #009347; }
 
@@ -107,6 +137,16 @@
   border: 1px solid #009347;
   color: #009347;
   cursor: pointer; }
+
+.blue_container_text {
+  color: #000; }
+  .blue_container_text a, .blue_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .blue_container_text a:hover {
+    color: #0082B8; }
 
 .blue_container {
   color: #0082B8; }
@@ -142,6 +182,16 @@
   color: #0082B8;
   cursor: pointer; }
 
+.orange_container_text {
+  color: #000; }
+  .orange_container_text a, .orange_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .orange_container_text a:hover {
+    color: #F56F02; }
+
 .orange_container {
   color: #F56F02; }
 
@@ -175,6 +225,16 @@
   border: 1px solid #F56F02;
   color: #F56F02;
   cursor: pointer; }
+
+.purple_container_text {
+  color: #000; }
+  .purple_container_text a, .purple_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .purple_container_text a:hover {
+    color: #6F3296; }
 
 .purple_container {
   color: #6F3296; }
@@ -210,6 +270,16 @@
   color: #6F3296;
   cursor: pointer; }
 
+.black_container_text {
+  color: #000; }
+  .black_container_text a, .black_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .black_container_text a:hover {
+    color: #000; }
+
 .black_container {
   color: #000; }
 
@@ -243,6 +313,16 @@
   border: 1px solid #000;
   color: #000;
   cursor: pointer; }
+
+.grey_container_text {
+  color: #000; }
+  .grey_container_text a, .grey_container_text a:hover {
+    text-decoration: none;
+    color: #000;
+    font-family: trade_gothic_bold, sans-serif;
+    cursor: pointer; }
+  .grey_container_text a:hover {
+    color: #D8D8D8; }
 
 .grey_container {
   color: #D8D8D8; }
@@ -319,6 +399,10 @@
             .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_title_container .volume_title, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_title_container .volume_title {
               font-family: trade_gothic_bold, sans-serif;
               font-size: 18px; }
+          .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_additional_text_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_additional_text_container {
+            font-family: trade_gothic, sans-serif;
+            font-size: 14px;
+            display: table; }
         .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer {
           width: 100%;
           height: 30px;
@@ -451,6 +535,12 @@
               font-family: trade_gothic, sans-serif;
               color: #000;
               line-height: 24px; }
+              .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_purchase a, .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_purchase a:hover, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_purchase a, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_purchase a:hover {
+                cursor: pointer;
+                text-decoration: none;
+                color: #000; }
+              .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_purchase a:hover, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_purchase a:hover {
+                color: #009347; }
             .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_landscape_purchase, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_info_table .generic_info_landscape_purchase {
               width: 537px;
               display: inline-block;

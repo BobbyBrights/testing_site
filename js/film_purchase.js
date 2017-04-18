@@ -45,6 +45,13 @@ function getVolume(volumes) {
         $(".generic_table").last().append("<div class='volume_container'></div>")
         $(".volume_container").last().append("<div class='volume_title_container'></div>")
         $(".volume_title_container").last().append("<div class='volume_title'><div class='" + getContainerClass(volumes[i]['link_colour']) + "'</div>" + volumes[i]['volume_title'] + "</div>")
+
+        if (getContainerClass(volumes[i]['additional_text'])) {
+            $(".volume_container").last().append("<div class='generic_spacer_sm'></div>")
+            $(".volume_container").last().append("<div class='volume_additional_text_container'>" + volumes[i]['additional_text'] + "</div>")
+        }
+
+        $(".generic_table").last().append("<div class='generic_spacer'></div>")
     }
 }
 
