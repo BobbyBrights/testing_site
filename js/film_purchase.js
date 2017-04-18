@@ -34,7 +34,7 @@ $(document).ready(function() {
         $(".generic_info_table").last().append("<div class='generic_info_landscape_purchase'><div class='generic_text_spacer_lg'></div>" + film_purchase_obj['film_description'] + "</div>")
     }
 
-    $(".generic_table").last().append("<div class='generic_spacer'></div>")
+    //$(".generic_table").last().append("<div class='generic_spacer'></div>")
 
     getVolume(film_purchase_obj['volumes'])
 })
@@ -104,6 +104,15 @@ function getVolume(volumes) {
             }
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
+    }
+
+    if (volumes[i]['study_guides']) {
+        for (j=0; j<volumes[i]['study_guides'].legnth; j++) {
+            $(".volume_container").last().append("<div class='generic_text'></div>")
+            $(".generic_text").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
+            $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append("<a href='" + volumes[i]['study_guides'][j]['url'] + "'></a>")
+            $("a").last().append(volumes[i]['study_guides'][j]['link'])
+        }
     }
 }
 
