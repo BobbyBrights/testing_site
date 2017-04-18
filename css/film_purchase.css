@@ -45,13 +45,13 @@
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .red_container_a, a:hover .red_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .red_container_a {
   border: 2px solid #E22134;
   color: #E22134;
   cursor: pointer; }
@@ -95,13 +95,13 @@ a:hover {
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .yellow_container_a, a:hover .yellow_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .yellow_container_a {
   border: 2px solid #FFC300;
   color: #FFC300;
   cursor: pointer; }
@@ -145,13 +145,13 @@ a:hover {
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .green_container_a, a:hover .green_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .green_container_a {
   border: 2px solid #009347;
   color: #009347;
   cursor: pointer; }
@@ -195,13 +195,13 @@ a:hover {
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .blue_container_a, a:hover .blue_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .blue_container_a {
   border: 2px solid #0082B8;
   color: #0082B8;
   cursor: pointer; }
@@ -245,13 +245,13 @@ a:hover {
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .orange_container_a, a:hover .orange_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .orange_container_a {
   border: 2px solid #F56F02;
   color: #F56F02;
   cursor: pointer; }
@@ -295,13 +295,13 @@ a:hover {
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .purple_container_a, a:hover .purple_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .purple_container_a {
   border: 2px solid #6F3296;
   color: #6F3296;
   cursor: pointer; }
@@ -345,13 +345,13 @@ a:hover {
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .black_container_a, a:hover .black_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .black_container_a {
   border: 2px solid #000;
   color: #000;
   cursor: pointer; }
@@ -395,13 +395,13 @@ a:hover {
     text-align: center;
     position: relative; }
 
-a, a:hover {
+a .grey_container_a, a:hover .grey_container_a {
   color: #000;
   border: none;
   cursor: pointer;
   text-decoration: none; }
 
-a:hover {
+a:hover .grey_container_a {
   border: 2px solid #D8D8D8;
   color: #D8D8D8;
   cursor: pointer; }
