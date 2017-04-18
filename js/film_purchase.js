@@ -86,6 +86,8 @@ function getStill(film_object, img_container) {
         $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "' class='film_still_container_child'>")
         $('.' + img_container + " > img").last().width(containerw)
         $('.' + img_container).css("background-color", "#fff")
+        $('.' + img_container).last().width(containerw)
+        $('.' + img_container).last().height(containerh)
     }
 
 }
