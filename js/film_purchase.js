@@ -104,7 +104,7 @@ function getVolume(volumes) {
             }
         }
         
-        if (volumes[i]['study_guides']) {
+        if (volumes[i]['study_guides'].length > 0) {
             for (j=0; j<volumes[i]['study_guides'].length; j++) {
                 $(".volume_container").last().append("<div class='generic_spacer'></div>")
                 $(".volume_container").last().append("<div class='generic_text'></div>")
