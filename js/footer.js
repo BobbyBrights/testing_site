@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     $('.footer_container').append("<div class='supporters_container'></div>")
     $('.supporters_container').append("<a href='http://canadacouncil.ca/' target='_blank'><img class='left_logo' src='" + web_host + "img/footer/CCFA_BW_black_96_e.jpg'></a>")
-    $('.supporters_container').append("<a href='http://www.arts.on.ca/' target='_blank'><img class='centre_logo' src='" + web_host + "img/footer/2014-OAC-Logo-BK-EPS_sm.jpg'></a>")
+    $('.supporters_container').append("<a href='http://www.arts.on.ca/' target='_blank'><img class='centre_logo' src='" + web_host + "img/footer/2014-OAC-Logo-BK-EPS_sm_sm.jpg'></a>")
     $('.supporters_container').append("<a href='http://www.torontoartscouncil.org/' target='_blank'><img class='right_logo' src='" + web_host + "img/footer/TAC.jpg'></a>")
 
     $(".glyphicon-menu-hamburger").on("click", hamburger)
