@@ -148,6 +148,13 @@ display: block;
                             float: left;
                             //background-color: green;
 
+                             .img_container_child_portrait {
+                                    max-width: 253px;
+                                    //position: absolute;
+                                    margin: auto;
+                                    z-index: 0;
+                                }
+
                             .img_container {
                                 width: 253px;
                                 //height:188px;

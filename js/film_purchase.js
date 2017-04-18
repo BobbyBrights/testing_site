@@ -19,6 +19,6 @@ $(document).ready(function() {
     $(".generic_info_table").last().append("<div class='generic_info_purchase'>" + film_purchase_obj['film_description'] + "</div>")
     $(".generic_info_table").last().append("<div class='generic_info_spacer'></div>")
     $(".generic_info_table").last().append("<div class='generic_info_image_purchase'></div>")
-    $(".generic_info_image_purchase").last().append("<div class='img_container'></div>")
-    $(".img_container").last().append("<img src='" + film_purchase_obj['large_image_url'] + "' class='img_container_child_portrait'>")
+    //$(".generic_info_image_purchase").last().append("<div class='img_container'></div>")
+    $(".generic_info_image_purchase").last().append("<img src='" + film_purchase_obj['large_image_url'] + "' class='img_container_child_portrait'>")
 })
