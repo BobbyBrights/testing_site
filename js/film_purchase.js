@@ -75,8 +75,8 @@ function getStill(film_object, img_container) {
     containerh = 188
     if (film_object['still_width'] < containerw || film_object['still_height'] < containerh) {
         $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "' class='film_still_container_child'>")
-        $('.' + img_container).last().width(containerw)
-        $('.' + img_container).last().height(containerh)
+        $('.' + img_container).last().width($('.' + img_container + " > img").last().width())
+        $('.' + img_container).last().height($('.' + img_container + " > img").last().height())
     }
     else if (film_object['still_width'] == 740) {
         $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "' class='film_still_container_child'>")
@@ -86,9 +86,6 @@ function getStill(film_object, img_container) {
         $('.' + img_container).last().append("<img src='" + film_object['image_url'] + "' class='film_still_container_child'>")
         $('.' + img_container + " > img").last().width(containerw)
         $('.' + img_container).css("background-color", "#fff")
-        $('.' + img_container).last().width(containerw)
-        $('.' + img_container).last().height(containerh)
-        alert(film_object['image_url'])
     }
 
 }
