@@ -42,6 +42,10 @@ $(document).ready(function() {
 function getVolume(volumes) {
 
     for (i=0; i<volumes.length; i++) {
+        if (i != 0) {
+            $(".generic_table").last().append("<div class='generic_spacer'></div>")
+        }
+
         $(".generic_table").last().append("<div class='volume_container'></div>")
         $(".volume_container").last().append("<div class='volume_title_container'></div>")
         $(".volume_title_container").last().append("<div class='volume_title'><div class='" + getContainerClass(volumes[i]['link_colour']) + "'</div>" + volumes[i]['volume_title'] + "</div>")
@@ -116,7 +120,7 @@ function getVolume(volumes) {
             }
         }
 
-        $(".generic_table").last().append("<div class='generic_spacer'></div>")
+        
     }
 
     
