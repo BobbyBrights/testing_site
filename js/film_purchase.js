@@ -66,6 +66,8 @@ function getVolume(volumes) {
                 getStill(volumes[i]['volumes_contents'][j], getContainerClass(volumes[i]['link_colour']) + "_img")
             }
 
+            alert(volumes[i]['volumes_contents'][j]['title']);
+
             $(".film_container").last().append("<div class='film_text_container'></div>")
             $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text>" + volumes[i]['volumes_contents'][j]['title'] + "</div>")
             
