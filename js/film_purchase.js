@@ -89,6 +89,13 @@ function getVolume(volumes) {
                 $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volume_film_detail)
             }
+
+            $(".film_text_container").last().append("<div class='text_spacer'></div>")
+
+            if (volumes[i]['volumes_contents'][j]['description']) {
+                $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
+                $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volumes[i]['volumes_contents'][j]['description'])
+            }
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
     }

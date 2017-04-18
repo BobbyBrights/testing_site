@@ -488,7 +488,8 @@ a:hover .grey_container_img {
                   font-size: 14px;
                   line-height: 24px; }
                 .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container .film_container .film_text_container .text_spacer, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .films_container .film_container .film_text_container .text_spacer {
-                  height: 15px; }
+                  height: 15px;
+                  display: table; }
         .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer {
           width: 100%;
           height: 30px;
