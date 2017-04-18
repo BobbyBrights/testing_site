@@ -145,6 +145,17 @@ display: block;
                         display: table;
                     }
 
+                    .films_container {
+
+                        .film_container {
+                            width: 820px;
+
+                            .film_text_container {
+                                width: 537px;
+                            }
+                        }
+                    }
+
                 }
 
                 .contents_spacer {
