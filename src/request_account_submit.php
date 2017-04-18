@@ -104,10 +104,10 @@ function otherMail($firstname, $lastname, $organization, $phone, $email, $addres
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-    $headers[] = 'To: CFMDC WEB <web@cfmdc.org>';
-    $headers[] = 'From: CFMDC WEB <web@cfmdc.org>';
+    $headers[] = 'To: CFMDC WEB <bookings@cfmdc.org>';
+    $headers[] = 'From: CFMDC WEB <bookings@cfmdc.org>';
 
-    mail("web@cfmdc.org", 'CFMDC ACCOUNT REQUESTED', $body, implode("\r\n", $headers));
+    mail("bookings@cfmdc.org", 'CFMDC ACCOUNT REQUESTED', $body, implode("\r\n", $headers));
 }
 
 
@@ -138,17 +138,17 @@ function send_message($firstname, $lastname, $organization, $phone, $email, $add
     $mail->SMTPDebug  = 1;
     $mail->SMTPAuth   = true;
 
-    $mail->Username   = 'web@cfmdc.org';
+    $mail->Username   = 'bookings@cfmdc.org';
     $mail->Password   = 'Snowman44!';
 
-    $mail->SetFrom('web@cfmdc.org', $name);
+    $mail->SetFrom('bookings@cfmdc.org', $name);
     $mail->AddReplyTo('no-reply@cfmdc.org','no-reply');
     $mail->Subject    = 'CFMDC ACCOUNT REQUESTED';
     $mail->isHTML(true);   
     $mail->Body = $body;
 
     $mail->SingleTo = true;
-    $mail->AddAddress('web@cfmdc.org');
+    $mail->AddAddress('bookings@cfmdc.org');
 
     ob_start();
     $mail->send();
