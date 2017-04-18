@@ -125,7 +125,7 @@ function getStill(film_object, img_container) {
 }
 
 function film_details(film_obj) {
-    film_details = [film_obj['country'], film_obj['length'], film_obj['year'], film_obj['sound'], film_obj['colour'], film_obj['language']]
+    //film_details = [film_obj['country'], film_obj['length'], film_obj['year'], film_obj['sound'], film_obj['colour'], film_obj['language']]
     film_detail_str = "";
     film_detail_first_string_found = false;
     for (i = 0; i < film_details.length; i++) { 
