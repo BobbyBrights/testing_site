@@ -83,14 +83,9 @@ function getVolume(volumes) {
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volumes[i]['volumes_contents'][j]['filmmakers'])
             }
 
-            alert(volumes[i]['link_colour'])
-
             cur_film = volumes[i]['volumes_contents'][j]
 
             volume_film_detail = film_details(cur_film)
-            
-            alert(volume_film_detail)
-            alert(volumes[i]['volumes_contents'][j]['length'])
 
             if (volume_film_detail) {
                 $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
@@ -125,17 +120,17 @@ function getStill(film_object, img_container) {
 }
 
 function film_details(film_obj) {
-    //film_details = [film_obj['country'], film_obj['length'], film_obj['year'], film_obj['sound'], film_obj['colour'], film_obj['language']]
+    film_detail = [film_obj['country'], film_obj['length'], film_obj['year'], film_obj['sound'], film_obj['colour'], film_obj['language']]
     film_detail_str = "";
     film_detail_first_string_found = false;
-    for (i = 0; i < film_details.length; i++) { 
-        if (film_details[i]) {
+    for (i = 0; i < film_detail.length; i++) { 
+        if (film_detail[i]) {
             if (i == 0 || !film_detail_first_string_found) {
                 film_detail_first_string_found = true
-                film_detail_str += film_details[i]
+                film_detail_str += film_detail[i]
             }
             else {
-                film_detail_str += " / " + film_details[i]
+                film_detail_str += " / " + film_detail[i]
             }
         }
     }
