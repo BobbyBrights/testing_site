@@ -1,6 +1,6 @@
 <?php
 //require "film_json.php";
-getWorkForPurchaseJson(4428);
+//getWorkForPurchaseJson(4428);
 
 function getWorkForPurchaseJson($film_number) {
     $host = "http://s219085.gridserver.com/";
@@ -9,7 +9,7 @@ function getWorkForPurchaseJson($film_number) {
 
     $data_cms = simplexml_load_string(file_get_contents_retry($cms_work_for_purchase_url));
 
-    print_r($data_cms);
+    //print_r($data_cms);
 
     if (!$data_cms) {
         return "";
@@ -300,144 +300,144 @@ function getVolume($nid, $combined_data) {
     return $volume_array;
 }
 
-function file_get_contents_retry($url) {
-    $a = false;
-    $i = 0;
-    while($a == false && $i < 10)
-    {
-        $a = @file_get_contents($url);
-        $i++;
-        if ($a == false) {
-            usleep(10);
-        }
-    }
-    return $a;
-}
+// function file_get_contents_retry($url) {
+//     $a = false;
+//     $i = 0;
+//     while($a == false && $i < 10)
+//     {
+//         $a = @file_get_contents($url);
+//         $i++;
+//         if ($a == false) {
+//             usleep(10);
+//         }
+//     }
+//     return $a;
+// }
 
-function utf8ize($d) {
-    if (is_array($d)) {
-        foreach ($d as $k => $v) {
-            $d[$k] = utf8ize($v);
-        }
-    } else if (is_string ($d)) {
-        $d = str_replace("\xe2\x80\xa8", '\\u2028', $d);
-        $d = str_replace("\xe2\x80\xa9", '\\u2029', $d);
-        return utf8_encode($d);
-    }
-    return $d;
-}
+// function utf8ize($d) {
+//     if (is_array($d)) {
+//         foreach ($d as $k => $v) {
+//             $d[$k] = utf8ize($v);
+//         }
+//     } else if (is_string ($d)) {
+//         $d = str_replace("\xe2\x80\xa8", '\\u2028', $d);
+//         $d = str_replace("\xe2\x80\xa9", '\\u2029', $d);
+//         return utf8_encode($d);
+//     }
+//     return $d;
+// }
 
-function file_exists_($file_path) {
-    $file_headers = @get_headers($file_path);
+// function file_exists_($file_path) {
+//     $file_headers = @get_headers($file_path);
     
-    if( strpos($file_headers[0], '404 Not Found') !== false){
-        return false;
-    } else if (strpos($file_headers[0], '302 Found') !== false && strpos($file_headers[7], '404 Not Found') !== false){
-        return false;
-    } else {
-        return true;
-    }
-}
+//     if( strpos($file_headers[0], '404 Not Found') !== false){
+//         return false;
+//     } else if (strpos($file_headers[0], '302 Found') !== false && strpos($file_headers[7], '404 Not Found') !== false){
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
 
-function convert_accent($string)
-{
-    echo($string);
-    return htmlspecialchars_decode(htmlentities(utf8_decode($string)));
-}
+// function convert_accent($string)
+// {
+//     echo($string);
+//     return htmlspecialchars_decode(htmlentities(utf8_decode($string)));
+// }
 
-function convertQuotes($str) {
-    $str = str_replace("‘", "'", $str);
-    $str = str_replace("’", "'", $str);
-    $str = str_replace("“", '"', $str);
-    $str = str_replace("”", '"', $str);
-    $str = str_replace("–", "-", $str);
-    $str = str_replace("…", "...", $str);
-    return $str;
-}
+// function convertQuotes($str) {
+//     $str = str_replace("‘", "'", $str);
+//     $str = str_replace("’", "'", $str);
+//     $str = str_replace("“", '"', $str);
+//     $str = str_replace("”", '"', $str);
+//     $str = str_replace("–", "-", $str);
+//     $str = str_replace("…", "...", $str);
+//     return $str;
+// }
 
-function getTimeString($length) {
-    $time_explode = explode(".", $length);
+// function getTimeString($length) {
+//     $time_explode = explode(".", $length);
     
-    if (count($time_explode) == 1) {
-        $mins = $time_explode[0];
-        $seconds = "0";
-    }
-    else {
-        $mins = $time_explode[0];
-        $seconds = $time_explode[1];
-    }
+//     if (count($time_explode) == 1) {
+//         $mins = $time_explode[0];
+//         $seconds = "0";
+//     }
+//     else {
+//         $mins = $time_explode[0];
+//         $seconds = $time_explode[1];
+//     }
 
-    $mins_int = intval($mins);
-    $hours_int = floor($mins_int/60);
+//     $mins_int = intval($mins);
+//     $hours_int = floor($mins_int/60);
 
-    //echo $hours_int;
+//     //echo $hours_int;
 
-    if (intval($seconds) < 10) {
-        $seconds_str = "0" . intval($seconds);
-    }
-    else {
-        $seconds_str = $seconds;
-    }
+//     if (intval($seconds) < 10) {
+//         $seconds_str = "0" . intval($seconds);
+//     }
+//     else {
+//         $seconds_str = $seconds;
+//     }
 
-    if ($hours_int == 0) {
-        return $mins . ":" . $seconds_str;
-    }
-    else {
-        $mins_int = $mins_int - ($hours_int * 60);
-         if (intval($mins_int) < 10) {
-            $mins_str = "0" . $mins_int;
-        }
-        else {
-            $mins_str = $mins_int;
-    }
-        return $hours_int . ":" . $mins_str . ":" . $seconds_str;
-    }
-}
+//     if ($hours_int == 0) {
+//         return $mins . ":" . $seconds_str;
+//     }
+//     else {
+//         $mins_int = $mins_int - ($hours_int * 60);
+//          if (intval($mins_int) < 10) {
+//             $mins_str = "0" . $mins_int;
+//         }
+//         else {
+//             $mins_str = $mins_int;
+//     }
+//         return $hours_int . ":" . $mins_str . ":" . $seconds_str;
+//     }
+// }
 
-function getMainFilmmakerName($filmmaker) {
-    $init_exp = explode(",", $filmmaker);
-    if (count($init_exp) > 1) {
-        return "<b>" . trim($init_exp[1]) . " " . trim($init_exp[0]) . "</b>";
-    }
-    else {
-        return "<b>" . $filmmaker . "</b>";
-    }
-}
+// function getMainFilmmakerName($filmmaker) {
+//     $init_exp = explode(",", $filmmaker);
+//     if (count($init_exp) > 1) {
+//         return "<b>" . trim($init_exp[1]) . " " . trim($init_exp[0]) . "</b>";
+//     }
+//     else {
+//         return "<b>" . $filmmaker . "</b>";
+//     }
+// }
 
-function getFilmmakerName($filmmaker) {
-    $filmmaker = preg_replace("/\([^)]+\)/","", $filmmaker);
+// function getFilmmakerName($filmmaker) {
+//     $filmmaker = preg_replace("/\([^)]+\)/","", $filmmaker);
 
-    $name_exp_semi_colon = explode(";", $filmmaker);
-    $name_exp_ampersand = explode("&", $filmmaker);
-	$name_exp_and = explode(" and", $filmmaker);
+//     $name_exp_semi_colon = explode(";", $filmmaker);
+//     $name_exp_ampersand = explode("&", $filmmaker);
+// 	$name_exp_and = explode(" and", $filmmaker);
 
-    $init_exp = (count($name_exp_semi_colon) > count($name_exp_ampersand) ? $name_exp_semi_colon : $name_exp_ampersand);
-	$init_exp = (count($init_exp) > count($name_exp_and) ? $init_exp : $name_exp_and);
+//     $init_exp = (count($name_exp_semi_colon) > count($name_exp_ampersand) ? $name_exp_semi_colon : $name_exp_ampersand);
+// 	$init_exp = (count($init_exp) > count($name_exp_and) ? $init_exp : $name_exp_and);
 
-    if (strpos($filmmaker, ';') === false && strpos($filmmaker, '&') === false && strpos($filmmaker, ' and') === false) {
-        $name_exp_comma = explode(",", $filmmaker);
-        if (count($name_exp_comma) > 1) {
-            $first_words = count(explode(" ",trim($name_exp_comma[0])));
-            $second_words = count(explode(" ",trim($name_exp_comma[1])));
-            if($first_words > 1 && $second_words > 1) {
-                $init_exp = explode(",", $filmmaker);
-            }
-        }
-    }
+//     if (strpos($filmmaker, ';') === false && strpos($filmmaker, '&') === false && strpos($filmmaker, ' and') === false) {
+//         $name_exp_comma = explode(",", $filmmaker);
+//         if (count($name_exp_comma) > 1) {
+//             $first_words = count(explode(" ",trim($name_exp_comma[0])));
+//             $second_words = count(explode(" ",trim($name_exp_comma[1])));
+//             if($first_words > 1 && $second_words > 1) {
+//                 $init_exp = explode(",", $filmmaker);
+//             }
+//         }
+//     }
 
-    $final_str = "";
+//     $final_str = "";
 
-    for ($i=0; $i<count($init_exp); $i++) {
-        $name_exp = explode(",", $init_exp[$i]);
+//     for ($i=0; $i<count($init_exp); $i++) {
+//         $name_exp = explode(",", $init_exp[$i]);
 
-        if (count($name_exp) < 2) {
-            $final_str .= ($i > 0 ? " & <b>" . trim($name_exp[0]) . '</b>': "<b>" . trim($name_exp[0]) . '</b>');
-        }
-        else {
-            $final_str .= ($i > 0 ? " & <b>" . trim($name_exp[1]) . " " . trim($name_exp[0]) . '</b>': "<b>" . trim($name_exp[1]) . " " . trim($name_exp[0]) . '</b>');
-        }
-    }
+//         if (count($name_exp) < 2) {
+//             $final_str .= ($i > 0 ? " & <b>" . trim($name_exp[0]) . '</b>': "<b>" . trim($name_exp[0]) . '</b>');
+//         }
+//         else {
+//             $final_str .= ($i > 0 ? " & <b>" . trim($name_exp[1]) . " " . trim($name_exp[0]) . '</b>': "<b>" . trim($name_exp[1]) . " " . trim($name_exp[0]) . '</b>');
+//         }
+//     }
 	
-    return $final_str;
-}
+//     return $final_str;
+// }
 ?>
