@@ -149,7 +149,7 @@ function getCMSrecord($filmrecord, $records) {
     $record['year'] = (string) $filmrecord->field[5]->data;
     $record['film_id'] = (string) $filmrecord->field[12]->data;
     $record['title'] = (string) $filmrecord->field[0]->data;
-    $record['client_id'] = (string) $filmrecord->field[2]->data;
+    $record['client_id'] = (string) $filmrecord->field[1]->data;
     $record["filmmaker_name"] = getMainFilmmakerName((string) $filmrecord->field[2]->data);
     if ($secondary_filmmaker) {
         $record["secondary_filmmaker"] = getFilmmakerName((string) $filmrecord->field[3]->data);
