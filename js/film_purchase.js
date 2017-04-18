@@ -31,7 +31,6 @@ $(document).ready(function() {
         $(".generic_table").last().append("<div class='generic_info_table'></div>")
         $(".generic_info_table").last().append("<div class='generic_info_image_landscape_purchase'></div>")
         $(".generic_info_image_landscape_purchase").last().append("<img src='" + film_purchase_obj['large_image_url'] + "' class='img_container_child_landscape'>")
-        $(".generic_info_table").last().append("<div class='generic_text_spacer'></div>")
-        $(".generic_info_table").last().append("<div class='generic_info_landscape_purchase'>" + film_purchase_obj['film_description'] + "</div>")
+        $(".generic_info_table").last().append("<div class='generic_info_landscape_purchase'><div class='generic_text_spacer'></div>" + film_purchase_obj['film_description'] + "</div>")
     }
 })
