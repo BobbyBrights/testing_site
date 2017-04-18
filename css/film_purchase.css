@@ -434,6 +434,10 @@ a:hover .grey_container_img {
   position: relative;
   width: 850px;
   display: block; }
+  .accessible .purchase_table_end_buffer, .accessible_generic .purchase_table_end_buffer {
+    display: table;
+    width: 100%;
+    height: 75px; }
   .accessible .purchase_table, .accessible_generic .purchase_table {
     width: 850px;
     height: 100px;

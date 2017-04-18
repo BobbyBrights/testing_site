@@ -37,6 +37,8 @@ $(document).ready(function() {
     $(".generic_table").last().append("<div class='generic_spacer'></div>")
 
     getVolume(film_purchase_obj['volumes'])
+
+    $(".purchase_table").last().append("<div class='purchase_table_end_buffer'></div>")
 })
 
 function getVolume(volumes) {
