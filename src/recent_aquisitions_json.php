@@ -200,28 +200,28 @@ function getFilmIdStr($filmRecords) {
     return $film_id_str;
 }
 
-// function file_get_contents_retry($url) {
-//     $a = false;
-//     $i = 0;
-//     while($a == false && $i < 10)
-//     {
-//         $a = @file_get_contents($url);
-//         $i++;
-//         if ($a == false) {
-//             usleep(10);
-//         }
-//     }
-//     return $a;
-// }
+function file_get_contents_retry($url) {
+    $a = false;
+    $i = 0;
+    while($a == false && $i < 10)
+    {
+        $a = @file_get_contents($url);
+        $i++;
+        if ($a == false) {
+            usleep(10);
+        }
+    }
+    return $a;
+}
 
-// function convertQuotes($str) {
-//     $str = str_replace("‘", "'", $str);
-//     $str = str_replace("’", "'", $str);
-//     $str = str_replace("“", '"', $str);
-//     $str = str_replace("”", '"', $str);
-//     $str = str_replace("–", "-", $str);
-//     $str = str_replace("…", "...", $str);
-//     return $str;
-// }
+function convertQuotes($str) {
+    $str = str_replace("‘", "'", $str);
+    $str = str_replace("’", "'", $str);
+    $str = str_replace("“", '"', $str);
+    $str = str_replace("”", '"', $str);
+    $str = str_replace("–", "-", $str);
+    $str = str_replace("…", "...", $str);
+    return $str;
+}
 
 ?>
