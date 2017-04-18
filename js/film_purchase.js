@@ -55,6 +55,7 @@ function getVolume(volumes) {
         if (getContainerClass(volumes[i]['additional_text'])) {
             $(".volume_container").last().append("<div class='generic_spacer_sm'></div>")
             $(".volume_container").last().append("<div class='volume_additional_text_container'><div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'</div>" + volumes[i]['additional_text'] + "</div>")
+            $(".volume_container").last().append("<div class='generic_spacer_sm'></div>")
         }
 
         $(".volume_container").last().append("<div class='films_container'></div>")
