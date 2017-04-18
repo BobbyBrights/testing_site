@@ -1,6 +1,6 @@
 <?php
 
-//echo getRecentAquisitions();
+getRecentAquisitions();
 
 function getRecentAquisitions() {
     $host = "http://s219085.gridserver.com/";
