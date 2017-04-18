@@ -58,7 +58,7 @@ function getVolume(volumes) {
             $(".films_container").last().append("<div class='film_container'></div>")
 
             if (j != 0) {
-                $(".film_container").last().append("<div class='generic_spacer_sm'></div>")
+                $(".film_container").last().append("<div class='generic_spacer'></div>")
             }
 
             if (volumes[i]['volumes_contents'][j]['film_id']) {
