@@ -109,6 +109,26 @@ display: block;
                     .generic_info_table {
                         display: table;
 
+                        .generic_text {
+                            float: left;
+                            font-size: 14px;
+                            font-family: trade_gothic, sans-serif;
+
+                            b {
+                                font-weight: normal;
+                                font-family: trade_gothic_bold, sans-serif;
+                            }
+
+                            a, a:hover {
+                                text-decoration: none;
+                                color: #000;
+                            }
+
+                            a:hover {
+                                color: #009347;
+                            }
+                        }
+
                         .generic_info_image {
                             width: 253px;
                             height:188px;
