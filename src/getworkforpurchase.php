@@ -1,6 +1,6 @@
 <?php
 //require "film_json.php";
-echo getWorkForPurchaseJson(4428);
+getWorkForPurchaseJson(4428);
 
 function getWorkForPurchaseJson($film_number) {
     $host = "http://s219085.gridserver.com/";
@@ -9,7 +9,7 @@ function getWorkForPurchaseJson($film_number) {
 
     $data_cms = simplexml_load_string(file_get_contents_retry($cms_work_for_purchase_url));
 
-    //print_r($data_cms);
+    print_r($data_cms);
 
     if (!$data_cms) {
         return "";
