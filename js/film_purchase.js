@@ -57,11 +57,28 @@ function getVolume(volumes) {
             $(".films_container").last().append("<div class='film_container'></div>")
             $(".film_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_img'></div>")
             if (volumes[i]['volumes_contents'][j]['image_url']) {
-                $("." + getContainerClass(volumes[i]['link_colour']) + "_img").last().append("<img src='" + volumes[i]['volumes_contents'][j]['image_url'] + "' class='film_still_container_child'>")
+                getStill(volumes[i]['volumes_contents'][j], getContainerClass(volumes[i]['link_colour']) + "_img")
             }
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
     }
+}
+
+function getStill(film_object, img_container) {
+    containerw = 253
+    containerh = 188
+    if (film_object['still_width'] < containerw || film_object['still_height'] < containerh) {
+        $('.' + img_container).last().append("<img src='" + film_object['still'] + "' class='film_still_container_child'>")
+    }
+    else if (film_object['still_width'] == 740) {
+        $('.' + img_container).last().append("<img src='" + film_object['still'] + "' class='film_still_container_child'>")
+        $('.' + img_container + " > img").last().width(containerw + 90)
+    }
+    else {
+        $('.' + img_container).last().append("<img src='" + film_object['still'] + "' class='film_still_container_child'>")
+        $('.' + img_container + " > img").last().width(containerw)
+    }
+
 }
 
 function getContainerClass(colour) {
