@@ -206,7 +206,7 @@
             /* Firefox 18- */
             color: #A29F9F; }
           .bar .hiddenbar .left_links .signin_form .input_space .border_line {
-            border-bottom: 2px solid #000000;
+            border-bottom: 1px solid #000000;
             width: auto;
             top: 5px; }
         .bar .hiddenbar .left_links .signin_form .button {
