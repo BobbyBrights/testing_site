@@ -83,8 +83,10 @@ function getVolume(volumes) {
                 $("." + getContainerClass(volumes[i]['link_colour']) + "_text").last().append(volumes[i]['volumes_contents'][j]['filmmakers'])
             }
 
-            volume_film_details = film_details(volumes[i]['volumes_contents'][j])
             alert(volumes[i]['link_colour'])
+
+            volume_film_details = film_details(volumes[i]['volumes_contents'][j])
+            
             alert(volume_film_details)
             alert(volumes[i]['link_colour'])
 
