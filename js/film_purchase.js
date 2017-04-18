@@ -34,5 +34,5 @@ $(document).ready(function() {
         $(".generic_info_table").last().append("<div class='generic_info_landscape_purchase'><div class='generic_text_spacer_lg'></div>" + film_purchase_obj['film_description'] + "</div>")
     }
 
-    $(".generic_info_table").last().append("<div class='generic_text_spacer'></div>")
+    $(".generic_table").last().append("<div class='generic_spacer_sm'></div>")
 })

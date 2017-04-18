@@ -70,6 +70,10 @@
             width: 100%;
             height: 30px;
             display: table; }
+          .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_spacer_sm, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_spacer_sm {
+            width: 100%;
+            height: 15px;
+            display: table; }
           .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_spacer_purchase, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .generic_table .generic_spacer_purchase {
             width: 100%;
             height: 30px;
