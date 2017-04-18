@@ -88,6 +88,7 @@ function getStill(film_object, img_container) {
         $('.' + img_container).css("background-color", "#fff")
         $('.' + img_container).last().width(containerw)
         $('.' + img_container).last().height(containerh)
+        alert(film_object['image_url'])
     }
 
 }
