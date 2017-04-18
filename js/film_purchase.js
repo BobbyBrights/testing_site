@@ -79,7 +79,7 @@ function getStill(film_object, img_container) {
         $('.' + img_container).last().width(film_object['still_width'])
         $('.' + img_container).last().height(film_object['still_height'])
         alert(film_object['still_width'])
-        $('.' + img_container).last().css('margin-left', (537 - parseInt(film_object['still_width']))/2.0 + "px")
+        $('.' + img_container).last().css('margin-left', (253 - parseInt(film_object['still_width']))/2.0 + "px")
                 
     }
     else if (film_object['still_width'] == 740) {
