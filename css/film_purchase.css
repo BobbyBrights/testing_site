@@ -8,6 +8,9 @@
 
 .red_container_text {
   color: #000; }
+  .red_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .red_container_text a, .red_container_text a:hover {
     text-decoration: none;
     color: #000;
@@ -58,6 +61,9 @@ a:hover .red_container_img {
 
 .yellow_container_text {
   color: #000; }
+  .yellow_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .yellow_container_text a, .yellow_container_text a:hover {
     text-decoration: none;
     color: #000;
@@ -108,6 +114,9 @@ a:hover .yellow_container_img {
 
 .green_container_text {
   color: #000; }
+  .green_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .green_container_text a, .green_container_text a:hover {
     text-decoration: none;
     color: #000;
@@ -158,6 +167,9 @@ a:hover .green_container_img {
 
 .blue_container_text {
   color: #000; }
+  .blue_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .blue_container_text a, .blue_container_text a:hover {
     text-decoration: none;
     color: #000;
@@ -208,6 +220,9 @@ a:hover .blue_container_img {
 
 .orange_container_text {
   color: #000; }
+  .orange_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .orange_container_text a, .orange_container_text a:hover {
     text-decoration: none;
     color: #000;
@@ -258,6 +273,9 @@ a:hover .orange_container_img {
 
 .purple_container_text {
   color: #000; }
+  .purple_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .purple_container_text a, .purple_container_text a:hover {
     text-decoration: none;
     color: #000;
@@ -308,6 +326,9 @@ a:hover .purple_container_img {
 
 .black_container_text {
   color: #000; }
+  .black_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .black_container_text a, .black_container_text a:hover {
     text-decoration: none;
     color: #000;
@@ -358,6 +379,9 @@ a:hover .black_container_img {
 
 .grey_container_text {
   color: #000; }
+  .grey_container_text b {
+    font-family: trade_gothic_bold, sans-serif;
+    font-weight: normal; }
   .grey_container_text a, .grey_container_text a:hover {
     text-decoration: none;
     color: #000;

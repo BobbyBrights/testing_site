@@ -3,6 +3,11 @@
     .#{$name}_text {
         color: #000;
 
+        b {
+            font-family: trade_gothic_bold, sans-serif;
+            font-weight: normal;
+        }
+
         a, a:hover {
             text-decoration: none;
             color:#000;
