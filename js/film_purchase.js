@@ -86,6 +86,7 @@ function getVolume(volumes) {
             volume_film_details = film_details(volumes[i]['volumes_contents'][j])
 
             alert(volume_film_details)
+            alert(volumes[i]['link_colour'])
 
             if (volume_film_details) {
                 $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'></div>")
