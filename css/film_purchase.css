@@ -42,6 +42,11 @@
         .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container {
           width: 820px;
           display: table; }
+          .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_title_container, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_title_container {
+            display: table; }
+            .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_title_container .volume_title, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .volume_container .volume_title_container .volume_title {
+              font-family: trade_gothic_bold, sans-serif;
+              font-size: 18px; }
         .accessible .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer, .accessible_generic .purchase_table .purchase_table_cell_container .purchase_table_contents .contents_spacer {
           width: 100%;
           height: 30px;

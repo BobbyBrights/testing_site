@@ -60,6 +60,14 @@ display: block;
                     width: 820px;
                     display: table;
 
+                    .volume_title_container {
+                        display: table;
+
+                        .volume_title {
+                            font-family: trade_gothic_bold, sans-serif;
+                            font-size: 18px;
+                        }
+                    }
 
                 }
 
