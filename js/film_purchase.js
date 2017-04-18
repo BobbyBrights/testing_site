@@ -68,7 +68,7 @@ function getVolume(volumes) {
 
 
             $(".film_container").last().append("<div class='film_text_container'></div>")
-            $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text></div>")
+            $(".film_text_container").last().append("<div class='" + getContainerClass(volumes[i]['link_colour']) + "_text'>" + volumes[i]['volumes_contents'][j]['title'] + "</div>")
             
         }
         $(".generic_table").last().append("<div class='generic_spacer'></div>")
