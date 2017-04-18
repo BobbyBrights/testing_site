@@ -120,6 +120,7 @@ display: block;
                             }
 
                             a, a:hover {
+                                cursor: pointer;
                                 text-decoration: none;
                                 color: #000;
                             }
@@ -127,6 +128,10 @@ display: block;
                             a:hover {
                                 color: #009347;
                             }
+                        }
+
+                        .generic_text_spacer {
+                            height: 15px;
                         }
 
                         .generic_info_image {

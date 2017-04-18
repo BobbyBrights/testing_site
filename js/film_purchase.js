@@ -16,6 +16,7 @@ $(document).ready(function() {
 
     $(".generic_table").last().append("<div class='generic_info_table'></div>")
     $(".generic_info_table").last().append("<div class='generic_text'>by <b><a href='" + web_host + "filmmaker/1'> CFMDC Special Edition</a></b></div>")
+    $(".generic_info_table").last().append("<div class='generic_text_spacer'></div>")
 
     $(".generic_table").last().append("<div class='generic_info_table'></div>")
 
