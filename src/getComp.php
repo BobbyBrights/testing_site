@@ -107,13 +107,15 @@ function getCMSrecord($filmrecord, $records, $compRecord) {
     $record['country'] = (string) $filmrecord->field[7]->data;
     //$record['length'] = getTimeString((string) $filmrecord->field[3]->data);
 
-    if (strpos((string) $filmrecord->field[3]->data, ':') === false && !ctype_alpha((string) $filmrecord->field[3]->data)) {
-        $record["length"] = getTimeString((string) $filmrecord->field[6]->data);
-    } 
-    else {
-        $record["length"] = (string) $filmrecord->field[6]->data;
+    if ((string) $filmrecord->field[6]->data) {
+        if (strpos((string) $filmrecord->field[3]->data, ':') === false && !ctype_alpha((string) $filmrecord->field[3]->data)) {
+            $record["length"] = getTimeString((string) $filmrecord->field[6]->data);
+        } 
+        else {
+            $record["length"] = (string) $filmrecord->field[6]->data;
+        }
     }
-
+    
     for ($i = 0; $i < count($records); $i++) {
         if ((string) $records[$i]->field_filemaker_film_id->value == $record['film_id']) {
             $old_still = (string) $records[$i]->field_old_web_still_optional_->url;
