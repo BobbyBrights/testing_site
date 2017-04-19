@@ -90,17 +90,6 @@ $(document).ready(function() {
             $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
         }
 
-        $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><a href='" + web_host + "feeschedule'><div class='inquire'><b>INQUIRE ABOUT FILM SALES + RENTALS</b></div></a></div>")
-
-        $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_end_buffer'></div>")
-        // right cell
-
-        $('.film_table_content_right').append("<div class='film_table_inner_table'><div class='film_table_inner_row_top_image_spacer'>\
-        </div></div>")
-
-        // still
-        $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_still'><div class='film_still_container'></div></div>")
-
         exhibition_format_exists = film_obj['exhibition_format'] && film_obj['exhibition_format'].length > 0 && film_obj['exhibition_format'][0]
 
         if (exhibition_format_exists) {
@@ -115,6 +104,19 @@ $(document).ready(function() {
 
             $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_genre_row'>" + exhibition_format_str + "</div>")
         }
+
+        $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><a href='" + web_host + "feeschedule'><div class='inquire'><b>INQUIRE ABOUT FILM SALES + RENTALS</b></div></a></div>")
+
+        $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_end_buffer'></div>")
+        // right cell
+
+        $('.film_table_content_right').append("<div class='film_table_inner_table'><div class='film_table_inner_row_top_image_spacer'>\
+        </div></div>")
+
+        // still
+        $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_still'><div class='film_still_container'></div></div>")
+
+        
 
         if (film_obj['still']) {
             $('.film_still_container').append('<img class="film_still_container_child" src="' + film_obj['still'] + '">')
