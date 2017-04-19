@@ -101,6 +101,21 @@ $(document).ready(function() {
         // still
         $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_still'><div class='film_still_container'></div></div>")
 
+        exhibition_format_exists = film_obj['exhibition_format'] && film_obj['exhibition_format'].length > 0 && film_obj['exhibition_format'][0]
+
+        if (exhibition_format_exists) {
+            $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
+            $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><b>Exhibition Format</b></div>")
+            
+            exhibition_format_str = ""
+
+            for (i=0; i<film_obj['exhibition_format'].length; i++) {
+                exhibition_format_str += "<div class='genre_category_list_entry'><span>" + film_obj['exhibition_format'][i] + "</span></div>"
+            }
+
+            $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_genre_row'>" + exhibition_format_str + "</div>")
+        }
+
         if (film_obj['still']) {
             $('.film_still_container').append('<img class="film_still_container_child" src="' + film_obj['still'] + '">')
             $('.film_still_container img').on('load', 
