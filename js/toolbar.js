@@ -514,7 +514,10 @@ $( document ).ready(function() {
 		if ($(".search_portion").hasClass("search_down")){
 			$(".search_portion").removeClass("search_down");
 			$(".search").removeClass("search_on")
-			$(".search_button").hide()
+			$(".search_portion").on('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
+				$(".search_button").hide()
+			})
+			
 		}
 		else {
 			$(".search_button").show()
@@ -861,7 +864,9 @@ function build_category_list(categories) {
 function hide_search() {
 	$(".search_portion").removeClass("search_down");
 	$(".search").removeClass("search_on")
-	$(".search_button").hide()
+	$(".search_portion").on('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
+		$(".search_button").hide()
+	})
 }
 
 function hide_hamburger() {$(".hidden_portion").removeClass("portion_down")}
@@ -905,7 +910,9 @@ function collapseToolbar() {
 	$(".hidden_portion").removeClass("portion_down");
 	$(".search_portion").removeClass("search_down")
 	$(".search").removeClass("search_on")
-	$(".search_button").hide()
+	$(".search_portion").on('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
+		$(".search_button").hide()
+	})
 
 	$(".warning").removeClass("warning_up")
 	$(".message").removeClass("message_up")
