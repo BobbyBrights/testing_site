@@ -182,7 +182,9 @@ function getGenreCategories(obj) {
 function getExhibition(obj) {
     str = ""
     for (k=0; k<obj.length; k++) {
-        str += "<div class='exhibition_list_entry'><span>" + obj[k] + "</span></div>"
+        if (obj[k]) {
+            str += "<div class='exhibition_list_entry'><span>" + obj[k] + "</span></div>"
+        }
     }
     return str
 }
