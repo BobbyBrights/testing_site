@@ -133,6 +133,7 @@ function writeRecords(records) {
 
         genre_exists = records[i]['genre'] && records[i]['genre'].length > 0 && records[i]['genre'][0]
         category_exists = (records[i]['category'] && records[i]['category'].length > 0 && records[i]['category'][0])
+        exhibition_exists = (records[i]['exhibition_format'] && records[i]['exhibition_format'].length > 0 && records[i]['exhibition_format'][0])
 
         // genre
         if (genre_exists) {
@@ -154,6 +155,19 @@ function writeRecords(records) {
             $(".search_table_content").append("<div class='genre_cat_table'></div>")
             $(".genre_cat_table").last().append(getGenreCategories(records[i]['category']))
         }
+
+        // category
+        if (exhibition_exists) {
+            if (genre_exists) {
+                $(".search_table_content").append("<div class='generic_spacer_genre_cat'></div>")
+            }
+            else {
+                $(".search_table_content").append("<div class='generic_spacer'></div>")
+            }
+            $(".search_table_content").append("<div class='genre_cat_heading'>Exhibition Format</div>")
+            $(".search_table_content").append("<div class='genre_cat_table'></div>")
+            $(".genre_cat_table").last().append(getExhibition(records[i]['exhibition_format']))
+        }
     }
 }
 
@@ -161,6 +175,14 @@ function getGenreCategories(obj) {
     str = ""
     for (k=0; k<obj.length; k++) {
         str += "<div class='genre_category_list_entry'><span>" + obj[k] + "</span></div>"
+    }
+    return str
+}
+
+function getExhibition(obj) {
+    str = ""
+    for (k=0; k<obj.length; k++) {
+        str += "<div class='exhibition_list_entry'><span>" + obj[k] + "</span></div>"
     }
     return str
 }

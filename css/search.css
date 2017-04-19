@@ -189,5 +189,22 @@
               border-radius: 0;
               padding: 5px 5px 2px 5px;
               margin-bottom: 11px; }
+          .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table .exhibition_list_entry {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            margin-top: 9px; }
+            .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table .exhibition_list_entry span {
+              font-weight: normal !important;
+              font-family: trade_gothic, sans-serif;
+              background: #D8D8D8;
+              line-height: 20px;
+              color: #000;
+              letter-spacing: -0.01em;
+              text-decoration: none;
+              border: none !important;
+              border-radius: 0;
+              padding: 5px 5px 2px 5px;
+              margin-bottom: 11px; }
 
 /*# sourceMappingURL=search.css.map */
