@@ -514,7 +514,7 @@ $( document ).ready(function() {
 		if ($(".search_portion").hasClass("search_down")){
 			$(".search_portion").removeClass("search_down");
 			$(".search").removeClass("search_on")
-			$(".search_portion").on('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
+			$(".search_portion").one('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
 				$(".search_button").hide()
 			})
 			
@@ -864,7 +864,7 @@ function build_category_list(categories) {
 function hide_search() {
 	$(".search_portion").removeClass("search_down");
 	$(".search").removeClass("search_on")
-	$(".search_portion").on('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
+	$(".search_portion").one('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
 		$(".search_button").hide()
 	})
 }
@@ -910,7 +910,7 @@ function collapseToolbar() {
 	$(".hidden_portion").removeClass("portion_down");
 	$(".search_portion").removeClass("search_down")
 	$(".search").removeClass("search_on")
-	$(".search_portion").on('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
+	$(".search_portion").one('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
 		$(".search_button").hide()
 	})
 
