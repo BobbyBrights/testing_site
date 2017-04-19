@@ -4,8 +4,6 @@
     @session_start();
 }
 
-getFilmJson(2818);
-
 function getFilmJson($film_number) {
 
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) {
@@ -23,8 +21,6 @@ function getFilmJson($film_number) {
 
     $data_fmpro = simplexml_load_string(file_get_contents_retry($fmpro_film_url));
     $data_cms = simplexml_load_string(file_get_contents_retry($cms_film_url));
-
-    print_r($data_fmpro->resultset->record);
 
     if (!$data_fmpro | $data_fmpro->resultset['count'] == 0) {
         return "";
