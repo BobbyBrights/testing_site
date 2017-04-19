@@ -93,6 +93,7 @@ function getFilmJson($film_number) {
         $json_film["is_publishable"] = $is_publishable;
         $json_film["vucavu_url"] = $vucavu_url;
         $json_film["category"] = explode("*", $category);
+        $json_film["exhibition_format"] = explode("*", $exhibition_format);
 
         if ($user_type > 0) {
             $json_film["old_preview_url_full"] = $old_preview_url_full;
