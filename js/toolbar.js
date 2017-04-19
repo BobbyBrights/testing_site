@@ -515,7 +515,9 @@ $( document ).ready(function() {
 			$(".search_portion").removeClass("search_down");
 			$(".search").removeClass("search_on")
 			$(".search_portion").one('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
-				$(".search_button").hide()
+				if (!$(this).hasClass("search_down")) {
+					$(".search_button").hide()
+				}
 			})
 			
 		}
@@ -865,7 +867,9 @@ function hide_search() {
 	$(".search_portion").removeClass("search_down");
 	$(".search").removeClass("search_on")
 	$(".search_portion").one('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
-		$(".search_button").hide()
+		if (!$(this).hasClass("search_down")) {
+			$(".search_button").hide()
+		}	
 	})
 }
 
@@ -911,7 +915,9 @@ function collapseToolbar() {
 	$(".search_portion").removeClass("search_down")
 	$(".search").removeClass("search_on")
 	$(".search_portion").one('webkitTransitionEnd oTransitionEnd transitionend msTransitionEnd', function() {
-		$(".search_button").hide()
+		if (!$(this).hasClass("search_down")) {
+			$(".search_button").hide()
+		}
 	})
 
 	$(".warning").removeClass("warning_up")
