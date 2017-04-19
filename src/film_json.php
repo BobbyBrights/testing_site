@@ -60,6 +60,8 @@ function getFilmJson($film_number) {
         $vimeo_preview_clip_id = (string) $data_fmpro->resultset->record->field[18]->data;
         $category = strtolower((string) $data_fmpro->resultset->record->field[19]->data);
 
+        $exhibition_format = strtolower((string) $data_fmpro->resultset->record->field[20]->data);
+
         // Provides Chicago style to synopsis
         $film_title_regex = preg_replace("|/|", "\/", $film_title);
         
