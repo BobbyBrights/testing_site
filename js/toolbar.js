@@ -514,8 +514,10 @@ $( document ).ready(function() {
 		if ($(".search_portion").hasClass("search_down")){
 			$(".search_portion").removeClass("search_down");
 			$(".search").removeClass("search_on")
+			$(".search").hide()
 		}
 		else {
+			$(".search").show()
 			$(".search_portion").addClass("search_down");
 			$(".search").addClass("search_on")
 			toolbarCollapsed = false;
@@ -859,6 +861,7 @@ function build_category_list(categories) {
 function hide_search() {
 	$(".search_portion").removeClass("search_down");
 	$(".search").removeClass("search_on")
+	$(".search").hide()
 }
 
 function hide_hamburger() {$(".hidden_portion").removeClass("portion_down")}
@@ -902,6 +905,7 @@ function collapseToolbar() {
 	$(".hidden_portion").removeClass("portion_down");
 	$(".search_portion").removeClass("search_down")
 	$(".search").removeClass("search_on")
+	$(".search").hide()
 
 	$(".warning").removeClass("warning_up")
 	$(".message").removeClass("message_up")
