@@ -84,13 +84,10 @@ $(document).ready(function() {
                 $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_category_row'>" + category_str + "</div>")
             }
 
-            if ((exhibition_format_exists &&  category_exists) || (exhibition_format_exists && genre_exists)) {
-                $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_list_spacer'></div>")
-            }
 
             if (exhibition_format_exists) {
                 if (genre_exists || category_exists) {
-                    $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_list_spacer'></div>")
+                    $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
                 }
                 $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><b>Exhibition Format</b></div>")
                 
