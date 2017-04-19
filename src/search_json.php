@@ -185,7 +185,7 @@ function getRecords($records) {
 
         $vimeo_preview_full_id = (string) $records[$i]->field[16]->data;
         $category = strtolower((string) $records[$i]->field[19]->data);
-
+        $exhibition_format = strtolower((string) $data_fmpro->resultset->record->field[20]->data);
         
         $single_record["country"] = $country;
         $single_record["year"] = $year;
@@ -206,6 +206,7 @@ function getRecords($records) {
         $single_record["film_id_number"] = $film_id_number;
         $single_record["client_id_number"] = $client_id_number;
         $single_record["filmmaker_name"] = getMainFilmmakerName($filmmaker_name);
+        $json_film["exhibition_format"] = explode("*", $exhibition_format);
         if ($secondary_filmmaker) {
             $single_record["secondary_filmmaker"] = getFilmmakerName($secondary_filmmaker);
         }
