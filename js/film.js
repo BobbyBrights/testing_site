@@ -94,7 +94,7 @@ $(document).ready(function() {
                 exhibition_format_str = ""
 
                 for (i=0; i<film_obj['exhibition_format'].length; i++) {
-                    exhibition_format_str += "<div class='genre_category_list_entry'><span>" + film_obj['exhibition_format'][i] + "</span></div>"
+                    exhibition_format_str += "<div class='exhibition_list_entry'><span>" + film_obj['exhibition_format'][i] + "</span></div>"
                 }
 
                 $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_genre_row'>" + exhibition_format_str + "</div>")
