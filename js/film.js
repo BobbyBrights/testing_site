@@ -54,8 +54,9 @@ $(document).ready(function() {
         // genre + category listing
         genre_exists = film_obj['genre'] && film_obj['genre'].length > 0 && film_obj['genre'][0]
         category_exists = (film_obj['category'] && film_obj['category'].length > 0 && film_obj['category'][0])
+        exhibition_format_exists = film_obj['exhibition_format'] && film_obj['exhibition_format'].length > 0 && film_obj['exhibition_format'][0]
 
-        if (genre_exists ||  category_exists) {
+        if (genre_exists ||  category_exists || exhibition_format_exists) {
             $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
             if (film_obj['genre'] && film_obj['genre'].length > 0 && film_obj['genre'][0]) {
                 $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><b>Genre</b></div>")
@@ -68,7 +69,7 @@ $(document).ready(function() {
                 $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_genre_row'>" + genre_str + "</div>")
             }
 
-            if (genre_exists ||  category_exists) {
+            if (genre_exists &&  category_exists) {
                 $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_list_spacer'></div>")
             }
 
@@ -83,26 +84,28 @@ $(document).ready(function() {
                 $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_category_row'>" + category_str + "</div>")
             }
 
+            if ((exhibition_format_exists &&  category_exists) || (exhibition_format_exists && genre_exists)) {
+                $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_list_spacer'></div>")
+            }
+
+            if (exhibition_format_exists) {
+                $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
+                $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><b>Exhibition Format</b></div>")
+                
+                exhibition_format_str = ""
+
+                for (i=0; i<film_obj['exhibition_format'].length; i++) {
+                    exhibition_format_str += "<div class='genre_category_list_entry'><span>" + film_obj['exhibition_format'][i] + "</span></div>"
+                }
+
+                $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_genre_row'>" + exhibition_format_str + "</div>")
+            }
+
             $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
         }
 
         else if (!genre_exists && !category_exists) {
             $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
-        }
-
-        exhibition_format_exists = film_obj['exhibition_format'] && film_obj['exhibition_format'].length > 0 && film_obj['exhibition_format'][0]
-
-        if (exhibition_format_exists) {
-            $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
-            $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><b>Exhibition Format</b></div>")
-            
-            exhibition_format_str = ""
-
-            for (i=0; i<film_obj['exhibition_format'].length; i++) {
-                exhibition_format_str += "<div class='genre_category_list_entry'><span>" + film_obj['exhibition_format'][i] + "</span></div>"
-            }
-
-            $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_genre_row'>" + exhibition_format_str + "</div>")
         }
 
         $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><a href='" + web_host + "feeschedule'><div class='inquire'><b>INQUIRE ABOUT FILM SALES + RENTALS</b></div></a></div>")
