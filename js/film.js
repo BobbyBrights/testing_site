@@ -90,7 +90,7 @@ $(document).ready(function() {
             $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
         }
 
-        $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><a href=''><div class='inquire'><b>INQUIRE ABOUT FILM SALES + RENTALS</b></div></a></div>")
+        $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_text'><a href='" + web_host + "feeschedule'><div class='inquire'><b>INQUIRE ABOUT FILM SALES + RENTALS</b></div></a></div>")
 
         $('.film_table_content_left > .film_table_inner_table').append("<div class='film_table_end_buffer'></div>")
         // right cell
