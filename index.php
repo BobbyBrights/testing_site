@@ -2,7 +2,7 @@
 <?php
 //header("Content-Type: text/html");
 
-$web_host = "http://s219085.gridserver.com/";
+$web_host = "http://www.cfmdc.org/";
 
 require 'addons/AltoRouter.php';
 $router = new AltoRouter();
