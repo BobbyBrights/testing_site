@@ -1,6 +1,6 @@
 <?php
 
-$host = "http://s219085.gridserver.com/";
+$host = "http://www.cfmdc.org/";
 
 //echo getPagesJson(2643);
 

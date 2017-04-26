@@ -3,7 +3,7 @@ String.prototype.trunc =
           return this.substr(0,n-1)+(this.length>n?'&hellip;':'');
       };
 
-var web_host = "http://s219085.gridserver.com/";
+var web_host = "http://www.cfmdc.org/";
 
 $(document).ready(function() {
     $(".contents").append("<div class='top_buffer'></div>")

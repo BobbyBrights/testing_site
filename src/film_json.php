@@ -13,7 +13,7 @@ function getFilmJson($film_number) {
         $user_type = 0;
     }
 
-    $host = "http://s219085.gridserver.com/";
+    $host = "http://www.cfmdc.org/";
 
     $fmpro_film_url = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_film&FilmIDnumber=" . $film_number . "&-max=1&-find";
     $cms_film_url = $host . "cms/api/film_stills/" . $film_number . "?_format=xml";

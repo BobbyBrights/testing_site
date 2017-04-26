@@ -1,4 +1,4 @@
-var web_host = "http://s219085.gridserver.com/";
+var web_host = "http://www.cfmdc.org/";
 
 //String.fromCharCode(97 + n)
 
