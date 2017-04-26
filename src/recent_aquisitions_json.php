@@ -3,7 +3,7 @@
 // getRecentAquisitions();
 
 function getRecentAquisitions() {
-    $host = "http://s219085.gridserver.com/";
+    $host = "http://www.cfmdc.org/";
 
     $fmpro_search_url = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_film&-script=promoted_films&-max=1000&-findall";
     $fmpro_cms = simplexml_load_string(file_get_contents_retry($fmpro_search_url));

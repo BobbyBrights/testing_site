@@ -1,7 +1,7 @@
 <?php
 
 function getFilmmakerJson($client_number) {
-    $host = "http://s219085.gridserver.com/";
+    $host = "http://www.cfmdc.org/";
 
     $fmpro_film_url = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_client&ClientIDnumber=" . $client_number . "&-max=1&-find";
 

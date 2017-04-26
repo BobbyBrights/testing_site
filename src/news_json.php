@@ -1,7 +1,7 @@
 <?php
 
 function getAllNews() {
-    $host = "http://s219085.gridserver.com/";
+    $host = "http://www.cfmdc.org/";
     $cms_news_url = $host . "cms/api/news?_format=xml";
     $data_cms = simplexml_load_string(file_get_contents_retry($cms_news_url));  
 
