@@ -1,15 +1,15 @@
 @font-face {
   font-family: league_gothic;
-  src: url("http://www.cfmdc.org/fonts/LeagueGothic-Regular.otf"); }
+  src: url("http://cfmdc.org/fonts/LeagueGothic-Regular.otf"); }
 @font-face {
   font-family: trade_gothic;
-  src: url("http://www.cfmdc.org/fonts/trade-gothic-lt-std.otf"); }
+  src: url("http://cfmdc.org/fonts/trade-gothic-lt-std.otf"); }
 @font-face {
   font-family: trade_gothic_bold;
-  src: url("http://www.cfmdc.org/fonts/trade-gothic-lt-std-bold.otf"); }
+  src: url("http://cfmdc.org/fonts/trade-gothic-lt-std-bold.otf"); }
 @font-face {
   font-family: trade_gothic_oblique;
-  src: url("http://www.cfmdc.org/fonts/trade-gothic-lt-std-oblique.otf"); }
+  src: url("http://cfmdc.org/fonts/trade-gothic-lt-std-oblique.otf"); }
 .toolbar_container {
   width: 850px;
   height: auto;
