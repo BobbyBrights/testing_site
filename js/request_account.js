@@ -299,8 +299,8 @@ $(document).ready(function() {
             $this = $(this);
             $.ajax({
                 type: "POST",
-                //url: web_host + "src/request_account_submit.php",
-                url: "src/request_account_submit.php",
+                url: "http://" + $(location).attr('hostname') + "src/request_account_submit.php",
+                //url: "src/request_account_submit.php",
                 data: $this.serialize()
             }).done(function(data) {
                 $(document.body).css({ 'cursor': 'default' })

@@ -498,8 +498,8 @@ $( document ).ready(function() {
 
 	$("#toolbar_signout").click(function() {
 		$.ajax({
-				//url: web_host + "src/logout.php",
-				url: "src/logout.php",
+				url: "http://" + $(location).attr('hostname') + "src/logout.php",
+				//url: "src/logout.php",
 			}).done(function(data) {
 				if (data == 1) {
 					location.reload();
@@ -678,8 +678,8 @@ function initiateLogin() {
 
 	if (uid && pass) {
 		$.ajax({
-			//url: web_host + "src/login.php",
-			url: "src/login.php",
+			url: "http://" + $(location).attr('hostname') + "src/login.php",
+			//url: "src/login.php",
 			type: "POST",
 			data:{"username":uid, "password":pass}
 		}).done(function(data) {
