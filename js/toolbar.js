@@ -461,7 +461,6 @@ $( document ).ready(function() {
 
 	//var currentDirectory = window.location.pathname.split('/').slice(0, -1).join('/')
 
-	alert($(location).attr('hostname'))
 
 	if (logged_in == 0) {
 		$(".bar").hide();
@@ -678,7 +677,7 @@ function initiateLogin() {
 
 	if (uid && pass) {
 		$.ajax({
-			url: "http://" + $(location).attr('hostname') + "src/login.php",
+			url: "http://" + $(location).attr('hostname') + "/src/login.php",
 			//url: "src/login.php",
 			type: "POST",
 			data:{"username":uid, "password":pass}
