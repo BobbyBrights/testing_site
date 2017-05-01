@@ -461,7 +461,7 @@ $( document ).ready(function() {
 
 	var currentDirectory = window.location.pathname.split('/').slice(0, -1).join('/')
 
-	alert(currentDirectory)
+	alert(window.location.pathname)
 
 	if (logged_in == 0) {
 		$(".bar").hide();
