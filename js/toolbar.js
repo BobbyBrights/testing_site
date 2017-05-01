@@ -678,7 +678,8 @@ function initiateLogin() {
 
 	if (uid && pass) {
 		$.ajax({
-			url: web_host + "src/login.php",
+			//url: web_host + "src/login.php",
+			url: "src/login.php",
 			type: "POST",
 			data:{"username":uid, "password":pass}
 		}).done(function(data) {
