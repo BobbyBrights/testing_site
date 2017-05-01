@@ -459,10 +459,9 @@ toolbarCollapsed = false;
 
 $( document ).ready(function() {
 
-	var loc = window.location.pathname;
-	var dir = loc.substring(0, loc.lastIndexOf('/'));
+	var currentDirectory = window.location.pathname.split('/').slice(0, -1).join('/')
 
-	alert(dir)
+	alert(currentDirectory)
 
 	if (logged_in == 0) {
 		$(".bar").hide();
