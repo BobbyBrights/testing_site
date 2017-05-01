@@ -299,7 +299,7 @@ $(document).ready(function() {
             $this = $(this);
             $.ajax({
                 type: "POST",
-                url: "http://" + $(location).attr('hostname') + "src/request_account_submit.php",
+                url: "http://" + $(location).attr('hostname') + "/src/request_account_submit.php",
                 //url: "src/request_account_submit.php",
                 data: $this.serialize()
             }).done(function(data) {

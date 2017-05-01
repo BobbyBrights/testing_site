@@ -497,7 +497,7 @@ $( document ).ready(function() {
 
 	$("#toolbar_signout").click(function() {
 		$.ajax({
-				url: "http://" + $(location).attr('hostname') + "src/logout.php",
+				url: "http://" + $(location).attr('hostname') + "/src/logout.php",
 				//url: "src/logout.php",
 			}).done(function(data) {
 				if (data == 1) {

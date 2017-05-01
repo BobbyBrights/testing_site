@@ -59,7 +59,7 @@ $(document).ready(function() {
             $(".message").removeClass("warning_up")
             $.ajax({
                 type: "POST",
-                url: "http://" + $(location).attr('hostname') + "src/forgot_password_submit.php",
+                url: "http://" + $(location).attr('hostname') + "/src/forgot_password_submit.php",
                 //url: "src/forgot_password_submit.php",
                 data: {"username":username, "email":email}
             }).done(function(data) {
