@@ -459,7 +459,7 @@ toolbarCollapsed = false;
 
 $( document ).ready(function() {
 
-	var currentDirectory = window.location.pathname.split('/').slice(0, -1).join('/')
+	//var currentDirectory = window.location.pathname.split('/').slice(0, -1).join('/')
 
 	//alert(window.location.pathname)
 
@@ -498,7 +498,8 @@ $( document ).ready(function() {
 
 	$("#toolbar_signout").click(function() {
 		$.ajax({
-				url: web_host + "src/logout.php",
+				//url: web_host + "src/logout.php",
+				url: "src/logout.php",
 			}).done(function(data) {
 				if (data == 1) {
 					location.reload();
