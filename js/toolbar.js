@@ -458,6 +458,12 @@ current_dist_scroll = 0;
 toolbarCollapsed = false;
 
 $( document ).ready(function() {
+
+	var loc = window.location.pathname;
+	var dir = loc.substring(0, loc.lastIndexOf('/'));
+
+	alert(dir)
+
 	if (logged_in == 0) {
 		$(".bar").hide();
 	}
