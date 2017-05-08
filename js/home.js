@@ -196,6 +196,7 @@ function addNewsCarousels() {
                 total_occupied += carousel_cur.find(".whats_new_blurb").height()
             }
             remaining_space = 340 - total_occupied
+            console.log(total_occupied)
             if (img_h > remaining_space) {
                 whats_new_img_container.height(remaining_space)
             }
