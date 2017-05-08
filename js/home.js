@@ -190,13 +190,15 @@ function addNewsCarousels() {
             whats_new_img_container = $(this).parent()
             carousel_cur = $(this).parent().parent().parent().parent()
             total_occupied = carousel_cur.find(".whats_new_heading").height()
+            console.log("title height:" + carousel_cur.find(".whats_new_heading").height())
             total_occupied += 8
             if (carousel_cur.find(".whats_new_blurb").length == 1) {
                 total_occupied += 16
                 total_occupied += carousel_cur.find(".whats_new_blurb").height()
+                console.log("blurb height:" + carousel_cur.find(".whats_new_blurb").height())
             }
             remaining_space = 340 - total_occupied
-            console.log(total_occupied)
+            console.log("total height:" + total_occupied)
             if (img_h > remaining_space) {
                 whats_new_img_container.height(remaining_space)
             }
