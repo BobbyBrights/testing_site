@@ -116,7 +116,8 @@ function addRecentAquisitionCarousels() {
             $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker)
         }
         else {
-            $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker + " / " + details)
+            //$(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker + " / " + details)
+            $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker)
         }
         
 
