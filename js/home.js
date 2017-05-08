@@ -184,7 +184,7 @@ function addNewsCarousels() {
         }
     }
 
-    setTimeout(function(){ 
+    //setTimeout(function(){ 
 
     //$(window).load( function() {
         $(".whats_new_img_container").find("img").each(function () {
@@ -210,7 +210,7 @@ function addNewsCarousels() {
                 }
             })
         })
-    }, 400)
+    //}, 400)
     //})
 }
 
