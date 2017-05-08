@@ -184,7 +184,7 @@ function addNewsCarousels() {
         }
     }
 
-    $(window).load( function() {
+    //$(window).load( function() {
         $(".whats_new_img_container").find("img").each(function () {
             $(this).load(function() {
                 img_h = $(this).height()
@@ -208,7 +208,7 @@ function addNewsCarousels() {
                 }
             })
         })
-    })
+    //})
 }
 
 function loadvimeochannels() {
