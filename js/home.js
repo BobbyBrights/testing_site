@@ -91,6 +91,7 @@ $(document).ready(function() {
     });
 
     $(window).load( function() {
+        alert('loaded')
         $(".whats_new_img_container").find("img").each(function () {
             $(this).load(function() {
                 img_h = $(this).height()
