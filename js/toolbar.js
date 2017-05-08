@@ -316,7 +316,7 @@ toolbar_contents += '			</div>\
 								<label for="celluloid_only_checkbox_input"></label>\
 							</div>\
 							<div class="celluloid_only_text"><b>Celluloid Only</b></div>\
-							<div class="celluloid_only_parens">(restricted to Super 8, 16mm, and 32mm)</div>\
+							<div class="celluloid_only_parens">(restricted to Super 8, 16mm, and 35mm)</div>\
 						</div>\
 						<div class="input_table">\
 							<div class="input_row">\
