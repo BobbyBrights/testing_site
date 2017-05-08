@@ -189,21 +189,19 @@ function addNewsCarousels() {
             img_h = $(this).height()
             whats_new_img_container = $(this).parent()
             carousel_cur = $(this).parent().parent().parent().parent()
-            carousel_cur.load(function () {
-                total_occupied = $(this).find(".whats_new_heading").height()
-                total_occupied += 8
-                if ($(this).find(".whats_new_blurb").length == 1) {
-                    total_occupied += 16
-                    total_occupied += $(this).find(".whats_new_blurb").height()
-                }
-                remaining_space = 340 - total_occupied
-                if (img_h > remaining_space) {
-                    whats_new_img_container.height(remaining_space)
-                }
-                else {
-                    whats_new_img_container.height(img_h)
-                }
-            })
+            total_occupied = carousel_cur.find(".whats_new_heading").height()
+            total_occupied += 8
+            if (carousel_cur.find(".whats_new_blurb").length == 1) {
+                total_occupied += 16
+                total_occupied += carousel_cur.find(".whats_new_blurb").height()
+            }
+            remaining_space = 340 - total_occupied
+            if (img_h > remaining_space) {
+                whats_new_img_container.height(remaining_space)
+            }
+            else {
+                whats_new_img_container.height(img_h)
+            }
         })
 
     })
