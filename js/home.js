@@ -210,7 +210,7 @@ function addNewsCarousels() {
                 }
             })
         })
-    }, 40)
+    }, 400)
     //})
 }
 
