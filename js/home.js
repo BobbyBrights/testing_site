@@ -185,7 +185,7 @@ function addNewsCarousels() {
     }
 
     $(".whats_new_img_container").find("img").each(function () {
-        $(this).load(function() {
+        $(window).load(function() {
             img_h = $(this).height()
             whats_new_img_container = $(this).parent()
             carousel_cur = $(this).parent().parent().parent().parent()
