@@ -190,7 +190,7 @@ function addNewsCarousels() {
             whats_new_img_container = $(this).parent()
             carousel_cur = $(this).parent().parent().parent().parent()
             total_occupied = carousel_cur.find(".whats_new_heading").height()
-            alert(total_occupied)
+            alert(carousel_cur.find(".whats_new_blurb").height())
             total_occupied += 8
             if (carousel_cur.find(".whats_new_blurb").length == 1) {
                 total_occupied += 16
