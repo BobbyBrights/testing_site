@@ -28,6 +28,8 @@ function getAllNews() {
             $news['news_blurb'] = convertQuotes($news['news_blurb']);
 
             $news['news_thumbnail'] = (string) $data_cms->item[$i]->field_thumbnail->url;
+            $news['news_thumbnail_width'] = (string) $data_cms->item[$i]->field_thumbnail->width;
+            $news['news_thumbnail_height'] = (string) $data_cms->item[$i]->field_thumbnail->height;
 
             $news['news_nid'] = (string) $data_cms->item[$i]->nid->value;
  

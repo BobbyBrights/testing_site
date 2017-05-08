@@ -169,6 +169,12 @@ function addNewsCarousels() {
             $("a").last().append("<div class='spacer'></div>")
             $("a").last().append("<div class='whats_new_img'></div>")
             $(".whats_new_img").last().append("<div class='whats_new_img_container'><img class='whats_new_img_container_child' src='" + news_json[i]['news_thumbnail'] + "'></div>")
+            if news_json[i]['news_thumbnail_width'] > 378 {
+                $(".whats_new_img_container_child").find("img").last().height(378 * (news_json[i]['news_thumbnail_width']/news_json[i]['news_thumbnail_height']))
+            }
+            else {
+                $(".whats_new_img_container_child").find("img").last().height(news_json[i]['news_thumbnail_height'])
+            }
         }
         if (news_json[i]['news_blurb']) {
             $(".whats_new_contents_table").last().append("<div class='spacer'></div>")
