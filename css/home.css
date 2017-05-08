@@ -17,7 +17,7 @@
       border-top: 1px solid #009347;
       position: relative; }
       .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .title {
-        font-family: league_gothic, sans-serif;
+        font-family: league_gothic, arial, sans-serif;
         font-size: 30px;
         margin-top: 11px;
         color: #009347;
@@ -40,10 +40,10 @@
             display: table;
             width: 313px; }
             .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .carousel-cell .recent_aquisitions_contents_table b {
-              font-family: trade_gothic_bold, sans-serif;
+              font-family: trade_gothic_bold, arial, sans-serif;
               font-weight: normal; }
             .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .carousel-cell .recent_aquisitions_contents_table i {
-              font-family: trade_gothic_italic, sans-serif;
+              font-family: trade_gothic_italic, arial, sans-serif;
               font-weight: normal; }
             .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .carousel-cell .recent_aquisitions_contents_table a {
               color: #000;
@@ -55,7 +55,7 @@
             .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .carousel-cell .recent_aquisitions_contents_table .recent_aquisitions_details {
               display: table-row;
               font-size: 14px;
-              font-family: trade_gothic, sans-serif; }
+              font-family: trade_gothic, arial, sans-serif; }
             .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .carousel-cell .recent_aquisitions_contents_table .recent_aquisitions_img {
               display: table-row; }
               .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .carousel-cell .recent_aquisitions_contents_table .recent_aquisitions_img .recent_aquisitions_img_container {
@@ -109,7 +109,7 @@
       border-top: 1px solid #0082B8;
       position: relative; }
       .landing_page_table .whats_new_row .whats_new_cell .title {
-        font-family: league_gothic, sans-serif;
+        font-family: league_gothic, arial, sans-serif;
         font-size: 30px;
         margin-top: 11px;
         color: #0082B8;
@@ -132,10 +132,10 @@
             display: table;
             width: 378px; }
             .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .carousel-cell .whats_new_contents_table b {
-              font-family: trade_gothic_bold, sans-serif;
+              font-family: trade_gothic_bold, arial, sans-serif;
               font-weight: normal; }
             .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .carousel-cell .whats_new_contents_table i {
-              font-family: trade_gothic_italic, sans-serif;
+              font-family: trade_gothic_italic, arial, sans-serif;
               font-weight: normal; }
             .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .carousel-cell .whats_new_contents_table a {
               color: #000;
@@ -147,11 +147,11 @@
             .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .carousel-cell .whats_new_contents_table .whats_new_heading {
               display: table-row;
               font-size: 14px;
-              font-family: trade_gothic_bold, sans-serif; }
+              font-family: trade_gothic_bold, arial, sans-serif; }
             .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .carousel-cell .whats_new_contents_table .whats_new_blurb {
               display: table-row;
               font-size: 14px;
-              font-family: trade_gothic, sans-serif; }
+              font-family: trade_gothic, arial, sans-serif; }
             .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .carousel-cell .whats_new_contents_table .whats_new_img {
               display: table-row; }
               .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .carousel-cell .whats_new_contents_table .whats_new_img .whats_new_img_container {
@@ -206,7 +206,7 @@
       border-top: 1px solid #6F3296;
       position: relative; }
       .landing_page_table .social_feed_cfmdc_tv_row .social_feed_cell .title {
-        font-family: league_gothic, sans-serif;
+        font-family: league_gothic, arial, sans-serif;
         font-size: 30px;
         margin-top: 11px;
         color: #6F3296;
@@ -244,12 +244,12 @@
         width: .7rem;
         cursor: pointer; }
       .landing_page_table .social_feed_cfmdc_tv_row .social_feed_cell .facebook_event_container {
-        font-family: trade_gothic, sans-serif;
+        font-family: trade_gothic, arial, sans-serif;
         font-size: 14px;
         line-height: 21px;
         color: #000; }
         .landing_page_table .social_feed_cfmdc_tv_row .social_feed_cell .facebook_event_container b {
-          font-family: trade_gothic_bold, sans-serif;
+          font-family: trade_gothic_bold, arial, sans-serif;
           font-weight: normal; }
         .landing_page_table .social_feed_cfmdc_tv_row .social_feed_cell .facebook_event_container a {
           color: #000;
@@ -286,7 +286,7 @@
       width: 48%;
       border-top: 1px solid #E22134; }
       .landing_page_table .social_feed_cfmdc_tv_row .cfmdc_tv_cell .title {
-        font-family: league_gothic, sans-serif;
+        font-family: league_gothic, arial, sans-serif;
         font-size: 30px;
         line-height: 26px;
         margin-top: 11px;
@@ -302,9 +302,9 @@
         margin-left: 15px;
         margin-top: 17px;
         font-size: 14px;
-        font-family: trade_gothic, sans-serif; }
+        font-family: trade_gothic, arial, sans-serif; }
         .landing_page_table .social_feed_cfmdc_tv_row .cfmdc_tv_cell .vimeo_container b {
-          font-family: trade_gothic_bold, sans-serif;
+          font-family: trade_gothic_bold, arial, sans-serif;
           font-weight: normal; }
         .landing_page_table .social_feed_cfmdc_tv_row .cfmdc_tv_cell .vimeo_container a {
           color: #000;
@@ -351,7 +351,7 @@
           .landing_page_table .featured_films_row a .featured_films_cell .featured_films img {
             width: 850px; }
         .landing_page_table .featured_films_row a .featured_films_cell .featured_films_text {
-          font-family: trade_gothic, sans-serif;
+          font-family: trade_gothic, arial, sans-serif;
           font-size: 14px;
           line-height: 21px;
           height: 30px;
@@ -362,7 +362,7 @@
             text-align: right;
             width: 850px; }
           .landing_page_table .featured_films_row a .featured_films_cell .featured_films_text b {
-            font-family: trade_gothic_bold, sans-serif;
+            font-family: trade_gothic_bold, arial, sans-serif;
             font-weight: normal; }
         .landing_page_table .featured_films_row a .featured_films_cell .featured_films_spacer {
           height: 23px;
