@@ -212,7 +212,9 @@ function addNewsCarousels() {
 }
 
 $(window).load( function() {
+    console.log("here1")
     $(".whats_new_img_container").find("img").each(function () {
+        console.log("here2")
         $(this).load(function() {
             img_h = $(this).height()
             console.log("here")
