@@ -6,8 +6,7 @@ String.prototype.trunc =
           return this.substr(0,n-1)+(this.length>n?'&hellip;':'');
       };
 
-//$(document).ready(function() {
-$(window).load( function() {   
+$(document).ready(function() {
     $(".contents").append("<div class='top_buffer'></div>")
     $(".contents").append("<div class='landing_page_table'></div>")
 
