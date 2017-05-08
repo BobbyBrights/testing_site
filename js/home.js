@@ -215,6 +215,7 @@ $(window).load( function() {
     $(".whats_new_img_container").find("img").each(function () {
         $(this).load(function() {
             img_h = $(this).height()
+            console.log("here")
             whats_new_img_container = $(this).parent()
             carousel_cur = $(this).parent().parent().parent().parent()
             total_occupied = carousel_cur.find(".whats_new_heading").height()
