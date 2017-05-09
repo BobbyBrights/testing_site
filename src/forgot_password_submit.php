@@ -9,10 +9,10 @@ $user_email = trim($_REQUEST['email']);
 
 require ('../cms/pass_check.php');
 
-$servername = "external-db.s219085.gridserver.com";
-$username = "db219085_admin";
+$servername = "external-db.s220335.gridserver.com";
+$username = "db220335";
 $password = "XQ245_Qfhuz";
-$database = "db219085_cfmdc";
+$database = "db220335_cfmdc";
 
 $mysqli = new mysqli($servername, $username, $password, $database);
 
