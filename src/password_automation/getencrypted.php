@@ -19,7 +19,7 @@ echo $pass;
 echo "/n";
 echo $enc_pass;
 
-if ($pass_func->check("qLXbfE7J", "$S$EVkShpAjmOmUSU6YN8qS1fYOQkh0aVOvWSxqzTDu7d1omOirhBKY")) {
+if ($pass_func->check('qLXbfE7J', '$S$EVkShpAjmOmUSU6YN8qS1fYOQkh0aVOvWSxqzTDu7d1omOirhBKY')) {
 	echo "hi";
 }
 else {
