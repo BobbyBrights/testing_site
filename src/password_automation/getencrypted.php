@@ -17,7 +17,7 @@ $pass = generatePassword(8);
 $enc_pass = $pass_func->hash($pass);
 echo $pass . " " . $enc_pass;
 
-if ($pass_func->check("fkmsoi6k", "$S$EtSJiITwPcAxbLoHRZYTb85dPSVEXZpf8EQ5xiDrOT/spLOPthJI")) {
+if ($pass_func->check("8hhkZJUP", "$S$EeAHHoK/tRv7JOshOmgKBOt20pZCaV1zLInv5lbDmW40BGKSJ6br")) {
 	echo "hi";
 }
 else {
