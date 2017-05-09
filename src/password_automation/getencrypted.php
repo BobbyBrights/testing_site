@@ -15,5 +15,5 @@ function getRandomBytes($nbBytes = 32)
 
 $pass = generatePassword(8);
 $enc_pass = $pass_func->hash($pass);
-echo $enc_pass;
+echo $pass . " " . $enc_pass;
 ?>
