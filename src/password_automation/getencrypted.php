@@ -15,14 +15,5 @@ function getRandomBytes($nbBytes = 32)
 
 $pass = generatePassword(8);
 $enc_pass = $pass_func->hash($pass);
-echo $pass; 
-echo "\n";
-echo $enc_pass;
-
-if ($pass_func->check('fkmsoi6k', '$S$EtSJiITwPcAxbLoHRZYTb85dPSVEXZpf8EQ5xiDrOT/spLOPthJI')) {
-	echo "hi";
-}
-else {
-	echo "nope";
-}
+echo $pass . " " . $enc_pass;
 ?>
