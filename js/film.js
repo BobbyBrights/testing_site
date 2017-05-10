@@ -187,12 +187,7 @@ $(document).ready(function() {
             else if (film_obj['old_preview_url_full'] || film_obj['old_preview_url_clip']) {
                 $('.film_table_content_right > .film_table_inner_table').append('<div class="film_table_inner_video_placeholder"></div>')
                 $('.film_table_content_right > .film_table_inner_table').append("<div class='video_links'></div>")
-                if (film_obj['old_preview_url_full']) {
-                    $('.film_table_inner_video').append('<div id="film_table_inner_video_preview"></div>')
-                    getJWPlayerStr(film_obj['old_preview_url_full'], film_obj, jwplayer("film_table_inner_video_preview"))
-                    $('.video_links').append("<div class='full_preview'><b>FULL PREVIEW</b></div>")
-                    $(".full_preview").addClass("link_on")
-                }
+
                 if (film_obj['old_preview_url_clip']) {
                     $('.film_table_inner_video').append('<div id="film_table_inner_video_clip"></div>')
                     $('#film_table_inner_video_preview').hide()
@@ -202,6 +197,14 @@ $(document).ready(function() {
                         $(".clip_link").addClass("link_on")
                     }   
                 }
+                
+                if (film_obj['old_preview_url_full']) {
+                    $('.film_table_inner_video').append('<div id="film_table_inner_video_preview"></div>')
+                    getJWPlayerStr(film_obj['old_preview_url_full'], film_obj, jwplayer("film_table_inner_video_preview"))
+                    $('.video_links').append("<div class='full_preview'><b>FULL PREVIEW</b></div>")
+                    $(".full_preview").addClass("link_on")
+                }
+                
 
                 if (film_obj['old_preview_url_full'] && film_obj['old_preview_url_clip']) {
                     $(".full_preview").click(function() {
