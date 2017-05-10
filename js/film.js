@@ -198,6 +198,7 @@ $(document).ready(function() {
                     }   
                 }
                 
+
                 if (film_obj['old_preview_url_full']) {
                     $('.film_table_inner_video').append('<div id="film_table_inner_video_preview"></div>')
                     getJWPlayerStr(film_obj['old_preview_url_full'], film_obj, jwplayer("film_table_inner_video_preview"))
