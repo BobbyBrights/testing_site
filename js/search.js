@@ -64,6 +64,7 @@ $(document).ready(function() {
 
             writeRecords(search_obj['records'])
 
+			$(".search_table_content").append("<div class='info_bar'></div>");
             $(".info_bar").last().append("<div class='preview_element_container'></div>")
             $(".preview_element_container").append("<div class='preview_text'>preview available</div>")
             $(".preview_element_container").append("<div class='preview_spacer'></div>")
@@ -73,7 +74,7 @@ $(document).ready(function() {
 
             if (!$(".search_spacer").last().visible()) {
                 if (page != 1 || number_pages != 1) {
-                    $(".search_table_content").append("<div class='info_bar'></div>");
+                    //$(".search_table_content").append("<div class='info_bar'></div>");
                     $(".info_bar").append("<div class='page_mover'></div>")
                     if (page != "1") {
                         $(".page_mover").last().append("<div class='left_arrow'><a href='" + web_host + "search/" + query + "/" + (page - 1) + "'><</a></div>")
