@@ -41,12 +41,12 @@ $(document).ready(function() {
 
             $(".search_table_content").append("<div class='info_bar'></div>");
             
-            if (user_type > 0) {
+            // if (user_type > 0) {
                 $(".info_bar").append("<div class='preview_element_container'></div>")
                 $(".preview_element_container").append("<div class='preview_text'>preview available</div>")
                 $(".preview_element_container").append("<div class='preview_spacer'></div>")
                 $(".preview_element_container").append("<div class='preview_marker'></div>")
-            }
+            // }
 
             if (page != 1 || number_pages != 1) {
                 $(".info_bar").append("<div class='page_mover'></div>")
@@ -94,7 +94,8 @@ function writeRecords(records) {
         // title
         film_title = records[i]['film_title']
         film_id = records[i]['film_id_number']
-        if (i != 0 || user_type > 0) {
+        // if (i != 0 || user_type > 0) {
+        if (i != 0) {
             $(".search_table_content").append("<div class='search_spacer'></div>")
         }
         $(".search_table_content").append("<div class='film_title'></div>")
