@@ -90,7 +90,13 @@ function getMainFilmmakerName($filmmaker) {
 function getCMSrecord($filmrecord, $records, $compRecord) {
     $record = array();
 
-    $record['description'] = (string) $compRecord->field_film_description->value;
+    if ($compRecord->field_film_description->value) {
+        $record['description'] = (string) $compRecord->field_film_description->value;
+    }
+    else {
+        $record['description'] = (string) $filmrecord->field[21]->data;
+    }
+    
     $record['description'] = preg_replace ("/<p>(\s*)/", "", $record['description']);
     $record['description'] = preg_replace ("/(\s*)<\/p>(\s*)/", "<br><br>", $record['description']);
     $record['description'] = preg_replace ("/<br><br>$/", "", $record['description']);
