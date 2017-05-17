@@ -118,11 +118,12 @@ $(document).ready(function() {
         </div></div>")
 
         // still
-        $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_still'><div class='film_still_container'></div></div>")
+        // $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_still'><div class='film_still_container'></div></div>")
 
         
 
         if (film_obj['still']) {
+            $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_still'><div class='film_still_container'></div></div>")
             $('.film_still_container').append('<img class="film_still_container_child" src="' + film_obj['still'] + '">')
             $('.film_still_container img').on('load', 
                 function() {
