@@ -145,9 +145,13 @@
                                 .film_still_container {
                                     width: 253px;
                                     height: 188px;
-                                    background-color: #D8D8D8;
+                                    background-color: #000;
                                     overflow: hidden;
                                     position: relative;
+
+                                    .no_still {
+                                        background-color: #fff;
+                                    }
 
                                     .film_still_container_child {
                                         position: absolute;
