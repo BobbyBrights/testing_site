@@ -144,7 +144,10 @@ $(document).ready(function() {
 
         // video clip
         if (film_obj['old_preview_url_full'] || film_obj['vimeo_preview_full_id'] || film_obj['old_preview_url_clip'] || film_obj['vimeo_preview_clip_id']) {
-            $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
+            if (film_obj['still']) {
+                $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_row_text_spacer'></div>")
+            }
+            
             $('.film_table_content_right > .film_table_inner_table').append("<div class='film_table_inner_video'></div>")
 
             // vimeo
