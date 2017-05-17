@@ -19,7 +19,7 @@ function getComp($nid) {
 
     if (!empty($film_id_str)) {
         $fmp_film_id_link = str_replace("+", "%2B", $film_id_str);
-        $fmp_link = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_film&-script=multi_search_film_id&-script.param=" . $fmp_film_id_link . "&-max=1000&-findall";
+        $fmp_link = "http://n462.fmphost.com/fmi/xml/fmresultset.xml?-db=cfmdc_full&-lay=web_film&-script=multi_search_film_id_public&-script.param=" . $fmp_film_id_link . "&-max=1000&-findall";
 
         $data_fmp = simplexml_load_string(file_get_contents_retry($fmp_link));
 
