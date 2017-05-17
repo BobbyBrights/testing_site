@@ -97,7 +97,6 @@ function getCMSrecord($filmrecord, $records, $compRecord) {
         $record['description'] = (string) $filmrecord->field[21]->data;
     }
 
-    $record['description'] = (string) $compRecord->field_film_description_classroom->value;
     $record['description'] = preg_replace ("/<p>(\s*)/", "", $record['description']);
     $record['description'] = preg_replace ("/(\s*)<\/p>(\s*)/", "<br><br>", $record['description']);
     $record['description'] = preg_replace ("/<br><br>$/", "", $record['description']);
