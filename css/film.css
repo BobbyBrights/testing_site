@@ -177,7 +177,7 @@
       .accessible .film_table .film_table_inner_table .film_still_container {
         width: 380px;
         height: 265px;
-        background-color: #D8D8D8;
+        background-color: #000;
         overflow: hidden;
         position: relative; }
         .accessible .film_table .film_table_inner_table .film_still_container .film_still_container_child {
