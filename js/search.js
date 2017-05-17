@@ -101,7 +101,8 @@ function writeRecords(records) {
         $(".search_table_content").append("<div class='film_title'></div>")
         $(".film_title").last().append("<div class='title'></div>")
         $(".title").last().append("<a href='" + web_host + "film/" + film_id + "'>" + film_title + "</a>")
-        if (records[i]['is_preview'] && user_type > 0) {
+        // if (records[i]['is_preview'] && user_type > 0) {
+        if (records[i]['is_preview']) {
             $(".film_title").last().append("<div class='preview_spacer'></div>")
             $(".film_title").last().append("<div class='preview_marker'></div>")
         }
