@@ -64,6 +64,7 @@ function getFilmography(filmography) {
         $('.filmmaker_table_filmmaker_filmography_row').last().append("<div class='filmmaker_table_filmography_film_cell'><a href='" + link + "'></a></div>")
         $('.filmmaker_table_filmography_film_cell > a').last().append("<div class='film_still_container'></div>")
         if (filmography[i]['still']) {
+            $(".film_still_container").last().addClass("has_still")
             getStill(filmography[i])
         }
         $('.filmmaker_table_filmography_film_cell > a').last().append("<div class='film_pre_spacer'></div>")

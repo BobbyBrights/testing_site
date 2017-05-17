@@ -95,11 +95,11 @@
                 .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_still_container {
                   width: 253px;
                   height: 188px;
-                  background-color: #000;
+                  background-color: #fff;
                   overflow: hidden;
                   position: relative; }
-                  .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_still_container .no_still {
-                    background-color: #fff; }
+                  .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_still_container .with_still {
+                    background-color: #000; }
                   .accessible .filmmaker_table .filmmaker_table_cell_container .filmmaker_table_cell_centre .filmmaker_table_filmmaker_filmography .filmmaker_table_filmmaker_filmography_row .filmmaker_table_filmography_film_cell a .film_still_container .film_still_container_child {
                     position: absolute;
                     top: -9999px;
