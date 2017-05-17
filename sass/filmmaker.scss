@@ -140,11 +140,15 @@
                             a {
                                 color: #000;
                                 text-decoration: none; /* no underline */
+
+                                .film_still_container.with_still {
+                                    background-color: #000;
+                                }
                             
                                 .film_still_container {
                                     width: 253px;
                                     height: 188px;
-                                    background-color: #D8D8D8;
+                                    background-color: #fff;
                                     overflow: hidden;
                                     position: relative;
 
