@@ -64,13 +64,13 @@ $(document).ready(function() {
 
             writeRecords(search_obj['records'])
 
+            $(".search_table_content").append("<div class='search_spacer'></div>")
+
 			$(".search_table_content").append("<div class='info_bar'></div>");
             $(".info_bar").last().append("<div class='preview_element_container'></div>")
             $(".preview_element_container").append("<div class='preview_text'>preview available</div>")
             $(".preview_element_container").append("<div class='preview_spacer'></div>")
             $(".preview_element_container").append("<div class='preview_marker'></div>")
-
-            $(".search_table_content").append("<div class='search_spacer'></div>")
 
             if (!$(".search_spacer").last().visible()) {
                 if (page != 1 || number_pages != 1) {
