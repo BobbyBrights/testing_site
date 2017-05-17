@@ -42,10 +42,10 @@ $(document).ready(function() {
             $(".search_table_content").append("<div class='info_bar'></div>");
             
             // if (user_type > 0) {
-                $(".info_bar").append("<div class='preview_element_container'></div>")
-                $(".preview_element_container").append("<div class='preview_text'>preview available</div>")
-                $(".preview_element_container").append("<div class='preview_spacer'></div>")
-                $(".preview_element_container").append("<div class='preview_marker'></div>")
+                // $(".info_bar").append("<div class='preview_element_container'></div>")
+                // $(".preview_element_container").append("<div class='preview_text'>preview available</div>")
+                // $(".preview_element_container").append("<div class='preview_spacer'></div>")
+                // $(".preview_element_container").append("<div class='preview_marker'></div>")
             // }
 
             if (page != 1 || number_pages != 1) {
@@ -61,7 +61,13 @@ $(document).ready(function() {
                     $(".page_mover").append("<div class='right_arrow'><a href='" + web_host + "search/" + query + "/" + (page + 1) + "'>></a></div>")
                 }
             }
+
             writeRecords(search_obj['records'])
+
+            $(".info_bar").last().append("<div class='preview_element_container'></div>")
+            $(".preview_element_container").append("<div class='preview_text'>preview available</div>")
+            $(".preview_element_container").append("<div class='preview_spacer'></div>")
+            $(".preview_element_container").append("<div class='preview_marker'></div>")
 
             $(".search_table_content").append("<div class='search_spacer'></div>")
 
