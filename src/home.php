@@ -47,69 +47,6 @@ if(session_status()==1) {
                 "@id": "http://www.cfmdc.org/filmsfortheclassroom/",
                 "name": "Educators"
                 }
-        },
-        {
-                @type": "ListItem",
-                "position": 2,
-                "item":
-                {
-                "@id": "http://www.cfmdc.org/previews/",
-                "name": "Sales + Rentals"
-                }
-        },
-        {
-                @type": "ListItem",
-                "position": 3,
-                "item":
-                {
-                "@id": "http://www.cfmdc.org/faq/",
-                "name": "Submit Film"
-                }
-        },
-        {
-                @type": "ListItem",
-                "position": 4,
-                "item":
-                {
-                "@id": "http://www.cfmdc.org/artistindex/",
-                "name": "Catalogue"
-                }
-        },
-        {
-                @type": "ListItem",
-                "position": 4,
-                "item":
-                {
-                "@id": "http://www.cfmdc.org/contact/",
-                "name": "Contact"
-                }
-        },
-        {
-                @type": "ListItem",
-                "position": 5,
-                "item":
-                {
-                "@id": "http://www.cfmdc.org/staffboard/",
-                "name": "Staff + Board"
-                }
-        },
-        {
-                @type": "ListItem",
-                "position": 6,
-                "item":
-                {
-                "@id": "http://www.cfmdc.org/about/",
-                "name": "About"
-                }
-        },
-        {
-                @type": "ListItem",
-                "position": 7,
-                "item":
-                {
-                "@id": "http://www.cfmdc.org/links/",
-                "name": "Links"
-                }
         }
     ]
   }] 
