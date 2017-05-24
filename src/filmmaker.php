@@ -16,6 +16,7 @@ else {
 <script src="<?=$web_host?>js/filmmaker.js" type="text/javascript"></script>
 
 <script>
+    console.log(filmmaker_obj)
     if (filmmaker_obj) {
         var el = document.createElement('script');
         el.type = 'application/ld+json';
