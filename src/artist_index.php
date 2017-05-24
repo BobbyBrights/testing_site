@@ -21,3 +21,14 @@ if (json_string) {
 
 </script>
 <script src="<?=$web_host?>js/artist_index.js" type="text/javascript"></script>
+<script>
+  var el = document.createElement('script');
+  el.type = 'application/ld+json';
+  el.text = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "url": window.location.href,
+    "name": "Artist Index | Canadian Filmmakers Distribution Centre"
+  });
+  document.querySelector('body').appendChild(el);
+</script>

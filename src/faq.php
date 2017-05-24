@@ -17,3 +17,14 @@ else {
 
 </script>
 <script src="<?=$web_host?>js/faq.js" type="text/javascript"></script>
+<script>
+  var el = document.createElement('script');
+  el.type = 'application/ld+json';
+  el.text = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "url": window.location.href,
+    "name": "F.A.Q. | Canadian Filmmakers Distribution Centre"
+  });
+  document.querySelector('body').appendChild(el);
+</script>
