@@ -40,7 +40,7 @@ if(session_status()==1) {
     "itemListElement":
     [
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 1,
                 "item":
                 {
@@ -49,7 +49,7 @@ if(session_status()==1) {
                 }
         },
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 2,
                 "item":
                 {
@@ -58,7 +58,7 @@ if(session_status()==1) {
                 }
         },
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 3,
                 "item":
                 {
@@ -67,7 +67,7 @@ if(session_status()==1) {
                 }
         },
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 4,
                 "item":
                 {
@@ -76,7 +76,7 @@ if(session_status()==1) {
                 }
         },
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 4,
                 "item":
                 {
@@ -85,7 +85,7 @@ if(session_status()==1) {
                 }
         },
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 5,
                 "item":
                 {
@@ -94,7 +94,7 @@ if(session_status()==1) {
                 }
         },
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 6,
                 "item":
                 {
@@ -103,7 +103,7 @@ if(session_status()==1) {
                 }
         },
         {
-                @type": "ListItem",
+                "@type": "ListItem",
                 "position": 7,
                 "item":
                 {
