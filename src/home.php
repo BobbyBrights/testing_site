@@ -18,7 +18,15 @@ if(session_status()==1) {
 
 <link rel="stylesheet" type="text/css" href="addons/flickity.min.css">
 <link rel="stylesheet" type="text/css" href="css/home.css">
-
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://www.cfmdc.org",
+  "alternateName": "Canadian Filmmakers Distribution Centre",
+  "description": "Established in 1967, CFMDC is a not-for-profit, artist-run centre that has since grown and evolved into a world-renowned distributor of independent media art. Now in our 50th year, with 3700+ films in our catalogue by over 1000 members, CFMDC is one of the most enduring, respected, forward thinking, and engaged, distribution centres in Canada."
+}
+</script>
 
 <script type="text/javascript">
 message = '<?= $_SESSION["message"] ?>';
