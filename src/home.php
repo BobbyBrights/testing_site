@@ -21,7 +21,6 @@ if(session_status()==1) {
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
-  "@type": "LocalBusiness",
   "url": "http://www.cfmdc.org",
   "alternateName": "Canadian Filmmakers Distribution Centre",
   "description": "Established in 1967, CFMDC is a not-for-profit, artist-run centre that has since grown and evolved into a world-renowned distributor of independent media art. Now in our 50th year, with 3700+ films in our catalogue by over 1000 members, CFMDC is one of the most enduring, respected, forward thinking, and engaged, distribution centres in Canada.",
