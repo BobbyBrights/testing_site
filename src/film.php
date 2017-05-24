@@ -49,3 +49,19 @@ else {
 <?php 
 }
 ?>
+
+<script>
+    console.log(film_obj)
+    if (film_obj) {
+        var el = document.createElement('script');
+        el.type = 'application/ld+json';
+        el.text = JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "url": window.location.href,
+            "name": film_obj['film_title'] + " | Canadian Filmmakers Distribution Centre",
+            "keywords": film_obj['filmmaker_name'] + " " + film_obj['film_title'] + ", " +film_obj['film_title'] + ", " + film_obj['filmmaker_name'] + " " + film_obj['film_title'] + ", " + film_obj['filmmaker_name'] + "CFMDC, " + film_obj['filmmaker_name'] + " " + filmmaker_obj['filmmaker_name'] + "Canadian Filmmakers Distribution Centre" + ", " + film_obj['filmmaker_name'] + " " + film_obj['filmmaker_name'] + "CFMDC, " + filmmaker_obj['filmmaker_name'] + "Canadian Filmmakers Distribution Centre"
+        });
+        document.querySelector('body').appendChild(el);
+    }
+</script>
