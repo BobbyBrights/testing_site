@@ -25,7 +25,7 @@ else {
             "@type": "WebPage",
             "url": window.location.href,
             "name": filmmaker_obj['filmmaker_name'] + " | Canadian Filmmakers Distribution Centre",
-            "keywords": filmmaker_obj['filmmaker_name'] + ", " + filmmaker_obj['filmmaker_name'] "CFMDC," + filmmaker_obj['filmmaker_name'] + "Canadian Filmmakers Distribution Centre"
+            "keywords": filmmaker_obj['filmmaker_name'] + ", " + filmmaker_obj['filmmaker_name'] + "CFMDC," + filmmaker_obj['filmmaker_name'] + "Canadian Filmmakers Distribution Centre"
         });
         document.querySelector('body').appendChild(el);
     }
