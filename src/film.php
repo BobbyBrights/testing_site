@@ -64,7 +64,7 @@ else {
         });
         document.querySelector('body').appendChild(el);
     }
-    elseif (film_obj) {
+    else if (film_obj) {
         var el = document.createElement('script');
         el.type = 'application/ld+json';
         el.text = JSON.stringify({
