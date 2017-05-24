@@ -51,6 +51,6 @@ else {
   "@context": "http://schema.org",
   "@type": "WebPage",
   "url": "http://www.cfmdc.org/about",
-  "name": "test"
+  "name": document.getElementsByTagName("title")[0].innerHTML
 }
 </script>
