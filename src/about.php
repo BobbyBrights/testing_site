@@ -46,12 +46,14 @@ else {
 
 </script>
 <script src="<?=$web_host?>js/about.js" type="text/javascript"></script>
-<script type="text/javascript"> u = "hi" </script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebPage",
-  "url": "http://www.cfmdc.org/about",
-  "name": u
-}
+<script>
+  var el = document.createElement('script');
+  el.type = 'application/ld+json';
+  el.text = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "url": "http://" + window.location.hostname,
+    "name": $(document).find("title").text()
+  });
+  document.querySelector('body').appendChild(el);
 </script>
