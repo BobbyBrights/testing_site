@@ -35,7 +35,7 @@ if(session_status()==1) {
   "name": "Canadian Filmmakers Distribution Centre",
   "description": "Established in 1967, CFMDC is a not-for-profit, artist-run centre that has since grown and evolved into a world-renowned distributor of independent media art. Now in our 50th year, with 3700+ films in our catalogue by over 1000 members, CFMDC is one of the most enduring, respected, forward thinking, and engaged, distribution centres in Canada.",
   "keywords": "401 Richmond, Canadian Filmmakers Distribution Centre, Film, Canadian, Filmmakers, Distribution, Canadian Film, CFMDC, Canadian Filmmakers Distribution, Canadian Film Distribution, Canadian Distribution, Filmmakers Distribution ",
-  "breadcrumbs": [{
+  "breadcrumb": [{
     "@type": "BreadcrumbList",
     "itemListElement":
     [
@@ -46,6 +46,69 @@ if(session_status()==1) {
                 {
                 "@id": "http://www.cfmdc.org/filmsfortheclassroom/",
                 "name": "Educators"
+                }
+        },
+        {
+                @type": "ListItem",
+                "position": 2,
+                "item":
+                {
+                "@id": "http://www.cfmdc.org/previews/",
+                "name": "Sales + Rentals"
+                }
+        },
+        {
+                @type": "ListItem",
+                "position": 3,
+                "item":
+                {
+                "@id": "http://www.cfmdc.org/faq/",
+                "name": "Submit Film"
+                }
+        },
+        {
+                @type": "ListItem",
+                "position": 4,
+                "item":
+                {
+                "@id": "http://www.cfmdc.org/artistindex/",
+                "name": "Catalogue"
+                }
+        },
+        {
+                @type": "ListItem",
+                "position": 4,
+                "item":
+                {
+                "@id": "http://www.cfmdc.org/contact/",
+                "name": "Contact"
+                }
+        },
+        {
+                @type": "ListItem",
+                "position": 5,
+                "item":
+                {
+                "@id": "http://www.cfmdc.org/staffboard/",
+                "name": "Staff + Board"
+                }
+        },
+        {
+                @type": "ListItem",
+                "position": 6,
+                "item":
+                {
+                "@id": "http://www.cfmdc.org/about/",
+                "name": "About"
+                }
+        },
+        {
+                @type": "ListItem",
+                "position": 7,
+                "item":
+                {
+                "@id": "http://www.cfmdc.org/links/",
+                "name": "Links"
                 }
         }
     ]
