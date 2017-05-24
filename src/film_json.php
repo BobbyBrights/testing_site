@@ -70,6 +70,7 @@ function getFilmJson($film_number) {
         $json_film = array();
         $json_film["film_title"] = $film_title;
         $json_film["client_id_number"] = $client_id_number;
+        $json_film["raw_names"] = $filmmaker_name . " " . $secondary_filmmaker;
         $json_film["filmmaker_name"] = getMainFilmmakerName($filmmaker_name);
         if ($secondary_filmmaker) {
             $json_film["secondary_filmmaker"] = getFilmmakerName($secondary_filmmaker);

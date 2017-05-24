@@ -52,7 +52,7 @@ else {
 
 <script>
     console.log(film_obj)
-    if (film_obj && film_obj['secondary_filmmaker']) {
+    if (film_obj) {
         var el = document.createElement('script');
         el.type = 'application/ld+json';
         el.text = JSON.stringify({
@@ -60,19 +60,7 @@ else {
             "@type": "WebPage",
             "url": window.location.href,
             "name": film_obj['film_title'] + " | Canadian Filmmakers Distribution Centre",
-            "keywords": film_obj['secondary_filmmaker'] + ", " + film_obj['filmmaker_name'] + ", " + film_obj['film_title'] + ", " + "CFMDC,  Canadian Filmmakers Distribution Centre"
-        });
-        document.querySelector('body').appendChild(el);
-    }
-    else if (film_obj) {
-        var el = document.createElement('script');
-        el.type = 'application/ld+json';
-        el.text = JSON.stringify({
-            "@context": "http://schema.org",
-            "@type": "WebPage",
-            "url": window.location.href,
-            "name": film_obj['film_title'] + " | Canadian Filmmakers Distribution Centre",
-            "keywords": film_obj['filmmaker_name'] + ", " + film_obj['film_title'] + ", " + "CFMDC,  Canadian Filmmakers Distribution Centre"
+            "keywords": film_obj['raw_names'] + ", " + film_obj['film_title'] + ", " + "CFMDC,  Canadian Filmmakers Distribution Centre"
         });
         document.querySelector('body').appendChild(el);
     }
