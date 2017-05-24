@@ -46,11 +46,12 @@ else {
 
 </script>
 <script src="<?=$web_host?>js/about.js" type="text/javascript"></script>
+<script type="text/javascript"> u = "hi" </script>
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "WebPage",
   "url": "http://www.cfmdc.org/about",
-  "name": document.getElementsByTagName("title")[0].innerHTML
+  "name": u
 }
 </script>
