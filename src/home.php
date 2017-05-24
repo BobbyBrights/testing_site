@@ -24,7 +24,7 @@ if(session_status()==1) {
   "@type": "Organization",
   "url": "http://www.cfmdc.org",
   "alternateName": "Canadian Filmmakers Distribution Centre",
-  "description": "Established in 1967, CFMDC is a not-for-profit, artist-run centre that has since grown and evolved into a world-renowned distributor of independent media art. Now in our 50th year, with 3700+ films in our catalogue by over 1000 members, CFMDC is one of the most enduring, respected, forward thinking, and engaged, distribution centres in Canada."
+  "description": "Established in 1967, CFMDC is a not-for-profit, artist-run centre that has since grown and evolved into a world-renowned distributor of independent media art. Now in our 50th year, with 3700+ films in our catalogue by over 1000 members, CFMDC is one of the most enduring, respected, forward thinking, and engaged, distribution centres in Canada.",
   "keywords": "401 Richmond, Canadian Filmmakers Distribution Centre, Film, Canadian, Filmmakers, Distribution, Canadian Film, CFMDC, Canadian Filmmakers Distribution, Canadian Film Distribution, Canadian Distribution, Filmmakers Distribution " 
 }
 </script>
