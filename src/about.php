@@ -47,10 +47,12 @@ else {
 </script>
 <script src="<?=$web_host?>js/about.js" type="text/javascript"></script>
 <script type="application/ld+json">
+e = $(document).find("title").text();
+
 {
   "@context": "http://schema.org",
   "@type": "WebPage",
   "url": "http://www.cfmdc.org/about",
-  "name": $(document).find("title").text(),
+  "name": "test"
 }
 </script>
