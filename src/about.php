@@ -52,8 +52,8 @@ else {
   el.text = JSON.stringify({
     "@context": "http://schema.org",
     "@type": "WebPage",
-    "url": "http://" + window.location.hostname,
-    "name": $(document).find("title").text()
+    "url": "http://" + window.location.href,
+    "name": "About | Canadian Filmmakers Distribution Centre"
   });
   document.querySelector('body').appendChild(el);
 </script>
