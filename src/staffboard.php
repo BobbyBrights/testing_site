@@ -25,3 +25,14 @@ else {
 
 </script>
 <script src="<?=$web_host?>js/staffboard.js" type="text/javascript"></script>
+<script>
+  var el = document.createElement('script');
+  el.type = 'application/ld+json';
+  el.text = JSON.stringify({
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "url": window.location.href,
+    "name": "Staff + Board | Canadian Filmmakers Distribution Centre"
+  });
+  document.querySelector('body').appendChild(el);
+</script>
