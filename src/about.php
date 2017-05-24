@@ -51,6 +51,6 @@ else {
   "@context": "http://schema.org",
   "@type": "WebPage",
   "url": "http://www.cfmdc.org/about",
-  "name": $(document).find("title").text();,
+  "name": $(document).find("title").text(),
 }
 </script>
