@@ -837,6 +837,7 @@ function getSearchData() {
 
 	query_str = new_aquisition_str + "(&)" + celluloid_only_str + "(&)" + artist_str + "(&)" + title_str.replace(/[!'()*]/g, escape) + "(&)" + country_str + "(&)" + year_str + "(&)" + genre_str + "(&)" + category_str
 	query_str = encodeURIComponent(query_str).replace("'", "%27");
+	alert(query_str)
 
 	return query_str
 }
