@@ -5,7 +5,7 @@ $query = $match['params']['query'];
 $page = $match['params']['page'];
 $increment = 20;
 
-$search_json = getSearchJson(urldecode($query), $page, $increment);
+$search_json = getSearchJson($query, $page, $increment);
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?=$web_host?>css/search.css">
