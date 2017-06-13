@@ -5,6 +5,8 @@ $query = $match['params']['query'];
 $page = $match['params']['page'];
 $increment = 20;
 
+print($query);
+
 $search_json = getSearchJson($query, $page, $increment);
 ?>
 
