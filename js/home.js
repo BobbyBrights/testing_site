@@ -92,8 +92,7 @@ $(document).ready(function() {
 })
 
 function addRecentAquisitionCarousels() {
-    //for (i=0; i < recent_aquisitions_json.length; i++) {
-    for (i=0; i < 4; i++) {
+    for (i=0; i < recent_aquisitions_json.length; i++) {
         $(".recent_aquisitions_carousel").append("<div class='carousel-cell'></div>")
         $(".carousel-cell").last().append("<div class='recent_aquisitions_contents_table'></div>")
         $(".recent_aquisitions_contents_table").last().append("<a href = '"  + web_host + "film/" + recent_aquisitions_json[i]['film_id'] + "'></a>")
