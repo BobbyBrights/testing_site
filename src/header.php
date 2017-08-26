@@ -19,8 +19,10 @@ $header_str =
     theme : "white"
  };
  </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
-        type="text/javascript"></script> ';
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script> ';
 
 if (isset($_SESSION["user_type"])) {
         $header_str .= '<script type="text/javascript">user_type=' . $_SESSION["user_type"] . ';</script>';
