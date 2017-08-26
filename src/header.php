@@ -19,15 +19,8 @@ $header_str =
     theme : "white"
  };
  </script>
-
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script> 
-
-   <link rel="stylesheet" type="text/css" href="addons/flickity.min.css">
-<script src="addons/flickity.pkgd.min.js"
-        type="text/javascript"></script>';
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+        type="text/javascript"></script> ';
 
 if (isset($_SESSION["user_type"])) {
         $header_str .= '<script type="text/javascript">user_type=' . $_SESSION["user_type"] . ';</script>';
