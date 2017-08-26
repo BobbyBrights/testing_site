@@ -42,7 +42,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
 
 
 <script src="js/home.js" type="text/javascript"></script>
-<!-- <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
@@ -138,4 +138,4 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
     ]
   } 
 }
-</script> -->
+</script>
