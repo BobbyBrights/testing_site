@@ -1,6 +1,4 @@
-<link rel="stylesheet" type="text/css" href="addons/flickity.min.css">
-<script src="addons/flickity.pkgd.min.js"
-        type="text/javascript"></script>
+
 
 <?php
 
