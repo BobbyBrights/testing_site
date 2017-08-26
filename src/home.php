@@ -24,6 +24,24 @@ if(session_status()==1) {
 
 
 <link rel="stylesheet" type="text/css" href="css/home.css">
+
+<script type="text/javascript">
+message = '<?= $_SESSION["message"] ?>';
+warning = '<?= $_SESSION["warning"] ?>';
+<?php
+unset($_SESSION["message"]);
+unset($_SESSION["warning"]);
+?>
+
+featured_film_json = JSON.parse('<?php echo addslashes($featured_film_json); ?>')
+facebook_json = JSON.parse('<?php echo addslashes($facebook_json); ?>')
+news_json = JSON.parse('<?php echo addslashes($news_json); ?>')
+recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_json); ?>')
+
+</script>
+
+
+<script src="js/home.js" type="text/javascript"></script>
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -121,21 +139,3 @@ if(session_status()==1) {
   } 
 }
 </script>
-<script type="text/javascript">
-message = '<?= $_SESSION["message"] ?>';
-warning = '<?= $_SESSION["warning"] ?>';
-<?php
-unset($_SESSION["message"]);
-unset($_SESSION["warning"]);
-?>
-
-featured_film_json = JSON.parse('<?php echo addslashes($featured_film_json); ?>')
-facebook_json = JSON.parse('<?php echo addslashes($facebook_json); ?>')
-news_json = JSON.parse('<?php echo addslashes($news_json); ?>')
-recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_json); ?>')
-
-</script>
-
-
-<script src="js/home.js"
-        type="text/javascript"></script>
