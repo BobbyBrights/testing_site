@@ -212,26 +212,26 @@ function addNewsCarousels() {
     //})
 }
 
-// $(window).load( function() {
-//     $(".whats_new_img_container").find("img").each(function () {
-//         img_h = $(this).height()
-//         whats_new_img_container = $(this).parent()
-//         carousel_cur = $(this).parent().parent().parent().parent()
-//         total_occupied = carousel_cur.find(".whats_new_heading").height()
-//         total_occupied += 8
-//         if (carousel_cur.find(".whats_new_blurb").length == 1) {
-//             total_occupied += 16
-//             total_occupied += carousel_cur.find(".whats_new_blurb").height()
-//         }
-//         remaining_space = 340 - total_occupied
-//         if (img_h > remaining_space) {
-//             whats_new_img_container.height(remaining_space)
-//         }
-//         else {
-//             whats_new_img_container.height(img_h)
-//         }
-//     })
-// })
+$(window).load( function() {
+    $(".whats_new_img_container").find("img").each(function () {
+        img_h = $(this).height()
+        whats_new_img_container = $(this).parent()
+        carousel_cur = $(this).parent().parent().parent().parent()
+        total_occupied = carousel_cur.find(".whats_new_heading").height()
+        total_occupied += 8
+        if (carousel_cur.find(".whats_new_blurb").length == 1) {
+            total_occupied += 16
+            total_occupied += carousel_cur.find(".whats_new_blurb").height()
+        }
+        remaining_space = 340 - total_occupied
+        if (img_h > remaining_space) {
+            whats_new_img_container.height(remaining_space)
+        }
+        else {
+            whats_new_img_container.height(img_h)
+        }
+    })
+})
 
 function loadvimeochannels() {
         var url = "http://vimeo.com/api/v2/user21477037/channels.json";
