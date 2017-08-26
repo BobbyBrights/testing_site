@@ -1,4 +1,9 @@
+<script src="addons/flickity.pkgd.min.js"
+        type="text/javascript"></script>
+
 <?php
+
+
 
 require 'src/featured_film.php';
 require 'src/facebook.php';
@@ -130,7 +135,6 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
 
 </script>
 
-<script src="addons/flickity.pkgd.min.js"
-        type="text/javascript"></script>
+
 <script src="js/home.js"
         type="text/javascript"></script>
