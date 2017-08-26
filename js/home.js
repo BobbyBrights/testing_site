@@ -94,31 +94,31 @@ $(document).ready(function() {
 function addRecentAquisitionCarousels() {
     for (i=0; i < recent_aquisitions_json.length; i++) {
         $(".recent_aquisitions_carousel").append("<div class='carousel-cell'></div>")
-        $(".carousel-cell").last().append("<div class='recent_aquisitions_contents_table'></div>")
-        $(".recent_aquisitions_contents_table").last().append("<a href = '"  + web_host + "film/" + recent_aquisitions_json[i]['film_id'] + "'></a>")
-        $("a").last().append("<div class='recent_aquisitions_img'><div class='recent_aquisitions_img_container'></div></div>")
+        // $(".carousel-cell").last().append("<div class='recent_aquisitions_contents_table'></div>")
+        // $(".recent_aquisitions_contents_table").last().append("<a href = '"  + web_host + "film/" + recent_aquisitions_json[i]['film_id'] + "'></a>")
+        // $("a").last().append("<div class='recent_aquisitions_img'><div class='recent_aquisitions_img_container'></div></div>")
 
-        if (recent_aquisitions_json[i]['still']) {
-            getStill(recent_aquisitions_json[i])
-        }
+        // if (recent_aquisitions_json[i]['still']) {
+        //     getStill(recent_aquisitions_json[i])
+        // }
 
-        $("a").last().append("<div class='spacer'></div>")
+        // $("a").last().append("<div class='spacer'></div>")
         
 
-        $("a").last().append("<div class='recent_aquisitions_details'></div>")
+        // $("a").last().append("<div class='recent_aquisitions_details'></div>")
 
-        filmmaker = recent_aquisitions_json[i]['secondary_filmmaker'] ? recent_aquisitions_json[i]['filmmaker_name'] + " & " + recent_aquisitions_json[i]['secondary_filmmaker'] : recent_aquisitions_json[i]['filmmaker_name']
+        // filmmaker = recent_aquisitions_json[i]['secondary_filmmaker'] ? recent_aquisitions_json[i]['filmmaker_name'] + " & " + recent_aquisitions_json[i]['secondary_filmmaker'] : recent_aquisitions_json[i]['filmmaker_name']
 
-        details = film_details(recent_aquisitions_json[i])
+        // details = film_details(recent_aquisitions_json[i])
 
-        if (parseInt(recent_aquisitions_json[i]['client_id']) == 1) {
-            filmmaker = recent_aquisitions_json[i]['filmmaker_name']
-            $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker)
-        }
-        else {
-            //$(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker + " / " + details)
-            $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker)
-        }
+        // if (parseInt(recent_aquisitions_json[i]['client_id']) == 1) {
+        //     filmmaker = recent_aquisitions_json[i]['filmmaker_name']
+        //     $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker)
+        // }
+        // else {
+        //     //$(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker + " / " + details)
+        //     $(".recent_aquisitions_details").last().append("<b>" + recent_aquisitions_json[i]['title'] + "</b> / " + filmmaker)
+        // }
         
 
     }
