@@ -1,6 +1,9 @@
-<link rel="stylesheet" type="text/css" href="addons/flickity.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="addons/flickity.min.css">
 <script src="addons/flickity.pkgd.min.js"
-        type="text/javascript"></script>
+        type="text/javascript"></script> -->
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 <?php
 
