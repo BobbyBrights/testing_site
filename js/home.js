@@ -37,7 +37,7 @@ $(document).ready(function() {
     $(".recent_aquisitions_cell").append("<div class='title'>Featured Works</div>")
 
     $(".recent_aquisitions_cell").append("<div class='recent_aquisitions_container'></div>")
-    $(".recent_aquisitions_container").append("<div class=\"recent_aquisitions_carousel\" data-flickity='{ \"wrapAround\": true }'>")
+    $(".recent_aquisitions_container").append("<div class=\"recent_aquisitions_carousel\" data-flickity='{ \"autoPlay\": 8000, \"wrapAround\": true }'>")
     addRecentAquisitionCarousels()
 
     // whats_new
