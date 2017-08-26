@@ -47,8 +47,8 @@ $(document).ready(function() {
     $(".whats_new_cell").append("<div class='title'>What's New</div>")
     $(".whats_new_cell").append("<div class='whats_new_container'></div>")
     //$(".whats_new_container").append("<div class=\"whats_new_carousel\" data-flickity='{\"wrapAround\": true }'>")
-    //$(".whats_new_container").append("<div class=\"whats_new_carousel\" data-flickity='{ \"autoPlay\": 10000, \"wrapAround\": true }'>")
-    //addNewsCarousels()
+    $(".whats_new_container").append("<div class=\"whats_new_carousel\" data-flickity='{ \"autoPlay\": 10000, \"wrapAround\": true }'>")
+    addNewsCarousels()
 
     // social_feed_cfmdc_tv
     $(".landing_page_table").append("<div class='social_feed_cfmdc_tv_row'></div>")
