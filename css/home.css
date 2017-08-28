@@ -178,12 +178,12 @@
           transition-property: opacity;
           transition-duration: 1ms; }
         .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .flickity-page-dots {
+          position: relative;
           top: 16px; }
           .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .flickity-page-dots .dot {
             width: 8px;
             height: 8px;
-            background: #000;
-            position: relative; }
+            background: #000; }
         .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .flickity-prev-next-button {
           background: transparent;
           width: 35px;
