@@ -177,14 +177,13 @@
           opacity: 1;
           transition-property: opacity;
           transition-duration: 1ms; }
-        .landing_page_table .whats_new_row .whats_new_cell .whats_new_container flickity-page-dots {
+        .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .flickity-page-dots {
           top: 16px; }
-          .landing_page_table .whats_new_row .whats_new_cell .whats_new_container flickity-page-dots .dot {
+          .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .flickity-page-dots .dot {
             width: 8px;
             height: 8px;
             background: #000;
-            position: relative;
-            margin: 0 8px 16px; }
+            position: relative; }
         .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .flickity-prev-next-button {
           background: transparent;
           width: 35px;
