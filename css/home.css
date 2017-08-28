@@ -79,13 +79,13 @@
           opacity: 1;
           transition-property: opacity;
           transition-duration: 1ms; }
-        .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container flickity-page-dots {
+        .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .flickity-page-dots {
+          position: relative;
           top: 16px; }
-          .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container flickity-page-dots .dot {
+          .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .flickity-page-dots .dot {
             width: 8px;
             height: 8px;
-            background: #000;
-            position: relative; }
+            background: #000; }
         .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .flickity-prev-next-button {
           background: transparent;
           width: 35px;

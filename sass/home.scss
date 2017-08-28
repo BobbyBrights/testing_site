@@ -130,14 +130,15 @@
 
                 
 
-                flickity-page-dots {
+                .flickity-page-dots {
+                    position: relative;
                     top: 16px;
 
                     .dot {
                         width: 8px;
                         height: 8px;
                         background: #000;
-                        position: relative;
+                        //position: relative;
                     }
 
                 }
