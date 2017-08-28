@@ -128,15 +128,18 @@
                     transition-duration: 1ms;
                 }
 
-                .dot {
-                    width: 8px;
-                    height: 8px;
-                    background: #000;
-                    position: relative;
-                }
+                
 
                 flickity-page-dots {
                     top: 16px;
+
+                    .dot {
+                        width: 8px;
+                        height: 8px;
+                        background: #000;
+                        position: relative;
+                    }
+
                 }
 
                 .flickity-prev-next-button {
@@ -293,15 +296,16 @@
                     transition-duration: 1ms;
                 }
 
-                .dot {
-                    width: 8px;
-                    height: 8px;
-                    background: #000;
-                    position: relative;
-                }
-
                 flickity-page-dots {
                     top: 16px;
+
+                    .dot {
+                        width: 8px;
+                        height: 8px;
+                        background: #000;
+                        position: relative;
+                    }
+
                 }
 
                 .flickity-prev-next-button {
