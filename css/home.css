@@ -83,8 +83,7 @@
           width: 8px;
           height: 8px;
           background: #000;
-          position: relative;
-          top: 16px; }
+          position: relative; }
         .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .flickity-prev-next-button {
           background: transparent;
           width: 35px;
