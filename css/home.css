@@ -84,6 +84,8 @@
           height: 8px;
           background: #000;
           position: relative; }
+        .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container flickity-page-dots {
+          top: 16px; }
         .landing_page_table .recent_aquisitions_row .recent_aquisitions_cell .recent_aquisitions_container .flickity-prev-next-button {
           background: transparent;
           width: 35px;
@@ -179,7 +181,8 @@
           width: 8px;
           height: 8px;
           background: #000;
-          position: relative;
+          position: relative; }
+        .landing_page_table .whats_new_row .whats_new_cell .whats_new_container flickity-page-dots {
           top: 16px; }
         .landing_page_table .whats_new_row .whats_new_cell .whats_new_container .flickity-prev-next-button {
           background: transparent;

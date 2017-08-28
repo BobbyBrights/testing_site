@@ -135,6 +135,10 @@
                     position: relative;
                 }
 
+                flickity-page-dots {
+                    top: 16px;
+                }
+
                 .flickity-prev-next-button {
                     background: transparent;
                     width:35px;
@@ -294,6 +298,9 @@
                     height: 8px;
                     background: #000;
                     position: relative;
+                }
+
+                flickity-page-dots {
                     top: 16px;
                 }
 
