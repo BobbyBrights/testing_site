@@ -3,7 +3,7 @@
 //getComp("2503");
 
 function getComp($nid) {
-    $host = "http://www.cfmdc.org/";
+    $host = "http://www.testing.cfmdc.org/";
 
     $cms_comp_url = $host . "cms/api/comps?_format=xml";
 

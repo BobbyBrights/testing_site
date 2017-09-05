@@ -60,7 +60,7 @@ function generatePassword($length){
 
 function otherMail($mail, $username, $password) {
     $body = "The password for $username, has been reset to $password.<br>
-    Please visit <a href='http://www.cfmdc.org'>www.cfmdc.org</a>, and attempt to login again.";
+    Please visit <a href='http://www.testing.cfmdc.org'>www.testing.cfmdc.org</a>, and attempt to login again.";
 
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=iso-8859-1';

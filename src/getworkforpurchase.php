@@ -3,7 +3,7 @@
 //getWorkForPurchaseJson(4428);
 
 function getWorkForPurchaseJson($film_number) {
-    $host = "http://www.cfmdc.org/";
+    $host = "http://www.testing.cfmdc.org/";
 
     $cms_work_for_purchase_url = $host . "cms/api/work_for_purchase/" . $film_number . "?_format=xml";
 
@@ -150,7 +150,7 @@ function combine_data($data_fmp, $still_data) {
 }
 
 function getVolumeFilmIdsStr($volume_references) {
-    $host = "http://www.cfmdc.org/";
+    $host = "http://www.testing.cfmdc.org/";
     $film_ids = array();
 
     for ($i=0; $i < count($volume_references); $i++) {
@@ -202,7 +202,7 @@ function getFilmIdsStr($film_records) {
 
 
 function getVolume($nid, $combined_data) {
-    $host = "http://www.cfmdc.org/";
+    $host = "http://www.testing.cfmdc.org/";
 
     $cms_work_for_purchase_url = $host . "cms/api/work_for_purchase_volume/" . $nid . "?_format=xml";
 

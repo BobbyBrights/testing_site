@@ -1,4 +1,4 @@
-var web_host = "http://www.cfmdc.org/";
+var web_host = "http://www.testing.cfmdc.org/";
 
 $(document).ready(function() {
     $(".contents").append("<div class='top_buffer'></div>")
