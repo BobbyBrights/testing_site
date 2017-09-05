@@ -132,7 +132,7 @@ if($match) {
 
 	require 'src/header.php';
 	//require 'src/toolbar.php';
-  echo $match['target'];
+  echo "hi i'm john";
   require $match['target'];
   require 'src/footer.php';
 }
