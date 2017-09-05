@@ -3,7 +3,7 @@
 //echo getCompLinks();
 
 function getCompLinks() {
-    $host = "http://testing.cfmdc.org/";
+    $host = "http://www.testing.cfmdc.org/";
 
     $cms_comp_url = $host . "cms/api/classcomps?_format=xml";
 

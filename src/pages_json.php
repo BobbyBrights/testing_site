@@ -1,6 +1,6 @@
 <?php
 
-$host = "http://testing.cfmdc.org/";
+$host = "http://www.testing.cfmdc.org/";
 
 //echo getPagesJson(2643);
 

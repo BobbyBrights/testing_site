@@ -1,6 +1,6 @@
 <?php
 
-$host = "http://testing.cfmdc.org/";
+$host = "http://www.testing.cfmdc.org/";
 
 function getBoardJson() {
     global $host; 

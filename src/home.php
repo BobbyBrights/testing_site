@@ -71,7 +71,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 1,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/filmsfortheclassroom/",
+                "@id": "http://www.testing.cfmdc.org/filmsfortheclassroom/",
                 "name": "Educators"
                 }
         },
@@ -80,7 +80,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 2,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/previews/",
+                "@id": "http://www.testing.cfmdc.org/previews/",
                 "name": "Sales + Rentals"
                 }
         },
@@ -89,7 +89,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 3,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/faq/",
+                "@id": "http://www.testing.cfmdc.org/faq/",
                 "name": "Submit Film"
                 }
         },
@@ -98,7 +98,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 4,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/artistindex/",
+                "@id": "http://www.testing.cfmdc.org/artistindex/",
                 "name": "Catalogue"
                 }
         },
@@ -107,7 +107,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 4,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/contact/",
+                "@id": "http://www.testing.cfmdc.org/contact/",
                 "name": "Contact"
                 }
         },
@@ -116,7 +116,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 5,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/staffboard/",
+                "@id": "http://www.testing.cfmdc.org/staffboard/",
                 "name": "Staff + Board"
                 }
         },
@@ -125,7 +125,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 6,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/about/",
+                "@id": "http://www.testing.cfmdc.org/about/",
                 "name": "About"
                 }
         },
@@ -134,7 +134,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 7,
                 "item":
                 {
-                "@id": "http://testing.cfmdc.org/links/",
+                "@id": "http://www.testing.cfmdc.org/links/",
                 "name": "Links"
                 }
         }
