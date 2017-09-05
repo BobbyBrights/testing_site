@@ -132,6 +132,7 @@ if($match) {
 
 	require 'src/header.php';
 	//require 'src/toolbar.php';
+  echo $match['target'];
   require $match['target'];
   require 'src/footer.php';
 }
