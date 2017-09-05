@@ -1,6 +1,6 @@
 <?php
 
-$host = "http://www.testing.cfmdc.org/";
+$host = "http://testing.cfmdc.org/";
 
 getStaffJson();
 

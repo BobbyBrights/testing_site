@@ -1,4 +1,4 @@
-$host: "http://www.testing.cfmdc.org/";
+$host: "http://testing.cfmdc.org/";
 
 @mixin sub_list_menu($name, $color, $right) {
     .#{$name}_sub_links {

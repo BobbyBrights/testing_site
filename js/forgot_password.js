@@ -1,4 +1,4 @@
-var web_host = "http://www.testing.cfmdc.org/";
+var web_host = "http://testing.cfmdc.org/";
 
 //String.fromCharCode(97 + n)
 

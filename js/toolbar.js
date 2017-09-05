@@ -16,7 +16,7 @@ String.fromHtmlEntities = function(string) {
     })
 };
 
-var web_host = "http://www.testing.cfmdc.org/";
+var web_host = "http://testing.cfmdc.org/";
 
 //var logo_ims = ["CFMDC_logo_50th_blk.jpg", "CFMDC_logo_50th_blk_gld.jpg", "CFMDC_logo_50th_blu.jpg"]
 

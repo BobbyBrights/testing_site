@@ -6,7 +6,7 @@
 //header("Expires: 0"); // Proxies.
 //header('Access-Control-Allow-Origin: *');
 
-$web_host = "http://www.testing.cfmdc.org/";
+$web_host = "http://testing.cfmdc.org/";
 
 require 'addons/AltoRouter.php';
 $router = new AltoRouter();

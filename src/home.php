@@ -49,7 +49,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "url": "http://www.testing.cfmdc.org",
+  "url": "http://testing.cfmdc.org",
   "alternateName": "Canadian Filmmakers Distribution Centre",
   "description": "Established in 1967, CFMDC is a not-for-profit, artist-run centre that has since grown and evolved into a world-renowned distributor of independent media art. Now in our 50th year, with 3700+ films in our catalogue by over 1000 members, CFMDC is one of the most enduring, respected, forward thinking, and engaged, distribution centres in Canada."
 }
@@ -58,7 +58,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
 {
   "@context": "http://schema.org",
   "@type": "WebPage",
-  "url": "http://www.testing.cfmdc.org",
+  "url": "http://testing.cfmdc.org",
   "name": "Canadian Filmmakers Distribution Centre",
   "description": "Established in 1967, CFMDC is a not-for-profit, artist-run centre that has since grown and evolved into a world-renowned distributor of independent media art. Now in our 50th year, with 3700+ films in our catalogue by over 1000 members, CFMDC is one of the most enduring, respected, forward thinking, and engaged, distribution centres in Canada.",
   "keywords": "401 Richmond, Canadian Filmmakers Distribution Centre, Film, Canadian, Filmmakers, Distribution, Canadian Film, CFMDC, Canadian Filmmakers Distribution, Canadian Film Distribution, Canadian Distribution, Filmmakers Distribution ",
@@ -71,7 +71,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 1,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/filmsfortheclassroom/",
+                "@id": "http://testing.cfmdc.org/filmsfortheclassroom/",
                 "name": "Educators"
                 }
         },
@@ -80,7 +80,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 2,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/previews/",
+                "@id": "http://testing.cfmdc.org/previews/",
                 "name": "Sales + Rentals"
                 }
         },
@@ -89,7 +89,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 3,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/faq/",
+                "@id": "http://testing.cfmdc.org/faq/",
                 "name": "Submit Film"
                 }
         },
@@ -98,7 +98,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 4,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/artistindex/",
+                "@id": "http://testing.cfmdc.org/artistindex/",
                 "name": "Catalogue"
                 }
         },
@@ -107,7 +107,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 4,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/contact/",
+                "@id": "http://testing.cfmdc.org/contact/",
                 "name": "Contact"
                 }
         },
@@ -116,7 +116,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 5,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/staffboard/",
+                "@id": "http://testing.cfmdc.org/staffboard/",
                 "name": "Staff + Board"
                 }
         },
@@ -125,7 +125,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 6,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/about/",
+                "@id": "http://testing.cfmdc.org/about/",
                 "name": "About"
                 }
         },
@@ -134,7 +134,7 @@ recent_aquisitions_json = JSON.parse('<?php echo addslashes($recent_aquisitions_
                 "position": 7,
                 "item":
                 {
-                "@id": "http://www.testing.cfmdc.org/links/",
+                "@id": "http://testing.cfmdc.org/links/",
                 "name": "Links"
                 }
         }
