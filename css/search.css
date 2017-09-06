@@ -174,6 +174,8 @@
               font-size: 10px;
               left: 4px;
               top: 0px; }
+          .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_heading .genre_menu_link:hover {
+            color: #FFC300; }
         .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table {
           width: 86.7%;
           display: table;
