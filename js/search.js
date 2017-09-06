@@ -147,7 +147,7 @@ function writeRecords(records) {
         // genre
         if (genre_exists) {
             $(".search_table_content").append("<div class='generic_spacer'></div>")
-            $(".search_table_content").append("<div class='genre_cat_heading'>Genre</div>")
+            $(".search_table_content").append("<div class='genre_cat_heading'>Genre</div> <div class=''>+</div>")
             $(".search_table_content").append("<div class='genre_cat_table'></div>")
             $(".genre_cat_table").last().append(getGenreCategories(records[i]['genre']))
         }
