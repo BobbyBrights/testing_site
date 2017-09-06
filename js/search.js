@@ -67,7 +67,7 @@ $(document).ready(function() {
             $(".genre_cat_table").hide();
 
             $(".genre_menu_link > .glyphicon").click(function() {
-
+                alert($(this).parent().parent().html());
             })
 
             $(".search_table_content").append("<div class='search_spacer'></div>")
