@@ -264,11 +264,13 @@
                             left: 4px;
                             top: 0px;
                         }
+
+                        .glyphicon:hover {
+                            color: #FFC300;
+                        }
                     }
 
-                    .genre_menu_link:hover {
-                        color: #FFC300;
-                    }
+
                 }
 
                 .genre_cat_table {
