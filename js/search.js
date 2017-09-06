@@ -67,7 +67,7 @@ $(document).ready(function() {
             $(".genre_cat_table").hide();
 
             $(".genre_menu_link > .glyphicon").click(function() {
-                alert("hi");
+
             })
 
             $(".search_table_content").append("<div class='search_spacer'></div>")
@@ -166,8 +166,8 @@ function writeRecords(records) {
             else {
                 $(".search_table_content").append("<div class='generic_spacer'></div>")
             }
-            $(".search_table_content").append("<div class='genre_cat_heading'>Keywords <div class='genre_menu_link'><span class='glyphicon glyphicon-plus'></span></div></div>")
-            $(".search_table_content").append("<div class='genre_cat_table'></div>")
+            $(".search_table_content").append("<div class='genre_obj'><div class='genre_cat_heading'>Keywords <div class='genre_menu_link'><span class='glyphicon glyphicon-plus'></span></div></div></div>")
+            $(".genre_obj").last().append("<div class='genre_cat_table'></div>")
             $(".genre_cat_table").last().append(getGenreCategories(records[i]['category']))
         }
 
