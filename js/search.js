@@ -153,8 +153,8 @@ function writeRecords(records) {
         // genre
         if (genre_exists) {
             $(".search_table_content").append("<div class='generic_spacer'></div>")
-            $(".search_table_content").append("<div class='genre_cat_heading'>Genre <div class='genre_menu_link'><span class='glyphicon glyphicon-plus'></span></div></div> ")
-            $(".search_table_content").append("<div class='genre_cat_table'></div>")
+            $(".search_table_content").append("<div class='genre_obj'><div class='genre_cat_heading'>Genre <div class='genre_menu_link'><span class='glyphicon glyphicon-plus'></span></div></div></div>")
+            $(".genre_obj").last().append("<div class='genre_cat_table'></div>")
             $(".genre_cat_table").last().append(getGenreCategories(records[i]['genre']))
         }
 
@@ -179,8 +179,8 @@ function writeRecords(records) {
             else {
                 $(".search_table_content").append("<div class='generic_spacer'></div>")
             }
-            $(".search_table_content").append("<div class='genre_cat_heading'>Exhibition Format <div class='genre_menu_link'><span class='glyphicon glyphicon-plus'></span></div></div>")
-            $(".search_table_content").append("<div class='genre_cat_table'></div>")
+            $(".search_table_content").append("<div class='genre_obj'><div class='genre_cat_heading'>Exhibition Format <div class='genre_menu_link'><span class='glyphicon glyphicon-plus'></span></div></div></div>")
+            $(".genre_obj").last().append("<div class='genre_cat_table'></div>")
             $(".genre_cat_table").last().append(getExhibition(records[i]['exhibition_format']))
         }
     }
