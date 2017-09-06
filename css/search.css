@@ -167,6 +167,8 @@
           display: table;
           font-size: 14px;
           font-family: trade_gothic_bold, sans-serif; }
+          .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_heading .genre_menu_link {
+            display: inline; }
         .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table {
           width: 86.7%;
           display: table;
