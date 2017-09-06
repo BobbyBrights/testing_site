@@ -71,9 +71,13 @@ $(document).ready(function() {
 
                 if (obj_table.is(':visible')) {
                     obj_table.hide();
+                    $(this).removeClass('glyphicon-minus');
+                    $(this).addClass('glyphicon-plus');
                 }
                 else {
                     obj_table.show();
+                    $(this).removeClass('glyphicon-plus');
+                    $(this).addClass('glyphicon-minus');
                 }
             })
 
