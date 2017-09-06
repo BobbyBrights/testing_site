@@ -169,6 +169,9 @@
           font-family: trade_gothic_bold, sans-serif; }
           .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_heading .genre_menu_link {
             display: inline; }
+            .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_heading .genre_menu_link .glyphicon {
+              font-size: 10px;
+              left: 4px; }
         .accessible .search_table .search_table_cell_container .search_table_content .genre_cat_table {
           width: 86.7%;
           display: table;
