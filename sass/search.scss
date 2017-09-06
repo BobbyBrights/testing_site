@@ -257,12 +257,13 @@
 
                     .genre_menu_link {
                         display: inline;
-                        cursor: pointer;
+                        
 
                         .glyphicon {
                             font-size: 10px;
                             left: 4px;
                             top: 0px;
+                            cursor: pointer;
                         }
 
                         .glyphicon:hover {
