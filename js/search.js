@@ -67,7 +67,14 @@ $(document).ready(function() {
             $(".genre_cat_table").hide();
 
             $(".genre_menu_link > .glyphicon").click(function() {
-                $(this).parent().parent().parent().find(".genre_cat_table").show();
+                obj_table = $(this).parent().parent().parent().find(".genre_cat_table");
+
+                if (obj_table.is(':visible')) {
+                    obj_table.hide();
+                }
+                else {
+                    obj_table.show();
+                }
             })
 
             $(".search_table_content").append("<div class='search_spacer'></div>")
