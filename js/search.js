@@ -64,7 +64,7 @@ $(document).ready(function() {
 
             writeRecords(search_obj['records'])
 
-            //$(".genre_cat_table").hide();
+            $(".genre_cat_table").hide();
 
             $(".genre_menu_link > .glyphicon").click(function() {
 
