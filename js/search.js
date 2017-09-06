@@ -64,6 +64,8 @@ $(document).ready(function() {
 
             writeRecords(search_obj['records'])
 
+            $(".genre_cat_table").hide();
+
             $(".search_table_content").append("<div class='search_spacer'></div>")
 
 			$(".search_table_content").append("<div class='info_bar'></div>");
