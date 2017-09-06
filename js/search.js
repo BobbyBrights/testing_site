@@ -66,6 +66,10 @@ $(document).ready(function() {
 
             $(".genre_cat_table").hide();
 
+            $(".genre_menu_link > .glyphicon").click(function() {
+                alert("hi");
+            })
+
             $(".search_table_content").append("<div class='search_spacer'></div>")
 
 			$(".search_table_content").append("<div class='info_bar'></div>");
