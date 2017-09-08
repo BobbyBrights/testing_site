@@ -107,6 +107,10 @@ $router->map('GET','/educationalservices/', 'src/educationalservices.php', 'educ
 $router->map('GET','/studyguides', 'src/studyguides.php', 'studyguides');
 $router->map('GET','/studyguides/', 'src/studyguides.php', 'studyguides_studyguides');
 
+// Submission Form
+$router->map('GET','/submissionform', 'src/submissionform.php', 'submissionform');
+$router->map('GET','/submissionform/', 'src/submissionform.php', 'submissionform_submissionform');
+
 // Compilations Main Page
 $router->map('GET','/filmsfortheclassroom', 'src/filmsfortheclassroom.php', 'filmsfortheclassroom');
 $router->map('GET','/filmsfortheclassroom/', 'src/filmsfortheclassroom.php', 'filmsfortheclassroom_filmsfortheclassroom');
