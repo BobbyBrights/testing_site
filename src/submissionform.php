@@ -3,7 +3,7 @@
 
 <link rel="stylesheet" type="text/css" href="<?=$web_host?>css/page.css">
 
-<!-- <script src="<?=$web_host?>js/studyguides.js" type="text/javascript"></script> -->
+<script src="<?=$web_host?>js/submission_form.js" type="text/javascript"></script>
 
 <script>
   var el = document.createElement('script');
