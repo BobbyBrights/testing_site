@@ -108,7 +108,10 @@ function getFilmDetails(film_detail) {
     details = [film_detail['title'], film_detail['length'], film_detail['year']];
     found_first = false
     for (j=0; j<3; j++) {
-        if (!found_first) {
+        if (!details[j]){
+            continue;
+        }
+        else if (!found_first) {
             if (j == 0) {
                 detail += "<b>" + details[j] + "</b>"
             }
