@@ -16,7 +16,7 @@ $(document).ready(function() {
     $(".table_cell_container").append("<div class='table_cell_right_margin'></div>")
 
     $(".table_contents").append("<div class='table_title'><div class='title'></div></div>")
-    $(".title").append("REQUEST ACCOUNT")
+    $(".title").append("Film Submission Form")
 
     $(".table_contents").append("<div class='spacer'></div>")
     $(".table_contents").append("<div class='request_acct_table'></div>")
