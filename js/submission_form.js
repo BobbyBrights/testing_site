@@ -4,7 +4,7 @@ recaptcha_checked = false;
 
 $(document).ready(function() {
 
-    document.title = "Request Account | Canadian Filmmakers Distribution Centre"
+    document.title = "Submission Form | Canadian Filmmakers Distribution Centre"
 
     $(".contents").append("<div class='top_buffer'></div>")
     $(".contents").append("<div class='table'></div>")
