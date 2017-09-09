@@ -162,7 +162,7 @@ $(document).ready(function() {
 
     $(".table_contents").append("<div class='request_acct_table'></div>")
 
-    Account type
+    // Account type
     $(".request_acct_table").last().append("<div class='request_acct_row'></div>")
     $(".request_acct_row").last().append("<div class='request_acct_type_heading'><b>I will be using this account as</b></div>")
     $(".request_acct_row").last().append("<div class='request_acct_type_label'></div>")
