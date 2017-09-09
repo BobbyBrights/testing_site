@@ -22,6 +22,10 @@ $(document).ready(function() {
     $(".table_contents").append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
     $(".note_table").last().append("<div class='note_content'></div>")
+    $(".note_content").last().append("<div class='note_content_table'></div>")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")

@@ -84,6 +84,13 @@ input {
           display: table-cell; }
         .table .table_cell_container .table_contents .note_table .note_content {
           display: table-cell; }
+          .table .table_cell_container .table_contents .note_table .note_content .note_content_table {
+            display: table; }
+            .table .table_cell_container .table_contents .note_table .note_content .note_content_table .note_content_horz_spacer {
+              height: 13px;
+              display: table-cell; }
+            .table .table_cell_container .table_contents .note_table .note_content .note_content_table .note_content_table_content {
+              display: table-cell; }
         .table .table_cell_container .table_contents .note_table .note_right_spacer {
           width: 13px;
           display: table-cell; }
