@@ -193,6 +193,17 @@ $(document).ready(function() {
     $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
     $(".table_contents").append("<div class='spacer'></div>")
 
+    $(".table_contents").append("<div class='spacer'></div>")
+    $(".table_contents").append("<div class='note_table'></div>")
+    $(".note_table").last().append("<div class='note_left_spacer'></div>")
+    $(".note_table").last().append("<div class='note_content'></div>")
+    $(".note_content").last().append("<div class='note_content_table'></div>")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
+    $(".note_content_table_content").last().append("If you do not have an Filmmaker or Client account with us, you will need to fill out the fields the section below.")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_table").last().append("<div class='note_right_spacer'></div>")
+
     // Button
     $(".table_contents").append("<button type='submit' id='subutton'><span>Submit</span></button>")
 
