@@ -74,6 +74,9 @@ input {
       .table .table_cell_container .table_contents .request_acct_table {
         width: 65.45%;
         display: table; }
+      .table .table_cell_container .table_contents .note_table {
+        width: 65.45%;
+        display: table; }
       .table .table_cell_container .table_contents .request_acct_sub_table {
         height: 100%;
         width: 100%;

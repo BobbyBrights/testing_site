@@ -19,6 +19,8 @@ $(document).ready(function() {
     $(".title").append("Film Submission Form")
 
     $(".table_contents").append("<div class='spacer'></div>")
+    $(".table_contents").append("<div class='note_table'></div>")
+    $(".table_contents").append("<div class='spacer'></div>")
     $(".table_contents").append("<div class='request_acct_table'></div>")
 
      $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
