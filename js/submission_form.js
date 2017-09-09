@@ -199,7 +199,7 @@ $(document).ready(function() {
     $(".note_content").last().append("<div class='note_content_table'></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("If you do not have an Filmmaker or Client account with us, you will need to fill out the fields the section below.")
+    $(".note_content_table_content").last().append("At this point they will submit film details here. Maybe some mention about copyrights etc.")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
