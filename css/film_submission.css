@@ -87,7 +87,8 @@ input {
         .table .table_cell_container .table_contents .note_table .note_content {
           display: table-cell; }
           .table .table_cell_container .table_contents .note_table .note_content .note_content_table {
-            display: table; }
+            display: table;
+            width: 674px; }
             .table .table_cell_container .table_contents .note_table .note_content .note_content_table .note_content_horz_spacer {
               height: 13px;
               display: table; }
