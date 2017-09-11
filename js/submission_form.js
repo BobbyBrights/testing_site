@@ -228,7 +228,7 @@ $(document).ready(function() {
     $(".categories_input_table").last().append("<div class='categories_input_row'></div>")
     $(".categories_input_row").last().append('<ul class="search_list" id="categories_form_ul"></ul>')
 
-    $("#categories_form_ul").append(build_category_list_form(categories_genre_obj['category'], 1) )
+    $("#categories_form_ul").append(build_category_list_form(categories_genre_obj['category'], 1))
 
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
@@ -306,6 +306,7 @@ function build_category_list_form(categories, count) {
         ul_str += li_str
     }
 
+    return ul_str
 }
 
 function recaptchaCallback() {
