@@ -194,10 +194,10 @@ $(document).ready(function() {
 
     $(".table_contents").append("<div class='spacer'></div>")
 
-    $(".table_contents").append("<div class='request_acct_table'></div>")
+    $(".table_contents").append("<div class='film_form_table'></div>")
 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
+    $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
+    $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
