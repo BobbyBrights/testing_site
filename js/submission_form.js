@@ -204,6 +204,7 @@ $(document).ready(function() {
     $(".film_form_row_row").last().append("<div class='request_acct_label'></div>")
     $(".request_acct_label").last().append("<div class='request_acct_label_text'></div>")
     $(".request_acct_label_text").last().append("<b>Genre</b>")
+    $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
 
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
