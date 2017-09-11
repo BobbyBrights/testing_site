@@ -209,6 +209,11 @@ $(document).ready(function() {
     $(".request_acct_input").last().append("<div class='genre_selection_container'></div>")
     $(".genre_selection_container").last().append("<div class='genre_input_table'></div>")
 
+    $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
+    $(".genre_input_row").last().append('<ul class="search_list" id="genre_form_ul"></ul>')
+
+    $("#genre_form_ul").append(build_genre_list(categories_genre_obj['genre']))
+
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
