@@ -182,27 +182,39 @@ input {
 
             }
 
-            .genre_selection_container::-webkit-scrollbar {   
+            .categories_selection_container {
+                height: 203px;
+                width: 100%;
+                overflow-x: visible;
+                overflow-y: scroll;
+                margin-top: 13px;
+
+                input[type="checkbox"] {
+                    visibility: hidden;
+                    position: absolute;
+                }
+
+            }
+
+            .genre_selection_container::-webkit-scrollbar, .categories_selection_container::-webkit-scrollbar{   
                 width: .5rem;
                 border-radius: 10rem
             }
             
-            .genre_selection_container::-webkit-scrollbar-track {
+            .genre_selection_container::-webkit-scrollbar-track, .categories_selection_container::-webkit-scrollbar-track {
                 background-color: transparent;
                 -moz-appearance: none !important;
             }
 
-            .genre_selection_container::-webkit-scrollbar-thumb {
+            .genre_selection_container::-webkit-scrollbar-thumb, .categories_selection_container::-webkit-scrollbar-thumb {
                 -moz-appearance: none !important;
                 background-color: #A29F9F;//rgba(0, 0, 0, 0.2);
                 border-radius: 10rem
             }
 
-            .genre_selection_container:hover::-webkit-scrollbar {
+            .genre_selection_container:hover::-webkit-scrollbar, .categories_selection_container:hover::-webkit-scrollbar {
                 width: .5rem
             }
-
-            
 
             .search_list {
                 padding: 0px;

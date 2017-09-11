@@ -96,17 +96,26 @@ input {
         .table .table_cell_container .table_contents .genre_selection_container input[type="checkbox"] {
           visibility: hidden;
           position: absolute; }
-      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar {
+      .table .table_cell_container .table_contents .categories_selection_container {
+        height: 203px;
+        width: 100%;
+        overflow-x: visible;
+        overflow-y: scroll;
+        margin-top: 13px; }
+        .table .table_cell_container .table_contents .categories_selection_container input[type="checkbox"] {
+          visibility: hidden;
+          position: absolute; }
+      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar, .table .table_cell_container .table_contents .categories_selection_container::-webkit-scrollbar {
         width: .5rem;
         border-radius: 10rem; }
-      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar-track {
+      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar-track, .table .table_cell_container .table_contents .categories_selection_container::-webkit-scrollbar-track {
         background-color: transparent;
         -moz-appearance: none !important; }
-      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar-thumb {
+      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar-thumb, .table .table_cell_container .table_contents .categories_selection_container::-webkit-scrollbar-thumb {
         -moz-appearance: none !important;
         background-color: #A29F9F;
         border-radius: 10rem; }
-      .table .table_cell_container .table_contents .genre_selection_container:hover::-webkit-scrollbar {
+      .table .table_cell_container .table_contents .genre_selection_container:hover::-webkit-scrollbar, .table .table_cell_container .table_contents .categories_selection_container:hover::-webkit-scrollbar {
         width: 0.5rem; }
       .table .table_cell_container .table_contents .search_list {
         padding: 0px;

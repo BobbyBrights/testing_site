@@ -220,6 +220,16 @@ $(document).ready(function() {
     $(".selection_acct_label").last().append("<div class='request_acct_label_text'></div>")
     $(".request_acct_label_text").last().append("<b>Keywords</b>")
 
+    $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
+
+    $(".request_acct_input").last().append("<div class='categories_selection_container'></div>")
+    $(".categories_selection_container").last().append("<div class='categories_input_table'></div>")
+
+    $(".categories_input_table").last().append("<div class='categories_input_row'></div>")
+    $(".categories_input_row").last().append('<ul class="search_list" id="categories_form_ul"></ul>')
+
+    $("#categories_form_ul").append(build_category_list_form(categories_genre_obj['category'], 1) )
+
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
@@ -283,6 +293,19 @@ function build_genre_list_form(genres, count) {
     }
 
     return ul_str
+}
+
+function build_category_list_form(categories, count) {
+    ul_str = ""
+
+    for($i=0; $i<categories.length; $i++) {
+        li_str = '<li class="search_list_entry_category">\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-category-' + count + '[]" id="search-category-' + count + '-' + ($i+1) + '"/>\
+                    <label for="search-category-' + count + '-' + ($i+1) + '">' + categories[$i][0] +'</label>\
+                </li>'
+        ul_str += li_str
+    }
+
 }
 
 function recaptchaCallback() {
