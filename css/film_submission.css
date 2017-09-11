@@ -57,6 +57,12 @@ input {
           margin-top: 11px;
           color: #000;
           display: inline-block; }
+        .table .table_cell_container .table_contents .table_title .subtitle {
+          font-family: trade_gothic_bold, sans-serif;
+          font-size: 18px;
+          margin-top: 11px;
+          color: #000;
+          display: inline-block; }
       .table .table_cell_container .table_contents .legend {
         font-family: trade_gothic, sans-serif;
         font-size: 14px; }
