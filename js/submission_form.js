@@ -189,10 +189,6 @@ $(document).ready(function() {
 
     $(".table_contents").append("<div class='spacer'></div>")
 
-    // recaptcha
-    $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
-    $(".table_contents").append("<div class='spacer_with_bar'></div>")
-
     $(".table_contents").append("<div class='table_title'><div class='subtitle'></div></div>")
     $(".subtitle").last().append("Film Entry #1")
 
@@ -209,6 +205,10 @@ $(document).ready(function() {
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
+
+    // recaptcha
+    $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
+    $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     // Button
     $(".table_contents").append("<button type='submit' id='subutton'><span>Submit</span></button>")
