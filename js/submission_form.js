@@ -203,7 +203,7 @@ $(document).ready(function() {
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
-    $(".table_contents").append("<div class='spacer'></div>")
+    $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     // Button
     $(".table_contents").append("<button type='submit' id='subutton'><span>Submit</span></button>")
