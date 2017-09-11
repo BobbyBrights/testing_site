@@ -196,6 +196,8 @@ $(document).ready(function() {
     $(".table_contents").append("<div class='table_title'><div class='subtitle'></div></div>")
     $(".subtitle").last().append("Film Entry #1")
 
+    $(".table_contents").append("<div class='spacer'></div>")
+
     $(".table_contents").append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
     $(".note_table").last().append("<div class='note_content'></div>")
