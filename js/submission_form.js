@@ -212,7 +212,7 @@ $(document).ready(function() {
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
     $(".genre_input_row").last().append('<ul class="search_list" id="genre_form_ul"></ul>')
 
-    $("#genre_form_ul").append(build_genre_list(categories_genre_obj['genre']))
+    $("#genre_form_ul").append(build_genre_list_form(categories_genre_obj['genre'], 1))
 
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
@@ -264,6 +264,20 @@ $(document).ready(function() {
     });
 
 })
+
+function build_genre_list_form(genres, count) {
+    ul_str = ""
+
+    for($i=0; $i<genres.length; $i++) {
+        li_str = '<li class="search_list_entry_genre">\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-genre-' + count + '[]" id="search-genre-' + count + '-' + ($i+1) + '"/>\
+                    <label for="search-genre-' + count + '-' + ($i+1) + '">' + genres[$i][0] +'</label>\
+                </li>'
+        ul_str += li_str
+    }
+
+    return ul_str
+}
 
 function recaptchaCallback() {
     recaptcha_checked = true;
