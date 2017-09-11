@@ -90,7 +90,7 @@ input {
         display: table; }
       .table .table_cell_container .table_contents .genre_selection_container {
         height: 203px;
-        width: 380px;
+        width: 100%;
         margin-top: 31px;
         overflow-x: visible;
         overflow-y: scroll;
