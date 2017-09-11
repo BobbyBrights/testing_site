@@ -214,6 +214,12 @@ $(document).ready(function() {
 
     $("#genre_form_ul").append(build_genre_list_form(categories_genre_obj['genre'], 1))
 
+    //Keywords
+    $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
+    $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
+    $(".selection_acct_label").last().append("<div class='request_acct_label_text'></div>")
+    $(".request_acct_label_text").last().append("<b>Keywords</b>")
+
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
