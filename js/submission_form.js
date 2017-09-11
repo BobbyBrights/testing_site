@@ -199,6 +199,12 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
+    // Genre
+    $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
+    $(".film_form_row_row").last().append("<div class='request_acct_label'></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'></div>")
+    $(".request_acct_label_text").last().append("Genre")
+
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
