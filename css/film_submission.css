@@ -88,6 +88,80 @@ input {
       .table .table_cell_container .table_contents .film_form_table {
         width: 65.45%;
         display: table; }
+      .table .table_cell_container .table_contents .genre_selection_container {
+        height: 203px;
+        width: 380px;
+        margin-top: 31px;
+        overflow-x: visible;
+        overflow-y: scroll;
+        position: absolute; }
+      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar {
+        width: .5rem;
+        border-radius: 10rem; }
+      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar-track {
+        background-color: transparent;
+        -moz-appearance: none !important; }
+      .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar-thumb {
+        -moz-appearance: none !important;
+        background-color: #A29F9F;
+        border-radius: 10rem; }
+      .table .table_cell_container .table_contents .genre_selection_container:hover::-webkit-scrollbar {
+        width: 0.5rem; }
+      .table .table_cell_container .table_contents .search_list {
+        padding: 0px;
+        list-style: none;
+        float: left;
+        margin-bottom: 5px;
+        overflow: hidden; }
+      .table .table_cell_container .table_contents .search_list_entry_category {
+        position: relative;
+        float: left;
+        margin-right: 10px; }
+      .table .table_cell_container .table_contents .search_list_entry_category label {
+        font-weight: normal !important;
+        font-family: trade_gothic, sans-serif;
+        background: #D8D8D8;
+        cursor: pointer;
+        line-height: 20px;
+        color: #000;
+        letter-spacing: -0.01em;
+        text-decoration: none;
+        border: none !important;
+        border-radius: 0;
+        padding: 2px 5px 0px 5px;
+        margin-bottom: 11px; }
+      .table .table_cell_container .table_contents .search_list_entry_category input[type=checkbox]:checked + label {
+        background: #FFC300; }
+      .table .table_cell_container .table_contents .search_list_entry_genre {
+        position: relative;
+        float: left;
+        margin-right: 10px; }
+      .table .table_cell_container .table_contents .search_list_entry_genre label {
+        font-weight: normal !important;
+        font-family: trade_gothic, sans-serif;
+        background: #D8D8D8;
+        cursor: pointer;
+        line-height: 20px;
+        color: #000;
+        letter-spacing: -0.01em;
+        text-decoration: none;
+        border: none !important;
+        border-radius: 0;
+        padding: 2px 5px 0px 5px;
+        margin-bottom: 11px; }
+      .table .table_cell_container .table_contents .search_list_entry_genre input[type=checkbox]:checked + label {
+        background: #FFC300; }
+      .table .table_cell_container .table_contents .input_table {
+        width: 100%;
+        display: table; }
+      .table .table_cell_container .table_contents .input_row {
+        display: table-row; }
+      .table .table_cell_container .table_contents .input_row_spacer {
+        display: table-row;
+        height: 7px; }
+      .table .table_cell_container .table_contents .input_row_heading {
+        font-family: trade_gothic_bold, sans-serif;
+        display: table-row; }
       .table .table_cell_container .table_contents .note_table {
         font-family: trade_gothic, sans-serif;
         font-size: 14px;

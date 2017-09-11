@@ -206,6 +206,8 @@ $(document).ready(function() {
     $(".request_acct_label_text").last().append("<b>Genre</b>")
     $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
 
+    $(".request_acct_input").last().append("<div class='genre_selection_container'></div>")
+
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
