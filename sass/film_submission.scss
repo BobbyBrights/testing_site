@@ -173,6 +173,7 @@ input {
                 width: 100%;
                 overflow-x: visible;
                 overflow-y: scroll;
+                margin-top: 31px;
 
                 input[type="checkbox"] {
                     visibility: hidden;
@@ -266,6 +267,7 @@ input {
             .genre_input_table {
                 width: 100%;
                 display: table;
+
             }
 
             .genre_input_row {

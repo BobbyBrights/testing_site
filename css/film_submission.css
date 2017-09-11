@@ -92,7 +92,8 @@ input {
         height: 203px;
         width: 100%;
         overflow-x: visible;
-        overflow-y: scroll; }
+        overflow-y: scroll;
+        margin-top: 31px; }
         .table .table_cell_container .table_contents .genre_selection_container input[type="checkbox"] {
           visibility: hidden;
           position: absolute; }
