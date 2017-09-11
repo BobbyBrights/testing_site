@@ -93,6 +93,9 @@ input {
         width: 100%;
         overflow-x: visible;
         overflow-y: scroll; }
+        .table .table_cell_container .table_contents .genre_selection_container input[type="checkbox"] {
+          visibility: hidden;
+          position: absolute; }
       .table .table_cell_container .table_contents .genre_selection_container::-webkit-scrollbar {
         width: .5rem;
         border-radius: 10rem; }
@@ -149,15 +152,15 @@ input {
         margin-bottom: 11px; }
       .table .table_cell_container .table_contents .search_list_entry_genre input[type=checkbox]:checked + label {
         background: #FFC300; }
-      .table .table_cell_container .table_contents .input_table {
+      .table .table_cell_container .table_contents .genre_input_table {
         width: 100%;
         display: table; }
-      .table .table_cell_container .table_contents .input_row {
+      .table .table_cell_container .table_contents .genre_input_row {
         display: table-row; }
-      .table .table_cell_container .table_contents .input_row_spacer {
+      .table .table_cell_container .table_contents .genre_input_row_spacer {
         display: table-row;
         height: 7px; }
-      .table .table_cell_container .table_contents .input_row_heading {
+      .table .table_cell_container .table_contents .genre_input_row_heading {
         font-family: trade_gothic_bold, sans-serif;
         display: table-row; }
       .table .table_cell_container .table_contents .note_table {

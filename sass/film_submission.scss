@@ -169,13 +169,16 @@ input {
             }
 
             .genre_selection_container {
-                //background-color: green;
                 height: 203px;
                 width: 100%;
-                //margin-top: 31px;
                 overflow-x: visible;
                 overflow-y: scroll;
-                //position: absolute;
+
+                input[type="checkbox"] {
+                    visibility: hidden;
+                    position: absolute;
+                }
+
             }
 
             .genre_selection_container::-webkit-scrollbar {   
@@ -198,10 +201,7 @@ input {
                 width: .5rem
             }
 
-            //input[type="checkbox"] {
-             //   visibility: hidden;
-            //    position: absolute;
-            //}
+            
 
             .search_list {
                 padding: 0px;
@@ -263,24 +263,21 @@ input {
                 background: #FFC300;
             }
 
-            .input_table {
-                //margin-top: 31px;
-                //position: relative;
-                //bottom: 0px;
+            .genre_input_table {
                 width: 100%;
                 display: table;
             }
 
-            .input_row {
+            .genre_input_row {
                 display: table-row;
             }
 
-            .input_row_spacer {
+            .genre_input_row_spacer {
                 display: table-row;
                 height: 7px;
             }
 
-            .input_row_heading {
+            .genre_input_row_heading {
                 font-family: trade_gothic_bold, sans-serif;
                 display: table-row;
             }
