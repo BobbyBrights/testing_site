@@ -1,6 +1,6 @@
 <?php
 
-echo getcwd(void);
+echo getcwd();
 
 $target_dir = "upload/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
