@@ -2,6 +2,8 @@
 
 define ('SITE_ROOT', realpath(dirname(__FILE__)));
 
+echo SITE_ROOT;
+
 $target_dir = SITE_ROOT . "/upload/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
