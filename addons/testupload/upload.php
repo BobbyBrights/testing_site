@@ -1,5 +1,5 @@
 <?php
-$target_dir = "http://www.testing.cfmdc.org/addons/testupload/upload/";
+$target_dir = "upload/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
