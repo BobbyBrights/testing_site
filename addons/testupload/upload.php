@@ -1,6 +1,8 @@
 <?php
 
-$target_dir = getcwd() . "/upload/";
+define ('SITE_ROOT', realpath(dirname(__FILE__)));
+
+$target_dir = SITE_ROOT . "/upload/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
