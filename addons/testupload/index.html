@@ -11,21 +11,27 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 
-		window.URL = window.URL || window.webkitURL;
-		
-		$("#fileToUpload").change(function() {
-			filename = $(this).val();
-			var img = new Image();
+		var _URL = window.URL || window.webkitURL;
 
-        	img.src = window.URL.createObjectURL( filename );
+		$("#fileToUpload").change(function(e) {
+		    
+		    var image, file;
 
-        	img.onload = function() {
-	            var width = img.naturalWidth,
-	                height = img.naturalHeight;
+		    if ((file = this.files[0])) {
+		       
+		        image = new Image();
+		        
+		        image.onload = function() {
+		            
+		            alert("The image width is " +this.width + " and image height is " + this.height);
+		        };
+		    
+		        image.src = _URL.createObjectURL(file);
 
-	            alert(height);
-	        };
-		})
+
+		    }
+
+		});
 	})
 </script>
 
