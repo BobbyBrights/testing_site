@@ -17,7 +17,13 @@
 		    
 		    var image, file;
 
-		    alert($(this).val());
+		    filename = $(this).val();
+
+		    var fileExt = filename.split('.').pop(); 
+
+		    if (fileExt.toLowerCase() !== "jpg" || fileExt.toLowerCase() !== "jpeg") {
+		    	alert("not a jpg image");
+		    }
 
 		    if ((file = this.files[0])) {
 
