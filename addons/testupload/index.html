@@ -10,11 +10,21 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
+
+		window.URL = window.URL || window.webkitURL;
+		
 		$("#fileToUpload").change(function() {
 			filename = $(this).val();
-			var fileInput = $(this).find("input[type=file]")[0],
-        	file = fileInput.files && fileInput.files[0];
-        	alert(file);
+			var img = new Image();
+
+        	img.src = window.URL.createObjectURL( filename );
+
+        	img.onload = function() {
+	            var width = img.naturalWidth,
+	                height = img.naturalHeight;
+
+	            alert(height);
+	        };
 		})
 	})
 </script>
