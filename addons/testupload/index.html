@@ -11,7 +11,17 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#fileToUpload").change(function() {
-			alert($(this).val());
+			filename = $(this).val();
+			var img = new Image();
+
+        	img.src = window.URL.createObjectURL( filename );
+
+        	img.onload = function() {
+	            var width = img.naturalWidth,
+	                height = img.naturalHeight;
+
+	            alert(height);
+	        };
 		})
 	})
 </script>
