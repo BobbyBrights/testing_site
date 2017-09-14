@@ -208,7 +208,7 @@ $(document).ready(function() {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file"/>Upload Web Still</label><div class="file-text" id="web-still-text">test</div>')
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file"/>Upload Web Still</label><div class="file-text" id="web-still-text">no file currently selected</div>')
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
