@@ -301,6 +301,9 @@ $(document).ready(function() {
 })
 
 function check_still_upload() {
+
+    var _URL = window.URL || window.webkitURL;
+    
     $("#film-still-file").change(function(e) {
         var image, file;
 
