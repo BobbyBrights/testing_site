@@ -199,6 +199,13 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
+    //Stills Upload
+    $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
+    $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
+    $(".selection_acct_label").last().append("<div class='request_acct_label_text'></div>")
+    $(".request_acct_label_text").last().append("<b>Web Still</b>")
+    $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
+
     // Genre
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
