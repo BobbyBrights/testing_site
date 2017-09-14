@@ -216,6 +216,8 @@ $(document).ready(function() {
 
     $(".request_acct_table_row_label").last().html("PDF only, max size 2MB")
 
+    check_screening_history_upload();
+
     //Stills Upload
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
@@ -314,6 +316,40 @@ $(document).ready(function() {
     });
 
 })
+
+function check_screening_history_upload() {
+
+    $("#film-screening-history-file").change(function(e) {
+        var file;
+
+        filepath = $(this).val();
+
+        var fileExt = filepath.split('.').pop(); 
+
+        filename = filepath.split('\\').pop(); 
+
+        if (fileExt.toLowerCase() !== "pdf") {
+            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. Please try again.</div>')
+            $(".warning").addClass("warning_up")
+            $(this).val("");
+            $("#web-screening-history-text").html("no file currently selected");
+        }
+        else{
+            if ((file = this.files[0])) {
+
+                if (file.size > 1048576 * 2) {
+                    $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 2MB. Please try again.</div>')
+                    $(".warning").addClass("warning_up")
+                    $(this).val("");
+                    $("#web-screening-history-text").html("no file currently selected");
+                }
+                else {
+                    $("#web-screening-history-text").html(filename);
+                }
+            }
+        }
+    })
+}
 
 function check_still_upload() {
 
