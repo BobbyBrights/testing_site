@@ -92,8 +92,6 @@ input {
         font-family: trade_gothic, sans-serif;
         top: 14px;
         position: relative; }
-        .table .table_cell_container .table_contents .request_acct_table_row_label input[type="file"] {
-          display: none; }
         .table .table_cell_container .table_contents .request_acct_table_row_label .file-upload {
           background-color: #000;
           width: 120px;
