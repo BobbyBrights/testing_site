@@ -307,9 +307,11 @@ function check_still_upload() {
     $("#film-still-file").change(function(e) {
         var image, file;
 
-        filename = $(this).val();
+        filepath = $(this).val();
 
-        var fileExt = filename.split('.').pop(); 
+        var fileExt = filepath.split('.').pop(); 
+
+        filename = filepath.split('\\').pop(); 
 
         if (fileExt.toLowerCase() !== "jpg" && fileExt.toLowerCase() !== "jpeg") {
             $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG. Please try again.</div>')
@@ -340,7 +342,6 @@ function check_still_upload() {
                             $("#web-still-text").html("no file currently selected");
                         }
                         else {
-                            alert($("#film-still-file").val());
                             $("#web-still-text").html(filename);
                         }
                     };
