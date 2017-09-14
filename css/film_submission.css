@@ -87,6 +87,10 @@ input {
         display: table; }
       .table .table_cell_container .table_contents .request_acct_table_row {
         display: table-row; }
+      .table .table_cell_container .table_contents .request_acct_table_row_label {
+        font-size: 14px;
+        font-family: trade_gothic_bold, sans-serif;
+        display: table-cell; }
       .table .table_cell_container .table_contents .film_form_table {
         width: 65.45%;
         display: table; }
