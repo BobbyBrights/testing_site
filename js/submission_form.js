@@ -210,7 +210,7 @@ $(document).ready(function() {
 
     $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file"/>Upload Web Still</label>')
 
-    $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
     $(".request_acct_table_row_label").last().html("JPEG only, min width 380px, min height 265px, max size 1MB")
 

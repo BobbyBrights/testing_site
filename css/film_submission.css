@@ -87,10 +87,12 @@ input {
         display: table; }
       .table .table_cell_container .table_contents .request_acct_table_row {
         display: table-row; }
+      .table .table_cell_container .table_contents .request_acct_upload_info_row {
+        height: 35px; }
       .table .table_cell_container .table_contents .request_acct_table_row_label {
         font-size: 14px;
         font-family: trade_gothic, sans-serif;
-        top: 14px;
+        top: 6px;
         position: relative; }
         .table .table_cell_container .table_contents .request_acct_table_row_label input[type="file"] {
           display: none; }
