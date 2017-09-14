@@ -340,8 +340,7 @@ function check_still_upload() {
                             $("#web-still-text").html("no file currently selected");
                         }
                         else {
-                            alert(filename);
-                            $("#web-still-text").html($(this).val());
+                            $("#web-still-text").html(filename);
                         }
                     };
                     
