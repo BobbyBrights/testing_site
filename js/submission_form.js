@@ -206,6 +206,10 @@ $(document).ready(function() {
     $(".request_acct_label_text").last().append("<b>Web Still</b>")
     $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
 
+    $(".request_acct_input").last().append("<div class='request_acct_input_row'></div>")
+
+    $(".request_acct_input_row").last().html("JPEG only, min width 380px, max height 265px, max size 1M")
+
     // Genre
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")

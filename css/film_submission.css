@@ -85,6 +85,8 @@ input {
       .table .table_cell_container .table_contents .request_acct_table {
         width: 65.45%;
         display: table; }
+      .table .table_cell_container .table_contents .request_acct_table_row {
+        display: table-row; }
       .table .table_cell_container .table_contents .film_form_table {
         width: 65.45%;
         display: table; }
