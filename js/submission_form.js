@@ -332,7 +332,7 @@ function check_screening_history_upload() {
             $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. Please try again.</div>')
             $(".warning").addClass("warning_up")
             $(this).val("");
-            $("#web-screening-history-text").html("no file currently selected");
+            $("#screening-history-text").html("no file currently selected");
         }
         else{
             if ((file = this.files[0])) {
@@ -341,10 +341,10 @@ function check_screening_history_upload() {
                     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 2MB. Please try again.</div>')
                     $(".warning").addClass("warning_up")
                     $(this).val("");
-                    $("#web-screening-history-text").html("no file currently selected");
+                    $("#screening-history-text").html("no file currently selected");
                 }
                 else {
-                    $("#web-screening-history-text").html(filename);
+                    $("#screening-history-text").html(filename);
                 }
             }
         }
