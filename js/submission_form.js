@@ -208,7 +208,7 @@ $(document).ready(function() {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label for="file-upload" class="file-upload"> <input id="file-upload" name="file-upload" type="file"/> Upload Still</label>')
+    $(".request_acct_table_row_label").last().append('<input id="file-upload" name="file-upload" type="file"/>')
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
