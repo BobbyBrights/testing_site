@@ -203,7 +203,7 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
     $(".selection_acct_label").last().append("<div class='request_acct_label_text'></div>")
-    $(".request_acct_label_text").last().append("<b>Web Still</b>")
+    $(".request_acct_label_text").last().append("<b>Web Still</b> jpg only")
     $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
 
     // Genre
