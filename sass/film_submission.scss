@@ -170,7 +170,8 @@ input {
             .request_acct_table_row_label {
                 font-size: 14px;
                 font-family: trade_gothic, sans-serif;
-                display: table-cell;
+                top: 14px;
+                position: relative;
             }
 
             .film_form_table { 
