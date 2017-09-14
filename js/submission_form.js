@@ -328,6 +328,8 @@ function check_still_upload() {
                 else {
                
                     image = new Image();
+
+                    image.src = _URL.createObjectURL(file);
                     
                     image.onload = function() {
                         if (this.width < 380 || this.height < 265) {
@@ -341,8 +343,7 @@ function check_still_upload() {
                             $("#web-still-text").html($(this).val());
                         }
                     };
-                
-                    image.src = _URL.createObjectURL(file);
+                    
                 }
             }
         }
