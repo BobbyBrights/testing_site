@@ -1,8 +1,12 @@
 var web_host = "http://www.testing.cfmdc.org/";
 
+var _URL = null;
+
 recaptcha_checked = false;
 
 $(document).ready(function() {
+
+    var _URL = window.URL || window.webkitURL;
 
     document.title = "Submission Form | Canadian Filmmakers Distribution Centre"
 
@@ -214,6 +218,8 @@ $(document).ready(function() {
 
     $(".request_acct_table_row_label").last().html("JPEG only, min width 380px, min height 265px, max size 1MB")
 
+    check_still_upload();
+
     // Genre
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
@@ -295,6 +301,52 @@ $(document).ready(function() {
     });
 
 })
+
+function check_still_upload() {
+    $("#film-still-file").change(function(e) {
+        var image, file;
+
+        filename = $(this).val();
+
+        var fileExt = filename.split('.').pop(); 
+
+        if (fileExt.toLowerCase() !== "jpg" && fileExt.toLowerCase() !== "jpeg") {
+            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG. Please try again.</div>')
+            $(".warning").addClass("warning_up")
+            $(this).val("");
+            $("#web-still-text").html("no file currently selected");
+        }
+        else{
+            if ((file = this.files[0])) {
+
+                if (file.size > 1048576) {
+                    $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 1MB. Please try again.</div>')
+                    $(".warning").addClass("warning_up")
+                    $(this).val("");
+                    $("#web-still-text").html("no file currently selected");
+                }
+                else {
+               
+                    image = new Image();
+                    
+                    image.onload = function() {
+                        if (this.width < 380 || this.height < 265) {
+                            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload has a width smaller than 380px or a height smaller than 265px. Please try again.</div>')
+                            $(".warning").addClass("warning_up")
+                            $(this).val("");
+                            $("#web-still-text").html("no file currently selected");
+                        }
+                        else {
+                            $("#web-still-text").html($(this).val());
+                        }
+                    };
+                
+                    image.src = _URL.createObjectURL(file);
+                }
+            }
+        }
+    })
+}
 
 function build_genre_list_form(genres, count) {
     ul_str = ""
