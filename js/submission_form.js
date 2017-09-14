@@ -303,7 +303,7 @@ $(document).ready(function() {
 function check_still_upload() {
 
     var _URL = window.URL || window.webkitURL;
-    
+
     $("#film-still-file").change(function(e) {
         var image, file;
 
@@ -340,7 +340,7 @@ function check_still_upload() {
                             $("#web-still-text").html("no file currently selected");
                         }
                         else {
-                            alert("ok");
+                            alert($(this).val());
                             $("#web-still-text").html($(this).val());
                         }
                     };
