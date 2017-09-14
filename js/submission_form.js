@@ -201,6 +201,21 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
+    //Screening history
+    $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
+    $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
+    $(".selection_acct_label").last().append("<div class='request_acct_label_text'></div>")
+    $(".request_acct_label_text").last().append("<b>Screening History</b> *")
+    $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
+
+    $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
+
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-screening-history-file" />Upload PDF</label><div class="file-text" id="screening-history-text">no file currently selected</div>')
+
+    $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
+
+    $(".request_acct_table_row_label").last().html("PDF only, max size 2MB")
+
     //Stills Upload
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
@@ -214,7 +229,7 @@ $(document).ready(function() {
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().html("JPEG only, min width 380px, min height 265px, max size 1MB")
+    $(".request_acct_table_row_label").last().html("JPEG/JPG only, min width 380px, min height 265px, max size 1MB")
 
     check_still_upload();
 
@@ -314,7 +329,7 @@ function check_still_upload() {
         filename = filepath.split('\\').pop(); 
 
         if (fileExt.toLowerCase() !== "jpg" && fileExt.toLowerCase() !== "jpeg") {
-            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG. Please try again.</div>')
+            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG/JPG. Please try again.</div>')
             $(".warning").addClass("warning_up")
             $(this).val("");
             $("#web-still-text").html("no file currently selected");
