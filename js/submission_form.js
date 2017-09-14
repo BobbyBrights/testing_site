@@ -206,7 +206,9 @@ $(document).ready(function() {
     $(".request_acct_label_text").last().append("<b>Web Still</b>")
     $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
 
-    $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'>test</div></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
+
+    $(".request_acct_table_row_label").last().append('<label for="file-upload" class="file-upload">Custom Upload</label><input id="file-upload" name="file-upload" type="file"/>')
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
