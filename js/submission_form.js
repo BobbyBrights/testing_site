@@ -1,7 +1,5 @@
 var web_host = "http://www.testing.cfmdc.org/";
 
-var _URL = null;
-
 recaptcha_checked = false;
 
 $(document).ready(function() {
