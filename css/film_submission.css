@@ -222,6 +222,9 @@ input {
       .table .table_cell_container .table_contents .request_acct_row {
         display: table;
         width: 536px; }
+      .table .table_cell_container .table_contents .request_acct_film_row {
+        display: table;
+        width: 424px; }
       .table .table_cell_container .table_contents .request_acct_row_row {
         display: table;
         width: 700px; }
