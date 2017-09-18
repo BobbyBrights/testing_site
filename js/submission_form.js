@@ -248,7 +248,7 @@ $(document).ready(function() {
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
     $(".genre_input_row").last().append('<ul class="search_list" id="org_format_form_ul"></ul>')
 
-    $("#org_format_form_ul").append(build_genre_list_form(categories_genre_obj['format'], 1))
+    $("#org_format_form_ul").append(build_genre_list_form(categories_org_format_obj['format'], 1))
 
     // Exhibition Format
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -263,7 +263,7 @@ $(document).ready(function() {
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
     $(".genre_input_row").last().append('<ul class="search_list" id="ex_format_form_ul"></ul>')
 
-    $("#ex_format_form_ul").append(build_genre_list_form(categories_genre_obj['format'], 1))
+    $("#ex_format_form_ul").append(build_genre_list_form(categories_ex_format_obj['format'], 1))
 
     // Genre
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
