@@ -521,6 +521,10 @@ input {
                     line-height: normal;
                     background-color: transparent;
                 }
+
+                input:focus {
+                    outline: none;
+                }
             }
 
             .request_acct_input_small{

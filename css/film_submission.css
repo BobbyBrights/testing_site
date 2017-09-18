@@ -337,6 +337,8 @@ input {
           height: 30px;
           line-height: normal;
           background-color: transparent; }
+        .table .table_cell_container .table_contents .request_acct_input_box input:focus {
+          outline: none; }
       .table .table_cell_container .table_contents .request_acct_input_small {
         position: relative;
         width: 80px;
