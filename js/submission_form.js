@@ -433,6 +433,34 @@ function check_still_upload() {
     })
 }
 
+function build_org_format_list_form(formats, count) {
+    ul_str = ""
+
+    for($i=0; $i<formats.length; $i++) {
+        li_str = '<li class="search_list_entry_genre">\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-org-format-' + count + '[]" id="search-org-format-' + count + '-' + ($i+1) + '"/>\
+                    <label for="search-org-format-' + count + '-' + ($i+1) + '">' + formats[$i][0] +'</label>\
+                </li>'
+        ul_str += li_str
+    }
+
+    return ul_str
+}
+
+function build_ex_format_list_form(formats, count) {
+    ul_str = ""
+
+    for($i=0; $i<formats.length; $i++) {
+        li_str = '<li class="search_list_entry_genre">\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-ex-format-' + count + '[]" id="search-ex-format-' + count + '-' + ($i+1) + '"/>\
+                    <label for="search-ex-format-' + count + '-' + ($i+1) + '">' + formats[$i][0] +'</label>\
+                </li>'
+        ul_str += li_str
+    }
+
+    return ul_str
+}
+
 function build_genre_list_form(genres, count) {
     ul_str = ""
 
