@@ -325,6 +325,10 @@ input {
           width: 220px;
           position: relative;
           top: 4px; }
+      .table .table_cell_container .table_contents .request_acct_input_box {
+        position: relative;
+        width: 595px;
+        height: 30px; }
       .table .table_cell_container .table_contents .request_acct_input_small {
         position: relative;
         width: 80px;

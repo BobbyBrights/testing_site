@@ -507,6 +507,12 @@ input {
                 @include input-space(220px); 
             }
 
+            .request_acct_input_box{
+                position: relative;
+                width: 595px;
+                height: 30px;
+            }
+
             .request_acct_input_small{
                 @include input-space(80px); 
             }
