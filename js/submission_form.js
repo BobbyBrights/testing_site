@@ -201,67 +201,6 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
-    // First Name 
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>First Name</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='filmmakers_firstname' name='filmmakers_firstname'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
-
-    // Last Name
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>Last Name</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='filmmakers_lastname' name='filmmakers_lastname'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
-
-    // Email
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's Email</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=2 type='text' id='filmmakers_email' name='filmmakers_email'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
-
-    // Filmmaker's Bio
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
-    $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>Bio</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
-    $(".request_acct_input_box").last().append("<input type='textarea' id='filmmakers_bio' name='filmmakers_bio'>")
-    $(".request_acct_input_box").last().append("<div class='border_line'></div>")
-
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
-
-    // Secondary Filmmaker Name(s) 
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Secondary <br/>Filmmaker Name(s)</b> *</div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='sec_filmmakers_name' name='sec_filmmakers_name'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
-
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
-
     // Film Title
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
@@ -371,6 +310,67 @@ $(document).ready(function() {
     $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
     $(".request_acct_input_box").last().append("<input type='textarea' id='synopsis' name='synopsis'>")
     $(".request_acct_input_box").last().append("<div class='border_line'></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
+    // First Name 
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>First Name</b></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='filmmakers_firstname' name='filmmakers_firstname'>")
+    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+
+    // Last Name
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>Last Name</b></div>")
+    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+    $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='filmmakers_lastname' name='filmmakers_lastname'>")
+    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
+
+    // Email
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's Email</b></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+    $(".request_acct_input_large").last().append("<input tabindex=2 type='text' id='filmmakers_email' name='filmmakers_email'>")
+    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
+    // Filmmaker's Bio
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
+    $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>Bio</b></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
+    $(".request_acct_input_box").last().append("<input type='textarea' id='filmmakers_bio' name='filmmakers_bio'>")
+    $(".request_acct_input_box").last().append("<div class='border_line'></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
+    // Secondary Filmmaker Name(s) 
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Secondary <br/>Filmmaker Name(s)</b> *</div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='sec_filmmakers_name' name='sec_filmmakers_name'>")
+    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
