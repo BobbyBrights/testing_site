@@ -327,13 +327,13 @@ input {
           top: 4px; }
       .table .table_cell_container .table_contents .request_acct_input_box {
         position: relative;
-        width: 595px;
+        width: 600px;
         height: 30px; }
         .table .table_cell_container .table_contents .request_acct_input_box input {
           position: relative;
           top: 12px;
           border: none;
-          width: 595px;
+          width: 600;
           height: 30px;
           line-height: normal;
           background-color: transparent; }
