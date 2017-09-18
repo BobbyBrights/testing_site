@@ -252,7 +252,7 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Secondary <br/>Filmmaker Name(s)</b></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Secondary <br/>Filmmaker Name(s)</b> *</div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
     $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='sec_filmmakers_name' name='sec_filmmakers_name'>")
