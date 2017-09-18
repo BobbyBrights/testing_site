@@ -15,11 +15,13 @@ if (!$data) {
 } else {
     $genre = $data->VALUELISTS->VALUELIST[0];
     $category = $data->VALUELISTS->VALUELIST[1];
+    $format = $data->VALUELISTS->VALUELIST[2];
     
     //print_r($genre);
     
     $category_array = array();
     $genre_array = array();
+    $format_array = array();
 
     for ($i=0; $i<count($genre); $i++) {
         array_push($genre_array, array((string) $genre->VALUE[$i]));
@@ -29,7 +31,11 @@ if (!$data) {
         array_push($category_array, array(strtolower((string) $category->VALUE[$i])));
     }   
 
-    $json_categories_genre = array("genre"=> $genre_array, "category"=> $category_array);
+    for ($i=0; $i<count($format); $i++) {
+        array_push($format_array, array(strtolower((string) $format->VALUE[$i])));
+    } 
+
+    $json_categories_genre = array("genre"=> $genre_array, "category"=> $category_array, "format"=> $format_array);
 
     ?>
 <script type="text/javascript"> 
