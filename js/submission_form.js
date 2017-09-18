@@ -224,7 +224,7 @@ $(document).ready(function() {
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
-    // Address
+    // Email
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
