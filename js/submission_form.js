@@ -362,8 +362,6 @@ $(document).ready(function() {
     $(".acct_type").last().append("<label for='client'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>silent</b></div>")
 
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
-
     // Film Synopsis
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
