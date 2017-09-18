@@ -229,6 +229,10 @@ input {
         display: table;
         height: 15px;
         width: 700px; }
+      .table .table_cell_container .table_contents .request_acct_row_row_sm_spacer {
+        display: table;
+        height: 5px;
+        width: 700px; }
       .table .table_cell_container .table_contents .film_form_row_row {
         display: table;
         width: 700px; }

@@ -222,7 +222,7 @@ $(document).ready(function() {
     $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='filmmakers_email' name='filmmakers_email'>")
     $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+    $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
     // Last Name 
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
