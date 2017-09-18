@@ -343,6 +343,8 @@ $(document).ready(function() {
     $(".acct_type").last().append("<label for='client_filmmaker'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour and b/w</b></div>")
 
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
     // Sound
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Sound</b> *</div>")
@@ -359,6 +361,8 @@ $(document).ready(function() {
     $(".acct_type").last().append("<input type='radio' value='silent' id='silent' name='sound'></input>")
     $(".acct_type").last().append("<label for='client'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>silent</b></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     //Screening history
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
