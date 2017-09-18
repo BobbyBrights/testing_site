@@ -318,6 +318,31 @@ $(document).ready(function() {
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
+    // Account type
+    $(".film_form_table").last().append("<div class='request_acct_row'></div>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_heading'><b>Sound</b> *</div>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_label'></div>")
+    $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
+    $(".acct_type").last().append("<input type='radio' value='filmmaker' id='filmmaker_acct' name='acct_type'></input>")
+    $(".acct_type").last().append("<label for='filmmaker_acct'></label><br>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_label_text'><b>colour</b></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row'></div>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_heading'>&#8203;</div>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_label'></div>")
+    $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
+    $(".acct_type").last().append("<input type='radio' value='client' id='client' name='acct_type'></input>")
+    $(".acct_type").last().append("<label for='client'></label>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_label_text'><b>b/w</b></div>")
+    
+    $(".film_form_table").last().append("<div class='request_acct_row'></div>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_heading'>&#8203;</div>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_label'></div>")
+    $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
+    $(".acct_type").last().append("<input type='radio' value='client_filmmaker' id='client_filmmaker' name='acct_type'></input>")
+    $(".acct_type").last().append("<label for='client_filmmaker'></label>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_label_text'><b>colour and b/w</b></div>")
+
     //Screening history
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
