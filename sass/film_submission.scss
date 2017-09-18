@@ -511,6 +511,16 @@ input {
                 position: relative;
                 width: 595px;
                 height: 30px;
+
+                input {
+                    position: relative;
+                    top: 12px;
+                    border: none;
+                    width: 595px;
+                    height: 30px;
+                    line-height: normal;
+                    background-color: transparent;
+                }
             }
 
             .request_acct_input_small{
