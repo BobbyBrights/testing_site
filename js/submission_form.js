@@ -320,7 +320,7 @@ $(document).ready(function() {
 
     // Account type
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading'><b>Colour</b> *</div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Colour</b> *</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='filmmaker' id='filmmaker_acct' name='acct_type'></input>")
@@ -328,7 +328,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour</b></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading'>&#8203;</div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='client' id='client' name='acct_type'></input>")
@@ -336,7 +336,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>b/w</b></div>")
     
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading'>&#8203;</div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='client_filmmaker' id='client_filmmaker' name='acct_type'></input>")

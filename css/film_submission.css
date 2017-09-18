@@ -279,6 +279,14 @@ input {
         .table .table_cell_container .table_contents .request_acct_type_heading b {
           font-weight: normal;
           font-family: trade_gothic_bold, sans-serif; }
+      .table .table_cell_container .table_contents .request_acct_type_heading_film {
+        height: 30px;
+        display: table-cell;
+        font-family: trade_gothic, sans-serif;
+        font-size: 14px; }
+        .table .table_cell_container .table_contents .request_acct_type_heading_film b {
+          font-weight: normal;
+          font-family: trade_gothic_bold, sans-serif; }
       .table .table_cell_container .table_contents .request_acct_type_label {
         width: 25px;
         height: 30px;
