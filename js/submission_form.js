@@ -234,7 +234,7 @@ $(document).ready(function() {
     $(".request_acct_input_large").last().append("<input tabindex=2 type='text' id='filmmakers_email' name='filmmakers_email'>")
     $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    $(".film_form_table").last().append("<div class='request_acct_row_sm_spacer'></div>")
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     // Filmmaker's Bio
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
