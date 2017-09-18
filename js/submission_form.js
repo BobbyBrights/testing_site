@@ -310,7 +310,7 @@ $(document).ready(function() {
     // Language
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Language <br/>(Dialogue/Titles)</b></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Language <br/>(Dialogue/Titles)</b> *</div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
     $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='film_language' name='film_language'>")
