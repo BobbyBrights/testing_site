@@ -320,7 +320,7 @@ $(document).ready(function() {
 
     // Account type
     $(".film_form_table").last().append("<div class='request_acct_row'></div>")
-    $(".request_acct_row").last().append("<div class='request_acct_type_heading'><b>Sound</b> *</div>")
+    $(".request_acct_row").last().append("<div class='request_acct_type_heading'><b>Colour</b> *</div>")
     $(".request_acct_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='filmmaker' id='filmmaker_acct' name='acct_type'></input>")
