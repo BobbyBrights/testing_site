@@ -463,6 +463,8 @@ $(document).ready(function() {
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+    
     // Original Format
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
