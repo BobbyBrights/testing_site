@@ -454,7 +454,8 @@ $(document).ready(function() {
     // $(".film_form_table").last().append("<div class='request_acct_row_sm_spacer'></div>")
 
     // vimeo link
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".film_form_table").last().append("<div class='request_acct_row_row' id='vimeo_link_section'></div>")
+    $("#vimeo_link_section").hide()
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
     $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Link</b></div>")
@@ -466,7 +467,7 @@ $(document).ready(function() {
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
     // vimeo password
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right' id='vimeo_password_section'></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
     $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Password</b></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
