@@ -459,7 +459,12 @@ $(document).ready(function() {
     $(".note_content").last().append("<div class='note_content_table'></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("<b>If you are submitting your preview format as DVD/Blu Ray/External drive, please mail it to:</b>")
+    $(".note_content_table_content").last().append("<b>If you are submitting your preview format as dvd/blu ray/external drive, please send it to:</b></br>")
+    $(".note_content_table_content").last().append("Membership & Aquisitions</br>")
+    $(".note_content_table_content").last().append("401 Richmond St. W., Suite 245</br>")
+    $(".note_content_table_content").last().append("Toronto, Ontario, Canada, M5V 3A8</br></br>")
+    $(".note_content_table_content").last().append("Please Note: Preview dvds and blu rays will not be returned.</br></br>")
+    $(".note_content_table_content").last().append("<b>You can expect a response in 4-8 weeks</b></br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
