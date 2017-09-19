@@ -408,6 +408,8 @@ $(document).ready(function() {
 
     check_still_upload();
 
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
     // Preview Format
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview <br/>Format</b></div>")
