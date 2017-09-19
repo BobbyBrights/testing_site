@@ -578,7 +578,8 @@ $(document).ready(function() {
     $("ul").last().append("<li>Newspaper headlines, magazine covers, posters</li>")
     $("ul").last().append("<li>Corporate logos (on clothing, computers, food packages, store signs, etc.)</li>")
     $(".note_content_table_content").last().append("If your film contains any of the above for which you have not obtained broadcast rights, click here ")
-    $(".note_content_table_content").last().append("<input type='checkbox' value='yes' id='rights' name='rights'></input><label for='rights'></label>")
+    $(".note_content_table_content").last().append("<input type='checkbox' value='yes' id='rights' name='rights'></input></br></br>")
+    $(".note_content_table_content").last().append("For more details, guidelines on Canadian copyright are available on the Canadian Intellectual Property Office website at www.cipo.gc.ca. U.S. copyright information is available at <a target='_blank' href='http://www.copyright.gov'>www.copyright.gov</a>.</br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
