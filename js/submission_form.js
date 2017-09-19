@@ -568,7 +568,8 @@ $(document).ready(function() {
     $(".note_content_table_content").last().append("<b>A Note On Rights:</b></br></br>")
     $(".note_content_table_content").last().append("The following all have protection under copyright or trade-mark law:</br>")
     $(".note_content_table_content").last().append("<ul></ul>")
-    $("ul").last().append("<li>Music (includes both the song and the performer</li>")
+    $("ul").last().append("<li>Music (includes both the song and the performer)</li>")
+    $("ul").last().append("<li>Sound (if from an identifiable source e.g. sound from a radio program or TV show)</li>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
