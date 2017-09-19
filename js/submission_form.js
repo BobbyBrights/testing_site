@@ -610,26 +610,26 @@ $(document).ready(function() {
 
     $('#account-request').submit(function(e) {
         e.preventDefault();
-        if (checkFields()) {
-            $(document.body).css({ 'cursor': 'wait' })
-            $(".warning").removeClass("warning_up")
-            $(".message").removeClass("message_up")
-            $('#subutton').attr('disabled', true);
-            $this = $(this);
-            $.ajax({
-                type: "POST",
-                url: "http://" + $(location).attr('hostname') + "/src/nothing.php",
-                //url: "src/request_account_submit.php",
-                data: $this.serialize()
-            }).done(function(data) {
-                $(document.body).css({ 'cursor': 'default' })
-                window.location.replace(web_host)
-            })
-        }
-        else {
-            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">You\'ve left some required fields empty or invalid, please try again.</div>')
-            $(".warning").addClass("warning_up")
-        }
+        // if (checkFields()) {
+        //     $(document.body).css({ 'cursor': 'wait' })
+        //     $(".warning").removeClass("warning_up")
+        //     $(".message").removeClass("message_up")
+        //     $('#subutton').attr('disabled', true);
+        //     $this = $(this);
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "http://" + $(location).attr('hostname') + "/src/nothing.php",
+        //         //url: "src/request_account_submit.php",
+        //         data: $this.serialize()
+        //     }).done(function(data) {
+        //         $(document.body).css({ 'cursor': 'default' })
+        //         window.location.replace(web_host)
+        //     })
+        // }
+        // else {
+        //     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">You\'ve left some required fields empty or invalid, please try again.</div>')
+        //     $(".warning").addClass("warning_up")
+        // }
     });
 
 })
