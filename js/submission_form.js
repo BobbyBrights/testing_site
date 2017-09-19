@@ -463,7 +463,7 @@ $(document).ready(function() {
     $(".note_content_table_content").last().append("Membership & Aquisitions</br>")
     $(".note_content_table_content").last().append("401 Richmond St. W., Suite 245</br>")
     $(".note_content_table_content").last().append("Toronto, Ontario, Canada, M5V 3A8</br></br>")
-    $(".note_content_table_content").last().append("Please Note: Preview dvds and blu rays will not be returned.</br></br>")
+    $(".note_content_table_content").last().append("Please Note: Preview dvds and blu rays will not be returned</br></br>")
     $(".note_content_table_content").last().append("<b>You can expect a response in 4-8 weeks</b></br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
