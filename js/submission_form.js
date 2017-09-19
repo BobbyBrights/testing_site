@@ -412,15 +412,15 @@ $(document).ready(function() {
 
     // Preview Format
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview <br/>Format</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview Format</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='colour' id='colour' name='colour'></input>")
     $(".acct_type").last().append("<label for='colour'></label><br>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>blu ray</b></div>")
 
-    // $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<br/><div class='request_acct_type_heading_film'>&#8203;</div>")
+    $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='b/w' id='b/w' name='colour'></input>")
