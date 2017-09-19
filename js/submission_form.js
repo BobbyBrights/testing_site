@@ -453,6 +453,16 @@ $(document).ready(function() {
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
+    $(".film_form_table").last().append("<div class='note_table'></div>")
+    $(".note_table").last().append("<div class='note_left_spacer'></div>")
+    $(".note_table").last().append("<div class='note_content'></div>")
+    $(".note_content").last().append("<div class='note_content_table'></div>")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
+    $(".note_content_table_content").last().append("At this point they will submit film details here. Maybe some mention about copyrights etc.")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_table").last().append("<div class='note_right_spacer'></div>")
+
     // Original Format
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
