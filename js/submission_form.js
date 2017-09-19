@@ -412,7 +412,7 @@ $(document).ready(function() {
 
     // Preview Format
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview <br/>Format</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview Format</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='colour' id='colour' name='colour'></input>")
