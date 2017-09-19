@@ -451,7 +451,7 @@ $(document).ready(function() {
     $(".acct_type").last().append("<label for='vimeo_link'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo password protected link</b></div>")
 
-    $(".film_form_table").last().append("<div class='request_acct_row_sm_spacer'></div>")
+    // $(".film_form_table").last().append("<div class='request_acct_row_sm_spacer'></div>")
 
     // vimeo link
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
