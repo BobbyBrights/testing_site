@@ -557,6 +557,16 @@ $(document).ready(function() {
 
     $("#categories_form_ul").append(build_category_list_form(categories_genre_obj['category'], 1))
 
+    $(".film_form_table").last().append("<div class='note_table'></div>")
+    $(".note_table").last().append("<div class='note_left_spacer'></div>")
+    $(".note_table").last().append("<div class='note_content'></div>")
+    $(".note_content").last().append("<div class='note_content_table'></div>")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
+    $(".note_content_table_content").last().append("<b>A Note On Rights:</b></br></br>")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_table").last().append("<div class='note_right_spacer'></div>")
+
     $(".table_contents").append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
