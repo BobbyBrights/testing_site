@@ -278,7 +278,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='colour and b/w' id='colour_and_b/w' name='colour_and_b/w'></input>")
+    $(".acct_type").last().append("<input type='radio' value='colour and b/w' id='colour_and_b/w' name='colour'></input>")
     $(".acct_type").last().append("<label for='colour_and_b/w'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour and b/w</b></div>")
 
@@ -415,7 +415,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview Format</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='blu_ray' id='blu_ray' name='blu_ray'></input>")
+    $(".acct_type").last().append("<input type='radio' value='blu_ray' id='blu_ray' name='preview_format'></input>")
     $(".acct_type").last().append("<label for='blu_ray'></label><br>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>blu ray</b></div>")
 
@@ -423,7 +423,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='dvd' id='dvd' name='dvd'></input>")
+    $(".acct_type").last().append("<input type='radio' value='dvd' id='dvd' name='preview_format'></input>")
     $(".acct_type").last().append("<label for='dvd'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>dvd</b></div>")
     
@@ -431,7 +431,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='digital_file' id='digital_file' name='digital_file'></input>")
+    $(".acct_type").last().append("<input type='radio' value='digital_file' id='digital_file' name='preview_format'></input>")
     $(".acct_type").last().append("<label for='digital_file'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>digital file</b></div>")
 
@@ -439,7 +439,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='drive_to_be_mailed' id='drive_to_be_mailed' name='drive_to_be_mailed'></input>")
+    $(".acct_type").last().append("<input type='radio' value='drive_to_be_mailed' id='drive_to_be_mailed' name='preview_format'></input>")
     $(".acct_type").last().append("<label for='drive_to_be_mailed'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>drive to be mailed</b></div>")
 
@@ -447,7 +447,7 @@ $(document).ready(function() {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link' name='vimeo_link'></input>")
+    $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link' name='preview_format'></input>")
     $(".acct_type").last().append("<label for='vimeo_link'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo link</b></div>")
 
