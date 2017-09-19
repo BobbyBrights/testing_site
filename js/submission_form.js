@@ -417,7 +417,7 @@ $(document).ready(function() {
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='colour' id='colour' name='colour'></input>")
     $(".acct_type").last().append("<label for='colour'></label><br>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>blu ray</b></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
@@ -425,7 +425,7 @@ $(document).ready(function() {
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='b/w' id='b/w' name='colour'></input>")
     $(".acct_type").last().append("<label for='b/w'></label>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>b/w</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>dvd</b></div>")
     
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
@@ -433,7 +433,23 @@ $(document).ready(function() {
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='colour and b/w' id='colour_and_b/w' name='colour'></input>")
     $(".acct_type").last().append("<label for='colour_and_b/w'></label>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour and b/w</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>digital file</b></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
+    $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
+    $(".acct_type").last().append("<input type='radio' value='colour and b/w' id='colour_and_b/w' name='colour'></input>")
+    $(".acct_type").last().append("<label for='colour_and_b/w'></label>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>drive to be mailed</b></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
+    $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
+    $(".acct_type").last().append("<input type='radio' value='colour and b/w' id='colour_and_b/w' name='colour'></input>")
+    $(".acct_type").last().append("<label for='colour_and_b/w'></label>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo link</b></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
