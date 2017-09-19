@@ -610,7 +610,12 @@ $(document).ready(function() {
 
 function check_preview_format() {
     $("input[type=radio][name=preview_format]").change(function() {
-        alert($(this).val());
+        if ($(this).val() === "vimeo_link") {
+            $("#vimeo_link_section").show();
+        }
+        else {
+            $("#vimeo_link_section").hide();
+        }
     }) 
 }
 
