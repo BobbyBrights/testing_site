@@ -449,7 +449,7 @@ $(document).ready(function() {
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link' name='preview_format'></input>")
     $(".acct_type").last().append("<label for='vimeo_link'></label>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo link</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo password protected link</b></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
@@ -457,7 +457,7 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Password Protected Link</b></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Link</b></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
     $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='filmmakers_firstname' name='filmmakers_firstname'>")
@@ -468,7 +468,7 @@ $(document).ready(function() {
     // vimeo password
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Link Password/b></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Password</b></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
     $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='filmmakers_lastname' name='filmmakers_lastname'>")
