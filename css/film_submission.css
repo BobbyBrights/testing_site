@@ -208,7 +208,7 @@ input {
         .table .table_cell_container .table_contents .note_table .note_content {
           display: table-cell; }
           .table .table_cell_container .table_contents .note_table .note_content a, .table .table_cell_container .table_contents .note_table .note_content a:hover {
-            color: #FFC300;
+            color: #009347;
             text-decoration: none;
             cursor: pointer; }
           .table .table_cell_container .table_contents .note_table .note_content .note_content_table {
