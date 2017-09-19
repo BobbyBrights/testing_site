@@ -349,6 +349,12 @@ input {
                 .note_content {
                     display: table-cell;
 
+                    a, a:hover {
+                        color: #FFC300;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+
                     .note_content_table {
                         display: table;
                         width: 674px;
