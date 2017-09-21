@@ -160,9 +160,9 @@ $(document).ready(function() {
     // Spacer
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
 
-    $(".table_contents").append("<div class='spacer_acct_type'></div>")
+    // $(".table_contents").append("<div class='spacer_acct_type'></div>")
 
-    $(".table_contents").append("<div class='request_acct_table'></div>")
+    // $(".table_contents").append("<div class='request_acct_table'></div>")
 
     // Account type
     // $(".request_acct_table").last().append("<div class='request_acct_row'></div>")
