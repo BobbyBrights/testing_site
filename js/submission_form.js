@@ -372,7 +372,18 @@ $(document).ready(function() {
 
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
+    // Self Identification section
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
+    $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>Self Identification</b> *</div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
+    $(".request_acct_input_box").last().append("<input type='textarea' id='self_identification' name='self_identification'>")
+    $(".request_acct_input_box").last().append("<div class='border_line'></div>")
+
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
 
     //Screening history
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
