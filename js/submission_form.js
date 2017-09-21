@@ -589,6 +589,8 @@ $(document).ready(function() {
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
     $(".film_form_table").last().append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
     $(".note_table").last().append("<div class='note_content'></div>")
