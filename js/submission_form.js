@@ -376,8 +376,8 @@ $(document).ready(function() {
 
     // Self Identification
 
-    $(".table_contents").append("<div class='spacer'></div>")
-    $(".table_contents").append("<div class='note_table'></div>")
+    $(".film_form_table").append("<div class='spacer'></div>")
+    $(".film_form_table").append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
     $(".note_table").last().append("<div class='note_content'></div>")
     $(".note_content").last().append("<div class='note_content_table'></div>")
