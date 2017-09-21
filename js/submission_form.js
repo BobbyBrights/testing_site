@@ -98,7 +98,7 @@ $(document).ready(function() {
     $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Organization *</b></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Association With Film(s) *</b></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
     $(".request_acct_input_large").last().append("<input tabindex=3 type='text' id='organization' name='organization'>")
