@@ -259,7 +259,7 @@ $(document).ready(function() {
 
     // Colour
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Colour</b> *</div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Colour</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='colour' id='colour' name='colour'></input>")
@@ -286,7 +286,7 @@ $(document).ready(function() {
 
     // Sound
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Sound</b> *</div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Sound</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='sound' id='sound' name='sound'></input>")
