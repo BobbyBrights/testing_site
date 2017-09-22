@@ -268,15 +268,7 @@ function make_film_entry(entry_count) {
     left_entry_form_text(entry_count, "country", "Country");
 
     // Language
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Language <br/>(Dialogue and/or Titles)</b> *</div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='film_language' name='film_language'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+    right_entry_form_text(entry_count, "language", "Language <br/>(Dialogue and/or Titles)", true);
 
     // Colour
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
