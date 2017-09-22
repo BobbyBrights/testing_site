@@ -246,6 +246,12 @@ $(document).ready(function() {
 
 })
 
+function check_id_count(count) {
+    $("#form_entry_" + old_count.toString() + " :input").each(function() {
+        console.log($(this).attr("id") + " " + $(this).attr("name"));
+    })
+}
+
 function change_id_count(old_count, new_count) {
     $("#form_entry_" + old_count.toString() + " :input").each(function() {
         // console.log($(this).attr("id") + " " + $(this).attr("name"));
