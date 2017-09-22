@@ -195,7 +195,7 @@ $(document).ready(function() {
 
     // check_id_count(5)
 
-    make_film_entry(2);
+    //make_film_entry(2);
 
     $(".table_contents").last().append("<div class='spacer_with_bar'></div>")
 
