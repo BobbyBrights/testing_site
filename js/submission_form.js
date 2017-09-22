@@ -256,25 +256,16 @@ function make_film_entry(entry_count) {
     $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
     // Film Title
-    left_entry_form_text(entry_count, "film_title");
+    left_entry_form_text(entry_count, "film_title", "Film Title");
 
     // Length
-    left_entry_form_text(entry_count, "length");
+    left_entry_form_text(entry_count, "length", "Length");
 
     // Year
-    right_entry_form_text(entry_count, "year");
+    right_entry_form_text(entry_count, "year", "Year");
 
     // Country
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Country</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='film_country' name='film_country'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+    left_entry_form_text(entry_count, "country", "Country");
 
     // Language
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
@@ -645,11 +636,11 @@ function make_film_entry(entry_count) {
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 }
 
-function left_entry_form_text (entry_count, name) {
+function left_entry_form_text (entry_count, name, title) {
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Film Title</b></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>" + title + "</b></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
     $(".request_acct_input_large").last().append("<input type='text' id='" + name + "_" + entry_count.toString() + "' name='" + name + "_" + entry_count.toString() + "'>")
@@ -657,10 +648,10 @@ function left_entry_form_text (entry_count, name) {
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 }
 
-function right_entry_form_text (entry_count, name) {
+function right_entry_form_text (entry_count, name, title) {
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Year</b></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>" + title + "</b></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
     $(".request_acct_input_large").last().append("<input type='text' id='" + name + "_" + entry_count.toString() + "' name='" + name + "_" + entry_count.toString() + "'>")
