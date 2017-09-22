@@ -189,6 +189,60 @@ $(document).ready(function() {
     // $(".acct_type").last().append("<label for='client_filmmaker'></label>")
     // $(".request_acct_row").last().append("<div class='request_acct_type_label_text'><b>both filmmaker and client</b></div>")
 
+    make_film_entry(1);
+
+    $(".table_contents").last().append("<div class='spacer_with_bar'></div>")
+
+    $(".table_contents").append("<div class='spacer'></div>")
+
+    // $(".table_contents").append("<div class='note_table'></div>")
+    // $(".note_table").last().append("<div class='note_left_spacer'></div>")
+    // $(".note_table").last().append("<div class='note_content'></div>")
+    // $(".note_content").last().append("<div class='note_content_table'></div>")
+    // $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    // $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
+    // $(".note_content_table_content").last().append("At this point they will submit film details here. Maybe some mention about copyrights etc.")
+    // $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    // $(".note_table").last().append("<div class='note_right_spacer'></div>")
+
+    // $(".table_contents").append("<div class='spacer'></div>")
+
+    // recaptcha
+    $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
+    $(".table_contents").append("<div class='spacer'></div>")
+
+    // Button
+    $(".table_contents").append("<button type='submit' id='subutton'><span>Submit</span></button>")
+
+    $(".contents").append("<div class='table_end_buffer'></div>")
+
+    $('#account-request').submit(function(e) {
+        e.preventDefault();
+        // if (checkFields()) {
+        //     $(document.body).css({ 'cursor': 'wait' })
+        //     $(".warning").removeClass("warning_up")
+        //     $(".message").removeClass("message_up")
+        //     $('#subutton').attr('disabled', true);
+        //     $this = $(this);
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "http://" + $(location).attr('hostname') + "/src/nothing.php",
+        //         //url: "src/request_account_submit.php",
+        //         data: $this.serialize()
+        //     }).done(function(data) {
+        //         $(document.body).css({ 'cursor': 'default' })
+        //         window.location.replace(web_host)
+        //     })
+        // }
+        // else {
+        //     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">You\'ve left some required fields empty or invalid, please try again.</div>')
+        //     $(".warning").addClass("warning_up")
+        // }
+    });
+
+})
+
+function make_film_entry(count) {
     $(".table_contents").append("<div id='form_entry_1' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
     $("#form_entry_1").append("<div class='table_title'><div class='subtitle'></div></div>")
@@ -375,7 +429,6 @@ $(document).ready(function() {
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
     // Self Identification
-
     $(".film_form_table").append("<div class='spacer'></div>")
     $(".film_form_table").append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
@@ -614,57 +667,7 @@ $(document).ready(function() {
     $(".note_content_table_content").last().append("For more details, guidelines on Canadian copyright are available on the Canadian Intellectual Property Office website at <a target='_blank' href='http://www.cipo.gc.ca'>www.cipo.gc.ca</a>. U.S. copyright information is available at <a target='_blank' href='http://www.copyright.gov'>www.copyright.gov</a>.</br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
-
-    $(".table_contents").last().append("<div class='spacer_with_bar'></div>")
-
-    $(".table_contents").append("<div class='spacer'></div>")
-
-    // $(".table_contents").append("<div class='note_table'></div>")
-    // $(".note_table").last().append("<div class='note_left_spacer'></div>")
-    // $(".note_table").last().append("<div class='note_content'></div>")
-    // $(".note_content").last().append("<div class='note_content_table'></div>")
-    // $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
-    // $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    // $(".note_content_table_content").last().append("At this point they will submit film details here. Maybe some mention about copyrights etc.")
-    // $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
-    // $(".note_table").last().append("<div class='note_right_spacer'></div>")
-
-    // $(".table_contents").append("<div class='spacer'></div>")
-
-    // recaptcha
-    $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
-    $(".table_contents").append("<div class='spacer'></div>")
-
-    // Button
-    $(".table_contents").append("<button type='submit' id='subutton'><span>Submit</span></button>")
-
-    $(".contents").append("<div class='table_end_buffer'></div>")
-
-    $('#account-request').submit(function(e) {
-        e.preventDefault();
-        // if (checkFields()) {
-        //     $(document.body).css({ 'cursor': 'wait' })
-        //     $(".warning").removeClass("warning_up")
-        //     $(".message").removeClass("message_up")
-        //     $('#subutton').attr('disabled', true);
-        //     $this = $(this);
-        //     $.ajax({
-        //         type: "POST",
-        //         url: "http://" + $(location).attr('hostname') + "/src/nothing.php",
-        //         //url: "src/request_account_submit.php",
-        //         data: $this.serialize()
-        //     }).done(function(data) {
-        //         $(document.body).css({ 'cursor': 'default' })
-        //         window.location.replace(web_host)
-        //     })
-        // }
-        // else {
-        //     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">You\'ve left some required fields empty or invalid, please try again.</div>')
-        //     $(".warning").addClass("warning_up")
-        // }
-    });
-
-})
+}
 
 function check_preview_format() {
     $("input[type=radio][name=preview_format]").change(function() {
