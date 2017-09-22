@@ -259,7 +259,7 @@ function make_film_entry(entry_count) {
     left_entry_form_text(entry_count, "film_title");
 
     // Length
-    $left_entry_form_text(entry_count, "length");
+    left_entry_form_text(entry_count, "length");
 
     // Year
     right_entry_form_text(entry_count, "year");
