@@ -315,16 +315,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>silent</b></div>")
 
     // Film Synopsis
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
-    $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>Synopsis</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
-    $(".request_acct_input_box").last().append("<input type='textarea' id='synopsis' name='synopsis'>")
-    $(".request_acct_input_box").last().append("<div class='border_line'></div>")
-
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+    entry_form_textbox(entry_count, "film_synopsis", "Film Synopsis")
 
     // First Name 
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
@@ -626,6 +617,24 @@ function make_film_entry(entry_count) {
     $(".note_content_table_content").last().append("For more details, guidelines on Canadian copyright are available on the Canadian Intellectual Property Office website at <a target='_blank' href='http://www.cipo.gc.ca'>www.cipo.gc.ca</a>. U.S. copyright information is available at <a target='_blank' href='http://www.copyright.gov'>www.copyright.gov</a>.</br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
+}
+
+function entry_form_textbox (entry_count, name, title, not_optional=false) {
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
+    if (not_optional) {
+        $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>" + title + "</b> *</div>")
+    }
+    else {
+        $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>" + title + "</b></div>")
+    }
+    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
+    $(".request_acct_input_box").last().append("<input type='textarea' id='" + name + "_" + entry_count.toString() + "' name='" + name + "_" + entry_count.toString() + "'>")
+    $(".request_acct_input_box").last().append("<div class='border_line'></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 }
 
 function left_entry_form_text (entry_count, name, title, not_optional=false) {
