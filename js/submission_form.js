@@ -191,7 +191,7 @@ $(document).ready(function() {
 
     make_film_entry(1);
 
-    change_id_count(1, 1)
+    change_id_count(1, 2)
 
     make_film_entry(2);
 
@@ -248,7 +248,27 @@ $(document).ready(function() {
 
 function change_id_count(old_count, new_count) {
     $("#form_entry_" + old_count.toString() + " :input").each(function() {
-        console.log($(this).attr("id") + " " + $(this).attr("name"));
+        // console.log($(this).attr("id") + " " + $(this).attr("name"));
+
+        cur_id = $(this).attr("id");
+        cur_name = $(this).attr("name");
+
+        // remove number 
+        if (cur_id.slice(-1).match(/^\d+$/)) {
+            lastIndex = cur_id.lastIndexOf("_");
+            $(this).attr("id", cur_id.substring(0, lastIndex) + new_count.toString());
+        }
+
+        if (cur_name !== void 0) {
+            lastIndex = cur_id.lastIndexOf("_");
+
+            if (cur_name.slice(-1).match(/^\d+$/)) {
+                $(this).attr("id", cur_id.substring(0, lastIndex) + new_count.toString()); 
+            }
+            else {
+                $(this).attr("id", cur_id.substring(0, lastIndex) + new_count.toString() + "[]"); 
+            }
+        }
     })
 }
 
