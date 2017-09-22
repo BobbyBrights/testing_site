@@ -191,6 +191,8 @@ $(document).ready(function() {
 
     make_film_entry(1);
 
+    make_film_entry(2);
+
     $(".table_contents").last().append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
