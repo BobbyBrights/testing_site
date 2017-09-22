@@ -281,7 +281,6 @@ function change_id_count(old_count, new_count) {
 
     $("#form_entry_" + old_count.toString() + " label").each(function() {
 
-        alert('hi')
         for_attr = $(this).attr("for")
 
         // switch numbers
