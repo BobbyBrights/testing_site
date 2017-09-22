@@ -250,7 +250,6 @@ $(document).ready(function() {
 
 function check_id_count(count) {
     $("#form_entry_" + count.toString() + " :input").each(function() {
-        alert("hi")
         console.log($(this).attr("id") + " " + $(this).attr("name"));
     })
 }
