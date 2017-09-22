@@ -369,13 +369,13 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-screening-history-file" />Upload PDF</label><div class="file-text" id="screening-history-text">no file currently selected</div>')
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-screening-history-file_' + entry_count.toString() + '" />Upload PDF</label><div class="file-text" id="screening-history-text">no file currently selected</div>')
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
     $(".request_acct_table_row_label").last().html("PDF only, max size 2MB")
 
-    check_screening_history_upload();
+    check_screening_history_upload(entry_count);
 
     //Stills Upload
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -386,13 +386,13 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-still-file" />Upload Web Still</label><div class="file-text" id="web-still-text">no file currently selected</div>')
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-still-file_' + entry_count.toString() + '" />Upload Web Still</label><div class="file-text" id="web-still-text">no file currently selected</div>')
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
     $(".request_acct_table_row_label").last().html("JPEG/JPG only, min width 380px, min height 265px, max size 1MB")
 
-    check_still_upload();
+    check_still_upload(entry_count);
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
@@ -401,7 +401,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview Format</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='blu_ray' id='blu_ray' name='preview_format'></input>")
+    $(".acct_type").last().append("<input type='radio' value='blu_ray' id='blu_ray' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='blu_ray'></label><br>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>blu ray</b></div>")
 
@@ -409,7 +409,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='dvd' id='dvd' name='preview_format'></input>")
+    $(".acct_type").last().append("<input type='radio' value='dvd' id='dvd' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='dvd'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>dvd</b></div>")
     
@@ -417,7 +417,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='digital_file' id='digital_file' name='preview_format'></input>")
+    $(".acct_type").last().append("<input type='radio' value='digital_file' id='digital_file' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='digital_file'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>digital file</b></div>")
 
@@ -425,7 +425,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='drive_to_be_mailed' id='drive_to_be_mailed' name='preview_format'></input>")
+    $(".acct_type").last().append("<input type='radio' value='drive_to_be_mailed' id='drive_to_be_mailed' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='drive_to_be_mailed'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>drive to be mailed</b></div>")
 
@@ -433,11 +433,11 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link' name='preview_format'></input>")
+    $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='vimeo_link'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo password protected link</b></div>")
 
-    check_preview_format();
+    check_preview_format(entry_count);
 
     // $(".film_form_table").last().append("<div class='request_acct_row_sm_spacer'></div>")
 
@@ -449,7 +449,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Link</b></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='filmmakers_firstname' name='filmmakers_firstname'>")
+    $(".request_acct_input_large").last().append("<input type='text' id='vimeo_link_" + entry_count.toString() + "' name='vimeo_link_" + entry_count.toString() + "'>")
     $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
@@ -460,7 +460,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Password</b></div>")
     $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='filmmakers_lastname' name='filmmakers_lastname'>")
+    $(".request_acct_input_large").last().append("<input type='text' id='vimeo_password_" + entry_count.toString() + "' name='vimeo_password_" + entry_count.toString() + "'>")
     $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
@@ -495,7 +495,7 @@ function make_film_entry(entry_count) {
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
     $(".genre_input_row").last().append('<ul class="search_list" id="org_format_form_ul"></ul>')
 
-    $("#org_format_form_ul").append(build_org_format_list_form(categories_genre_obj['format'], 1))
+    $("#org_format_form_ul").append(build_org_format_list_form(categories_genre_obj['format'], entry_count))
 
     // Exhibition Format
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -508,9 +508,9 @@ function make_film_entry(entry_count) {
     $(".genre_selection_container").last().append("<div class='genre_input_table'></div>")
 
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
-    $(".genre_input_row").last().append('<ul class="search_list" id="ex_format_form_ul"></ul>')
+    $(".genre_input_row").last().append('<ul class="search_list" id="ex_format_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#ex_format_form_ul").append(build_ex_format_list_form(categories_genre_obj['format'], 1))
+    $("#ex_format_form_ul_" + entry_count.toString()).append(build_ex_format_list_form(categories_genre_obj['format'], entry_count))
 
     // Genre
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -523,9 +523,9 @@ function make_film_entry(entry_count) {
     $(".genre_selection_container").last().append("<div class='genre_input_table'></div>")
 
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
-    $(".genre_input_row").last().append('<ul class="search_list" id="genre_form_ul"></ul>')
+    $(".genre_input_row").last().append('<ul class="search_list" id="genre_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#genre_form_ul").append(build_genre_list_form(categories_genre_obj['genre'], 1))
+    $("#genre_form_ul_" + entry_count.toString()).append(build_genre_list_form(categories_genre_obj['genre'], entry_count))
 
     //Keywords
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -539,9 +539,9 @@ function make_film_entry(entry_count) {
     $(".categories_selection_container").last().append("<div class='categories_input_table'></div>")
 
     $(".categories_input_table").last().append("<div class='categories_input_row'></div>")
-    $(".categories_input_row").last().append('<ul class="search_list" id="categories_form_ul"></ul>')
+    $(".categories_input_row").last().append('<ul class="search_list" id="categories_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#categories_form_ul").append(build_category_list_form(categories_genre_obj['category'], 1))
+    $("#categories_form_ul_" + entry_count.toString()).append(build_category_list_form(categories_genre_obj['category'], entry_count))
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
@@ -566,7 +566,7 @@ function make_film_entry(entry_count) {
     $("ul").last().append("<li>Newspaper headlines, magazine covers, posters</li>")
     $("ul").last().append("<li>Corporate logos (on clothing, computers, food packages, store signs, etc.)</li>")
     $(".note_content_table_content").last().append("If your film contains any of the above for which you have not obtained broadcast rights, click here ")
-    $(".note_content_table_content").last().append("<input type='checkbox' value='yes' id='rights' name='rights'></input></br></br>")
+    $(".note_content_table_content").last().append("<input type='checkbox' value='yes' id='rights' name='rights_" + entry_count.toString() + "'></input></br></br>")
     $(".note_content_table_content").last().append("For more details, guidelines on Canadian copyright are available on the Canadian Intellectual Property Office website at <a target='_blank' href='http://www.cipo.gc.ca'>www.cipo.gc.ca</a>. U.S. copyright information is available at <a target='_blank' href='http://www.copyright.gov'>www.copyright.gov</a>.</br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
@@ -622,8 +622,8 @@ function right_entry_form_text (entry_count, name, title, not_optional=false) {
     $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 }
 
-function check_preview_format() {
-    $("input[type=radio][name=preview_format]").change(function() {
+function check_preview_format(entry_count) {
+    $("input[type=radio][name=preview_format_" + entry_count.toString() + "]").change(function() {
         if ($(this).val() === "vimeo_link") {
             $("#vimeo_link_section").show();
         }
@@ -633,9 +633,9 @@ function check_preview_format() {
     }) 
 }
 
-function check_screening_history_upload() {
+function check_screening_history_upload(entry_count) {
 
-    $("#film-screening-history-file").change(function(e) {
+    $("#film-screening-history-file_" + entry_count.toString()).change(function(e) {
         var file;
 
         filepath = $(this).val();
@@ -667,11 +667,11 @@ function check_screening_history_upload() {
     })
 }
 
-function check_still_upload() {
+function check_still_upload(entry_count) {
 
     var _URL = window.URL || window.webkitURL;
 
-    $("#film-still-file").change(function(e) {
+    $("#film-still-file_" + entry_count.toString()).change(function(e) {
         var image, file;
 
         filepath = $(this).val();
