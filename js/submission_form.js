@@ -191,6 +191,8 @@ $(document).ready(function() {
 
     make_film_entry(1);
 
+    $("#form_entry_1").attr("id", "#ok")
+
     make_film_entry(2);
 
     $(".table_contents").last().append("<div class='spacer_with_bar'></div>")
