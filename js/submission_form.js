@@ -256,17 +256,17 @@ function change_id_count(old_count, new_count) {
         // remove number 
         if (cur_id.slice(-1).match(/^\d+$/)) {
             lastIndex = cur_id.lastIndexOf("_");
-            $(this).attr("id", cur_id.substring(0, lastIndex) + new_count.toString());
+            $(this).attr("id", cur_id.substring(0, lastIndex) + "_" + new_count.toString());
         }
 
         if (cur_name !== void 0) {
             lastIndex = cur_id.lastIndexOf("_");
 
             if (cur_name.slice(-1).match(/^\d+$/)) {
-                $(this).attr("id", cur_id.substring(0, lastIndex) + new_count.toString()); 
+                $(this).attr("id", cur_id.substring(0, lastIndex) + "_" + new_count.toString()); 
             }
             else {
-                $(this).attr("id", cur_id.substring(0, lastIndex) + new_count.toString() + "[]"); 
+                $(this).attr("id", cur_id.substring(0, lastIndex) + "_" + new_count.toString() + "[]"); 
             }
         }
     })
