@@ -285,7 +285,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Colour</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='colour' id='colour' name='colour_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='colour' id='colour_" + entry_count.toString() + "' name='colour_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='colour'></label><br>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour</b></div>")
 
@@ -293,7 +293,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='b/w' id='b/w' name='colour_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='b/w' id='b/w_" + entry_count.toString() + "' name='colour_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='b/w'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>b/w</b></div>")
     
@@ -301,7 +301,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='colour and b/w' id='colour_and_b/w' name='colour_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='colour and b/w' id='colour_and_b/w_" + entry_count.toString() + "' name='colour_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='colour_and_b/w'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour and b/w</b></div>")
 
@@ -312,7 +312,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Sound</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='sound' id='sound' name='sound_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='sound' id='sound_" + entry_count.toString() + "' name='sound_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='sound'></label><br>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>sound</b></div>")
 
@@ -320,7 +320,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='silent' id='silent' name='sound_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='silent' id='silent_" + entry_count.toString() + "' name='sound_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='silent'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>silent</b></div>")
 
@@ -379,7 +379,7 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-screening-history-file_' + entry_count.toString() + '" />Upload PDF</label><div class="file-text" id="screening-history-text">no file currently selected</div>')
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-screening-history-file_' + entry_count.toString() + '" />Upload PDF</label><div class="file-text" id="screening-history-text_' + entry_count.toString() + '">no file currently selected</div>')
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
@@ -396,7 +396,7 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-still-file_' + entry_count.toString() + '" />Upload Web Still</label><div class="file-text" id="web-still-text">no file currently selected</div>')
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-still-file_' + entry_count.toString() + '" />Upload Web Still</label><div class="file-text" id="web-still-text_' + entry_count.toString() + '">no file currently selected</div>')
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
@@ -411,7 +411,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview Format</b></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='blu_ray' id='blu_ray' name='preview_format_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='blu_ray' id='blu_ray_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='blu_ray'></label><br>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>blu ray</b></div>")
 
@@ -419,7 +419,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='dvd' id='dvd' name='preview_format_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='dvd' id='dvd_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='dvd'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>dvd</b></div>")
     
@@ -427,7 +427,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='digital_file' id='digital_file' name='preview_format_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='digital_file' id='digital_file_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='digital_file'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>digital file</b></div>")
 
@@ -435,7 +435,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='drive_to_be_mailed' id='drive_to_be_mailed' name='preview_format_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='drive_to_be_mailed' id='drive_to_be_mailed_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='drive_to_be_mailed'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>drive to be mailed</b></div>")
 
@@ -443,7 +443,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link' name='preview_format_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='vimeo_link'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo password protected link</b></div>")
 
@@ -658,7 +658,7 @@ function check_screening_history_upload(entry_count) {
             $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. Please try again.</div>')
             $(".warning").addClass("warning_up")
             $(this).val("");
-            $("#screening-history-text").html("no file currently selected");
+            $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
         }
         else{
             if ((file = this.files[0])) {
@@ -667,10 +667,10 @@ function check_screening_history_upload(entry_count) {
                     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 2MB. Please try again.</div>')
                     $(".warning").addClass("warning_up")
                     $(this).val("");
-                    $("#screening-history-text").html("no file currently selected");
+                    $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
                 }
                 else {
-                    $("#screening-history-text").html(filename);
+                    $("#screening-history-text_" + entry_count.toString()).html(filename);
                 }
             }
         }
@@ -703,7 +703,7 @@ function check_still_upload(entry_count) {
                     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 1MB. Please try again.</div>')
                     $(".warning").addClass("warning_up")
                     $(this).val("");
-                    $("#web-still-text").html("no file currently selected");
+                    $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
                 }
                 else {
                
@@ -716,10 +716,10 @@ function check_still_upload(entry_count) {
                             $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload has a width smaller than 380px or a height smaller than 265px. Please try again.</div>')
                             $(".warning").addClass("warning_up")
                             $(this).val("");
-                            $("#web-still-text").html("no file currently selected");
+                            $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
                         }
                         else {
-                            $("#web-still-text").html(filename);
+                            $("#web-still-text_" + entry_count.toString()).html(filename);
                         }
                     };
                     
