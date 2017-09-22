@@ -336,7 +336,7 @@ function make_film_entry(entry_count) {
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     // Secondary Filmmaker Name(s) 
-    left_entry_form_text(entry_count, "sec_filmmakers_name", "sec_filmmakers_name");
+    left_entry_form_text(entry_count, "sec_filmmakers_name", "Secondary <br/>Filmmaker Name(s)");
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
