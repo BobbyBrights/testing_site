@@ -191,7 +191,7 @@ $(document).ready(function() {
 
     make_film_entry(1);
 
-    // change_id_count(1, 5)
+    change_id_count(1, 5)
 
     // check_id_count(5)
 
