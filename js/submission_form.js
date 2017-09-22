@@ -261,7 +261,7 @@ function change_id_count(old_count, new_count) {
         cur_id = $(this).attr("id");
         cur_name = $(this).attr("name");
 
-        // remove number 
+        // switch numbers
         if (cur_id.slice(-1).match(/^\d+$/)) {
             lastIndex = cur_id.lastIndexOf("_");
             $(this).attr("id", cur_id.substring(0, lastIndex) + "_" + new_count.toString());
@@ -276,6 +276,16 @@ function change_id_count(old_count, new_count) {
             else {
                 $(this).attr("name", cur_name.substring(0, lastIndex) + "_" + new_count.toString() + "[]"); 
             }
+        }
+    })
+
+    $("#form_entry_" + old_count.toString() + " :label").each(function() {
+        for_attr = $(this).attr("for")
+
+        // switch numbers
+        if (for_attr.slice(-1).match(/^\d+$/)) {
+            lastIndex = for_attr.lastIndexOf("_");
+            $(this).attr("for", for_attr.substring(0, lastIndex) + "_" + new_count.toString());
         }
     })
 
