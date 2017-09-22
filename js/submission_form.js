@@ -726,7 +726,7 @@ function build_org_format_list_form(formats, count) {
 
     for($i=0; $i<formats.length; $i++) {
         li_str = '<li class="search_list_entry_genre">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-org-format-' + count + '[]" id="search-org-format-' + count + '-' + ($i+1) + '"/>\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-org-format-' + count + '[]" id="search-org-format-' + ($i+1) + '-' + count + '"/>\
                     <label for="search-org-format-' + count + '-' + ($i+1) + '">' + formats[$i][0] +'</label>\
                 </li>'
         ul_str += li_str
@@ -740,7 +740,7 @@ function build_ex_format_list_form(formats, count) {
 
     for($i=0; $i<formats.length; $i++) {
         li_str = '<li class="search_list_entry_genre">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-ex-format-' + count + '[]" id="search-ex-format-' + count + '-' + ($i+1) + '"/>\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-ex-format-' + count + '[]" id="search-ex-format-' + ($i+1) + '-' + count + '"/>\
                     <label for="search-ex-format-' + count + '-' + ($i+1) + '">' + formats[$i][0] +'</label>\
                 </li>'
         ul_str += li_str
@@ -754,7 +754,7 @@ function build_genre_list_form(genres, count) {
 
     for($i=0; $i<genres.length; $i++) {
         li_str = '<li class="search_list_entry_genre">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-genre-' + count + '[]" id="search-genre-' + count + '-' + ($i+1) + '"/>\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-genre-' + count + '[]" id="search-genre-' + ($i+1) + '-' + count + '"/>\
                     <label for="search-genre-' + count + '-' + ($i+1) + '">' + genres[$i][0] +'</label>\
                 </li>'
         ul_str += li_str
@@ -768,7 +768,7 @@ function build_category_list_form(categories, count) {
 
     for($i=0; $i<categories.length; $i++) {
         li_str = '<li class="search_list_entry_category">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-category-' + count + '[]" id="search-category-' + count + '-' + ($i+1) + '"/>\
+                    <input type="checkbox" value="' + ($i+1) + '" name="search-category-' + count + '[]" id="search-category-' + ($i+1) + '-' + count + '"/>\
                     <label for="search-category-' + count + '-' + ($i+1) + '">' + categories[$i][0] +'</label>\
                 </li>'
         ul_str += li_str
