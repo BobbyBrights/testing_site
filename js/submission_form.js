@@ -279,6 +279,12 @@ function change_id_count(old_count, new_count) {
         }
     })
 
+    check_preview_format(old_count, new_count);
+
+    change_check_screening_history_upload(old_count, new_count);  
+    
+    change_check_still_upload(old_count, new_count)  
+
     $("#form_entry_" + old_count.toString()).attr("id", "form_entry_" + new_count.toString())
 }
 
@@ -482,8 +488,8 @@ function make_film_entry(entry_count) {
     // $(".film_form_table").last().append("<div class='request_acct_row_sm_spacer'></div>")
 
     // vimeo link
-    $(".film_form_table").last().append("<div class='request_acct_row_row' id='vimeo_link_section'></div>")
-    $("#vimeo_link_section").hide()
+    $(".film_form_table").last().append("<div class='request_acct_row_row' id='vimeo_link_section_" + entry_count.toString() + "'></div>")
+    $("#vimeo_link_section_" + entry_count.toString()).hide()
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
     $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Link</b></div>")
@@ -662,15 +668,27 @@ function right_entry_form_text (entry_count, name, title, not_optional=false) {
     $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 }
 
+function check_preview_format(old_count, new_count) {
+    $("input[type=radio][name=preview_format_" + old_count.toString() + "]").off('change');
+    $("#vimeo_link_section_"+ old_count.toString()).attr("id", "#vimeo_link_section_"+ new_count.toString())
+    check_preview_format(new_count);
+}
+
 function check_preview_format(entry_count) {
     $("input[type=radio][name=preview_format_" + entry_count.toString() + "]").change(function() {
         if ($(this).val() === "vimeo_link") {
-            $("#vimeo_link_section").show();
+            $("#vimeo_link_section_"+ entry_count.toString()).show();
         }
         else {
-            $("#vimeo_link_section").hide();
+            $("#vimeo_link_section_"+ entry_count.toString()).hide();
         }
     }) 
+}
+
+function change_check_screening_history_upload(old_count, new_count) {
+    $("#film-screening-history-file_" + old_count.toString()).off("change");
+    $("#film-screening-history-file_" + old_count.toString()).attr("id", "#film-screening-history-file_" + new_count.toString());
+    check_screening_history_upload(new_count);
 }
 
 function check_screening_history_upload(entry_count) {
@@ -705,6 +723,12 @@ function check_screening_history_upload(entry_count) {
             }
         }
     })
+}
+
+function change_check_still_upload(old_count, new_count) {
+    $("#film-still-file_" + old_count.toString()).off("change");
+    $("#film-still-file_" + old_count.toString()).attr("id", "#film-still-file_" + new_count.toString())
+    check_still_upload(new_count);
 }
 
 function check_still_upload(entry_count) {
