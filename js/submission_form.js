@@ -318,39 +318,15 @@ function make_film_entry(entry_count) {
     entry_form_textbox(entry_count, "film_synopsis", "Film Synopsis")
 
     // First Name 
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>First Name</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='filmmakers_firstname' name='filmmakers_firstname'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+    left_entry_form_text(entry_count, "filmmakers_firstname", "Filmmaker's <br/>First Name");
 
     // Last Name
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>Last Name</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='filmmakers_lastname' name='filmmakers_lastname'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+    right_entry_form_text(entry_count, "filmmakers_lastname", "Filmmaker's <br/>Last Name");
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
     // Email
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's Email</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=2 type='text' id='filmmakers_email' name='filmmakers_email'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+    left_entry_form_text(entry_count, "filmmakers_email", "Filmmaker's Email");
 
     // Filmmaker's Bio
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
