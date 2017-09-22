@@ -286,7 +286,7 @@ function change_id_count(old_count, new_count) {
         for_attr = $(this).attr("for")
 
         // switch numbers
-        if (for_attr.slice(-1).match(/^\d+$/)) {
+        if (for_attr !== void 0 && for_attr.slice(-1).match(/^\d+$/)) {
             lastIndex = for_attr.lastIndexOf("_");
             $(this).attr("for", for_attr.substring(0, lastIndex) + "_" + new_count.toString());
         }
