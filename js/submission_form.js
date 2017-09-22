@@ -194,9 +194,9 @@ $(document).ready(function() {
     $("#form_entry_1").append("<div class='table_title'><div class='subtitle'></div></div>")
     $(".subtitle").last().append("Film Entry #1")
 
-    $(".table_contents").append("<div class='spacer'></div>")
+    $("#form_entry_1").append("<div class='spacer'></div>")
 
-    $(".table_contents").append("<div class='film_form_table'></div>")
+    $("#form_entry_1").append("<div class='film_form_table'></div>")
 
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
@@ -615,7 +615,7 @@ $(document).ready(function() {
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
-    $("#form_entry_1").append("<div class='spacer_with_bar'></div>")
+    $("#form_entry_1").last().append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
 
