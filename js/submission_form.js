@@ -271,10 +271,10 @@ function change_id_count(old_count, new_count) {
             lastIndex = cur_name.lastIndexOf("_");
 
             if (cur_name.slice(-1).match(/^\d+$/)) {
-                $(this).attr("id", cur_name.substring(0, lastIndex) + "_" + new_count.toString()); 
+                $(this).attr("name", cur_name.substring(0, lastIndex) + "_" + new_count.toString()); 
             }
             else {
-                $(this).attr("id", cur_name.substring(0, lastIndex) + "_" + new_count.toString() + "[]"); 
+                $(this).attr("name", cur_name.substring(0, lastIndex) + "_" + new_count.toString() + "[]"); 
             }
         }
     })
