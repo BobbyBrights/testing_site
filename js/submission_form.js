@@ -246,7 +246,7 @@ function make_film_entry(entry_count) {
     $(".table_contents").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
     $("#form_entry_" + entry_count.toString()).append("<div class='table_title'><div class='subtitle'></div></div>")
-    $(".subtitle").last().append("Film Entry #1")
+    $(".subtitle").last().append("Film Entry #" + entry_count.toString())
 
     $("#form_entry_" + entry_count.toString()).append("<div class='spacer'></div>")
 
