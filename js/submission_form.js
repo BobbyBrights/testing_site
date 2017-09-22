@@ -32,7 +32,7 @@ $(document).ready(function() {
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
-    $(".table_contents").append("<div class='request_acct_table'></div>")
+    $(".table_contents").append("<div id='acct_request'><div class='request_acct_table'></div></div>")
 
      $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
      $(".request_acct_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
