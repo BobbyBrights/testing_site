@@ -242,51 +242,27 @@ $(document).ready(function() {
 
 })
 
-function make_film_entry(count) {
-    $(".table_contents").append("<div id='form_entry_1' class='form_entry'><div class='spacer_with_bar'></div></div>")
+function make_film_entry(entry_count) {
+    $(".table_contents").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
-    $("#form_entry_1").append("<div class='table_title'><div class='subtitle'></div></div>")
+    $("#form_entry_" + entry_count.toString()).append("<div class='table_title'><div class='subtitle'></div></div>")
     $(".subtitle").last().append("Film Entry #1")
 
-    $("#form_entry_1").append("<div class='spacer'></div>")
+    $("#form_entry_" + entry_count.toString()).append("<div class='spacer'></div>")
 
-    $("#form_entry_1").append("<div class='film_form_table'></div>")
+    $("#form_entry_" + entry_count.toString()).append("<div class='film_form_table'></div>")
 
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
     // Film Title
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Film Title</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='film_title' name='film_title'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+    left_entry_form_text(entry_count, "film_title");
 
     // Length
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Length <br/>(min.sec)</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='film_length' name='film_length'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+    $left_entry_form_text(entry_count, "length");
 
     // Year
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Year</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='film_year' name='film_year'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+    right_entry_form_text(entry_count, "year");
 
     // Country
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
@@ -667,6 +643,28 @@ function make_film_entry(count) {
     $(".note_content_table_content").last().append("For more details, guidelines on Canadian copyright are available on the Canadian Intellectual Property Office website at <a target='_blank' href='http://www.cipo.gc.ca'>www.cipo.gc.ca</a>. U.S. copyright information is available at <a target='_blank' href='http://www.copyright.gov'>www.copyright.gov</a>.</br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
+}
+
+function left_entry_form_text (entry_count, name) {
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Film Title</b></div>")
+    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+    $(".request_acct_input_large").last().append("<input type='text' id='" + name + "_" + entry_count.toString() + "' name='" name + "_" + entry_count.toString() + "'>")
+    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+}
+
+function right_entry_form_text (entry_count, name) {
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
+    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Year</b></div>")
+    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
+    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+    $(".request_acct_input_large").last().append("<input type='text' id='" + name + "_" + entry_count.toString() + "' name='" name + "_" + entry_count.toString() + "'>")
+    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 }
 
 function check_preview_format() {
