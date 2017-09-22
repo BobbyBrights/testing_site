@@ -268,13 +268,13 @@ function change_id_count(old_count, new_count) {
         }
 
         if (cur_name !== void 0) {
-            lastIndex = cur_id.lastIndexOf("_");
+            lastIndex = cur_name.lastIndexOf("_");
 
             if (cur_name.slice(-1).match(/^\d+$/)) {
-                $(this).attr("id", cur_id.substring(0, lastIndex) + "_" + new_count.toString()); 
+                $(this).attr("id", cur_name.substring(0, lastIndex) + "_" + new_count.toString()); 
             }
             else {
-                $(this).attr("id", cur_id.substring(0, lastIndex) + "_" + new_count.toString() + "[]"); 
+                $(this).attr("id", cur_name.substring(0, lastIndex) + "_" + new_count.toString() + "[]"); 
             }
         }
     })
