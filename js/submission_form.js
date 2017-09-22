@@ -189,9 +189,9 @@ $(document).ready(function() {
     // $(".acct_type").last().append("<label for='client_filmmaker'></label>")
     // $(".request_acct_row").last().append("<div class='request_acct_type_label_text'><b>both filmmaker and client</b></div>")
 
-    $(".table_contents").append("<div class='spacer_with_bar'></div>")
+    $(".table_contents").append("<div id='form_entry_1' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
-    $(".table_contents").append("<div class='table_title'><div class='subtitle'></div></div>")
+    $("#form_entry_1").append("<div class='table_title'><div class='subtitle'></div></div>")
     $(".subtitle").last().append("Film Entry #1")
 
     $(".table_contents").append("<div class='spacer'></div>")
@@ -615,7 +615,7 @@ $(document).ready(function() {
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
-    $(".table_contents").append("<div class='spacer_with_bar'></div>")
+    $("#form_entry_1").append("<div class='spacer_with_bar'></div>")
 
     $(".table_contents").append("<div class='spacer'></div>")
 
