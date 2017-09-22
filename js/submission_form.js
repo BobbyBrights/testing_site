@@ -248,7 +248,6 @@ $(document).ready(function() {
 
 function change_id_count(old_count, new_count) {
     $("#form_entry_" + old_count.toString() + " :input").each(function() {
-        alert("test");
         console.log($(this).attr("id"));
     })
 }
