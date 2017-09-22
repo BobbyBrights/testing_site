@@ -495,9 +495,9 @@ function make_film_entry(entry_count) {
     $(".genre_selection_container").last().append("<div class='genre_input_table'></div>")
 
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
-    $(".genre_input_row").last().append('<ul class="search_list" id="org_format_form_ul"></ul>')
+    $(".genre_input_row").last().append('<ul class="search_list" id="org_format_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#org_format_form_ul").append(build_org_format_list_form(categories_genre_obj['format'], entry_count))
+    $("#org_format_form_ul_" + entry_count.toString()).append(build_org_format_list_form(categories_genre_obj['format'], entry_count))
 
     // Exhibition Format
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
