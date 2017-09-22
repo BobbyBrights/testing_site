@@ -328,29 +328,15 @@ function make_film_entry(entry_count) {
     // Email
     left_entry_form_text(entry_count, "filmmakers_email", "Filmmaker's Email");
 
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
     // Filmmaker's Bio
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
-    $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>Filmmaker's <br/>Bio</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
-    $(".request_acct_input_box").last().append("<input type='textarea' id='filmmakers_bio' name='filmmakers_bio'>")
-    $(".request_acct_input_box").last().append("<div class='border_line'></div>")
+    entry_form_textbox(entry_count, "filmmakers_bio", "Filmmaker's <br/>Bio")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     // Secondary Filmmaker Name(s) 
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Secondary <br/>Filmmaker Name(s)</b> *</div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='sec_filmmakers_name' name='sec_filmmakers_name'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
-
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+    left_entry_form_text(entry_count, "sec_filmmakers_name", "sec_filmmakers_name");
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
@@ -368,20 +354,11 @@ function make_film_entry(entry_count) {
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
-    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
-    $(".selection_acct_label").last().append("<div class='request_acct_label_text'><b>Self Identification</b> *</div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
-    $(".request_acct_input_box").last().append("<input type='textarea' id='self_identification' name='self_identification'>")
-    $(".request_acct_input_box").last().append("<div class='border_line'></div>")
-
+    entry_form_textbox(entry_count, "self_identification", "Self Identification", true)
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
-
 
     //Screening history
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
