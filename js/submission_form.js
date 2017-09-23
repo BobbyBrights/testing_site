@@ -195,6 +195,8 @@ $(document).ready(function() {
 
     $("#form_count").hide();
 
+    $(".table_contents").last().append("<div class='forms'></div>")
+
     make_film_entry(1);
 
     //change_id_count(1, 5)
@@ -310,7 +312,7 @@ function change_id_count(old_count, new_count) {
 }
 
 function make_film_entry(entry_count) {
-    $(".table_contents").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
+    $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
     $("#form_entry_" + entry_count.toString()).last().append("<input type='text' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
 
