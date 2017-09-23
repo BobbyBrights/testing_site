@@ -659,8 +659,11 @@ function make_film_entry(entry_count) {
 
 function add_film_form(button_obj) {
     button_obj.click(function(){
-        alert("button");
+        make_film_entry(film_form_count);
     });
+
+    film_form_count++;
+    alert(film_form_count);
 }
 
 function entry_form_textbox (entry_count, name, title, not_optional=false) {
