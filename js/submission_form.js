@@ -191,6 +191,10 @@ $(document).ready(function() {
     // $(".acct_type").last().append("<label for='client_filmmaker'></label>")
     // $(".request_acct_row").last().append("<div class='request_acct_type_label_text'><b>both filmmaker and client</b></div>")
 
+    $(".table_contents").last().append("<input type='text' name='form_count' id='form_count' value='" + film_form_count.toString() + "'></input>");
+
+    $("#form_count").hide();
+
     make_film_entry(1);
 
     //change_id_count(1, 5)
@@ -306,9 +310,7 @@ function change_id_count(old_count, new_count) {
 function make_film_entry(entry_count) {
     $(".table_contents").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
-    $("#form_entry_" + entry_count.toString()).last().append("<input type='test' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
-
-    $("#form_id_" + entry_count.toString()).hide()
+    // $("#form_entry_" + entry_count.toString()).last().append("<input type='test' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
 
     $("#form_entry_" + entry_count.toString()).append("<div class='table_title'><div class='subtitle'></div></div>")
     $(".subtitle").last().append("Film Entry #" + entry_count.toString())
