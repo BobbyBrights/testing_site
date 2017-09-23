@@ -2,7 +2,7 @@ var web_host = "http://www.testing.cfmdc.org/";
 
 recaptcha_checked = false;
 
-film_form_count = 0;
+film_form_count = 1;
 
 $(document).ready(function() {
 
@@ -662,13 +662,13 @@ function make_film_entry(entry_count) {
 }
 
 function add_film_form(button_obj) {
-    film_form_count++;
-    
     button_obj.click(function(){
         make_film_entry(film_form_count);
     });
 
-    
+    $("#form_count").attr("value", film_form_count.toString())
+
+    film_form_count++;
     // alert(film_form_count);
 }
 
