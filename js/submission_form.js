@@ -666,11 +666,11 @@ function make_film_entry(entry_count) {
 function add_film_form(button_obj) {
     button_obj.click(function(){
         make_film_entry(film_form_count);
-
-        $("#form_count").attr("value", film_form_count.toString())
-
-        film_form_count++;
     });
+
+    $("#form_count").attr("value", film_form_count.toString())
+
+    film_form_count++;
     // alert(film_form_count);
 }
 
