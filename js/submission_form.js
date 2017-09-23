@@ -309,6 +309,8 @@ function change_id_count(old_count, new_count) {
     change_check_still_upload(old_count, new_count)  
 
     $("#form_entry_" + old_count.toString()).attr("id", "form_entry_" + new_count.toString())
+
+    $("#form_entry_" + new_count.toString()).find('.subtitle').html("Film Entry #" + new_count.toString())
 }
 
 function make_film_entry(entry_count) {
@@ -689,7 +691,7 @@ function remove_film_form(button_obj) {
             }
         }
 
-        $("#form_count").attr("value", form_count.toString())
+        $("#form_count").attr("value", (form_count - 1).toString())
 
         film_form_count--;
     });
