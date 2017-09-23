@@ -678,7 +678,7 @@ function add_film_form(button_obj) {
 function remove_film_form(button_obj) {
     button_obj.click(function(){
         $(this).off("click");
-        alert($(this).parent().parent().parent().html());
+        alert($(this).parent().parent().parent().parent().html());
     });
 }
 
