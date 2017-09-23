@@ -685,7 +685,7 @@ function remove_film_form(button_obj) {
 
         if (form_count - 1 > 1) {
             for (i=parseInt(form_number); i<form_count; i++) {
-                change_id_count(i + 1; i);
+                change_id_count(i + 1, i);
             }
         }
 
