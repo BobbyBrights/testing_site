@@ -252,7 +252,10 @@ input {
       .table .table_cell_container .table_contents .request_acct_cell_left {
         display: table-cell;
         width: 350px; }
-      .table .table_cell_container .table_contents .request_acct_cell_right {
+      .table .table_cell_container .table_contents .request_acct_cell_left_button {
+        display: table-cell;
+        width: 200px; }
+      .table .table_cell_container .table_contents .request_acct_cell_right .request_acct_cell_right_button {
         display: table-cell;
         width: auto; }
       .table .table_cell_container .table_contents .request_acct_cell_spacer {

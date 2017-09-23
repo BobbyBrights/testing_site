@@ -426,7 +426,12 @@ input {
                 width: 350px;
             }
 
-            .request_acct_cell_right {
+            .request_acct_cell_left_button {
+                display: table-cell;
+                width: 200px;
+            }
+
+            .request_acct_cell_right .request_acct_cell_right_button{
                 display: table-cell;
                 width: auto;
             }
