@@ -298,6 +298,8 @@ function change_id_count(old_count, new_count) {
         }
     })
 
+    $("#form_id_" + new_count.toString()).attr("value", new_count.toString())
+
     check_preview_format(old_count, new_count);
 
     change_check_screening_history_upload(old_count, new_count);  
@@ -310,7 +312,7 @@ function change_id_count(old_count, new_count) {
 function make_film_entry(entry_count) {
     $(".table_contents").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
-    // $("#form_entry_" + entry_count.toString()).last().append("<input type='test' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
+    $("#form_entry_" + entry_count.toString()).last().append("<input type='text' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
 
     $("#form_entry_" + entry_count.toString()).append("<div class='table_title'><div class='subtitle'></div></div>")
     $(".subtitle").last().append("Film Entry #" + entry_count.toString())
@@ -646,11 +648,19 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_cell_left_button").last().append("<button type='button' id='add_film_form_" + entry_count.toString() + "'><span>Add Another Film Entry</span></button>")
 
+    add_film_form("#add_film_form_" + entry_count.toString());
+
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right_button'></div>")
 
     $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
+}
+
+function add_film_form(button_obj) {
+    button_obj.click(function(){
+        alert("button");
+    });
 }
 
 function entry_form_textbox (entry_count, name, title, not_optional=false) {
