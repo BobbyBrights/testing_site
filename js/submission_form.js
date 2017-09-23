@@ -648,7 +648,7 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_cell_left_button").last().append("<button type='button' id='add_film_form_" + entry_count.toString() + "'><span>Add Another Film Entry</span></button>")
 
-    add_film_form("#add_film_form_" + entry_count.toString());
+    add_film_form($("#add_film_form_" + entry_count.toString()));
 
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
