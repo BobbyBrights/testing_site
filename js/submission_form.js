@@ -215,6 +215,8 @@ $(document).ready(function() {
 
     $("#form_entry_2").append("<button type='button'><span>Add Another Film Entry</span></button>")
 
+    $("#form_entry_2").append("<button type='button'><span>Remove Current Film Entry</span></button>")
+
     // recaptcha
     $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
     $(".table_contents").append("<div class='spacer'></div>")
