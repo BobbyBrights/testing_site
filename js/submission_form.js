@@ -191,11 +191,11 @@ $(document).ready(function() {
 
     make_film_entry(1);
 
-    change_id_count(1, 5)
+    //change_id_count(1, 5)
 
     // check_id_count(5)
 
-    make_film_entry(2);
+    //make_film_entry(2);
 
     $(".table_contents").last().append("<div class='spacer_with_bar'></div>")
 
@@ -212,10 +212,6 @@ $(document).ready(function() {
     // $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
     // $(".table_contents").append("<div class='spacer'></div>")
-
-    $("#form_entry_2").append("<button type='button'><span>Add Another Film Entry</span></button>")
-
-    $("#form_entry_2").append("<button type='button'><span>Remove Current Film Entry</span></button>")
 
     // recaptcha
     $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
@@ -633,6 +629,17 @@ function make_film_entry(entry_count) {
     $(".note_content_table_content").last().append("For more details, guidelines on Canadian copyright are available on the Canadian Intellectual Property Office website at <a target='_blank' href='http://www.cipo.gc.ca'>www.cipo.gc.ca</a>. U.S. copyright information is available at <a target='_blank' href='http://www.copyright.gov'>www.copyright.gov</a>.</br>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+
+    $(".request_acct_cell_left").last().append("<button type='button'><span>Add Another Film Entry</span></button>")
+
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+
+    $(".request_acct_cell_right").last().append("<button type='button'><span>Remove Current Film Entry</span></button>")
 }
 
 function entry_form_textbox (entry_count, name, title, not_optional=false) {
