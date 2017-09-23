@@ -2,7 +2,7 @@ var web_host = "http://www.testing.cfmdc.org/";
 
 recaptcha_checked = false;
 
-film_form_count = 1;
+film_form_count = 0;
 
 $(document).ready(function() {
 
