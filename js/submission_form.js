@@ -660,6 +660,7 @@ function make_film_entry(entry_count) {
 
     if (entry_count > 1) {
         $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
+        remove_film_form($("#remove_film_form_" + entry_count.toString()))
     }
 }
 
@@ -675,7 +676,10 @@ function add_film_form(button_obj) {
 }
 
 function remove_film_form(button_obj) {
-
+    button_obj.click(function(){
+        $(this).off("click");
+        alert($(this).parent().parent().html());
+    });
 }
 
 function entry_form_textbox (entry_count, name, title, not_optional=false) {
