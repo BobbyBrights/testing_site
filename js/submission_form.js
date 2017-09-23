@@ -213,7 +213,7 @@ $(document).ready(function() {
 
     // $(".table_contents").append("<div class='spacer'></div>")
 
-    $("#film_entry_2").append("<button type='submit' id='subutton'><span>Submit</span></button>")
+    $("#film_entry_2").append("<button type='button'><span>Submit</span></button>")
 
     // recaptcha
     $(".table_contents").append("<div class='g-recaptcha-outer'><div class='g-recaptcha' data-callback='recaptchaCallback' data-sitekey='6LemsxcUAAAAACG6GzNABCispOz4O0qQFVCn4MT3'></div></div>")
