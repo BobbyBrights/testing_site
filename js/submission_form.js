@@ -658,18 +658,24 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right_button'></div>")
 
-    $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
+    if (entry_count > 1) {
+        $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
+    }
 }
 
 function add_film_form(button_obj) {
     button_obj.click(function(){
         make_film_entry(film_form_count);
+
+        $("#form_count").attr("value", film_form_count.toString())
+
+        film_form_count++;
     });
-
-    $("#form_count").attr("value", film_form_count.toString())
-
-    film_form_count++;
     // alert(film_form_count);
+}
+
+function remove_film_form(button_obj) {
+
 }
 
 function entry_form_textbox (entry_count, name, title, not_optional=false) {
