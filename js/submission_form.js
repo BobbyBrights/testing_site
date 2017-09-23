@@ -636,13 +636,13 @@ function make_film_entry(entry_count) {
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left_button'></div>")
 
-    $(".request_acct_cell_left_button").last().append("<button type='button'><span>Add Another Film Entry</span></button>")
+    $(".request_acct_cell_left_button").last().append("<button type='button' id='add_film_form_" + entry_count.toString() + "'><span>Add Another Film Entry</span></button>")
 
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right_button'></div>")
 
-    $(".request_acct_cell_right_button").last().append("<button type='button'><span>Remove Current Film Entry</span></button>")
+    $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
 }
 
 function entry_form_textbox (entry_count, name, title, not_optional=false) {
