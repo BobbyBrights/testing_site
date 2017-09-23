@@ -314,7 +314,7 @@ function change_id_count(old_count, new_count) {
 function make_film_entry(entry_count) {
     $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
-    $("#form_entry_" + entry_count.toString()).last().append("<input type='text' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
+    $("#form_entry_" + entry_count.toString()).last().append("<input type='text' class='form_id' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
 
     $("#form_id_" + entry_count.toString()).hide();
 
@@ -678,7 +678,7 @@ function add_film_form(button_obj) {
 function remove_film_form(button_obj) {
     button_obj.click(function(){
         $(this).off("click");
-        alert($(this).parent().parent().parent().parent().html());
+        form_number = $(this).parent().parent().parent().parent().find()
     });
 }
 
