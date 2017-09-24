@@ -656,7 +656,7 @@ function filmmaker_info_handler() {
 function set_filmmaker_info(checkbox_obj) {
     alert('here')
     alert(checkbox_obj.parent().html())
-    checkbox_obj.on('change', filmmaker_info_handler);
+    checkbox_obj.bind('change', filmmaker_info_handler);
 }
 
 function add_film_form(button_obj) {
@@ -686,7 +686,7 @@ function remove_film_form(button_obj) {
 
         $("#form_count").attr("value", (form_count - 1).toString())
 
-        $('#filmmaker_info_' + form_number).off('change');
+        $('#filmmaker_info_' + form_number).unbind('change');
 
         film_form_count--;
     });
@@ -799,7 +799,7 @@ function check_preview_format(old_count, new_count) {
 }
 
 function check_filmmaker_section(old_count, new_count) {
-    $('#filmmaker_info_' + old_count.toString()).off('change');
+    $('#filmmaker_info_' + old_count.toString()).unbind('change');
     alert($('#filmmaker_info_' + new_count.toString()).length);
     set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
 }
