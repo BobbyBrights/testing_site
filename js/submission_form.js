@@ -687,6 +687,7 @@ function remove_film_form(button_obj) {
         $('#filmmaker_info_' + form_number).off('change');
         $("#film-screening-history-file_" + form_number).off("change");
         $("#film-still-file_" + form_number).off("change");
+        $("input[type=radio][name=preview_format_" + form_number + "]").off('change');
 
         $("#form_entry_" + form_number).remove();
 
