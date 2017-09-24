@@ -677,6 +677,7 @@ function remove_film_form(button_obj) {
     button_obj.click(function(){
         $(this).off("click");
         form_number = $(this).parent().parent().parent().parent().find(".form_id").attr('value');
+        $('#filmmaker_info_' + form_number).off('change');
         $("#form_entry_" + form_number).remove();
 
         form_count = parseInt($("#form_count").attr("value"));
@@ -688,8 +689,6 @@ function remove_film_form(button_obj) {
         }
 
         $("#form_count").attr("value", (form_count - 1).toString())
-
-        $('#filmmaker_info_' + form_number).off('change');
 
         film_form_count--;
     });
