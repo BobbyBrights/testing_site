@@ -645,6 +645,7 @@ function make_film_entry(entry_count) {
 
 function set_filmmaker_info(checkbox_obj) {
     checkbox_obj.on('change', function() {
+        alert('ok');
         form_obj = $(this).parent().parent().parent().parent().parent()
         if($(this).is(':checked')) {
             form_obj.find(".filmmaker_section").hide()
