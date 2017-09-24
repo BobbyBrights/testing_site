@@ -260,7 +260,9 @@ function change_id_count(old_count, new_count) {
 
     change_check_screening_history_upload(old_count, new_count);  
     
-    change_check_still_upload(old_count, new_count)  
+    change_check_still_upload(old_count, new_count)
+
+    check_filmmaker_section(old_count, new_count)
 
     $("#form_entry_" + old_count.toString()).attr("id", "form_entry_" + new_count.toString())
 
@@ -788,6 +790,11 @@ function check_preview_format(old_count, new_count) {
     $("input[type=radio][name=preview_format_" + old_count.toString() + "]").off('change');
     $("#vimeo_link_section_"+ old_count.toString()).attr("id", "#vimeo_link_section_"+ new_count.toString())
     check_preview_format(new_count);
+}
+
+function check_filmmaker_section(old_count, new_count) {
+    $('#filmmaker_info_' + old_count.toString()).off('change');
+    check_preview_format('#filmmaker_info_' + new_count.toString());
 }
 
 function check_preview_format(entry_count) {
