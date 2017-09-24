@@ -256,6 +256,11 @@ function change_id_count(old_count, new_count) {
 
     $("#form_id_" + new_count.toString()).attr("value", new_count.toString())
 
+    $("#org_format_form_ul_" + old_count.toString()).attr("id", "org_format_form_ul_" + new_count.toString())
+    $("#ex_format_form_ul_" + old_count.toString()).attr("id", "ex_format_form_ul_" + new_count.toString())
+    $("#genre_form_ul_" + old_count.toString()).attr("id", "genre_form_ul_" + new_count.toString())
+    $("#categories_form_ul_" + old_count.toString()).attr("id", "categories_form_ul_" + new_count.toString())
+
     check_preview_format(old_count, new_count);
 
     change_check_screening_history_upload(old_count, new_count);  
