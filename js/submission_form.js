@@ -670,7 +670,7 @@ function add_film_form(button_obj) {
 
 function remove_film_form(button_obj) {
     button_obj.click(function(){
-        $(this).off("click");
+        $(this).unbind("click");
         form_number = $(this).parent().parent().parent().parent().find(".form_id").attr('value');
         $("#form_entry_" + form_number).remove();
 
@@ -791,7 +791,7 @@ function right_entry_form_text (entry_count, name, title, not_optional=false) {
 }
 
 function check_preview_format(old_count, new_count) {
-    $("input[type=radio][name=preview_format_" + old_count.toString() + "]").off('change');
+    $("input[type=radio][name=preview_format_" + old_count.toString() + "]").unbind('change');
     $("#vimeo_link_section_"+ old_count.toString()).attr("id", "#vimeo_link_section_"+ new_count.toString())
     check_preview_format(new_count);
 }
@@ -813,7 +813,7 @@ function check_preview_format(entry_count) {
 }
 
 function change_check_screening_history_upload(old_count, new_count) {
-    $("#film-screening-history-file_" + old_count.toString()).off("change");
+    $("#film-screening-history-file_" + old_count.toString()).unbind("change");
     $("#film-screening-history-file_" + old_count.toString()).attr("id", "#film-screening-history-file_" + new_count.toString());
     check_screening_history_upload(new_count);
 }
@@ -853,7 +853,7 @@ function check_screening_history_upload(entry_count) {
 }
 
 function change_check_still_upload(old_count, new_count) {
-    $("#film-still-file_" + old_count.toString()).off("change");
+    $("#film-still-file_" + old_count.toString()).unbind("change");
     $("#film-still-file_" + old_count.toString()).attr("id", "#film-still-file_" + new_count.toString())
     check_still_upload(new_count);
 }
