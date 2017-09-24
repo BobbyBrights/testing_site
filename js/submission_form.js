@@ -644,7 +644,7 @@ function make_film_entry(entry_count) {
 }
 
 function set_filmmaker_info(checkbox_obj) {
-    checkbox_obj.change(function() {
+    checkbox_obj.on('change', function() {
         form_obj = $(this).parent().parent().parent().parent().parent()
         if($(this).is(':checked')) {
             form_obj.find(".filmmaker_section").hide()
@@ -795,8 +795,6 @@ function check_preview_format(old_count, new_count) {
 }
 
 function check_filmmaker_section(old_count, new_count) {
-    alert(old_count)
-    alert(new_count)
     $('#filmmaker_info_' + old_count.toString()).off('change');
     set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
 }
