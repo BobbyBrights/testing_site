@@ -643,17 +643,19 @@ function make_film_entry(entry_count) {
     }
 }
 
+function filmmaker_info_handler() {
+    alert('ok');
+    form_obj = $(this).parent().parent().parent().parent().parent()
+    if($(this).is(':checked')) {
+        form_obj.find(".filmmaker_section").hide()
+    }
+    else {
+        form_obj.find(".filmmaker_section").show()
+    }
+}
+
 function set_filmmaker_info(checkbox_obj) {
-    checkbox_obj.on('change', function() {
-        alert('ok');
-        form_obj = $(this).parent().parent().parent().parent().parent()
-        if($(this).is(':checked')) {
-            form_obj.find(".filmmaker_section").hide()
-        }
-        else {
-            form_obj.find(".filmmaker_section").show()
-        }
-    })
+    checkbox_obj.on('change', filmmaker_info_handler);
 }
 
 function add_film_form(button_obj) {
