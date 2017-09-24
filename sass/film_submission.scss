@@ -442,7 +442,7 @@ input {
             }
 
             .selection_acct_label .selection_acct_label_generic {
-                //width: 100px;
+                width: 100px;
                 height: 30px;
                 display: table-cell;
                 font-family: trade_gothic, sans-serif;
@@ -455,8 +455,8 @@ input {
                 }
             }
 
-            .selection_acct_label {
-                width: 100px;
+            .selection_acct_label_generic {
+                width: auto;
             }
 
             .request_acct_label {

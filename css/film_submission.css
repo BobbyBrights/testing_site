@@ -262,6 +262,7 @@ input {
         display: table-cell;
         width: 30px; }
       .table .table_cell_container .table_contents .selection_acct_label .selection_acct_label_generic {
+        width: 100px;
         height: 30px;
         display: table-cell;
         font-family: trade_gothic, sans-serif;
@@ -270,8 +271,8 @@ input {
         .table .table_cell_container .table_contents .selection_acct_label .selection_acct_label_generic b {
           font-weight: normal;
           font-family: trade_gothic_bold, sans-serif; }
-      .table .table_cell_container .table_contents .selection_acct_label {
-        width: 100px; }
+      .table .table_cell_container .table_contents .selection_acct_label_generic {
+        width: auto; }
       .table .table_cell_container .table_contents .request_acct_label {
         width: 100px;
         height: 30px;
