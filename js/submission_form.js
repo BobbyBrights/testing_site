@@ -272,6 +272,10 @@ function change_id_count(old_count, new_count) {
     $("#form_entry_" + old_count.toString()).attr("id", "form_entry_" + new_count.toString())
 
     $("#form_entry_" + new_count.toString()).find('.subtitle').html("Film Entry #" + new_count.toString())
+
+    if ($("input[type=radio][name=preview_format_" + new_count.toString() + "]").val !== "vimeo_link") {
+        $("#vimeo_link_section_" + new_count.toString()).hide();
+    }
 }
 
 function make_film_entry(entry_count) {
