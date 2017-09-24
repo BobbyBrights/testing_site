@@ -262,7 +262,7 @@ function change_id_count(old_count, new_count) {
     
     change_check_still_upload(old_count, new_count)
 
-    check_filmmaker_section(old_count, new_count)
+    //check_filmmaker_section(old_count, new_count)
 
     $("#form_entry_" + old_count.toString()).attr("id", "form_entry_" + new_count.toString())
 
