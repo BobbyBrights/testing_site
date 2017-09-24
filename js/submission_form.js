@@ -830,6 +830,8 @@ function check_screening_history_upload(entry_count) {
 
         filename = filepath.split('\\').pop(); 
 
+        alert(fileExt)
+
         if (fileExt.toLowerCase() !== "pdf") {
             $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. Please try again.</div>')
             $(".warning").addClass("warning_up")
