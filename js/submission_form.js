@@ -795,6 +795,8 @@ function check_preview_format(old_count, new_count) {
 }
 
 function check_filmmaker_section(old_count, new_count) {
+    alert(old_count)
+    alert(new_count)
     $('#filmmaker_info_' + old_count.toString()).off('change');
     set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
 }
