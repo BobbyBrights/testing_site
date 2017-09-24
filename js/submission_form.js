@@ -676,7 +676,6 @@ function add_film_form(button_obj) {
     $("#form_count").attr("value", film_form_count.toString())
 
     film_form_count++;
-    // alert(film_form_count);
 }
 
 function remove_film_form(button_obj) {
@@ -839,7 +838,6 @@ function change_check_screening_history_upload(old_count, new_count) {
 }
 
 function check_screening_history_upload_handler(e) {
-    alert(e.data.entry_count);
 
     entry_count = e.data.entry_count;
     var file;
