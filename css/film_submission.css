@@ -261,14 +261,14 @@ input {
       .table .table_cell_container .table_contents .request_acct_cell_spacer {
         display: table-cell;
         width: 30px; }
-      .table .table_cell_container .table_contents .selection_acct_label .selection_acct_label_textline {
+      .table .table_cell_container .table_contents .selection_acct_label, .table .table_cell_container .table_contents .selection_acct_label_textline {
         width: 100px;
         height: 30px;
         display: table-cell;
         font-family: trade_gothic, sans-serif;
         font-size: 14px;
         vertical-align: top; }
-        .table .table_cell_container .table_contents .selection_acct_label .selection_acct_label_textline b {
+        .table .table_cell_container .table_contents .selection_acct_label b, .table .table_cell_container .table_contents .selection_acct_label_textline b {
           font-weight: normal;
           font-family: trade_gothic_bold, sans-serif; }
       .table .table_cell_container .table_contents .request_acct_label {
