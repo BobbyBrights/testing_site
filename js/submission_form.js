@@ -828,7 +828,9 @@ function change_check_screening_history_upload(old_count, new_count) {
 }
 
 function check_screening_history_upload_handler(e) {
-    alert('here');
+    alert(e.data.entry_count);
+
+    entry_count = e.data.entry_count;
     var file;
 
     filepath = $(this).val();
@@ -861,7 +863,7 @@ function check_screening_history_upload_handler(e) {
 
 function check_screening_history_upload(entry_count) {
 
-    $("#film-screening-history-file_" + entry_count.toString()).on('change', check_screening_history_upload_handler)
+    $("#film-screening-history-file_" + entry_count.toString()).on('change', {entry_count: entry_count}, check_screening_history_upload_handler)
 }
 
 function change_check_still_upload(old_count, new_count) {
