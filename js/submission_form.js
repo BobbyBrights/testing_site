@@ -682,6 +682,8 @@ function remove_film_form(button_obj) {
 
         $("#form_count").attr("value", (form_count - 1).toString())
 
+        $('#filmmaker_info_' + form_number).off('change');
+
         film_form_count--;
     });
 }
