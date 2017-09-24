@@ -342,7 +342,8 @@ function make_film_entry(entry_count) {
     $(".acct_type").last().append("<input type='radio' value='silent' id='silent_" + entry_count.toString() + "' name='sound_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='silent_" + entry_count.toString() + "'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>silent</b></div>")
-
+    
+    $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
     $(".film_form_table").last().append("<div class='filmmaker_section'></div>")
 
     // Film Synopsis
