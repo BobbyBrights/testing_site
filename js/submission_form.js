@@ -654,8 +654,6 @@ function filmmaker_info_handler() {
 }
 
 function set_filmmaker_info(checkbox_obj) {
-    alert('here')
-    alert(checkbox_obj.parent().html())
     checkbox_obj.bind('change', filmmaker_info_handler);
 }
 
@@ -800,7 +798,6 @@ function check_preview_format(old_count, new_count) {
 
 function check_filmmaker_section(old_count, new_count) {
     $('#filmmaker_info_' + old_count.toString()).unbind('change');
-    alert($('#filmmaker_info_' + new_count.toString()).length);
     set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
 }
 
