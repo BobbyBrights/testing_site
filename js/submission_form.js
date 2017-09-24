@@ -348,7 +348,7 @@ function make_film_entry(entry_count) {
     entry_form_textbox(entry_count, "film_synopsis", "Film Synopsis")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
-    $(".film_form_table").last().append("<div class='filmmaker_section_" + entry_count.toString() + "'></div>")
+    $(".film_form_table").last().append("<div class='filmmaker_section'></div>")
 
     // First Name 
     left_entry_form_text_filmmaker(entry_count, "filmmakers_firstname", "Filmmaker's <br/>First Name");
@@ -356,26 +356,26 @@ function make_film_entry(entry_count) {
     // Last Name
     right_entry_form_text_filmmaker(entry_count, "filmmakers_lastname", "Filmmaker's <br/>Last Name");
 
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row_sm_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
     // Email
     left_entry_form_text_filmmaker(entry_count, "filmmakers_email", "Filmmaker's Email");
 
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     // Filmmaker's Bio
     entry_form_textbox_filmmaker(entry_count, "filmmakers_bio", "Filmmaker's <br/>Bio")
 
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     // Secondary Filmmaker Name(s) 
     left_entry_form_text_filmmaker(entry_count, "sec_filmmakers_name", "Secondary <br/>Filmmaker Name(s)");
 
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row_sm_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
     // Self Identification
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='spacer'></div>")
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='note_table'></div>")
+    $(".filmmaker_section").last().append("<div class='spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
     $(".note_table").last().append("<div class='note_content'></div>")
     $(".note_content").last().append("<div class='note_content_table'></div>")
@@ -385,13 +385,13 @@ function make_film_entry(entry_count) {
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     entry_form_textbox_filmmaker(entry_count, "self_identification", "Self Identification", true)
 
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row_sm_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     //Screening history
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -656,7 +656,7 @@ function remove_film_form(button_obj) {
 }
 
 function entry_form_textbox_filmmaker (entry_count, name, title, not_optional=false) {
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='selection_acct_label'></div>")
     if (not_optional) {
@@ -692,7 +692,7 @@ function entry_form_textbox (entry_count, name, title, not_optional=false) {
 }
 
 function left_entry_form_text_filmmaker (entry_count, name, title, not_optional=false) {
-    $(".filmmaker_section_" + entry_count.toString()).last().append("<div class='request_acct_row_row'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
     if (not_optional) {
