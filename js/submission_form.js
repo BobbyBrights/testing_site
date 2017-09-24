@@ -655,6 +655,7 @@ function filmmaker_info_handler() {
 
 function set_filmmaker_info(checkbox_obj) {
     alert('here')
+    alert(checkbox_obj.parent().html())
     checkbox_obj.on('change', filmmaker_info_handler);
 }
 
