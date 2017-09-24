@@ -275,9 +275,9 @@ function change_id_count(old_count, new_count) {
 
     $("#vimeo_link_section_" + old_count.toString()).attr('id', "vimeo_link_section_" + new_count.toString())
 
-    if ($("input[type=radio][name=preview_format_" + new_count.toString() + "]").val() !== "vimeo_link") {
-        $("#vimeo_link_section_" + new_count.toString()).hide();
-    }
+    // if ($("input[type=radio][name=preview_format_" + new_count.toString() + "]").val() !== "vimeo_link") {
+    //     $("#vimeo_link_section_" + new_count.toString()).hide();
+    // }
 }
 
 function make_film_entry(entry_count) {
