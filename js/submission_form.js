@@ -821,7 +821,7 @@ function change_check_screening_history_upload(old_count, new_count) {
 
 function check_screening_history_upload(entry_count) {
 
-    $("#film-screening-history-file_" + entry_count.toString()).change(function(e) {
+    $("#film-screening-history-file_" + entry_count.toString()).bind('change', function(e) {
         var file;
 
         filepath = $(this).val();
@@ -864,7 +864,7 @@ function check_still_upload(entry_count) {
 
     var _URL = window.URL || window.webkitURL;
 
-    $("#film-still-file_" + entry_count.toString()).change(function(e) {
+    $("#film-still-file_" + entry_count.toString()).bind('change', function(e) {
         var image, file;
 
         filepath = $(this).val();
