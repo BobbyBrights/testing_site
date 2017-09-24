@@ -873,60 +873,66 @@ function change_check_still_upload(old_count, new_count) {
     check_still_upload(new_count);
 }
 
+function check_still_upload_handler(e) {
+    var image, file;
+
+    entry_count = e.data.entry_count;
+
+    _URL = e.data._URL;
+
+    filepath = $(this).val();
+
+    if (!filepath) {
+        $("#web-still-text").html("no file currently selected");
+    }
+
+    var fileExt = filepath.split('.').pop(); 
+
+    filename = filepath.split('\\').pop(); 
+
+    if (fileExt.toLowerCase() !== "jpg" && fileExt.toLowerCase() !== "jpeg") {
+        $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG/JPG. Please try again.</div>')
+        $(".warning").addClass("warning_up")
+        $(this).val("");
+        $("#web-still-text").html("no file currently selected");
+    }
+    else{
+        if ((file = this.files[0])) {
+
+            if (file.size > 1048576) {
+                $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 1MB. Please try again.</div>')
+                $(".warning").addClass("warning_up")
+                $(this).val("");
+                $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
+            }
+            else {
+           
+                image = new Image();
+
+                image.src = _URL.createObjectURL(file);
+                
+                image.onload = function() {
+                    if (this.width < 380 || this.height < 265) {
+                        $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload has a width smaller than 380px or a height smaller than 265px. Please try again.</div>')
+                        $(".warning").addClass("warning_up")
+                        $(this).val("");
+                        $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
+                    }
+                    else {
+                        $("#web-still-text_" + entry_count.toString()).html(filename);
+                    }
+                };
+                
+            }
+        }
+    }
+}
+
 function check_still_upload(entry_count) {
 
     var _URL = window.URL || window.webkitURL;
 
-    $("#film-still-file_" + entry_count.toString()).on('change', function(e) {
-        var image, file;
-
-        filepath = $(this).val();
-
-        if (!filepath) {
-            $("#web-still-text").html("no file currently selected");
-        }
-
-        var fileExt = filepath.split('.').pop(); 
-
-        filename = filepath.split('\\').pop(); 
-
-        if (fileExt.toLowerCase() !== "jpg" && fileExt.toLowerCase() !== "jpeg") {
-            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG/JPG. Please try again.</div>')
-            $(".warning").addClass("warning_up")
-            $(this).val("");
-            $("#web-still-text").html("no file currently selected");
-        }
-        else{
-            if ((file = this.files[0])) {
-
-                if (file.size > 1048576) {
-                    $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 1MB. Please try again.</div>')
-                    $(".warning").addClass("warning_up")
-                    $(this).val("");
-                    $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
-                }
-                else {
-               
-                    image = new Image();
-
-                    image.src = _URL.createObjectURL(file);
-                    
-                    image.onload = function() {
-                        if (this.width < 380 || this.height < 265) {
-                            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload has a width smaller than 380px or a height smaller than 265px. Please try again.</div>')
-                            $(".warning").addClass("warning_up")
-                            $(this).val("");
-                            $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
-                        }
-                        else {
-                            $("#web-still-text_" + entry_count.toString()).html(filename);
-                        }
-                    };
-                    
-                }
-            }
-        }
-    })
+    $("#film-still-file_" + entry_count.toString()).on('change', {entry_count: entry_count, _URL: _URL}, check_still_upload_handler)
 }
 
 function build_org_format_list_form(formats, count) {
