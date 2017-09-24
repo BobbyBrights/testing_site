@@ -815,15 +815,19 @@ function check_filmmaker_section(old_count, new_count) {
     set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
 }
 
+function check_preview_format_handler(e) {
+    entry_count = e.data.entry_count;
+
+    if ($(this).val() === "vimeo_link") {
+        $("#vimeo_link_section_"+ entry_count.toString()).show();
+    }
+    else {
+        $("#vimeo_link_section_"+ entry_count.toString()).hide();
+    }
+}
+
 function check_preview_format(entry_count) {
-    $("input[type=radio][name=preview_format_" + entry_count.toString() + "]").change(function() {
-        if ($(this).val() === "vimeo_link") {
-            $("#vimeo_link_section_"+ entry_count.toString()).show();
-        }
-        else {
-            $("#vimeo_link_section_"+ entry_count.toString()).hide();
-        }
-    }) 
+    $("input[type=radio][name=preview_format_" + entry_count.toString() + "]").on('change', {entry_count: entry_count}, check_preview_format_handler) 
 }
 
 function change_check_screening_history_upload(old_count, new_count) {
