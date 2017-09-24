@@ -806,7 +806,7 @@ function right_entry_form_text (entry_count, name, title, not_optional=false) {
 
 function check_preview_format(old_count, new_count) {
     $("input[type=radio][name=preview_format_" + old_count.toString() + "]").off('change');
-    $("#vimeo_link_section_"+ old_count.toString()).attr("id", "#vimeo_link_section_"+ new_count.toString())
+    $("#vimeo_link_section_"+ old_count.toString()).attr("id", "vimeo_link_section_"+ new_count.toString())
     check_preview_format(new_count);
 }
 
