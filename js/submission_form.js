@@ -342,12 +342,13 @@ function make_film_entry(entry_count) {
     $(".acct_type").last().append("<input type='radio' value='silent' id='silent_" + entry_count.toString() + "' name='sound_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='silent_" + entry_count.toString() + "'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>silent</b></div>")
-    
-    $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
-    $(".film_form_table").last().append("<div class='filmmaker_section'></div>")
+
 
     // Film Synopsis
-    entry_form_textbox_filmmaker(entry_count, "film_synopsis", "Film Synopsis")
+    entry_form_textbox(entry_count, "film_synopsis", "Film Synopsis")
+
+    $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
+    $(".film_form_table").last().append("<div class='filmmaker_section'></div>")
 
     // First Name 
     left_entry_form_text_filmmaker(entry_count, "filmmakers_firstname", "Filmmaker's <br/>First Name");
