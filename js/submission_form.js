@@ -644,7 +644,7 @@ function make_film_entry(entry_count) {
 function set_filmmaker_info(checkbox_obj) {
     checkbox_obj.change(function() {
         form_obj = $(this).parent().parent().parent().parent().parent()
-        alert($(this).val())
+        alert($(this).is(':checked'))
     })
 }
 
