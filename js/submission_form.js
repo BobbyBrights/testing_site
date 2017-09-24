@@ -357,6 +357,8 @@ function make_film_entry(entry_count) {
         $(".selection_acct_label_generic").last().append("<div class='request_acct_label_text'>If filmmaker(s)' information is the same as film entry #1, click here </div>")
         $(".request_acct_label_text").last().append("<input type='checkbox' value='yes' id='filmmaker_info_" + entry_count.toString() + "' name='filmmaker_info_" + entry_count.toString() + "'></input>")
         $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
+
+        set_filmmaker_info($('#filmmaker_info_' + entry_count.toString()));
     }
 
 
@@ -637,6 +639,12 @@ function make_film_entry(entry_count) {
         $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
         remove_film_form($("#remove_film_form_" + entry_count.toString()))
     }
+}
+
+function set_filmmaker_info(checkbox_obj) {
+    checkbox_obj.change(function() {
+        alert($(this).parent().parent().parent().parent().html())
+    })
 }
 
 function add_film_form(button_obj) {
