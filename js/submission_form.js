@@ -654,7 +654,7 @@ function filmmaker_info_handler() {
 }
 
 function set_filmmaker_info(checkbox_obj) {
-    checkbox_obj.bind('change', filmmaker_info_handler);
+    checkbox_obj.on('change', filmmaker_info_handler);
 }
 
 function add_film_form(button_obj) {
@@ -670,7 +670,7 @@ function add_film_form(button_obj) {
 
 function remove_film_form(button_obj) {
     button_obj.click(function(){
-        $(this).unbind("click");
+        $(this).off("click");
         form_number = $(this).parent().parent().parent().parent().find(".form_id").attr('value');
         $("#form_entry_" + form_number).remove();
 
@@ -684,7 +684,7 @@ function remove_film_form(button_obj) {
 
         $("#form_count").attr("value", (form_count - 1).toString())
 
-        $('#filmmaker_info_' + form_number).unbind('change');
+        $('#filmmaker_info_' + form_number).off('change');
 
         film_form_count--;
     });
@@ -791,13 +791,13 @@ function right_entry_form_text (entry_count, name, title, not_optional=false) {
 }
 
 function check_preview_format(old_count, new_count) {
-    $("input[type=radio][name=preview_format_" + old_count.toString() + "]").unbind('change');
+    $("input[type=radio][name=preview_format_" + old_count.toString() + "]").off('change');
     $("#vimeo_link_section_"+ old_count.toString()).attr("id", "#vimeo_link_section_"+ new_count.toString())
     check_preview_format(new_count);
 }
 
 function check_filmmaker_section(old_count, new_count) {
-    $('#filmmaker_info_' + old_count.toString()).unbind('change');
+    $('#filmmaker_info_' + old_count.toString()).off('change');
     set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
 }
 
@@ -813,7 +813,7 @@ function check_preview_format(entry_count) {
 }
 
 function change_check_screening_history_upload(old_count, new_count) {
-    $("#film-screening-history-file_" + old_count.toString()).unbind("change");
+    $("#film-screening-history-file_" + old_count.toString()).off("change");
     $("#film-screening-history-file_" + old_count.toString()).attr("id", "film-screening-history-file_" + new_count.toString());
     $("#screening-history-text_" + old_count.toString()).attr("id", "screening-history-text_" + new_count.toString());
     check_screening_history_upload(new_count);
@@ -821,7 +821,7 @@ function change_check_screening_history_upload(old_count, new_count) {
 
 function check_screening_history_upload(entry_count) {
 
-    $("#film-screening-history-file_" + entry_count.toString()).bind('change', function(e) {
+    $("#film-screening-history-file_" + entry_count.toString()).on('change', function(e) {
         var file;
 
         filepath = $(this).val();
@@ -854,7 +854,7 @@ function check_screening_history_upload(entry_count) {
 }
 
 function change_check_still_upload(old_count, new_count) {
-    $("#film-still-file_" + old_count.toString()).unbind("change");
+    $("#film-still-file_" + old_count.toString()).off("change");
     $("#film-still-file_" + old_count.toString()).attr("id", "film-still-file_" + new_count.toString())
     $("#web-still-text_" + old_count.toString()).attr("id", "web-still-text_" + new_count.toString());
     check_still_upload(new_count);
@@ -864,7 +864,7 @@ function check_still_upload(entry_count) {
 
     var _URL = window.URL || window.webkitURL;
 
-    $("#film-still-file_" + entry_count.toString()).bind('change', function(e) {
+    $("#film-still-file_" + entry_count.toString()).on('change', function(e) {
         var image, file;
 
         filepath = $(this).val();
