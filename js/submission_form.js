@@ -825,7 +825,7 @@ function change_check_screening_history_upload(old_count, new_count) {
 
 function check_screening_history_upload(entry_count) {
 
-    $("#film-screening-history-file_" + entry_count.toString()).bind('change', function(e) {
+    $("#film-screening-history-file_" + entry_count.toString()).on('change', function(e) {
         var file;
 
         filepath = $(this).val();
