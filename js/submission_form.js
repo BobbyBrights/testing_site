@@ -855,8 +855,8 @@ function check_screening_history_upload(entry_count) {
 
 function change_check_still_upload(old_count, new_count) {
     $("#film-still-file_" + old_count.toString()).unbind("change");
-    $("#film-still-file_" + old_count.toString()).attr("id", "#film-still-file_" + new_count.toString())
-    $("#web-still-text_" + old_count.toString()).attr("id", "#web-still-text_" + new_count.toString());
+    $("#film-still-file_" + old_count.toString()).attr("id", "film-still-file_" + new_count.toString())
+    $("#web-still-text_" + old_count.toString()).attr("id", "web-still-text_" + new_count.toString());
     check_still_upload(new_count);
 }
 
