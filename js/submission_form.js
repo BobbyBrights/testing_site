@@ -644,7 +644,6 @@ function make_film_entry(entry_count) {
 }
 
 function filmmaker_info_handler() {
-    alert('ok');
     form_obj = $(this).parent().parent().parent().parent().parent()
     if($(this).is(':checked')) {
         form_obj.find(".filmmaker_section").hide()
@@ -655,6 +654,7 @@ function filmmaker_info_handler() {
 }
 
 function set_filmmaker_info(checkbox_obj) {
+    alert('here')
     checkbox_obj.on('change', filmmaker_info_handler);
 }
 
@@ -800,7 +800,6 @@ function check_preview_format(old_count, new_count) {
 function check_filmmaker_section(old_count, new_count) {
     $('#filmmaker_info_' + old_count.toString()).off('change');
     alert($('#filmmaker_info_' + new_count.toString()).length);
-    set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
     set_filmmaker_info($('#filmmaker_info_' + new_count.toString()));
 }
 
