@@ -354,7 +354,7 @@ function make_film_entry(entry_count) {
         $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
         $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
         $(".request_acct_cell_left").last().append("<div class='selection_acct_label_generic'></div>")
-        $(".selection_acct_label").last().append("<div class='request_acct_label_text'>Use filmmaker(s)' information from film entry #1</div>")
+        $(".selection_acct_label_generic").last().append("<div class='request_acct_label_text'>Use filmmaker(s)' information from film entry #1</div>")
         $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
     }
 
