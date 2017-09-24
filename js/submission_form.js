@@ -686,6 +686,10 @@ function remove_film_form(button_obj) {
 
         $('#filmmaker_info_' + form_number).unbind('change');
 
+        $("#film-screening-history-file_" + form_number).unbind("change");
+
+        $("#film-still-file_" + form_number).unbind("change");
+
         film_form_count--;
     });
 }
