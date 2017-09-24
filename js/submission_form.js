@@ -827,39 +827,41 @@ function change_check_screening_history_upload(old_count, new_count) {
     check_screening_history_upload(new_count);
 }
 
-function check_screening_history_upload(entry_count) {
+function check_screening_history_upload_handler(e) {
+    alert('here');
+    var file;
 
-    $("#film-screening-history-file_" + entry_count.toString()).on('change', function(e) {
-        alert('here');
-        var file;
+    filepath = $(this).val();
 
-        filepath = $(this).val();
+    var fileExt = filepath.split('.').pop(); 
 
-        var fileExt = filepath.split('.').pop(); 
+    filename = filepath.split('\\').pop(); 
 
-        filename = filepath.split('\\').pop(); 
+    if (fileExt.toLowerCase() !== "pdf") {
+        $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. Please try again.</div>')
+        $(".warning").addClass("warning_up")
+        $(this).val("");
+        $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
+    }
+    else{
+        if ((file = this.files[0])) {
 
-        if (fileExt.toLowerCase() !== "pdf") {
-            $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. Please try again.</div>')
-            $(".warning").addClass("warning_up")
-            $(this).val("");
-            $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
-        }
-        else{
-            if ((file = this.files[0])) {
-
-                if (file.size > 1048576 * 2) {
-                    $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 2MB. Please try again.</div>')
-                    $(".warning").addClass("warning_up")
-                    $(this).val("");
-                    $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
-                }
-                else {
-                    $("#screening-history-text_" + entry_count.toString()).html(filename);
-                }
+            if (file.size > 1048576 * 2) {
+                $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 2MB. Please try again.</div>')
+                $(".warning").addClass("warning_up")
+                $(this).val("");
+                $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
+            }
+            else {
+                $("#screening-history-text_" + entry_count.toString()).html(filename);
             }
         }
-    })
+    }
+}
+
+function check_screening_history_upload(entry_count) {
+
+    $("#film-screening-history-file_" + entry_count.toString()).on('change', check_screening_history_upload_handler)
 }
 
 function change_check_still_upload(old_count, new_count) {
