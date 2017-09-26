@@ -209,7 +209,7 @@ $(document).ready(function() {
     });
 
     $("input").each(function() {
-        console.log($("this").html());
+        console.log($(this).name());
     })
 
 })
