@@ -503,7 +503,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
-    $(".acct_type").last().append("<input type='radio' value='vimeo_link' id='vimeo_link_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
+    $(".acct_type").last().append("<input type='radio' value='vimeo' id='vimeo_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='vimeo_link_" + entry_count.toString() + "'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo password protected link</b></div>")
 
@@ -1056,7 +1056,7 @@ function fill_acct_request(with_opt=true) {
     }
 }
 
-function fill_form(form_number, with_opt=true) {
+function fill_form(form_number, with_opt=true, vimeo_on=false) {
     form_fields = ["film_title_", "length_", "year_", "country_", "film_synopsis_", "filmmakers_firstname_", "filmmakers_lastname_", "filmmakers_bio_"]
 
     for (i=0; i<fieldnames.length; i++) {
@@ -1065,7 +1065,12 @@ function fill_form(form_number, with_opt=true) {
 
     fill_radio("colour_" + form_number.toString())
     fill_radio("silent_" + form_number.toString())
-    fill_radio("vimeo_link_" + form_number.toString())
+
+    if (vimeo_on) {
+        fill_radio("vimeo_" + form_number.toString())
+        fill_field("vimeo_link_" + form_number.toString(), "test");
+        fill_field("vimeo_password_" + form_number.toString(), "test");
+    }
 
     fill_textarea("film_synopsis_" + form_number.toString(), "test");
     fill_textarea("filmmakers_bio_" + form_number.toString(), "test");
