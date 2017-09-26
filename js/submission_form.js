@@ -1048,7 +1048,7 @@ function fill_acct_request() {
         fill_field(fieldnames[i], "test");
     }
 
-    fill_field("email", "test");
+    fill_field("email", "test@test.com");
 }
 
 function fill_field(name, value) {
