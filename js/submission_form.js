@@ -212,6 +212,8 @@ $(document).ready(function() {
         console.log($(this).attr("name"));
     })
 
+    fill_acct_request()
+
 })
 
 function check_id_count(count) {
