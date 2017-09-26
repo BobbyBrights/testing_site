@@ -504,7 +504,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label'></div>")
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='vimeo' id='vimeo_" + entry_count.toString() + "' name='preview_format_" + entry_count.toString() + "'></input>")
-    $(".acct_type").last().append("<label for='vimeo_link_" + entry_count.toString() + "'></label>")
+    $(".acct_type").last().append("<label for='vimeo_" + entry_count.toString() + "'></label>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>vimeo password protected link</b></div>")
 
     check_preview_format(entry_count);
