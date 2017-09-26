@@ -208,6 +208,10 @@ $(document).ready(function() {
         // }
     });
 
+    $("input").each(function() {
+        log.console($("this").attr("name"));
+    })
+
 })
 
 function check_id_count(count) {
