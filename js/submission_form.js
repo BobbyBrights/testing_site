@@ -1063,8 +1063,9 @@ function fill_form(form_number, with_opt=true) {
         fill_field(form_fields[i] + form_number.toString(), "test");
     }
 
-    fill_radio("colour_" + form_number.toString(), "colour")
-    fill_radio("silent_" + form_number.toString(), "colour")
+    fill_radio("colour_" + form_number.toString())
+    fill_radio("silent_" + form_number.toString())
+    fill_radio("vimeo_link_" + form_number.toString())
 
     fill_textarea("film_synopsis_" + form_number.toString(), "test");
     fill_textarea("filmmakers_bio_" + form_number.toString(), "test");
@@ -1078,7 +1079,7 @@ function fill_form(form_number, with_opt=true) {
     }
 }
 
-function fill_radio(name, value) {
+function fill_radio(name) {
     $("#" + name).prop('checked', true)
 }
 
