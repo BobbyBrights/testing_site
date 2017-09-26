@@ -1064,6 +1064,7 @@ function fill_form(form_number, with_opt=true) {
     }
 
     fill_radio("colour_" + form_number.toString(), "colour")
+    fill_radio("silent_" + form_number.toString(), "colour")
 
     fill_textarea("film_synopsis_" + form_number.toString(), "test");
     fill_textarea("filmmakers_bio_" + form_number.toString(), "test");
