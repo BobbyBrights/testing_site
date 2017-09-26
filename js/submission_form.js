@@ -1075,6 +1075,11 @@ function fill_form(form_number, with_opt=true, vimeo_on=false) {
         fill_radio("blu_ray_" + form_number.toString())
     }
 
+    fill_radio("search-org-format-1_" + form_number.toString())
+    fill_radio("search-ex-format-9_" + form_number.toString())
+    fill_radio("search-genre-2_" + form_number.toString())
+    fill_radio("search-category-24_" + form_number.toString())
+
     //fill_field("film-still-file_" + form_number.toString(), "test");
 
     fill_textarea("film_synopsis_" + form_number.toString(), "test");
