@@ -436,7 +436,7 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-screening-history-file_' + entry_count.toString() + '" />Upload PDF</label><div class="file-text" id="screening-history-text_' + entry_count.toString() + '">no file currently selected</div>')
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-screening-history-file_' + entry_count.toString() + '" name="film-screening-history-file_' + entry_count.toString() + '"/>Upload PDF</label><div class="file-text" id="screening-history-text_' + entry_count.toString() + '">no file currently selected</div>')
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
@@ -453,7 +453,7 @@ function make_film_entry(entry_count) {
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
 
-    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-still-file_' + entry_count.toString() + '" />Upload Web Still</label><div class="file-text" id="web-still-text_' + entry_count.toString() + '">no file currently selected</div>')
+    $(".request_acct_table_row_label").last().append('<label class="custom-file-upload"><input type="file" id="film-still-file_' + entry_count.toString() + '" name="film-still-file_' + entry_count.toString() + '" />Upload Web Still</label><div class="file-text" id="web-still-text_' + entry_count.toString() + '">no file currently selected</div>')
 
     $(".request_acct_input").last().append("<div class='request_acct_upload_info_row'><div class='request_acct_table_row_label'></div></div>")
 
