@@ -213,6 +213,7 @@ $(document).ready(function() {
     })
 
     fill_acct_request()
+    fill_form(1)
 
 })
 
@@ -1056,7 +1057,19 @@ function fill_acct_request(with_opt=true) {
 }
 
 function fill_form(form_number, with_opt=true) {
-    form_fields_1 = ["film_title_", "length_", "year_", "country_", "language_"]
+    form_fields = ["film_title_", "length_", "year_", "country_", "film_synopsis_", "filmmakers_firstname_", "filmmakers_lastname_", "filmmakers_bio_"]
+
+    for (i=0; i<fieldnames.length; i++) {
+        fill_field(form_fields[i] + form_number.toString(), "test");
+    }
+
+    fill_field("filmmakers_email_" + form_number.toString(), "test@test.com");
+
+    if (with_opt) {
+        fill_field("language_" + form_number.toString(), "test");
+        fill_field("sec_filmmakers_name_" + form_number.toString(), "test");
+        fill_field("self_identification_" + form_number.toString(), "test");
+    }
 }
 
 function fill_field(name, value) {
