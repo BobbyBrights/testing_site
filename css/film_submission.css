@@ -351,7 +351,7 @@ input {
         position: relative;
         width: 600px;
         height: 150px; }
-        .table .table_cell_container .table_contents .request_acct_input_box input {
+        .table .table_cell_container .table_contents .request_acct_input_box textarea {
           position: relative;
           top: 12px;
           border: 1px solid #000000;
@@ -359,7 +359,7 @@ input {
           height: 150px;
           line-height: normal;
           background-color: transparent; }
-        .table .table_cell_container .table_contents .request_acct_input_box input:focus {
+        .table .table_cell_container .table_contents .request_acct_input_box textarea:focus {
           outline: none; }
       .table .table_cell_container .table_contents .request_acct_input_small {
         position: relative;

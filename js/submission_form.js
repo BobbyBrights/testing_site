@@ -723,7 +723,7 @@ function entry_form_textbox_filmmaker (entry_count, name, title, not_optional=fa
     }
     $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
     $(".request_acct_input").last().append("<div class='request_acct_input_box'></div>")
-    $(".request_acct_input_box").last().append("<input type='textarea' id='" + name + "_" + entry_count.toString() + "' name='" + name + "_" + entry_count.toString() + "'>")
+    $(".request_acct_input_box").last().append("<textarea id='" + name + "_" + entry_count.toString() + "' name='" + name + "_" + entry_count.toString() + "'></textarea>")
     $(".request_acct_input_box").last().append("<div class='border_line'></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
