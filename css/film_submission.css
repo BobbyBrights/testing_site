@@ -358,7 +358,9 @@ input {
           width: 600px;
           height: 150px;
           line-height: normal;
-          background-color: transparent; }
+          background-color: transparent;
+          font-family: trade_gothic, sans-serif;
+          font-size: 14px; }
         .table .table_cell_container .table_contents .request_acct_input_box textarea:focus {
           outline: none; }
       .table .table_cell_container .table_contents .request_acct_input_small {
