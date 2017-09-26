@@ -1036,3 +1036,19 @@ function checkFields() {
         return false;
     }
 }
+
+function fill_acct_request() {
+    fieldnames = ["firstname", "address", "lastname", "lastname", 
+    "city_town", "city_town", "city_town", "country_", "country_", 
+    "organization", "province_state", "phone", "postal_code"]
+
+    for (i=0; i<fieldnames.length; i++) {
+        fill_field(fieldnames[i], "test");
+    }
+
+    fill_field("email", "test");
+}
+
+function fill_field(name, value) {
+    $("input[name='" + name + "']").val(value)
+}
