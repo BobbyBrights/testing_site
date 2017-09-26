@@ -466,6 +466,11 @@ function make_film_entry(entry_count) {
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
+    $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
+    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+    $(".request_acct_cell_left").last().append("<div class='selection_acct_label_generic'></div>")
+    $(".selection_acct_label_generic").last().append("<div class='request_acct_label_text'>Please select the preview format you will be submitting to CFMDC: </div>")
+
     // Preview Format
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'><b>Preview Format</b></div>")
