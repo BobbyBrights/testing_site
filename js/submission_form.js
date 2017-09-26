@@ -1063,15 +1063,22 @@ function fill_form(form_number, with_opt=true) {
         fill_field(form_fields[i] + form_number.toString(), "test");
     }
 
+    fill_textarea("film_synopsis_" + form_number.toString(), "test");
+    fill_textarea("filmmakers_bio_" + form_number.toString(), "test");
+
     fill_field("filmmakers_email_" + form_number.toString(), "test@test.com");
 
     if (with_opt) {
         fill_field("language_" + form_number.toString(), "test");
         fill_field("sec_filmmakers_name_" + form_number.toString(), "test");
-        fill_field("self_identification_" + form_number.toString(), "test");
+        fill_textarea("self_identification_" + form_number.toString(), "test");
     }
 }
 
 function fill_field(name, value) {
     $("input[name='" + name + "']").val(value)
+}
+
+function fill_textarea(name, value) {
+    $("textarea[name='" + name + "']").val(value)
 }
