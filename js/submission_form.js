@@ -1075,12 +1075,15 @@ function fill_form(form_number, with_opt=true, vimeo_on=false) {
         fill_radio("blu_ray_" + form_number.toString())
     }
 
+    fill_field("film-still-file_" + form_number.toString(), "test");
+
     fill_textarea("film_synopsis_" + form_number.toString(), "test");
     fill_textarea("filmmakers_bio_" + form_number.toString(), "test");
 
     fill_field("filmmakers_email_" + form_number.toString(), "test@test.com");
 
     if (with_opt) {
+        fill_field("film-screening-history-file_" + form_number.toString(), "test");
         fill_field("language_" + form_number.toString(), "test");
         fill_field("sec_filmmakers_name_" + form_number.toString(), "test");
         fill_textarea("self_identification_" + form_number.toString(), "test");
