@@ -405,7 +405,7 @@ function make_film_entry(entry_count) {
     $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     // Secondary Filmmaker Name(s) 
-    left_entry_form_text_filmmaker(entry_count, "sec_filmmakers_name", "Secondary <br/>Filmmaker Name(s)");
+    left_entry_form_text_filmmaker(entry_count, "sec_filmmakers_name", "Secondary <br/>Filmmaker Name(s)", true);
 
     $(".filmmaker_section").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
@@ -1039,16 +1039,24 @@ function checkFields() {
     }
 }
 
-function fill_acct_request() {
+function fill_acct_request(with_opt=true) {
     fieldnames = ["firstname", "address", "lastname", "lastname", 
     "city_town", "city_town", "city_town", "country_", "country_", 
-    "organization", "province_state", "phone", "postal_code"]
+    "province_state", "phone", "postal_code"]
 
     for (i=0; i<fieldnames.length; i++) {
         fill_field(fieldnames[i], "test");
     }
 
     fill_field("email", "test@test.com");
+
+    if (with_opt) {
+        fill_field("organization", "test");
+    }
+}
+
+function fill_form(form_number, with_opt=true) {
+    form_fields_1 = ["film_title_", "length_", "year_", "country_", "language_"]
 }
 
 function fill_field(name, value) {
