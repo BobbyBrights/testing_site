@@ -1071,6 +1071,9 @@ function fill_form(form_number, with_opt=true, vimeo_on=false) {
         fill_field("vimeo_link_" + form_number.toString(), "test");
         fill_field("vimeo_password_" + form_number.toString(), "test");
     }
+    else {
+        fill_radio("blu_ray" + form_number.toString())
+    }
 
     fill_textarea("film_synopsis_" + form_number.toString(), "test");
     fill_textarea("filmmakers_bio_" + form_number.toString(), "test");
