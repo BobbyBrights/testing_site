@@ -1072,7 +1072,15 @@ function checkFields() {
         highlight_field_text('email', emailCheck)
     }
 
+    //check form
 
+    //get number of forms
+
+    form_count = parseInt($("input[id='film_count']").val())
+
+    for (i=1; i<=form_count; i++) {
+        check_form(i); 
+    }
 
     // if($("input:radio[name=acct_type]").is(":checked")){
     //     acct_type = true
@@ -1083,7 +1091,24 @@ function checkFields() {
     // }
     // else {
     //     return false;
+
+    return is_complete;
 }
+
+function check_form (form_number) {
+    form_text_fields = ["film_title_", "length_", "year_", "country_", "filmmakers_firstname_", "filmmakers_lastname_"]
+
+    is_complete = true;
+
+    for(j=0; j<form_text_fields.length; j++) {
+        field_value = $("input[name='" + form_text_fields[i] + form_number.toString() + "']").val();
+        is_complete = is_complete && field_value;
+        highlight_field_text(form_text_fields[i], field_value)
+    }
+
+    return is_complete;
+}
+
 
 function highlight_field_text(name, boolean) {
     if (boolean) {
