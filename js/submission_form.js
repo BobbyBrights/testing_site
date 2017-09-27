@@ -1076,7 +1076,7 @@ function checkFields() {
 
     //get number of forms
 
-    form_count = $("#film_count").val()
+    form_count = $("#form_count")
 
     alert(form_count)
 
