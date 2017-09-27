@@ -1107,20 +1107,23 @@ function check_form (form_number) {
     }
 
     // colour
-    colour_checked = false;
-    $("input:radio[id='colour_" + form_number.toString() + "']").each(function() {
-        if ($(this).is(":checked")) {
-            colour_checked = true;
-        }
-    })
+    check_radio_form("colour_", form_number)
 
-    alert(colour_checked)
-
-    is_complete = is_complete && colour_checked
-
-    highlight_field_checkbox("colour_" + form_number.toString(), colour_checked)
+    // colour
+    check_radio_form("sound_", form_number)
 
     return is_complete;
+}
+
+function check_radio_form(name, form_number) {
+    checked = false;
+    $("input:radio[id='" + name + form_number.toString() + "']").each(function() {
+        if ($(this).is(":checked")) {
+            checked = true;
+        }
+    })
+    highlight_field_checkbox(name + form_number.toString(), checked)
+    return checked
 }
 
 function highlight_field_checkbox(name, boolean) {
@@ -1149,7 +1152,7 @@ function fill_form(form_number, with_opt=true, vimeo_on=false) {
     }
 
     //fill_radio("colour_" + form_number.toString())
-    fill_radio("silent_" + form_number.toString())
+    //fill_radio("silent_" + form_number.toString())
 
     if (vimeo_on) {
         fill_radio("vimeo_" + form_number.toString())
