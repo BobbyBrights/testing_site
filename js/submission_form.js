@@ -1063,10 +1063,10 @@ function checkFields() {
         field_value = $("input[name='" + acct_request_fields[i] + "']").val();
         is_complete = is_complete && field_value;
         if (field_value) {
-            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().removeClass("request_acct_label_text_alert");
+            $("input[name='" + acct_request_fields[i] + "']").removeClass("request_acct_label_text_alert");
         }
         else {
-            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().addClass("request_acct_label_text_alert");
+            $("input[name='" + acct_request_fields[i] + "']").addClass("request_acct_label_text_alert");
         }
     }
 
@@ -1075,10 +1075,10 @@ function checkFields() {
         emailCheck = isValidEmailAddress(email);
         is_complete = is_complete && isValidEmailAddress(email);
         if (emailCheck) {
-            $("input[name='email']").parent().parent().parent().removeClass("request_acct_label_text_alert");
+            $("input[name='email']").removeClass("request_acct_label_text_alert");
         }
         else {
-            $("input[name='email']").parent().parent().parent().addClass("request_acct_label_text_alert");
+            $("input[name='email']").addClass("request_acct_label_text_alert");
         }
     }
 
