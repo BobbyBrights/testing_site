@@ -1150,7 +1150,7 @@ function check_form (form_number) {
     is_complete = check_radio_form("preview_format_", form_number) && is_complete
 
     // original format
-    check_checkbox_form = check_checkbox_form("search-org-format-1_", form_number) && is_complete
+    check_checkbox_form = check_checkbox_form("search-org-format_", form_number) && is_complete
 
     if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
         form_text_fields = ["vimeo_link_", "vimeo_password_"]
@@ -1167,7 +1167,7 @@ function check_form (form_number) {
 function check_checkbox_form (name, form_number) {
     checked = false;
     alert(name + form_number.toString() + "[]")
-    $("input:checkbox[name='" + name + form_number.toString() + "']").each(function() {
+    $("input:checkbox[name='" + name + form_number.toString() + "[]']").each(function() {
         alert("hi")
         if ($(this).is(":checked")) {
             checked = true;
