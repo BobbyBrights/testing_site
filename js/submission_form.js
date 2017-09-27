@@ -841,12 +841,9 @@ function check_filmmaker_section(old_count, new_count) {
 
 function check_preview_format_handler(e) {
 
-
     entry_count = e.data.entry_count;
 
-    alert($(this).val())
-
-    if ($(this).val() === "vimeo_link") {
+    if ($(this).val() === "vimeo") {
         $("#vimeo_link_section_"+ entry_count.toString()).show();
     }
     else {
