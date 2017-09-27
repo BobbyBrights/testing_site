@@ -6,6 +6,13 @@
 <script src="<?=$web_host?>js/submission_form.js" type="text/javascript"></script>
 
 <script>
+  <?php 
+    if ($_SESSION["loggedin"]) {
+  ?>
+      client_id = <?php echo $_SESSION['client_id']; ?>;
+  <?php
+    }
+  ?>
   var el = document.createElement('script');
   el.type = 'application/ld+json';
   el.text = JSON.stringify({
