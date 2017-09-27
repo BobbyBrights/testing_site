@@ -1101,6 +1101,8 @@ function checkFields() {
     // else {
     //     return false;
 
+    console.log("final: " + is_complete)
+
     return is_complete;
 }
 
