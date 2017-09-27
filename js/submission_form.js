@@ -1118,12 +1118,11 @@ function check_form (form_number) {
 function check_radio_form(name, form_number) {
     checked = false;
     $("input:radio[id='" + name + form_number.toString() + "']").each(function() {
+        alert(name)
         if ($(this).is(":checked")) {
             checked = true;
         }
     })
-
-    alert(checked)
     highlight_field_checkbox(name + form_number.toString(), checked)
     return checked
 }
