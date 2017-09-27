@@ -188,6 +188,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         if (checkFields()) {
+            console.log("yes")
             // $(document.body).css({ 'cursor': 'wait' })
             // $(".warning").removeClass("warning_up")
             // $(".message").removeClass("message_up")
@@ -204,6 +205,7 @@ $(document).ready(function() {
             // })
         }
         else {
+            console.log("no")
             $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">You\'ve left some required fields empty or invalid, please try again.</div>')
             $(".warning").addClass("warning_up")
         }
