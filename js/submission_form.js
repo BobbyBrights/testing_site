@@ -420,7 +420,7 @@ function make_film_entry(entry_count) {
     $(".note_content").last().append("<div class='note_content_table'></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("Text on self Identification.")
+    $(".note_content_table_content").last().append("Text on self identification.")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
