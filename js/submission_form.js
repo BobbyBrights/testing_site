@@ -1149,6 +1149,9 @@ function check_form (form_number) {
     // preview format
     is_complete = check_radio_form("preview_format_", form_number) && is_complete
 
+    // original format
+    check_checkbox_form = check_checkbox_form ("search-org-format-1_", form_number) && is_complete
+
     if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
         form_text_fields = ["vimeo_link_", "vimeo_password_"]
         for(j=0; j<form_text_fields.length; j++) {
