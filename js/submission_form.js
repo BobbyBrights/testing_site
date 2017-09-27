@@ -1097,7 +1097,7 @@ function checkFields() {
 }
 
 function check_form (form_number) {
-    form_text_fields = ["film_title_", "length_", "year_", "country_", "filmmakers_firstname_", "filmmakers_lastname_"]
+    form_text_fields = ["film_title_", "length_", "year_", "country_"]
 
     is_complete = true;
 
