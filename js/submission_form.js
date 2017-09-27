@@ -1111,7 +1111,6 @@ function check_form (form_number) {
     $("input:radio[id='colour_" + form_number.toString() + "']").each(function() {
         if ($(this).is(":checked")) {
             colour_checked = true;
-            break;
         }
     })
 
