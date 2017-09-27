@@ -1098,6 +1098,8 @@ function checkFields() {
 
     }
 
+    is_complete = true;
+
     //check form
 
     //get number of forms
