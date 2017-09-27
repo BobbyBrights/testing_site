@@ -958,6 +958,7 @@ function check_still_upload_handler(e) {
                         $(".warning").addClass("warning_up")
                         reset_file($("#" + file_obj))
                         console.log("img onload: " + file_obj)
+                        $("#" + file_obj).val("")
                         $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
                     }
                     else {
