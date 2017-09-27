@@ -1068,8 +1068,8 @@ function checkFields() {
 
 
     if ($("input[name='email']").val()) {
-        emailCheck = isValidEmailAddress(email);
-        is_complete = is_complete && isValidEmailAddress(email);
+        emailCheck = isValidEmailAddress($("input[name='email']").val());
+        is_complete = is_complete && emailCheck;
         highlight_field_text('email', emailCheck)
     }
 
@@ -1088,11 +1088,11 @@ function checkFields() {
 
 function highlight_field_text(name, boolean) {
     if (boolean) {
-            $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
-        }
-        else {
-            $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
-        }
+        $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
+    }
+    else {
+        $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
+    }
 }
 
 function fill_form(form_number, with_opt=true, vimeo_on=false) {
