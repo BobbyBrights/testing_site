@@ -1059,7 +1059,7 @@ function fill_acct_request(with_opt=true) {
 
 function checkFields() {
     // check acct request area
-    acct_request_fields = ["firstname", "address", "lastname", "lastname", 
+    acct_request_fields = ["firstname", "address", "lastname", 
     "city_town", "city_town", "city_town", "country_", "province_state", 
     "phone", "postal_code", "email"];
 
@@ -1067,6 +1067,7 @@ function checkFields() {
 
     for (i=0; i<acct_request_fields.length; i++) {
         field_value = $("input[name='" + acct_request_fields[i] + "']").val();
+        console.log( acct_request_fields[i] + " " + field_value)
         is_complete = is_complete && field_value;
         highlight_field_text(acct_request_fields[i], field_value)
     }
