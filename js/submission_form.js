@@ -1103,6 +1103,7 @@ function check_form (form_number) {
     is_complete = true;
 
     for(j=0; j<form_text_fields.length; j++) {
+        alert("input[name='" + form_text_fields[j] + form_number.toString() + "']")
         field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
         is_complete = is_complete && field_value;
         highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
