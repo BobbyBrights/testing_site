@@ -944,7 +944,9 @@ function check_still_upload_handler(e) {
             }
             else {
            
-                file_obj = this;
+                file_obj = $(this).attr('id');
+
+                console.log(file_obj);
 
                 image = new Image();
 
