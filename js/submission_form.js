@@ -916,6 +916,8 @@ function check_still_upload_handler(e) {
 
     filepath = $(this).val();
 
+    console.log("before processing: " + filepath)
+
     if (!filepath) {
         $("#web-still-text").html("no file currently selected");
     }
