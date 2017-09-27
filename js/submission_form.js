@@ -310,7 +310,7 @@ function make_film_entry(entry_count) {
     left_entry_form_text(entry_count, "film_title", "Film Title");
 
     // Length
-    left_entry_form_text(entry_count, "length", "Length");
+    left_entry_form_text(entry_count, "length", "Length (min.sec)");
 
     // Year
     right_entry_form_text(entry_count, "year", "Year");
