@@ -1069,6 +1069,7 @@ function checkFields() {
         field_value = $("input[name='" + acct_request_fields[i] + "']").val();
         console.log( acct_request_fields[i] + " " + field_value)
         is_complete = is_complete && field_value;
+        console.log(is_complete)
         highlight_field_text(acct_request_fields[i], field_value)
     }
 
