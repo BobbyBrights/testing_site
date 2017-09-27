@@ -1172,6 +1172,8 @@ function check_checkbox_form (name, form_number) {
         }
     })
 
+    alert(checked)
+
     highlight_field_checkbox(name + form_number.toString() + "[]", checked)
     return checked
 }
