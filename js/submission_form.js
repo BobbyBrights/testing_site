@@ -1164,14 +1164,14 @@ function fill_form(form_number, with_opt=true, vimeo_on=false) {
     fill_radio("colour_" + form_number.toString())
     fill_radio("silent_" + form_number.toString())
 
-    if (vimeo_on) {
-        fill_radio("vimeo_" + form_number.toString())
-        fill_field("vimeo_link_" + form_number.toString(), "test");
-        fill_field("vimeo_password_" + form_number.toString(), "test");
-    }
-    else {
-        fill_radio("blu_ray_" + form_number.toString())
-    }
+    // if (vimeo_on) {
+    //     fill_radio("vimeo_" + form_number.toString())
+    //     fill_field("vimeo_link_" + form_number.toString(), "test");
+    //     fill_field("vimeo_password_" + form_number.toString(), "test");
+    // }
+    // else {
+    //     fill_radio("blu_ray_" + form_number.toString())
+    // }
 
     fill_radio("search-org-format-1_" + form_number.toString())
     fill_radio("search-ex-format-9_" + form_number.toString())
