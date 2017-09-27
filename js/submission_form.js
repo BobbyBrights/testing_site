@@ -1114,11 +1114,33 @@ function check_form (form_number) {
     // sound
     is_complete = check_radio_form("sound_", form_number) && is_complete
 
+    // filmmaker_info
+
+    if(!$("input[name='filmmaker_info_" + form_number.toString() + "']").is("checked")) {
+        form_text_fields = ["filmmakers_firstname_", "filmmakers_lastname_", "filmmakers_email_"]
+        for(j=0; j<form_text_fields.length; j++) {
+            field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
+            is_complete = is_complete && field_value;
+            highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
+        }
+
+        if ($("input[name='filmmakers_email_" + form_number.toString() + "']").val()) {
+            emailCheck = isValidEmailAddress($("input[name='filmmakers_email_" + form_number.toString() + "']").val());
+            is_complete = is_complete && emailCheck;
+            highlight_field_text("filmmakers_email_" + form_number.toString(), emailCheck)
+        }
+    }
+
     // preview_format
     is_complete = check_radio_form("preview_format_", form_number) && is_complete
 
     if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
-        form_text_fields = ["film_title_", "length_"]
+        form_text_fields = ["vimeo_link_", "vimeo_password_"]
+        for(j=0; j<form_text_fields.length; j++) {
+            field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
+            is_complete = is_complete && field_value;
+            highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
+        }
     }
 
     return is_complete;
