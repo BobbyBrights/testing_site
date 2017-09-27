@@ -1161,6 +1161,19 @@ function check_form (form_number) {
     return is_complete;
 }
 
+function check_checkbox_form (name, form_number) {
+    checked = false;
+
+    $("input:checkbox[name='" + name + form_number.toString() + "[]']").each(function() {
+        if ($(this).is(":checked")) {
+            checked = true;
+        }
+    })
+
+    highlight_field_checkbox(name + form_number.toString() + "[]", checked)
+    return checked
+}
+
 function check_radio_form(name, form_number) {
     checked = false;
 
@@ -1170,11 +1183,20 @@ function check_radio_form(name, form_number) {
         }
     })
 
-    highlight_field_checkbox(name + form_number.toString(), checked)
+    highlight_field_radio(name + form_number.toString(), checked)
     return checked
 }
 
 function highlight_field_checkbox(name, boolean) {
+    if (boolean) {
+        $("input[name='" + name + "']").parent().parent().parent().parent().parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
+    }
+    else {
+        $("input[name='" + name + "']").parent().parent().parent().parent().parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
+    }
+}
+
+function highlight_field_radio(name, boolean) {
     if (boolean) {
         $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_type_heading_film').removeClass("request_acct_label_text_alert");
     }
