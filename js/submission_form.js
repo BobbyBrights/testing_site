@@ -1192,6 +1192,15 @@ function highlight_field_textbox(name, boolean) {
     }
 }
 
+function highlight_field_file(name, boolean) {
+    if (boolean) {
+        $("input[name='" + name + "']").parent().parent().parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
+    }
+    else {
+        $("input[name='" + name + "']").parent().parent().parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
+    }
+}
+
 function highlight_field_text(name, boolean) {
     if (boolean) {
         $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
