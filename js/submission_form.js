@@ -1093,7 +1093,6 @@ function checkFields() {
     // }
     // else {
     //     return false;
-    }
 }
 
 function fill_form(form_number, with_opt=true, vimeo_on=false) {
