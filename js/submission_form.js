@@ -1152,6 +1152,15 @@ function check_form (form_number) {
     // original format
     is_complete = check_checkbox_form("search-org-format_", form_number) && is_complete
 
+    // exhibition format
+    is_complete = check_checkbox_form("search-ex-format_", form_number) && is_complete
+
+    // genre
+    is_complete = check_checkbox_form("search-genre_", form_number) && is_complete
+
+    // keywords
+    is_complete = check_checkbox_form("search-category_", form_number) && is_complete
+
     if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
         form_text_fields = ["vimeo_link_", "vimeo_password_"]
         for(j=0; j<form_text_fields.length; j++) {
@@ -1171,8 +1180,6 @@ function check_checkbox_form (name, form_number) {
             checked = true;
         }
     })
-
-    alert(checked)
 
     highlight_field_checkbox(name + form_number.toString() + "[]", checked)
     return checked
