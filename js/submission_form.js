@@ -210,10 +210,6 @@ $(document).ready(function() {
         // }
     });
 
-    $("input").each(function() {
-        console.log($(this).attr("name"));
-    })
-
     fill_acct_request()
     fill_form(1)
 
