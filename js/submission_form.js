@@ -1086,6 +1086,8 @@ function checkFields() {
 
     form_count = parseInt($("#form_count").val())
 
+    console.log("before form: " + is_complete)
+
     for (i=1; i<=form_count; i++) {
         check_result = check_form(i)
         is_complete = is_complete &&  Boolean(check_result); 
