@@ -1,5 +1,11 @@
 <?php
+
+if(session_status()==1) {
+        @session_start();
+}
 ?>
+
+
 
 <link rel="stylesheet" type="text/css" href="<?=$web_host?>css/film_submission.css">
 
