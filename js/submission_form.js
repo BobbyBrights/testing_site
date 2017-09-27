@@ -186,6 +186,7 @@ $(document).ready(function() {
 
     $('#film-form').submit(function(e) {
         e.preventDefault();
+        alert('t')
 
         checkFields();
         // if (checkFields()) {
