@@ -1063,24 +1063,14 @@ function checkFields() {
     for (i=0; i<acct_request_fields.length; i++) {
         field_value = $("input[name='" + acct_request_fields[i] + "']").val();
         is_complete = is_complete && field_value;
-        if (field_value) {
-            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
-        }
-        else {
-            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
-        }
+        highlight_field_text(acct_request_fields[i], field_value)
     }
 
 
     if ($("input[name='email']").val()) {
         emailCheck = isValidEmailAddress(email);
         is_complete = is_complete && isValidEmailAddress(email);
-        if (emailCheck) {
-            $("input[name='email']").parent().parent().parent().removeClass("request_acct_label_text_alert");
-        }
-        else {
-            $("input[name='email']").parent().parent().parent().addClass("request_acct_label_text_alert");
-        }
+        highlight_field_text('email', emailCheck)
     }
 
 
@@ -1094,6 +1084,15 @@ function checkFields() {
     // }
     // else {
     //     return false;
+}
+
+function highlight_field_text(name, boolean) {
+    if (boolean) {
+            $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
+        }
+        else {
+            $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
+        }
 }
 
 function fill_form(form_number, with_opt=true, vimeo_on=false) {
