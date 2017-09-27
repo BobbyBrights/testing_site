@@ -1118,7 +1118,7 @@ function check_form (form_number) {
     is_complete = is_complete && colour_checked
 
     highlight_field_checkbox("colour_" + form_number.toString(), colour_checked)
-    
+
     return is_complete;
 }
 
@@ -1147,7 +1147,7 @@ function fill_form(form_number, with_opt=true, vimeo_on=false) {
         fill_field(form_fields[i] + form_number.toString(), "test");
     }
 
-    fill_radio("colour_" + form_number.toString())
+    //fill_radio("colour_" + form_number.toString())
     fill_radio("silent_" + form_number.toString())
 
     if (vimeo_on) {
