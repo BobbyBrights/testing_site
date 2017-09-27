@@ -4,6 +4,10 @@ recaptcha_checked = false;
 
 film_form_count = 1;
 
+function recaptchaCallback() {
+    recaptcha_checked = true;
+}
+
 $(document).ready(function() {
 
     var _URL = window.URL || window.webkitURL;
@@ -1067,9 +1071,7 @@ function checkFields() {
 
     for (i=0; i<acct_request_fields.length; i++) {
         field_value = $("input[name='" + acct_request_fields[i] + "']").val();
-        console.log( acct_request_fields[i] + " " + field_value)
         is_complete = is_complete &&  Boolean(field_value);
-        console.log(is_complete)
         highlight_field_text(acct_request_fields[i], field_value)
     }
 
@@ -1086,12 +1088,13 @@ function checkFields() {
 
     form_count = parseInt($("#form_count").val())
 
-    console.log("before form: " + is_complete)
-
     for (i=1; i<=form_count; i++) {
         check_result = check_form(i)
         is_complete = is_complete &&  Boolean(check_result); 
     }
+
+    // recaptcha
+    is_complete = is_complete &&  Boolean(recaptcha_checked);
 
     // if($("input:radio[name=acct_type]").is(":checked")){
     //     acct_type = true
@@ -1102,8 +1105,6 @@ function checkFields() {
     // }
     // else {
     //     return false;
-
-    console.log("final: " + is_complete)
 
     return is_complete;
 }
