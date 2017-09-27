@@ -336,7 +336,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='b_w' id='b_w_" + entry_count.toString() + "' name='colour_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='b_w_" + entry_count.toString() + "'></label>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>b_w</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>b/w</b></div>")
     
     $(".film_form_table").last().append("<div class='request_acct_film_row'></div>")
     $(".request_acct_film_row").last().append("<div class='request_acct_type_heading_film'>&#8203;</div>")
@@ -344,7 +344,7 @@ function make_film_entry(entry_count) {
     $(".request_acct_type_label").last().append("<div class='acct_type'></div>")
     $(".acct_type").last().append("<input type='radio' value='colour and b_w' id='colour_and_b_w_" + entry_count.toString() + "' name='colour_" + entry_count.toString() + "'></input>")
     $(".acct_type").last().append("<label for='colour_and_b_w_" + entry_count.toString() + "'></label>")
-    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour and b_w</b></div>")
+    $(".request_acct_film_row").last().append("<div class='request_acct_type_label_text'><b>colour and b/w</b></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
