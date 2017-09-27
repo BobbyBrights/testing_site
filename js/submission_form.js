@@ -299,7 +299,7 @@ function change_id_count(old_count, new_count) {
 
 function make_film_entry(entry_count) {
 
-    if (entry_count > 1) {
+    if (1) {
         $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
     }
     else {
