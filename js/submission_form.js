@@ -194,8 +194,8 @@ $(document).ready(function() {
         if (checkFields()) {
             console.log("yes")
             // $(document.body).css({ 'cursor': 'wait' })
-            // $(".warning").removeClass("warning_up")
-            // $(".message").removeClass("message_up")
+            $(".warning").removeClass("warning_up")
+            $(".message").removeClass("message_up")
             // $('#subutton').attr('disabled', true);
             // $this = $(this);
             // $.ajax({
