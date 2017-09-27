@@ -1168,6 +1168,7 @@ function check_checkbox_form (name, form_number) {
     checked = false;
 
     $("input:checkbox[name='" + name + form_number.toString() + "[]']").each(function() {
+        alert("hi")
         if ($(this).is(":checked")) {
             checked = true;
         }
