@@ -1129,6 +1129,10 @@ function check_form (form_number) {
             is_complete = is_complete && emailCheck;
             highlight_field_text("filmmakers_email_" + form_number.toString(), emailCheck)
         }
+
+        film_synopsis = $("textbox[name='film_synopsis_" + form_number.toString() + "']").val();
+        is_complete = is_complete && film_synopsis;
+        highlight_field_text("film_synopsis_" + form_number.toString(), film_synopsis)
     }
 
     // preview_format
@@ -1165,6 +1169,15 @@ function highlight_field_checkbox(name, boolean) {
     }
     else {
         $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_type_heading_film').addClass("request_acct_label_text_alert");
+    }
+}
+
+function highlight_field_textbox(name, boolean) {
+    if (boolean) {
+        $("textbox[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
+    }
+    else {
+        $("textbox[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
     }
 }
 
