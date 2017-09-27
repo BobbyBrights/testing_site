@@ -1111,7 +1111,7 @@ function checkFields() {
 function check_form (form_number) {
     form_text_fields = ["film_title_", "length_", "year_", "country_"]
 
-    is_complete__ = true;
+    is_complete_ = true;
 
     for(j=0; j<form_text_fields.length; j++) {
         field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
