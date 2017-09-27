@@ -1068,7 +1068,7 @@ function checkFields() {
     for (i=0; i<acct_request_fields.length; i++) {
         field_value = $("input[name='" + acct_request_fields[i] + "']").val();
         console.log( acct_request_fields[i] + " " + field_value)
-        is_complete = is_complete && field_value;
+        is_complete = is_complete &&  Boolean(field_value);
         console.log(is_complete)
         highlight_field_text(acct_request_fields[i], field_value)
     }
@@ -1076,7 +1076,7 @@ function checkFields() {
 
     if ($("input[name='email']").val()) {
         emailCheck = isValidEmailAddress($("input[name='email']").val());
-        is_complete = is_complete && emailCheck;
+        is_complete = is_complete &&  Boolean(emailCheck);
         highlight_field_text('email', emailCheck)
     }
 
@@ -1088,7 +1088,7 @@ function checkFields() {
 
     for (i=1; i<=form_count; i++) {
         check_result = check_form(i)
-        is_complete = is_complete && check_result; 
+        is_complete = is_complete &&  Boolean(check_result); 
     }
 
     // if($("input:radio[name=acct_type]").is(":checked")){
