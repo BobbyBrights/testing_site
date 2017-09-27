@@ -1117,8 +1117,8 @@ function check_form (form_number) {
 
 function check_radio_form(name, form_number) {
     checked = false;
-    alert("input:radio[id='" + name + form_number.toString() + "']")
-    $("input:radio[id='" + name + form_number.toString() + "']").each(function() {
+    alert("input:radio[name='" + name + form_number.toString() + "']")
+    $("input:radio[name='" + name + form_number.toString() + "']").each(function() {
         if ($(this).is(":checked")) {
             checked = true;
         }
