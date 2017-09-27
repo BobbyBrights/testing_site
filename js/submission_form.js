@@ -1078,6 +1078,8 @@ function checkFields() {
 
     form_count = parseInt($("#form_count").val())
 
+    alert(form_count)
+
     for (i=1; i<=form_count; i++) {
         check_form(i); 
     }
