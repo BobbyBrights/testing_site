@@ -1115,6 +1115,8 @@ function check_form (form_number) {
         }
     })
 
+    alert(colour_checked)
+
     is_complete = is_complete && colour_checked
 
     highlight_field_checkbox("colour_" + form_number.toString(), colour_checked)
