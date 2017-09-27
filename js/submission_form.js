@@ -1064,10 +1064,10 @@ function checkFields() {
         field_value = $("input[name='" + acct_request_fields[i] + "']").val();
         is_complete = is_complete && field_value;
         if (field_value) {
-            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().removeClass("request_acct_label_text_alert");
+            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
         }
         else {
-            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().addClass("request_acct_label_text_alert");
+            $("input[name='" + acct_request_fields[i] + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
         }
     }
 
