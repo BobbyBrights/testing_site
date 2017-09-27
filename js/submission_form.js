@@ -893,6 +893,8 @@ function check_screening_history_upload_handler(e) {
             }
         }
     }
+
+    console.log($(this).val())
 }
 
 function check_screening_history_upload(entry_count) {
