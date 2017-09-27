@@ -323,6 +323,8 @@ input {
       .table .table_cell_container .table_contents .request_acct_label_text {
         top: 14px;
         position: relative; }
+      .table .table_cell_container .table_contents request_acct_label_text_alert {
+        color: #E22134; }
       .table .table_cell_container .table_contents .request_acct_input_large {
         position: relative;
         width: 220px;

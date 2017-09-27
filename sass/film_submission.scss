@@ -540,6 +540,10 @@ input {
                 position: relative;
             }
 
+            request_acct_label_text_alert {
+                color: #E22134;
+            }
+
             .request_acct_input_large{
                 @include input-space(220px); 
             }

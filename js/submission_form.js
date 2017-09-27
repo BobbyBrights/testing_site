@@ -184,8 +184,10 @@ $(document).ready(function() {
 
     $(".contents").append("<div class='table_end_buffer'></div>")
 
-    $('#account-request').submit(function(e) {
+    $('#film-form').submit(function(e) {
         e.preventDefault();
+
+        checkFields();
         // if (checkFields()) {
         //     $(document.body).css({ 'cursor': 'wait' })
         //     $(".warning").removeClass("warning_up")
@@ -1031,33 +1033,11 @@ function isValidEmailAddress(emailAddress) {
     return pattern.test(emailAddress);
 };
 
-function checkFields() {
-    firstname = $("input[name='firstname']").val()
-    lastname = $("input[name='lastname']").val()
-    phone = $("input[name='phone']").val()
-    email = $("input[name='email']").val()
-    address = $("input[name='address']").val()
-    city_town = $("input[name='city_town']").val()
-    province_state = $("input[name='province_state']").val()
-    country = $("input[name='country_']").val()
-    postal_code = $("input[name='postal_code']").val()
-    acct_type = false
 
-    if($("input:radio[name=acct_type]").is(":checked")){
-        acct_type = true
-    }
-
-    if (firstname && lastname && phone && email && isValidEmailAddress(email) && address && city_town && province_state && country && postal_code && acct_type && recaptcha_checked) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
 
 function fill_acct_request(with_opt=true) {
     fieldnames = ["firstname", "address", "lastname", "lastname", 
-    "city_town", "city_town", "city_town", "country_", "country_", 
+    "city_town", "city_town", "city_town", "country_", 
     "province_state", "phone", "postal_code"]
 
     for (i=0; i<fieldnames.length; i++) {
@@ -1068,6 +1048,51 @@ function fill_acct_request(with_opt=true) {
 
     if (with_opt) {
         fill_field("organization", "test");
+    }
+}
+
+function checkFields() {
+    // check acct request area
+    acct_request_fields = ["firstname", "address", "lastname", "lastname", 
+    "city_town", "city_town", "city_town", "country_", "province_state", 
+    "phone", "postal_code", "email"];
+
+    is_complete = true;
+
+    for (i=0; i<acct_request_fields.length; i++) {
+        field_value = $("input[name='" + acct_request_fields[i] + "']").val();
+        is_complete = is_complete && field_value;
+        if (field_value) {
+            $("input[name='" + acct_request_fields[i] + "']").removeClass("request_acct_label_text_alert");
+        }
+        else {
+            $("input[name='" + acct_request_fields[i] + "']").addClass("request_acct_label_text_alert");
+        }
+    }
+
+
+    if ($("input[name='email']").val()) {
+        emailCheck = isValidEmailAddress(email);
+        is_complete = is_complete && isValidEmailAddress(email);
+        if (emailCheck) {
+            $("input[name='email']").removeClass("request_acct_label_text_alert");
+        }
+        else {
+            $("input[name='email']").addClass("request_acct_label_text_alert");
+        }
+    }
+
+
+
+    // if($("input:radio[name=acct_type]").is(":checked")){
+    //     acct_type = true
+    // }
+
+    // if (firstname && lastname && phone && email && isValidEmailAddress(email) && address && city_town && province_state && country && postal_code && acct_type && recaptcha_checked) {
+    //     return true;
+    // }
+    // else {
+    //     return false;
     }
 }
 
