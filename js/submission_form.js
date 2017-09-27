@@ -960,6 +960,7 @@ function check_still_upload_handler(e) {
             }
         }
     }
+    console.log($(this).val())
 }
 
 function check_still_upload(entry_count) {
