@@ -870,7 +870,7 @@ function check_screening_history_upload_handler(e) {
     filename = filepath.split('\\').pop(); 
 
     if (fileExt.toLowerCase() !== "pdf") {
-        $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. Please try again.</div>')
+        $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The file you\'re attempting to upload is not a PDF. <br/>Please try again.</div>')
         $(".warning").addClass("warning_up")
         reset_file($(this));
         $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
@@ -879,7 +879,7 @@ function check_screening_history_upload_handler(e) {
         if ((file = this.files[0])) {
 
             if (file.size > 1048576 * 2) {
-                $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 2MB. Please try again.</div>')
+                $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 2MB. <br/>Please try again.</div>')
                 $(".warning").addClass("warning_up")
                 reset_file($(this));
                 $("#screening-history-text_" + entry_count.toString()).html("no file currently selected");
@@ -922,7 +922,7 @@ function check_still_upload_handler(e) {
     filename = filepath.split('\\').pop(); 
 
     if (fileExt.toLowerCase() !== "jpg" && fileExt.toLowerCase() !== "jpeg") {
-        $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG/JPG. Please try again.</div>')
+        $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is not a JPEG/JPG. <br/>Please try again.</div>')
         $(".warning").addClass("warning_up")
         reset_file($(this))
         $("#web-still-text").html("no file currently selected");
@@ -931,7 +931,7 @@ function check_still_upload_handler(e) {
         if ((file = this.files[0])) {
 
             if (file.size > 1048576) {
-                $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 1MB. Please try again.</div>')
+                $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload is larger than 1MB. <br/>Please try again.</div>')
                 $(".warning").addClass("warning_up")
                 reset_file($(this))
                 $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
