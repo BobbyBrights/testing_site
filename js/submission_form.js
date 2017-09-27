@@ -302,6 +302,9 @@ function make_film_entry(entry_count) {
     if (entry_count > 1) {
         $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
     }
+    else {
+        $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'></div>")
+    }
 
     $("#form_entry_" + entry_count.toString()).last().append("<input type='text' class='form_id' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
 
