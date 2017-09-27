@@ -28,9 +28,9 @@ $(document).ready(function() {
     $(".table_contents").append("<div class='table_title'><div class='title'></div></div>")
     $(".title").append("Film Submission Form")
 
-    $(".table_contents").append("<div class='spacer'></div>")
-
     if (logged_in !== 1) {
+
+        $(".table_contents").append("<div class='spacer'></div>")
 
         $(".table_contents").append("<div class='note_table'></div>")
         $(".note_table").last().append("<div class='note_left_spacer'></div>")
