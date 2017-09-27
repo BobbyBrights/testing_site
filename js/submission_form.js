@@ -1111,23 +1111,23 @@ function checkFields() {
 function check_form (form_number) {
     form_text_fields = ["film_title_", "length_", "year_", "country_"]
 
-    is_complete = true;
+    is_complete__ = true;
 
     for(j=0; j<form_text_fields.length; j++) {
         field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
-        is_complete = is_complete && field_value;
+        is_complete_ = is_complete_ && field_value;
         highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
     }
 
     // colour
-    is_complete = check_radio_form("colour_", form_number) && is_complete
+    is_complete_ = check_radio_form("colour_", form_number) && is_complete_
 
     // sound
-    is_complete = check_radio_form("sound_", form_number) && is_complete
+    is_complete_ = check_radio_form("sound_", form_number) && is_complete_
 
     // film synopsis
     film_synopsis = $("textarea[name='film_synopsis_" + form_number.toString() + "']").val();
-    is_complete = is_complete && film_synopsis;
+    is_complete_ = is_complete_ && film_synopsis;
     highlight_field_textbox("film_synopsis_" + form_number.toString(), film_synopsis)
 
 
@@ -1137,51 +1137,51 @@ function check_form (form_number) {
         form_text_fields = ["filmmakers_firstname_", "filmmakers_lastname_", "filmmakers_email_"]
         for(j=0; j<form_text_fields.length; j++) {
             field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
-            is_complete = is_complete && field_value;
+            is_complete_ = is_complete_ && field_value;
             highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
         }
 
         if ($("input[name='filmmakers_email_" + form_number.toString() + "']").val()) {
             emailCheck = isValidEmailAddress($("input[name='filmmakers_email_" + form_number.toString() + "']").val());
-            is_complete = is_complete && emailCheck;
+            is_complete_ = is_complete_ && emailCheck;
             highlight_field_text("filmmakers_email_" + form_number.toString(), emailCheck)
         }
 
         filmmaker_bio = $("textarea[name='filmmakers_bio_" + form_number.toString() + "']").val();
-        is_complete = is_complete && filmmaker_bio;
+        is_complete_ = is_complete_ && filmmaker_bio;
         highlight_field_textbox("filmmakers_bio_" + form_number.toString(), filmmaker_bio)
     }
 
     // web still
     web_still = $("input[name='film-still-file_" + form_number.toString() + "']").val();
-    is_complete = is_complete && web_still;
+    is_complete_ = is_complete_ && web_still;
     highlight_field_file("film-still-file_" + form_number.toString(), web_still)
 
     // preview format
-    is_complete = check_radio_form("preview_format_", form_number) && is_complete
+    is_complete_ = check_radio_form("preview_format_", form_number) && is_complete_
 
     // original format
-    is_complete = check_checkbox_form("search-org-format_", form_number) && is_complete
+    is_complete_ = check_checkbox_form("search-org-format_", form_number) && is_complete_
 
     // exhibition format
-    is_complete = check_checkbox_form("search-ex-format_", form_number) && is_complete
+    is_complete_ = check_checkbox_form("search-ex-format_", form_number) && is_complete_
 
     // genre
-    is_complete = check_checkbox_form("search-genre_", form_number) && is_complete
+    is_complete_ = check_checkbox_form("search-genre_", form_number) && is_complete_
 
     // keywords
-    is_complete = check_checkbox_form("search-category_", form_number) && is_complete
+    is_complete_ = check_checkbox_form("search-category_", form_number) && is_complete_
 
     if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
         form_text_fields = ["vimeo_link_", "vimeo_password_"]
         for(j=0; j<form_text_fields.length; j++) {
             field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
-            is_complete = is_complete && field_value;
+            is_complete_ = is_complete_ && field_value;
             highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
         }
     }
 
-    return is_complete;
+    return is_complete_;
 }
 
 function check_checkbox_form (name, form_number) {
