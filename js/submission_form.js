@@ -1078,7 +1078,7 @@ function checkFields() {
 
     form_count = $("#form_count")
 
-    alert(form_count)
+    alert(form_count.html())
 
     for (i=1; i<=form_count; i++) {
         check_form(i); 
