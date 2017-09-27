@@ -1180,10 +1180,10 @@ function highlight_field_checkbox(name, boolean) {
 
 function highlight_field_textbox(name, boolean) {
     if (boolean) {
-        $("textbox[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
+        $("textarea[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
     }
     else {
-        $("textbox[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
+        $("textarea[name='" + name + "']").parent().parent().parent().find('.request_acct_label_text').addClass("request_acct_label_text_alert");
     }
 }
 
