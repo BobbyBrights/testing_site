@@ -1117,7 +1117,7 @@ function check_form (form_number) {
     // film synopsis
     film_synopsis = $("textbox[name='film_synopsis_" + form_number.toString() + "']").val();
     is_complete = is_complete && film_synopsis;
-    highlight_field_text("film_synopsis_" + form_number.toString(), film_synopsis)
+    highlight_field_textbox("film_synopsis_" + form_number.toString(), film_synopsis)
 
 
     // filmmaker_info
@@ -1138,7 +1138,7 @@ function check_form (form_number) {
 
         filmmaker_bio = $("textbox[name='filmmakers_bio_" + form_number.toString() + "']").val();
         is_complete = is_complete && filmmaker_bio;
-        highlight_field_text("filmmakers_bio_" + form_number.toString(), filmmaker_bio)
+        highlight_field_textbox("filmmakers_bio_" + form_number.toString(), filmmaker_bio)
     }
 
     // preview_format
