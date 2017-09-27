@@ -920,7 +920,7 @@ function check_still_upload_handler(e) {
 
     if (!filepath) {
         $("#web-still-text").html("no file currently selected");
-        break;
+        return
     }
 
     var fileExt = filepath.split('.').pop(); 
