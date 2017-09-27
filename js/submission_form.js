@@ -1106,9 +1106,30 @@ function check_form (form_number) {
         highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
     }
 
+    // colour
+    colour_checked = false;
+    $("input:radio[id='colour_" + form_number.toString() + "']").each(function() {
+        if ($(this).is(":checked")) {
+            colour_checked = true;
+            break;
+        }
+    })
+
+    is_complete = is_complete && colour_checked
+
+    highlight_field_checkbox("colour_" + form_number.toString(), colour_checked)
+    
     return is_complete;
 }
 
+function highlight_field_checkbox(name, boolean) {
+    if (boolean) {
+        $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_type_heading_film').removeClass("request_acct_label_text_alert");
+    }
+    else {
+        $("input[name='" + name + "']").parent().parent().parent().find('.request_acct_type_heading_film').addClass("request_acct_label_text_alert");
+    }
+}
 
 function highlight_field_text(name, boolean) {
     if (boolean) {
