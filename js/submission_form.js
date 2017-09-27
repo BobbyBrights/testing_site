@@ -1081,6 +1081,7 @@ function checkFields() {
 
     for (i=1; i<=form_count; i++) {
         is_complete = is_complete && check_form(i); 
+        alert(i);
     }
 
     // if($("input:radio[name=acct_type]").is(":checked")){
