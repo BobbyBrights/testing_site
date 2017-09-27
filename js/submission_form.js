@@ -1115,7 +1115,7 @@ function check_form (form_number) {
     is_complete = check_radio_form("sound_", form_number) && is_complete
 
     // film synopsis
-    film_synopsis = $("textbox[name='film_synopsis_" + form_number.toString() + "']").val();
+    film_synopsis = $("textarea[name='film_synopsis_" + form_number.toString() + "']").val();
     is_complete = is_complete && film_synopsis;
     highlight_field_textbox("film_synopsis_" + form_number.toString(), film_synopsis)
 
@@ -1136,7 +1136,7 @@ function check_form (form_number) {
             highlight_field_text("filmmakers_email_" + form_number.toString(), emailCheck)
         }
 
-        filmmaker_bio = $("textbox[name='filmmakers_bio_" + form_number.toString() + "']").val();
+        filmmaker_bio = $("textarea[name='filmmakers_bio_" + form_number.toString() + "']").val();
         is_complete = is_complete && filmmaker_bio;
         highlight_field_textbox("filmmakers_bio_" + form_number.toString(), filmmaker_bio)
     }
