@@ -9,8 +9,6 @@ function recaptchaCallback() {
 }
 
 $(document).ready(function() {
-    alert("this");
-    alert(client_id);
 
     var _URL = window.URL || window.webkitURL;
 
