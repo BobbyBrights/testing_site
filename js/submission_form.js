@@ -1122,6 +1122,8 @@ function check_radio_form(name, form_number) {
             checked = true;
         }
     })
+
+    alert(checked)
     highlight_field_checkbox(name + form_number.toString(), checked)
     return checked
 }
