@@ -1076,7 +1076,7 @@ function checkFields() {
 
     //get number of forms
 
-    form_count = $("#form_count").html()
+    form_count = $("#form_count").val()
 
     alert(form_count)
 
