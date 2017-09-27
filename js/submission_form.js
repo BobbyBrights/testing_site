@@ -957,6 +957,7 @@ function check_still_upload_handler(e) {
                         $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">The image you\'re attempting to upload has a width smaller than 380px or a height smaller than 265px. Please try again.</div>')
                         $(".warning").addClass("warning_up")
                         reset_file($("#" + file_obj))
+                        console.log("img onload: " + file_obj)
                         $("#web-still-text_" + entry_count.toString()).html("no file currently selected");
                     }
                     else {
