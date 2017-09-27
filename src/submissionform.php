@@ -6,6 +6,7 @@
 <script src="<?=$web_host?>js/submission_form.js" type="text/javascript"></script>
 
 <script>
+  client_id = -1;
   <?php 
     if ($_SESSION["loggedin"]) {
   ?>
