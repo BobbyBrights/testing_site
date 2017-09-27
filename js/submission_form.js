@@ -1076,9 +1076,9 @@ function checkFields() {
 
     //get number of forms
 
-    form_count = parseInt($("input[id='film_count']").val())
+    form_count = parseInt($("#film_count").val())
 
-    alert(form_count)
+    // alert(form_count)
 
     for (i=1; i<=form_count; i++) {
         check_form(i); 
