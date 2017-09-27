@@ -354,6 +354,7 @@ input {
         width: 600px;
         height: 150px; }
         .table .table_cell_container .table_contents .request_acct_input_box textarea {
+          resize: none;
           position: relative;
           top: 12px;
           border: 1px solid #000000;

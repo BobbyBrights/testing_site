@@ -1109,21 +1109,23 @@ function check_form (form_number) {
     // colour
     check_radio_form("colour_", form_number)
 
-    // colour
+    // sound
     check_radio_form("sound_", form_number)
+
+    // preview_format
+    check_radio_form("preview_format_", form_number)
 
     return is_complete;
 }
 
 function check_radio_form(name, form_number) {
     checked = false;
-    alert("input:radio[name='" + name + form_number.toString() + "']")
+
     $("input:radio[name='" + name + form_number.toString() + "']").each(function() {
         if ($(this).is(":checked")) {
             checked = true;
         }
     })
-
 
     highlight_field_checkbox(name + form_number.toString(), checked)
     return checked
