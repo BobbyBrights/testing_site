@@ -1078,8 +1078,6 @@ function checkFields() {
 
     form_count = parseInt($("#form_count").val())
 
-    alert(form_count)
-
     for (i=1; i<=form_count; i++) {
         check_form(i); 
     }
@@ -1103,10 +1101,9 @@ function check_form (form_number) {
     is_complete = true;
 
     for(j=0; j<form_text_fields.length; j++) {
-        alert(form_text_fields[i] + form_number.toString())
-        field_value = $("input[name='" + form_text_fields[i] + form_number.toString() + "']").val();
+        field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
         is_complete = is_complete && field_value;
-        highlight_field_text(form_text_fields[i] + form_number.toString(), field_value)
+        highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
     }
 
     return is_complete;
