@@ -1073,24 +1073,29 @@ function fill_acct_request(with_opt=true) {
 }
 
 function checkFields() {
-    // check acct request area
-    acct_request_fields = ["firstname", "address", "lastname", 
-    "city_town", "city_town", "city_town", "country_", "province_state", 
-    "phone", "postal_code", "email"];
 
-    is_complete = true;
+    if (logged_in == 1) {
 
-    for (i=0; i<acct_request_fields.length; i++) {
-        field_value = $("input[name='" + acct_request_fields[i] + "']").val();
-        is_complete = is_complete &&  Boolean(field_value);
-        highlight_field_text(acct_request_fields[i], field_value)
-    }
+        // check acct request area
+        acct_request_fields = ["firstname", "address", "lastname", 
+        "city_town", "city_town", "city_town", "country_", "province_state", 
+        "phone", "postal_code", "email"];
+
+        is_complete = true;
+
+        for (i=0; i<acct_request_fields.length; i++) {
+            field_value = $("input[name='" + acct_request_fields[i] + "']").val();
+            is_complete = is_complete &&  Boolean(field_value);
+            highlight_field_text(acct_request_fields[i], field_value)
+        }
 
 
-    if ($("input[name='email']").val()) {
-        emailCheck = isValidEmailAddress($("input[name='email']").val());
-        is_complete = is_complete &&  Boolean(emailCheck);
-        highlight_field_text('email', emailCheck)
+        if ($("input[name='email']").val()) {
+            emailCheck = isValidEmailAddress($("input[name='email']").val());
+            is_complete = is_complete &&  Boolean(emailCheck);
+            highlight_field_text('email', emailCheck)
+        }
+
     }
 
     //check form
