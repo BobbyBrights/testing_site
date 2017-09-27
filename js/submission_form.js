@@ -1143,6 +1143,7 @@ function check_form (form_number) {
 
     // web still
     web_still = $("input[name='film-still-file_" + form_number.toString() + "']").val();
+    alert(web_still)
     is_complete = is_complete && web_still;
     highlight_field_text("film-still-file_" + form_number.toString(), web_still)
 
