@@ -29,141 +29,146 @@ $(document).ready(function() {
     $(".title").append("Film Submission Form")
 
     $(".table_contents").append("<div class='spacer'></div>")
-    $(".table_contents").append("<div class='note_table'></div>")
-    $(".note_table").last().append("<div class='note_left_spacer'></div>")
-    $(".note_table").last().append("<div class='note_content'></div>")
-    $(".note_content").last().append("<div class='note_content_table'></div>")
-    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
-    $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("If you do not have a Filmmaker or Client account with us, you will need to fill out the fields the section below. If you have an account, please log in now and continue to fill out the film(s) submission form.")
-    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
-    $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
-    $(".table_contents").append("<div class='spacer'></div>")
-    $(".table_contents").append("<div id='acct_request'><div class='request_acct_table'></div></div>")
+    if (logged_in == 1) {
 
-     $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-     $(".request_acct_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
+        $(".table_contents").append("<div class='note_table'></div>")
+        $(".note_table").last().append("<div class='note_left_spacer'></div>")
+        $(".note_table").last().append("<div class='note_content'></div>")
+        $(".note_content").last().append("<div class='note_content_table'></div>")
+        $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+        $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
+        $(".note_content_table_content").last().append("If you do not have a Filmmaker or Client account with us, you will need to fill out the fields the section below. If you have an account, please log in now and continue to fill out the film(s) submission form.")
+        $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+        $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
-    // First Name 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>First Name</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='firstname' name='firstname'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        $(".table_contents").append("<div class='spacer'></div>")
+        $(".table_contents").append("<div id='acct_request'><div class='request_acct_table'></div></div>")
 
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+         $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+         $(".request_acct_row_row").last().append("<div class='legend'>optional field <b>*</b></div>")
 
-    // Address
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Address</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='address' name='address'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        // First Name 
+        $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>First Name</b></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=1 type='text' id='firstname' name='firstname'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    // Last Name 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Last Name</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=2 type='text' id='lastname' name='lastname'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+        // Address
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Address</b></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=6 type='text' id='address' name='address'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    // City/Town
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>City/Town</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=7 type='text' id='city_town' name='city_town'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        // Last Name 
+        $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Last Name</b></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=2 type='text' id='lastname' name='lastname'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    // Spacer 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+        // City/Town
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>City/Town</b></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=7 type='text' id='city_town' name='city_town'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    // Country
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Country</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=8 type='text' id='country_' name='country_'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        // Spacer 
+        $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
 
-    // Organization 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Association <br/>With Film</b> *</div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=3 type='text' id='organization' name='organization'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+        // Country
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Country</b></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=8 type='text' id='country_' name='country_'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    // Spacer 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+        // Organization 
+        $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Association <br/>With Film</b> *</div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=3 type='text' id='organization' name='organization'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
-    // Province/State
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Province/State</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_small'></div>")
-    $(".request_acct_input_small").last().append("<input tabindex=9 type='text' id='province_state' name='province_state'>")
-    $(".request_acct_input_small").last().append("<div class='border_line'></div>")
+        // Spacer 
+        $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
 
-    // Phone 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Phone Number</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=4 type='text' id='phone' name='phone'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+        // Province/State
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Province/State</b></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_small'></div>")
+        $(".request_acct_input_small").last().append("<input tabindex=9 type='text' id='province_state' name='province_state'>")
+        $(".request_acct_input_small").last().append("<div class='border_line'></div>")
 
-    // Postal Code
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Postal/Zip Code</b></div>")
-    $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_small'></div>")
-    $(".request_acct_input_small").last().append("<input tabindex=11 type='text' id='postal_code' name='postal_code'>")
-    $(".request_acct_input_small").last().append("<div class='border_line'></div>")
+        // Phone 
+        $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Phone Number</b></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=4 type='text' id='phone' name='phone'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
 
-    // Spacer
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
 
-    // Email 
-    $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
-    $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Email</b></div>")
-    $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
-    $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
-    $(".request_acct_input_large").last().append("<input tabindex=5 type='text' id='email' name='email'>")
-    $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+        // Postal Code
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Postal/Zip Code</b></div>")
+        $(".request_acct_cell_right").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_small'></div>")
+        $(".request_acct_input_small").last().append("<input tabindex=11 type='text' id='postal_code' name='postal_code'>")
+        $(".request_acct_input_small").last().append("<div class='border_line'></div>")
 
-    $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+        // Spacer
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
+
+        // Email 
+        $(".request_acct_table").last().append("<div class='request_acct_row_row'></div>")
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
+        $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Email</b></div>")
+        $(".request_acct_cell_left").last().append("<div class='request_acct_input'></div>")
+        $(".request_acct_input").last().append("<div class='request_acct_input_large'></div>")
+        $(".request_acct_input_large").last().append("<input tabindex=5 type='text' id='email' name='email'>")
+        $(".request_acct_input_large").last().append("<div class='border_line'></div>")
+
+        $(".request_acct_row_row").last().append("<div class='request_acct_cell_spacer'></div>")
+
+    }
 
     // Spacer
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_right'></div>")
