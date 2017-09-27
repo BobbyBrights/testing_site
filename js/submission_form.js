@@ -1079,7 +1079,7 @@ function checkFields() {
     form_count = parseInt($("#form_count").val())
 
     for (i=1; i<=form_count; i++) {
-        check_form(i); 
+        is_complete = is_complete && check_form(i); 
     }
 
     // if($("input:radio[name=acct_type]").is(":checked")){
@@ -1107,13 +1107,17 @@ function check_form (form_number) {
     }
 
     // colour
-    check_radio_form("colour_", form_number)
+    is_complete = is_complete && check_radio_form("colour_", form_number)
 
     // sound
-    check_radio_form("sound_", form_number)
+    is_complete = is_complete && check_radio_form("sound_", form_number)
 
     // preview_format
-    check_radio_form("preview_format_", form_number)
+    is_complete = is_complete && check_radio_form("preview_format_", form_number)
+
+    if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
+        form_text_fields = ["film_title_", "length_"]
+    }
 
     return is_complete;
 }
@@ -1156,8 +1160,8 @@ function fill_form(form_number, with_opt=true, vimeo_on=false) {
         fill_field(form_fields[i] + form_number.toString(), "test");
     }
 
-    //fill_radio("colour_" + form_number.toString())
-    //fill_radio("silent_" + form_number.toString())
+    fill_radio("colour_" + form_number.toString())
+    fill_radio("silent_" + form_number.toString())
 
     if (vimeo_on) {
         fill_radio("vimeo_" + form_number.toString())
