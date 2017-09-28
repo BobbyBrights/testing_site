@@ -204,7 +204,7 @@ $(document).ready(function() {
             $('#subutton').attr('disabled', true);
             $this = $(this);
 
-            $(this).submit();
+            this.submit();
             // $.ajax({
             //     type: "POST",
             //     url: "http://" + $(location).attr('hostname') + "/src/submit_form.php",
