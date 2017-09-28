@@ -44,9 +44,11 @@ if (isCorrectCaptcha($_POST)) {
 
         $stmt->execute();
 
+        echo ($mysqli->lastInsertId());
+
         $count = $stmt->affected_rows;
 
-        echo ($mysqli->lastInsertId());
+
 
         $stmt->close();
         $mysqli->close();
