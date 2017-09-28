@@ -144,14 +144,6 @@
   -ms-transform: translateY(0px);
   transform: translateY(0px); }
 
-html {
-  overflow: hidden;
-  height: 100%; }
-
-body {
-  height: 100%;
-  overflow: auto; }
-
 .bar {
   position: fixed;
   width: 850px;
