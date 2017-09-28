@@ -201,17 +201,17 @@ $(document).ready(function() {
             // $(document.body).css({ 'cursor': 'wait' })
             $(".warning").removeClass("warning_up")
             $(".message").removeClass("message_up")
-            // $('#subutton').attr('disabled', true);
-            // $this = $(this);
-            // $.ajax({
-            //     type: "POST",
-            //     url: "http://" + $(location).attr('hostname') + "/src/nothing.php",
-            //     //url: "src/request_account_submit.php",
-            //     data: $this.serialize()
-            // }).done(function(data) {
-            //     $(document.body).css({ 'cursor': 'default' })
-            //     window.location.replace(web_host)
-            // })
+            $('#subutton').attr('disabled', true);
+            $this = $(this);
+            $.ajax({
+                type: "POST",
+                url: "http://" + $(location).attr('hostname') + "/src/submit_form.php",
+                //url: "src/request_account_submit.php",
+                data: $this.serialize()
+            }).done(function(data) {
+                $(document.body).css({ 'cursor': 'default' })
+                window.location.replace(web_host)
+            })
         }
         else {
             console.log("no")
