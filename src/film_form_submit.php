@@ -28,7 +28,7 @@ $email = $_POST['email'];
 
 $number_of_forms = $_POST['form_count'];
 
-echo($_POST['search-org-format_1']);
+print_r($_POST['search-org-format_1']);
 
 $outcome = 0;
 
