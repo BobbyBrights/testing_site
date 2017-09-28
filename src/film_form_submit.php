@@ -5,5 +5,6 @@ if(session_status()==1) {
 }
 
 echo($_SESSION['loggedin']);
+echo($_SESSION['client_id']);
 
 ?>
