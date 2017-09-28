@@ -24,6 +24,11 @@ $postal_code = $_POST['postal_code'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 
+// form(s)
+
+$number_of_forms = $_POST['form_count'];
+
+echo($number_of_forms);
 
 $outcome = 0;
 
@@ -38,28 +43,26 @@ if (isCorrectCaptcha($_POST)) {
     if ($mysqli->connect_errno) {
         $outcome = 0;
     }
-    else {
-    	$stmt = $mysqli->prepare("INSERT INTO `film_submission_request`(`firstname`, `lastname`, `association_with_film`, `phone_number`, `email`, `address`, `province_state`, `country`, `postal_code_zip_code`, `city_town`, `client_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssssssi",$firstname,$lastname,$association,$phone,$email,$address,$province_state,$country,$postal_code,$city_town,$client_id);
+    // else {
+    // 	$stmt = $mysqli->prepare("INSERT INTO `film_submission_request`(`firstname`, `lastname`, `association_with_film`, `phone_number`, `email`, `address`, `province_state`, `country`, `postal_code_zip_code`, `city_town`, `client_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    //     $stmt->bind_param("ssssssssssi",$firstname,$lastname,$association,$phone,$email,$address,$province_state,$country,$postal_code,$city_town,$client_id);
 
-        $stmt->execute();
+    //     $stmt->execute();
 
-        echo ($mysqli->insert_id);
+    //     $current_id = $mysqli->insert_id;
 
-        $count = $stmt->affected_rows;
+    //     $count = $stmt->affected_rows;
 
+    //     $stmt->close();
+    //     $mysqli->close();
 
+    //     if ($count != 1) {
+    //         return $outcome;
+    //     }
+    //     // else {
 
-        $stmt->close();
-        $mysqli->close();
-
-        if ($count != 1) {
-            return $outcome;
-        }
-        // else {
-
-        // }
-    }
+    //     // }
+    // }
 }
 
 function isCorrectCaptcha($postvar) {
