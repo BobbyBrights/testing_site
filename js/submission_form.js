@@ -17,7 +17,7 @@ $(document).ready(function() {
     $(".contents").append("<div class='top_buffer'></div>")
     $(".contents").append("<div class='table'></div>")
 
-    $(".table").append('<form action="' + web_host + 'src/request_account_submit.php" method="POST" id="film-form"></form>')
+    $(".table").append('<form action="' + web_host + 'src/film_form_submit.php" method="POST" id="film-form"></form>')
     $("form").append("<div class='table_cell_container'></div>")
     $(".table_cell_container").append("<div class='table_cell_left_margin'></div>")
     $(".table_cell_container").append("<div class='table_contents'></div>")
