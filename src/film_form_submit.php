@@ -24,15 +24,60 @@ $postal_code = $_POST['postal_code'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 
-echo($firstname);
-echo($lastname);
-echo($address);
-echo($city_town);
-echo($country);
-echo($association);
-echo($province_state);
-echo($postal_code);
-echo($phone);
-echo($email);
+
+$outcome = 0;
+
+if (isCorrectCaptcha($_POST)) {
+    $servername = "external-db.s220335.gridserver.com";
+    $username = "db220335";
+    $password = "XQ245_Qfhuz";
+    $database = "db220335_cfmdc";
+
+    $mysqli = new mysqli($servername, $username, $password, $database);
+
+    if ($mysqli->connect_errno) {
+        $outcome = 0;
+    }
+    else {
+    	$stmt = $mysqli->prepare("INSERT INTO `film_submission_request`(`firstname`, `lastname`, `association_with_film`, `phone_number`, `email`, `address`, `province_state`, `country`, `postal_code_zip_code`, `city_town`, `client_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssssssssi",$firstname,$lastname,$association,$phone,$email,$address,$province_state,$country,$postal_code,$city_town,$client_id);
+
+        $stmt->execute();
+
+        $count = $stmt->affected_rows;
+
+        echo ($mysqli->lastInsertId());
+
+        $stmt->close();
+        $mysqli->close();
+
+        if ($count != 1) {
+            return $outcome;
+        }
+        // else {
+
+        // }
+    }
+}
+
+function isCorrectCaptcha($postvar) {
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $secret = "6LemsxcUAAAAAK8i2Iv2ZcCjzlggw1IkGuS-e8CO";
+    $captcha = $postvar['g-recaptcha-response'];
+    $myvars = 'secret=' . $secret . '&response=' . $captcha;
+
+    $ch = curl_init( $url );
+    curl_setopt( $ch, CURLOPT_POST, 1);
+    curl_setopt( $ch, CURLOPT_POSTFIELDS, $myvars);
+    curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt( $ch, CURLOPT_HEADER, 0);
+    curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+
+    $response = curl_exec( $ch );
+
+    $s = json_decode($response);
+
+    return $s->success;
+}
 
 ?>
