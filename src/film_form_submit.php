@@ -28,7 +28,7 @@ $email = $_POST['email'];
 
 $number_of_forms = $_POST['form_count'];
 
-echo($number_of_forms);
+echo($_POST['colour_1']);
 
 $outcome = 0;
 
