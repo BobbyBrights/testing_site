@@ -223,9 +223,9 @@ $host: "http://www.testing.cfmdc.org/";
     @include drop-menu(0px);
 }
 
-html {
-    overflow: hidden;
+body {
     height: 100%;
+    overflow: auto;
 }
 
 .bar {
