@@ -4,11 +4,6 @@ define ('SITE_ROOT', realpath(dirname(getcwd())));
 
 $host = "http://www.testing.cfmdc.org/";
 
-// $target_file = $target_dir . guidv4(openssl_random_pseudo_bytes(16)) . ".jpg";
-
-// move_uploaded_file($_FILES["film-still-file_1"]["tmp_name"], $target_file);
-
-echo $target_dir;
 
 if(session_status()==1) {
     @session_start();
@@ -40,21 +35,12 @@ $number_of_forms = (int) $_POST['form_count'];
 
 // here loading up files
 
-
-
-
-
-
-// print_r($_POST['search-org-format_1']);
-
-//echo(implode(',', $_POST['search-org-format_1']));
-
-//echo guidv4(openssl_random_pseudo_bytes(16));
-
-
 $outcome = 0;
 
-if (isCorrectCaptcha($_POST)) {
+$captchaCheck = isCorrectCaptcha($_POST);
+echo $captchaCheck;
+
+if ($captchaCheck) {
     $servername = "external-db.s220335.gridserver.com";
     $username = "db220335";
     $password = "XQ245_Qfhuz";
