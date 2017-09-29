@@ -704,7 +704,8 @@ function is_cfmdc_member(user_name) {
 
     alert(split_string[0])
     alert(split_string[1])
-    alert(isNaN(split_string[2]))
+    alert(!isNaN(split_string[2]))
+    alert(split_string.length)
     
     if (split_string.length !== 3) {
         return false;
