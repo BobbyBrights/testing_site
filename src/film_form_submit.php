@@ -4,7 +4,7 @@ define ('SITE_ROOT', realpath(dirname(getcwd())));
 
 $target_dir = SITE_ROOT . "/upload/";
 
-print_r($_FILES["film-screening-history-file_1"]);
+echo($_FILES["film-screening-history-file_1"]['size']);
 
 // $target_file = $target_dir . guidv4(openssl_random_pseudo_bytes(16)) . ".jpg";
 
