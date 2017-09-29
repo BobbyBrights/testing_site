@@ -710,6 +710,11 @@ function is_cfmdc_member(user_name) {
         return false;
     }
 
+    alert(split_string[0])
+    alert(split_string[1])
+    alert(split_string[2])
+
+
     return true;
 }
 
