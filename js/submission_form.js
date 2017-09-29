@@ -1134,7 +1134,7 @@ function checkFields() {
     }
 
     // recaptcha
-    //is_complete = is_complete &&  Boolean(recaptcha_checked);
+    is_complete = is_complete &&  Boolean(recaptcha_checked);
 
     // if($("input:radio[name=acct_type]").is(":checked")){
     //     acct_type = true
