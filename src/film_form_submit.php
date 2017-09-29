@@ -63,7 +63,7 @@ if (isCorrectCaptcha($_POST)) {
     $mysqli = new mysqli($servername, $username, $password, $database);
 
     if ($mysqli->connect_errno) {
-        $outcome = 0;
+        $outcome = 1;
     }
     else {
     	$stmt = $mysqli->prepare("INSERT INTO `film_submission_request`(`firstname`, `lastname`, `association_with_film`, `phone_number`, `email`, `address`, `province_state`, `country`, `postal_code_zip_code`, `city_town`, `client_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
@@ -76,9 +76,10 @@ if (isCorrectCaptcha($_POST)) {
         $count = $stmt->affected_rows;
 
         if ($count != 1) {
-            return $outcome;
+            echo $outcome;
             $stmt->close();
         	$mysqli->close();
+        	return;
         }
 
         $stmt = $mysqli->prepare("INSERT INTO `film_submission`(`cid`, `film_title`, `length`, `year`, `country`, `language`, `colour`, `sound`, `synopsis`, `firstname`, `lastname`, `email`, `bio`, `secondary_filmmaker`, `self_identification`, `screening_history_link`, `web_still_link`, `preview_format`, `original_format`, `exhibition_format`, `genre`, `keywords`, `copyright`, `vimeo_link`, `vimeo_password`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
@@ -152,11 +153,23 @@ if (isCorrectCaptcha($_POST)) {
 			$stmt->bind_param("isssssssssssssssssssssiss", $current_id, $film_title, $length, $year, $country, $language, $colour, $sound, $synopsis, $firstname, $lastname, $email, $bio, $secondary_filmmaker, $self_identification, $screening_history_link, $web_still_link, $preview_format, $original_format, $exhibition_format, $genre, $keywords, $copyright, $vimeo_link, $vimeo_password);
 
 			$stmt->execute();
+
+			$count = $stmt->affected_rows;
+
+	        if ($count != 1) {
+	            echo $outcome;
+	            $stmt->close();
+	        	$mysqli->close();
+	        	return;
+	        }
 		}
 
         $stmt->close();
         $mysqli->close();
 
+        $_SESSION['message'] = '<div class="normal_text"><div class="big">Your film submission has been received. Please allow one week for a response.</div>If you have further questions please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a></div>';
+
+        echo $outcome;
     }
 }
 

@@ -197,8 +197,8 @@ $(document).ready(function() {
         e.preventDefault();
 
         if (checkFields()) {
-            console.log("yes")
-            // $(document.body).css({ 'cursor': 'wait' })
+            // console.log("yes")
+            $(document.body).css({ 'cursor': 'wait' })
             $(".warning").removeClass("warning_up")
             $(".message").removeClass("message_up")
             $('#subutton').attr('disabled', true);
@@ -211,14 +211,18 @@ $(document).ready(function() {
                 data: new FormData($('#film-form')[0]),
                 processData: false,
                 contentType: false
-            }).done(function(data) {
-                alert(data);
-                // $(document.body).css({ 'cursor': 'default' })
-                // window.location.replace(web_host)
+            }).done(function(data) {                
+                $(document.body).css({ 'cursor': 'default' })
+                if (data === 0) {
+                    window.location.replace(web_host)
+                }
+                else {
+                    $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">An error has occurred in your submission. <br/>Please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a> for further assistance.</div>')
+                    $(".warning").addClass("warning_up")
+                }
             })
         }
         else {
-            console.log("no")
             $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">You\'ve left some required fields empty or invalid, please try again.</div>')
             $(".warning").addClass("warning_up")
         }
