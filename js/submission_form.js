@@ -212,7 +212,7 @@ $(document).ready(function() {
                 contentType: false
             }).done(function(data) {                
                 $(document.body).css({ 'cursor': 'default' })
-                if (data === "1") {
+                if (data === "0") {
                     window.location.replace(web_host)
                 }
                 else {
