@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(".table_contents").append("<div class='table_title'><div class='title'></div></div>")
     $(".title").append("Film Submission Form")
 
-    alert(username);
+    alert(is_cfmdc_member(username));
 
     if (logged_in !== 1) {
 
@@ -697,6 +697,20 @@ function make_film_entry(entry_count) {
         $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
         remove_film_form($("#remove_film_form_" + entry_count.toString()))
     }
+}
+
+function is_cfmdc_member(user_name) {
+    split_string = user_name.split("_")
+    
+    if (split_string.length !== 3) {
+        return false;
+    }
+
+    if (split_string[0] !== "cfmdc" || split_string[1] !== "member" || !isNaN(split_string[2])) {
+        return false;
+    }
+
+    return true;
 }
 
 function filmmaker_info_handler() {
