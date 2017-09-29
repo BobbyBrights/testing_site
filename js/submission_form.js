@@ -210,10 +210,11 @@ $(document).ready(function() {
                 data: new FormData($('#film-form')[0]),
                 processData: false,
                 contentType: false
-            }).done(function(data) {                
+            }).done(function(data) {     
+                alert(data)           
                 $(document.body).css({ 'cursor': 'default' })
                 if (data === "0") {
-                    window.location.replace(web_host)
+                    //window.location.replace(web_host)
                 }
                 else {
                     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">An error has occurred in your submission.</div>Please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a> for further assistance.</div>')
