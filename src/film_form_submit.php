@@ -168,7 +168,7 @@ if (isCorrectCaptcha($_POST)) {
         $mysqli->close();
 
         $_SESSION['message'] = '<div class="normal_text"><div class="big">Your film submission has been received. Please allow one week for a response.</div>If you have further questions please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a></div>';
-
+        echo "here";
         echo $outcome;
     }
 }
