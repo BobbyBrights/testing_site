@@ -17,6 +17,7 @@ if(session_status()==1) {
     if ($_SESSION["loggedin"]) {
   ?>
       client_id = <?php echo $_SESSION['client_id']; ?>;
+      username = <?php echo $_SESSION["username"]; ?>;
   <?php
     }
   ?>
