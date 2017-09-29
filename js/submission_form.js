@@ -208,7 +208,9 @@ $(document).ready(function() {
             $.ajax({
                 type: "POST",
                 url: "http://" + $(location).attr('hostname') + "/src/film_form_submit.php",
-                data: new FormData($('#film-form'))
+                data: new FormData($('#film-form')[0]),
+                processData: false,
+                contentType: false
             }).done(function(data) {
                 alert(data);
                 // $(document.body).css({ 'cursor': 'default' })
