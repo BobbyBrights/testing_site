@@ -31,7 +31,7 @@ $number_of_forms = $_POST['form_count'];
 // print_r($_POST['search-org-format_1']);
 
 echo(implode(',', $_POST['search-org-format_1']));
-echo($_FILES["film-still-file_1"]["name"]);
+echo($_FILES["film-still-file_1"]);
 
 $outcome = 0;
 
