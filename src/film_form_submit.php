@@ -1,6 +1,6 @@
 <?php
 
-define ('SITE_ROOT', realpath(dirname(__FILE__) . '/..' . '/..'));
+define ('SITE_ROOT', realpath(dirname(getcwd())));
 
 $target_dir = SITE_ROOT . "/upload/";
 $target_file = $target_dir . guidv4(openssl_random_pseudo_bytes(16)) . ".jpg";
