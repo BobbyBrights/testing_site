@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(".table_contents").append("<div class='table_title'><div class='title'></div></div>")
     $(".title").append("Film Submission Form")
 
-    alert(client_id);
+    alert(username);
 
     if (logged_in !== 1) {
 
