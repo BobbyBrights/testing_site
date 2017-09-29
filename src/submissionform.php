@@ -13,6 +13,7 @@ if(session_status()==1) {
 
 <script>
   client_id = -1;
+  username = "";
   <?php 
     if ($_SESSION["loggedin"]) {
   ?>
