@@ -210,6 +210,7 @@ $(document).ready(function() {
                 url: "http://" + $(location).attr('hostname') + "/src/film_form_submit.php",
                 data: new FormData($('form')[0]),
             }).done(function(data) {
+                alert(data);
                 $(document.body).css({ 'cursor': 'default' })
                 window.location.replace(web_host)
             })
