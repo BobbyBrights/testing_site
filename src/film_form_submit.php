@@ -18,16 +18,30 @@ else {
 
 // --- request info ---
 
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
-$address = $_POST['address'];
-$city_town = $_POST['city_town'];
-$country = $_POST['country_'];
-$association = $_POST['organization'];
-$province_state = $_POST['province_state'];
-$postal_code = $_POST['postal_code'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
+if ($client_id == -1) {
+	$firstname = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+	$address = $_POST['address'];
+	$city_town = $_POST['city_town'];
+	$country = $_POST['country_'];
+	$association = $_POST['organization'];
+	$province_state = $_POST['province_state'];
+	$postal_code = $_POST['postal_code'];
+	$phone = $_POST['phone'];
+	$email = $_POST['email'];
+}
+else {
+	$firstname = "";
+	$lastname = "";
+	$address = "";
+	$city_town = "";
+	$country = "";
+	$association = "";
+	$province_state = "";
+	$postal_code = "";
+	$phone = "";
+	$email = "";
+}
 
 // --- form(s) ---
 
