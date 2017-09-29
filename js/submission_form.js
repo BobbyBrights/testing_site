@@ -214,7 +214,7 @@ $(document).ready(function() {
             }).done(function(data) {                
                 $(document.body).css({ 'cursor': 'default' })
                 alert(data);
-                if (data === 0) {
+                if (data === "0") {
                     window.location.replace(web_host)
                 }
                 else {
