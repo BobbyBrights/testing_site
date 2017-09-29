@@ -66,7 +66,7 @@ if (isCorrectCaptcha($_POST)) {
         $outcome = 0;
     }
     else {
-    	$stmt = $mysqli->prepare("INSERT INTO `film_submission`(`firstname`, `lastname`, `association_with_film`, `phone_number`, `email`, `address`, `province_state`, `country`, `postal_code_zip_code`, `city_town`, `client_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    	$stmt = $mysqli->prepare("INSERT INTO `film_submission_request`(`firstname`, `lastname`, `association_with_film`, `phone_number`, `email`, `address`, `province_state`, `country`, `postal_code_zip_code`, `city_town`, `client_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssssssssi",$firstname,$lastname,$association,$phone,$email,$address,$province_state,$country,$postal_code,$city_town,$client_id);
 
         $stmt->execute();
@@ -81,7 +81,7 @@ if (isCorrectCaptcha($_POST)) {
         	$mysqli->close();
         }
 
-        $stmt = $mysqli->prepare("INSERT INTO `film_submission_request`(`cid`, `film_title`, `length`, `year`, `country`, `language`, `colour`, `sound`, `synopsis`, `firstname`, `lastname`, `email`, `bio`, `secondary_filmmaker`, `self_identification`, `screening_history_link`, `web_still_link`, `preview_format`, `original_format`, `exhibition_format`, `genre`, `keywords`, `copyright`, `vimeo_link`, `vimeo_password`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $mysqli->prepare("INSERT INTO `film_submission`(`cid`, `film_title`, `length`, `year`, `country`, `language`, `colour`, `sound`, `synopsis`, `firstname`, `lastname`, `email`, `bio`, `secondary_filmmaker`, `self_identification`, `screening_history_link`, `web_still_link`, `preview_format`, `original_format`, `exhibition_format`, `genre`, `keywords`, `copyright`, `vimeo_link`, `vimeo_password`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         
 		for ($i=1; $i<=$number_of_forms; $i++) {
 
