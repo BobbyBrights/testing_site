@@ -707,11 +707,6 @@ function is_cfmdc_member(user_name) {
     }
 
     if (split_string[0] !== "cfmdc" || split_string[1] !== "member" || isNaN(split_string[2])) {
-        alert("kk")
-        alert(split_string[0] !== "cfmdc")
-        alert(split_string[1] !== "member")
-        alert(!isNaN(split_string[2]))
-
         return false;
     }
 
