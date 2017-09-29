@@ -217,7 +217,7 @@ $(document).ready(function() {
                     window.location.replace(web_host)
                 }
                 else {
-                    $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">An error has occurred in your submission.</div> <br/>Please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a> for further assistance.</div>')
+                    $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">An error has occurred in your submission.</div>Please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a> for further assistance.</div>')
                     $(".warning").addClass("warning_up")
                 }
             })
