@@ -701,6 +701,10 @@ function make_film_entry(entry_count) {
 
 function is_cfmdc_member(user_name) {
     split_string = user_name.split("_")
+
+    alert(split_string[0])
+    alert(split_string[1])
+    alert(split_string[2])
     
     if (split_string.length !== 3) {
         return false;
@@ -709,11 +713,6 @@ function is_cfmdc_member(user_name) {
     if (split_string[0] !== "cfmdc" || split_string[1] !== "member" || !isNaN(split_string[2])) {
         return false;
     }
-
-    alert(split_string[0])
-    alert(split_string[1])
-    alert(split_string[2])
-
 
     return true;
 }
