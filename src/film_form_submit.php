@@ -3,6 +3,9 @@
 define ('SITE_ROOT', realpath(dirname(getcwd())));
 
 $target_dir = SITE_ROOT . "/upload/";
+
+print_r($_FILES["film-screening-history-file_1"]);
+
 // $target_file = $target_dir . guidv4(openssl_random_pseudo_bytes(16)) . ".jpg";
 
 // move_uploaded_file($_FILES["film-still-file_1"]["tmp_name"], $target_file);
