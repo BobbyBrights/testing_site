@@ -211,8 +211,8 @@ $(document).ready(function() {
                 data: new FormData($('form')[0]),
             }).done(function(data) {
                 alert(data);
-                $(document.body).css({ 'cursor': 'default' })
-                window.location.replace(web_host)
+                // $(document.body).css({ 'cursor': 'default' })
+                // window.location.replace(web_host)
             })
         }
         else {
