@@ -10,7 +10,7 @@ if(session_status()==1) {
 }
 
 if ($_SESSION['loggedin']) {
-	$client_id = $_SESSION['client_id'];
+	$client_id = (int) $_SESSION['client_id'];
 }
 else {
 	$client_id = -1;
@@ -67,6 +67,7 @@ if ($captchaCheck) {
         $count = $stmt->affected_rows;
 
         if ($count != 1) {
+        	$outcome = 1;
             echo $outcome;
             $stmt->close();
         	$mysqli->close();
@@ -148,6 +149,7 @@ if ($captchaCheck) {
 			$count = $stmt->affected_rows;
 
 	        if ($count != 1) {
+	        	$outcome = 1;
 	            echo $outcome;
 	            $stmt->close();
 	        	$mysqli->close();
