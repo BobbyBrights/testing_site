@@ -10,6 +10,8 @@ function recaptchaCallback() {
 
 $(document).ready(function() {
 
+    alert(client_id)
+
     var _URL = window.URL || window.webkitURL;
 
     document.title = "Submission Form | Canadian Filmmakers Distribution Centre"
