@@ -33,7 +33,7 @@ $number_of_forms = $_POST['form_count'];
 //echo(implode(',', $_POST['search-org-format_1']));
 
 echo ("test");
-print_r($_FILES);
+print_r($firstname);
 
 $outcome = 0;
 
