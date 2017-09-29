@@ -68,6 +68,7 @@ if ($captchaCheck) {
 
         if ($count != 1) {
         	$outcome = 1;
+        	echo 'shit';
             echo $outcome;
             $stmt->close();
         	$mysqli->close();
