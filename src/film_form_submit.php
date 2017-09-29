@@ -5,7 +5,7 @@ define ('SITE_ROOT', realpath(dirname(__FILE__) . '/..' . '/..'));
 $target_dir = SITE_ROOT . "/upload/";
 $target_file = $target_dir . guidv4(openssl_random_pseudo_bytes(16)) . ".jpg";
 
-move_uploaded_file($_FILES["film-still-file_1"]["tmp_name"], $target_file)
+move_uploaded_file($_FILES["film-still-file_1"]["tmp_name"], $target_file);
 
 if(session_status()==1) {
     @session_start();
