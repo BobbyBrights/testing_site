@@ -1,5 +1,9 @@
 <?php
 
+define ('SITE_ROOT', realpath(dirname(__FILE__)));
+
+echo SITE_ROOT;
+
 if(session_status()==1) {
     @session_start();
 }
@@ -32,7 +36,7 @@ $number_of_forms = $_POST['form_count'];
 
 //echo(implode(',', $_POST['search-org-format_1']));
 
-echo guidv4(openssl_random_pseudo_bytes(16));
+//echo guidv4(openssl_random_pseudo_bytes(16));
 
 
 $outcome = 0;
