@@ -213,8 +213,7 @@ $(document).ready(function() {
                 contentType: false
             }).done(function(data) {                
                 $(document.body).css({ 'cursor': 'default' })
-                alert(data);
-                if (data === "0") {
+                if (data === "1") {
                     window.location.replace(web_host)
                 }
                 else {
