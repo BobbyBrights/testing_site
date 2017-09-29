@@ -708,10 +708,12 @@ function is_cfmdc_member(user_name) {
     alert(split_string.length)
     
     if (split_string.length !== 3) {
+        alert("k")
         return false;
     }
 
     if (split_string[0] !== "cfmdc" || split_string[1] !== "member" || !isNaN(split_string[2])) {
+        alert("kk")
         return false;
     }
 
