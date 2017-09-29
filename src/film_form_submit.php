@@ -24,7 +24,12 @@ if ($client_id == -1) {
 	$address = $_POST['address'];
 	$city_town = $_POST['city_town'];
 	$country = $_POST['country_'];
-	$association = $_POST['organization'];
+	if (!$_POST['organization']) {
+		$association = "";
+	}
+	else {
+		$association = $_POST['organization'];
+	}
 	$province_state = $_POST['province_state'];
 	$postal_code = $_POST['postal_code'];
 	$phone = $_POST['phone'];
@@ -82,7 +87,6 @@ if ($captchaCheck) {
 
         if ($count != 1) {
         	$outcome = 1;
-        	echo 'shit';
             echo $outcome;
             $stmt->close();
         	$mysqli->close();
@@ -176,7 +180,6 @@ if ($captchaCheck) {
         $mysqli->close();
 
         $_SESSION['message'] = '<div class="normal_text"><div class="big">Your film submission has been received. Please allow one week for a response.</div>If you have further questions please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a></div>';
-        echo "here";
         echo $outcome;
     }
 }
