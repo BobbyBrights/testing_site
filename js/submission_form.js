@@ -596,7 +596,7 @@ function make_film_entry(entry_count) {
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
     $(".genre_input_row").last().append('<ul class="search_list" id="org_format_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#org_format_form_ul_" + entry_count.toString()).append(build_org_format_list_form(categories_genre_obj['format'], entry_count))
+    $("#org_format_form_ul_" + entry_count.toString()).append(build_org_format_list_form(categories_genre_obj['format_form'], entry_count))
 
     // Exhibition Format
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -611,7 +611,7 @@ function make_film_entry(entry_count) {
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
     $(".genre_input_row").last().append('<ul class="search_list" id="ex_format_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#ex_format_form_ul_" + entry_count.toString()).append(build_ex_format_list_form(categories_genre_obj['format'], entry_count))
+    $("#ex_format_form_ul_" + entry_count.toString()).append(build_ex_format_list_form(categories_genre_obj['format_form'], entry_count))
 
     $(".film_form_table").last().append("<div class='request_acct_row_row'></div>")
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
@@ -631,7 +631,7 @@ function make_film_entry(entry_count) {
     $(".genre_input_table").last().append("<div class='genre_input_row'></div>")
     $(".genre_input_row").last().append('<ul class="search_list" id="genre_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#genre_form_ul_" + entry_count.toString()).append(build_genre_list_form(categories_genre_obj['genre'], entry_count))
+    $("#genre_form_ul_" + entry_count.toString()).append(build_genre_list_form(categories_genre_obj['genre_form'], entry_count))
 
     //Keywords
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
@@ -647,7 +647,7 @@ function make_film_entry(entry_count) {
     $(".categories_input_table").last().append("<div class='categories_input_row'></div>")
     $(".categories_input_row").last().append('<ul class="search_list" id="categories_form_ul_' + entry_count.toString() + '"></ul>')
 
-    $("#categories_form_ul_" + entry_count.toString()).append(build_category_list_form(categories_genre_obj['category'], entry_count))
+    $("#categories_form_ul_" + entry_count.toString()).append(build_category_list_form(categories_genre_obj['category_form'], entry_count))
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
