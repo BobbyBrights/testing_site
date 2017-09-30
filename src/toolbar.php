@@ -14,11 +14,11 @@ if (!$data) {
     }
 } else {
     $genre = $data->VALUELISTS->VALUELIST[0];
-    $genre_form = $data->VALUELISTS->VALUELIST[0];
+
     $category = $data->VALUELISTS->VALUELIST[1];
-    $category_form = $data->VALUELISTS->VALUELIST[1];
+
     $format = $data->VALUELISTS->VALUELIST[2];
-    $format_form = $data->VALUELISTS->VALUELIST[2];
+
     
     //print_r($genre);
     
@@ -46,11 +46,11 @@ if (!$data) {
     }
 
      for ($i=0; $i<count($category); $i++) {
-        array_push($category_form_array, array(strtolower((string) $category->VALUE[$i])));
+        array_push($category_form_array, array((string) $category->VALUE[$i]));
     }   
 
     for ($i=0; $i<count($format); $i++) {
-        array_push($format_form_array, array(strtolower((string) $format->VALUE[$i])));
+        array_push($format_form_array, array((string) $format->VALUE[$i]));
     }
 
     $json_categories_genre = array("genre"=> $genre_array, "category"=> $category_array, "format"=> $format_array, "genre_form"=> $genre_form_array, "category_form"=> $category_form_array, "format_form"=> $format_form_array);
