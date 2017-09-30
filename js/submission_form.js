@@ -1015,8 +1015,8 @@ function build_org_format_list_form(formats, count) {
 
     for($i=0; $i<formats.length; $i++) {
         li_str = '<li class="search_list_entry_genre">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-org-format_' + count + '[]" id="search-org-format-' + ($i+1) + '_' + count + '"/>\
-                    <label for="search-org-format-' + ($i+1) + '_' + count + '">' + formats[$i][0] +'</label>\
+                    <input type="checkbox" value="' + formats[$i][0] + '" name="search-org-format_' + count + '[]" id="search-org-format-' + ($i+1) + '_' + count + '"/>\
+                    <label for="search-org-format-' + ($i+1) + '_' + count + '">' + formats[$i][0].toLowerCase() +'</label>\
                 </li>'
         ul_str += li_str
     }
@@ -1029,8 +1029,8 @@ function build_ex_format_list_form(formats, count) {
 
     for($i=0; $i<formats.length; $i++) {
         li_str = '<li class="search_list_entry_genre">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-ex-format_' + count + '[]" id="search-ex-format-' + ($i+1) + '_' + count + '"/>\
-                    <label for="search-ex-format-' + ($i+1) + '_' + count + '">' + formats[$i][0] +'</label>\
+                    <input type="checkbox" value="' + formats[$i][0] + '" name="search-ex-format_' + count + '[]" id="search-ex-format-' + ($i+1) + '_' + count + '"/>\
+                    <label for="search-ex-format-' + ($i+1) + '_' + count + '">' + formats[$i][0].toLowerCase() +'</label>\
                 </li>'
         ul_str += li_str
     }
@@ -1043,8 +1043,8 @@ function build_genre_list_form(genres, count) {
 
     for($i=0; $i<genres.length; $i++) {
         li_str = '<li class="search_list_entry_genre">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-genre_' + count + '[]" id="search-genre-' + ($i+1) + '_' + count + '"/>\
-                    <label for="search-genre-' + ($i+1) + '_' + count + '">' + genres[$i][0] +'</label>\
+                    <input type="checkbox" value="' + genres[$i][0] + '" name="search-genre_' + count + '[]" id="search-genre-' + ($i+1) + '_' + count + '"/>\
+                    <label for="search-genre-' + ($i+1) + '_' + count + '">' + genres[$i][0].toLowerCase() +'</label>\
                 </li>'
         ul_str += li_str
     }
@@ -1057,8 +1057,8 @@ function build_category_list_form(categories, count) {
 
     for($i=0; $i<categories.length; $i++) {
         li_str = '<li class="search_list_entry_category">\
-                    <input type="checkbox" value="' + ($i+1) + '" name="search-category_' + count + '[]" id="search-category-' + ($i+1) + '_' + count + '"/>\
-                    <label for="search-category-' + ($i+1) + '_' + count + '">' + categories[$i][0] +'</label>\
+                    <input type="checkbox" value="' + categories[$i][0] + '" name="search-category_' + count + '[]" id="search-category-' + ($i+1) + '_' + count + '"/>\
+                    <label for="search-category-' + ($i+1) + '_' + count + '">' + categories[$i][0].toLowerCase() +'</label>\
                 </li>'
         ul_str += li_str
     }
