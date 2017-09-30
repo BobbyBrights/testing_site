@@ -57,12 +57,6 @@ $number_of_forms = (int) $_POST['form_count'];
 $outcome = 0;
 
 $captchaCheck = isCorrectCaptcha($_POST);
-if ($captchaCheck) {
-	echo "yes";
-}
-else {
-	echo "no";
-}
 
 if ($captchaCheck) {
     $servername = "external-db.s220335.gridserver.com";
