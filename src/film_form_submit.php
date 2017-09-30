@@ -175,7 +175,20 @@ if ($captchaCheck) {
 
         $_SESSION['message'] = '<div class="normal_text"><div class="big">Your film submission has been received. Please allow one week for a response.</div>If you have further questions please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a></div>';
         echo $outcome;
+        otherMail();
     }
+}
+
+function otherMail() {
+    $body = "A film submission has been made. Please check FileMaker records.";
+
+    $headers[] = 'MIME-Version: 1.0';
+    $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+    $headers[] = 'To: CFMDC WEB <bookings@cfmdc.org>';
+    $headers[] = 'From: CFMDC WEB <bookings@cfmdc.org>';
+
+    mail("bookings@cfmdc.org", 'CFMDC FILM SUBMISSION', $body, implode("\r\n", $headers));
 }
 
 function guidv4($data)

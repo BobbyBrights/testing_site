@@ -178,7 +178,7 @@ $(document).ready(function() {
     $(".table_contents").last().append("<div class='forms'></div>")
 
     make_film_entry(1);
-    make_film_entry(2);
+    // make_film_entry(2);
 
     $(".table_contents").last().append("<div class='spacer_with_bar'></div>")
 
@@ -229,8 +229,8 @@ $(document).ready(function() {
     });
 
     fill_acct_request()
-    fill_form(1)
-    fill_form(2)
+    // fill_form(1)
+    // fill_form(2)
 
 })
 
