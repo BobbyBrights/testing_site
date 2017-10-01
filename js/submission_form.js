@@ -306,12 +306,7 @@ function change_id_count(old_count, new_count) {
 
 function make_film_entry(entry_count) {
 
-    if (1) {
-        $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
-    }
-    else {
-        $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'></div>")
-    }
+    $(".forms").append("<div id='form_entry_" + entry_count.toString() + "' class='form_entry'><div class='spacer_with_bar'></div></div>")
 
     $("#form_entry_" + entry_count.toString()).last().append("<input type='text' class='form_id' name='form_id_" + entry_count.toString() + "' id='form_id_" + entry_count.toString() + "' value='" + entry_count.toString() + "'></input>")
 
@@ -729,12 +724,15 @@ function set_filmmaker_info(checkbox_obj) {
 
 function add_film_form(button_obj) {
     button_obj.click(function(){
-        make_film_entry(film_form_count);
+        if (logged_in == 1 || parseInt($("#form_count").val()) < 5) {
+            make_film_entry(film_form_count);
+        }
     });
 
-    $("#form_count").attr("value", film_form_count.toString())
-
-    film_form_count++;
+    if (logged_in == 1 || parseInt($("#form_count").val()) < 5) {
+        $("#form_count").attr("value", film_form_count.toString())
+        film_form_count++;
+    }
 }
 
 function remove_film_form(button_obj) {
