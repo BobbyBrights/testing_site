@@ -87,7 +87,7 @@ if ($captchaCheck) {
         	return;
         }
 
-        $stmt = $mysqli->prepare("INSERT INTO `film_submission`(`cid`, `film_title`, `length`, `year`, `country`, `language`, `colour`, `sound`, `synopsis`, `firstname`, `lastname`, `email`, `bio`, `secondary_filmmaker`, `self_identification`, `screening_history_link`, `web_still_link`, `preview_format`, `original_format`, `exhibition_format`, `genre`, `keywords`, `copyright`, `vimeo_link`, `vimeo_password`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $mysqli->prepare("INSERT INTO `film_submission`(`cid`, `film_title`, `length`, `year`, `country`, `language`, `colour`, `sound`, `synopsis`, `firstname`, `lastname`, `email`, `bio`, `secondary_filmmaker`, `self_identification`, `screening_history_link`, `web_still_link`, `preview_format`, `original_format`, `exhibition_format`, `genre`, `keywords`, `copyright`, `vimeo_link`, `vimeo_password`, `screening_history_alternate_url`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         
 		for ($i=1; $i<=$number_of_forms; $i++) {
 
@@ -154,8 +154,9 @@ if ($captchaCheck) {
 			$keywords = implode(',', $_POST['search-category_' . $i]);
 			$vimeo_link = $_POST["vimeo_link_" . $i];
 			$vimeo_password = $_POST["vimeo_password_" . $i];
+			$screening_history_alternate_url = $_POST["screening_url_" . $i];
 
-			$stmt->bind_param("isssssssssssssssssssssiss", $current_id, $film_title, $length, $year, $country, $language, $colour, $sound, $synopsis, $firstname, $lastname, $email, $bio, $secondary_filmmaker, $self_identification, $screening_history_link, $web_still_link, $preview_format, $original_format, $exhibition_format, $genre, $keywords, $copyright, $vimeo_link, $vimeo_password);
+			$stmt->bind_param("isssssssssssssssssssssisss", $current_id, $film_title, $length, $year, $country, $language, $colour, $sound, $synopsis, $firstname, $lastname, $email, $bio, $secondary_filmmaker, $self_identification, $screening_history_link, $web_still_link, $preview_format, $original_format, $exhibition_format, $genre, $keywords, $copyright, $vimeo_link, $vimeo_password, $screening_history_alternate_url);
 
 			$stmt->execute();
 
@@ -173,7 +174,7 @@ if ($captchaCheck) {
         $stmt->close();
         $mysqli->close();
 
-        $_SESSION['message'] = '<div class="normal_text"><div class="big">Your film submission has been received. Please allow one week for a response.</div>If you have further questions please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a></div>';
+        $_SESSION['message'] = '<div class="normal_text"><div class="big">Your film submission has been received. Please allow one week for a response.</div>If you have further questions please contact <a class="small" href="mailto:members@cfmdc.org">members@cfmdc.org</a></div>';
         echo $outcome;
         otherMail();
     }
