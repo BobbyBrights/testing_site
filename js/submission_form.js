@@ -436,7 +436,7 @@ function make_film_entry(entry_count) {
     $(".note_content").last().append("<div class='note_content_table'></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("This space is for voluntary self-identification. Please note this information will not be posted on our website, it is confidential and for internal use only to aide programmers and researchers in finding works relevant to their festival, programs, classes, research etc. The CFMDC aims also to support work that may not in content explicitly reflect the identities or communities of the filmmaker(s). Self Identification is one of the tools we use to give these works the opportunity to be screened and discussed alongside works that are more explicit in their content.")
+    $(".note_content_table_content").last().append("This space is for voluntary self-identification. <b>Please note this information will not be posted on our website, it is confidential and for internal use only to aide programmers and researchers in finding works relevant to their festival, programs, classes, research etc.</b> The CFMDC aims also to support work that may not in content explicitly reflect the identities or communities of the filmmaker(s). Self Identification is one of the tools we use to give these works the opportunity to be screened and discussed alongside works that are more explicit in their content.")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
