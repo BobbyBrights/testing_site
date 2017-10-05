@@ -452,7 +452,7 @@ function make_film_entry(entry_count) {
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
     $(".film_form_row_row").last().append("<div class='selection_acct_label'></div>")
     $(".selection_acct_label").last().append("<div class='request_acct_label_text'></div>")
-    $(".request_acct_label_text").last().append("<b>Screening History</b> *")
+    $(".request_acct_label_text").last().append("<b>Screening History File</b> *")
     $(".film_form_row_row").last().append("<div class='request_acct_input'></div>")
 
     $(".request_acct_input").last().append("<div class='request_acct_input_row'><div class='request_acct_table_row_label'></div></div>")
