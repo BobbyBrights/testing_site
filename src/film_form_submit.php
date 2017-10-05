@@ -186,10 +186,10 @@ function otherMail() {
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-    $headers[] = 'To: CFMDC WEB <bookings@cfmdc.org>';
-    $headers[] = 'From: CFMDC WEB <bookings@cfmdc.org>';
+    $headers[] = 'To: CFMDC WEB <members@cfmdc.org>';
+    $headers[] = 'From: CFMDC WEB <members@cfmdc.org>';
 
-    mail("bookings@cfmdc.org", 'CFMDC FILM SUBMISSION', $body, implode("\r\n", $headers));
+    mail("members@cfmdc.org", 'CFMDC FILM SUBMISSION', $body, implode("\r\n", $headers));
 }
 
 function guidv4($data)
