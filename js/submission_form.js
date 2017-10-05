@@ -444,7 +444,7 @@ function make_film_entry(entry_count) {
 
     entry_form_textbox_filmmaker(entry_count, "self_identification", "Self Identification", true)
 
-    // $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
+    $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     // $(".filmmaker_section").last().append("<div class='request_acct_row_row_spacer'></div>")
 
