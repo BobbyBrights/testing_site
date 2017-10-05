@@ -228,8 +228,8 @@ $(document).ready(function() {
         }
     });
 
-    //fill_acct_request()
-    // fill_form(1)
+    fill_acct_request()
+     fill_form(1)
     // fill_form(2)
 
 })
