@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     var _URL = window.URL || window.webkitURL;
 
-    document.title = "Submission Form | Canadian Filmmakers Distribution Centre"
+    document.title = "Submit Now | Canadian Filmmakers Distribution Centre"
 
     $(".contents").append("<div class='top_buffer'></div>")
     $(".contents").append("<div class='table'></div>")
@@ -24,7 +24,7 @@ $(document).ready(function() {
     $(".table_cell_container").append("<div class='table_cell_right_margin'></div>")
 
     $(".table_contents").append("<div class='table_title'><div class='title'></div></div>")
-    $(".title").append("Film Submission Form")
+    $(".title").append("Submit Now")
 
     if (logged_in !== 1 || !is_cfmdc_member(username)) {
 
