@@ -451,7 +451,7 @@ function make_film_entry(entry_count) {
 
     //Screening history url
     // $(".filmmaker_section").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
-    // left_entry_form_text_filmmaker(entry_count, "screening_url", "Screening History URL", true);
+    left_entry_form_text_filmmaker(entry_count, "screening_url", "Screening History URL", true);
 
     //Screening history
     $(".film_form_table").last().append("<div class='film_form_row_row'></div>")
