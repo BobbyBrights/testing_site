@@ -2,7 +2,7 @@
 
 define ('SITE_ROOT', realpath(dirname(getcwd())));
 
-$host = "http://www.testing.cfmdc.org/";
+$host = "http://www.cfmdc.org/";
 
 
 if(session_status()==1) {

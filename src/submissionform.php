@@ -28,7 +28,7 @@ if(session_status()==1) {
     "@context": "http://schema.org",
     "@type": "WebPage",
     "url": window.location.href,
-    "name": "Submission Form | Canadian Filmmakers Distribution Centre"
+    "name": "Submit Now | Canadian Filmmakers Distribution Centre"
   });
   document.querySelector('body').appendChild(el);
 </script>

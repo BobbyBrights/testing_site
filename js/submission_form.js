@@ -1,4 +1,4 @@
-var web_host = "http://www.testing.cfmdc.org/";
+var web_host = "http://www.cfmdc.org/";
 
 recaptcha_checked = false;
 
@@ -13,6 +13,9 @@ $(document).ready(function() {
     var _URL = window.URL || window.webkitURL;
 
     document.title = "Submit Now | Canadian Filmmakers Distribution Centre"
+
+    $("#submitnow").addClass("submit_film_link_selected")
+    $(".submit_film").css("color", "#0082B8")
 
     $(".contents").append("<div class='top_buffer'></div>")
     $(".contents").append("<div class='table'></div>")
@@ -36,7 +39,7 @@ $(document).ready(function() {
         $(".note_content").last().append("<div class='note_content_table'></div>")
         $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
         $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-        $(".note_content_table_content").last().append("If you do not have a Filmmaker or Client account with us, you will need to fill out the fields the section below. If you have an account, please log in now and continue to fill out the film(s) submission form.")
+        $(".note_content_table_content").last().append("If you do not have a Filmmaker or Client account with us, you will need to fill out the fields in the section below. If you have an account, please log in now and continue to fill out the film(s) submission form.")
         $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
         $(".note_table").last().append("<div class='note_right_spacer'></div>")
 
@@ -213,12 +216,14 @@ $(document).ready(function() {
                 contentType: false
             }).done(function(data) {              
                 $(document.body).css({ 'cursor': 'default' })
+                //alert(data);
                 if (data === "0") {
                     window.location.replace(web_host)
                 }
                 else {
                     $(".warning").find(".alert_text_table").html('<div class="normal_text"> <div class="big">An error has occurred in your submission.</div>Please contact <a class="small" href="mailto:bookings@cfmdc.org">bookings@cfmdc.org</a> for further assistance.</div>')
                     $(".warning").addClass("warning_up")
+                    $('#subutton').attr('disabled', false);
                 }
             })
         }

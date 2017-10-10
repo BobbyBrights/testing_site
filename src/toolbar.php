@@ -46,7 +46,9 @@ if (!$data) {
     }
 
      for ($i=0; $i<count($category); $i++) {
-        array_push($category_form_array, array((string) $category->VALUE[$i]));
+        if ((string) $category->VALUE[$i] !== "bi/trans" && (string) $category->VALUE[$i] !== "queer/bi/trans") {
+            array_push($category_form_array, array((string) $category->VALUE[$i]));
+        }
     }   
 
     for ($i=0; $i<count($format); $i++) {

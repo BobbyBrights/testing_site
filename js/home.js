@@ -18,7 +18,9 @@ $(document).ready(function() {
     $(".featured_films_text").append("<div class='featured_films_text_content'></div>")
     $(".featured_films_cell").append("<div class='featured_films_spacer'></div>")
 
-    add_featured_film_image()
+    add_landing_trailer();
+
+    //add_featured_film_image()
 
     interval_id = setInterval(changeFeaturedFilmsImg, 6000)
     $(window).focus(function() {
@@ -273,6 +275,10 @@ function loadvimeoimages(channel_url, channel_title) {
 
         $(".vimeo_container").find("a").append("<div class='vimeo_text_container'>" + video_title_array[rand_num]  + "</div>")
     });
+}
+
+function add_landing_trailer() {
+    $(".featured_films").html('<iframe src="https://player.vimeo.com/video/218838044?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="850" height="478" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 }
 
 function add_featured_film_image() {
