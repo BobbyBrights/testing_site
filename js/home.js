@@ -13,9 +13,9 @@ $(document).ready(function() {
     // feature_films
     $(".landing_page_table").append("<div class='featured_films_row'></div>")
     $(".featured_films_row").append("<a href=''><div class='featured_films_cell'></div></a>")
-    $(".featured_films_cell").append("<div class='featured_films'></div>")
+    $(".featured_films_cell").append("<div class='featured_films_vimeo'></div>")
     $(".featured_films_cell").append("<div class='featured_films_text'></div>")
-    $(".featured_films_text").append("<div class='featured_films_text_content'></div>")
+    // $(".featured_films_text").append("<div class='featured_films_text_content'></div>")
     $(".featured_films_cell").append("<div class='featured_films_spacer'></div>")
 
     add_landing_trailer();
@@ -278,7 +278,7 @@ function loadvimeoimages(channel_url, channel_title) {
 }
 
 function add_landing_trailer() {
-    $(".featured_films").html('<iframe src="https://player.vimeo.com/video/218838044?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="850" height="478" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+    $(".featured_films_vimeo").html('<iframe src="https://player.vimeo.com/video/218838044?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="850" height="478" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 }
 
 function add_featured_film_image() {

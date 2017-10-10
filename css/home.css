@@ -344,12 +344,14 @@
         opacity: 1;
         transition-property: opacity;
         transition-duration: 750ms; }
-        .landing_page_table .featured_films_row a .featured_films_cell .featured_films {
+        .landing_page_table .featured_films_row a .featured_films_cell .featured_films, .landing_page_table .featured_films_row a .featured_films_cell .featured_films_vimeo {
           width: 850px;
           height: 340px;
           overflow: hidden; }
-          .landing_page_table .featured_films_row a .featured_films_cell .featured_films img {
+          .landing_page_table .featured_films_row a .featured_films_cell .featured_films img, .landing_page_table .featured_films_row a .featured_films_cell .featured_films_vimeo img {
             width: 850px; }
+        .landing_page_table .featured_films_row a .featured_films_cell .featured_films_vimeo {
+          height: 478px; }
         .landing_page_table .featured_films_row a .featured_films_cell .featured_films_text {
           font-family: trade_gothic, arial, sans-serif;
           font-size: 14px;

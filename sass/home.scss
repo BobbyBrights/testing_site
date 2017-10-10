@@ -589,7 +589,7 @@
                 transition-property: opacity;
                 transition-duration: 750ms;
 
-                .featured_films {
+                .featured_films, .featured_films_vimeo {
                     width: 850px;
                     height: 340px;
                     //height: 370px;
@@ -599,6 +599,10 @@
                     img {
                         width: 850px;
                     }
+                }
+
+                .featured_films_vimeo {
+                    height: 478px;
                 }
 
                 .featured_films_text {
