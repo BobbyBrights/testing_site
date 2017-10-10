@@ -14,7 +14,7 @@ $(document).ready(function() {
     $(".landing_page_table").append("<div class='featured_films_row'></div>")
     $(".featured_films_row").append("<a href=''><div class='featured_films_cell'></div></a>")
     $(".featured_films_cell").append("<div class='featured_films_vimeo'></div>")
-    $(".featured_films_cell").append("<div class='featured_films_text'></div>")
+    // $(".featured_films_cell").append("<div class='featured_films_text'></div>")
     // $(".featured_films_text").append("<div class='featured_films_text_content'></div>")
     $(".featured_films_cell").append("<div class='featured_films_spacer'></div>")
 
