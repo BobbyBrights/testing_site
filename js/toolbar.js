@@ -104,11 +104,11 @@ var toolbar_contents = '\
 			</a>\
 			<div class="right_links">\
 			<div class="facebook_logo">\
-				<a href="https://twitter.com/cfmdc/" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>\
+				<a href="https://www.instagram.com/cfmdcfilm/" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>\
 			</div>\
 			<div class="spacer"></div>\
-			<div class="facebook_logo">\
-				<a href="https://www.instagram.com/cfmdcfilm/" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>\
+						<div class="facebook_logo">\
+				<a href="https://twitter.com/cfmdc/" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>\
 			</div>\
 			<div class="spacer"></div>\
 							<div class="facebook_logo">\
