@@ -15,7 +15,7 @@ function getFacebookPosts() {
   $fb->setDefaultAccessToken($token);
 
   try {
-    $response = $fb->get('/cfmdcmembers?fields=posts.limit(35){id,full_picture,message,name}');
+    $response = $fb->get('/cfmdcfilm?fields=posts.limit(35){id,full_picture,message,name}');
   } catch(Facebook\Exceptions\FacebookSDKException $e) {
     echo $e;
     exit;
