@@ -103,11 +103,11 @@ var toolbar_contents = '\
 			<img class="logo" src="' + web_host + 'img/toolbar/' + logo_ims[randomnumber] + '">\
 			</a>\
 			<div class="right_links">\
-			<div class="twitter_logo">\
+			<div class="facebook_logo">\
 				<a href="https://twitter.com/cfmdc/" target="_blank" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>\
 			</div>\
 			<div class="spacer"></div>\
-			<div class="instagram_logo">\
+			<div class="facebook_logo">\
 				<a href="https://www.instagram.com/cfmdcfilm/" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>\
 			</div>\
 			<div class="spacer"></div>\
