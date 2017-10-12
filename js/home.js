@@ -58,7 +58,7 @@ $(document).ready(function() {
     $(".social_feed_cfmdc_tv_row").append("<div class='spacer_cell'></div>")
     $(".social_feed_cfmdc_tv_row").append("<div class='cfmdc_tv_cell'></div>")
 
-    $(".social_feed_cell").append("<div class='title'><a href='https://www.facebook.com/cfmdcmembers/' target='_blank'>Social Feed</a></div>")
+    $(".social_feed_cell").append("<div class='title'><a href='https://www.facebook.com/cfmdcfilm/' target='_blank'>Social Feed</a></div>")
     
     $(".social_feed_cell").append("<div class='scroll_container'><div class='scroll_container_container'></div></div>")
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
     $(".scroll_container").find(".scroll_container_container").append("<div class='facebook_event_container'><div class='event_container'></div></div>")
     getFacebookEvents(facebook_json, 10)
     $(".facebook_event_container").append("<div class='spacer'></div>")
-    $(".facebook_event_container").append("<div class='facebook_text_container'>Want to see more? <a href='https://www.facebook.com/cfmdcmembers/' target='_blank'><b>Follow us on Facebook.</b></a></div>")
+    $(".facebook_event_container").append("<div class='facebook_text_container'>Want to see more? <a href='https://www.facebook.com/cfmdcfilm/' target='_blank'><b>Follow us on Facebook.</b></a></div>")
 
 
     // $(".featured_films").append("<img src='img/feature_films/Colburn-Martha.jpg'/>")
@@ -324,7 +324,7 @@ function getFacebookEvents(facebookObj, length) {
         }
 
         id_split = post['id'].split("_")
-        link = "https://www.facebook.com/cfmdcmembers/posts/" + id_split[1]
+        link = "https://www.facebook.com/cfmdcfilm/posts/" + id_split[1]
 
         $(".event_container").append("<a href='" + link + "' target='_blank'></a>")
 
