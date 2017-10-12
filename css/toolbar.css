@@ -318,17 +318,17 @@
           height: 58px; }
           .bar .toolbar .upper_portion .right_links .hamburger span {
             top: 22px; }
-        .bar .toolbar .upper_portion .right_links .facebook_logo {
+        .bar .toolbar .upper_portion .right_links .social_media_logo {
           color: #A29F9F;
           font-size: 19px;
           position: relative;
           float: right;
           width: auto;
           top: 33px; }
-          .bar .toolbar .upper_portion .right_links .facebook_logo a {
+          .bar .toolbar .upper_portion .right_links .social_media_logo a {
             color: #A29F9F;
             text-decoration: none; }
-          .bar .toolbar .upper_portion .right_links .facebook_logo a:hover {
+          .bar .toolbar .upper_portion .right_links .social_media_logo a:hover {
             color: #0082B8;
             text-decoration: none;
             cursor: pointer; }
