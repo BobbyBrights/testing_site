@@ -1294,21 +1294,21 @@ function check_form (form_number) {
     return is_complete_;
 }
 
-// function check_distribution(form_number) {
-//     checked = false
-//     $("input:radio[name='distri_" + form_number.toString() + "']").each(function() {
-//         if ($(this).is(":checked")) {
-//             checked = true;
-//         }
-//     })
+function check_distribution_form(form_number) {
+    checked = false
+    $("input:radio[name='distri_" + form_number.toString() + "']").each(function() {
+        if ($(this).is(":checked")) {
+            checked = true;
+        }
+    })
 
-//     if (checked) {
+    if (checked) {
 
-//     }
-//     else {
+    }
+    else {
 
-//     }
-// }
+    }
+}
 
 function check_checkbox_form (name, form_number) {
     checked = false;
