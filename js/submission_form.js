@@ -681,6 +681,8 @@ function make_film_entry(entry_count) {
     $("#please_list").hide()
     $(".note_table").last().append("<div class='note_right_spacer'></div>") 
 
+    check_distributor(entry_count)
+
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
@@ -728,6 +730,14 @@ function make_film_entry(entry_count) {
         $(".request_acct_cell_right_button").last().append("<button type='button' id='remove_film_form_" + entry_count.toString() + "'><span>Remove Current Film Entry</span></button>")
         remove_film_form($("#remove_film_form_" + entry_count.toString()))
     }
+}
+
+function check_distributor(entry_count) {
+    $("input[type=radio][name=distri_" + entry_count.toString() + "]").on('change', {entry_count: entry_count}, check_distribution_handler) 
+}
+
+function check_distribution_handler(e) {
+    alert("here");
 }
 
 function is_cfmdc_member(user_name) {
