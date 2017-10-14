@@ -669,7 +669,8 @@ function make_film_entry(entry_count) {
     $(".note_content").last().append("<div class='note_content_table'></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("<b>Is your title in distribution with any other organizations?</b>")
+    $(".note_content_table_content").last().append("<b>Is your title in distribution with any other organizations?</b><br/>")
+    $(".note_content_table_content").last().append("<input type='radio' value='yes' id='distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><br/>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>") 
 
