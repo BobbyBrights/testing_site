@@ -23,6 +23,10 @@
   border: 1px solid #000;
   float: left; }
 
+#please_list input[type="text"] {
+  background-color: #000;
+  border: 0px solid; }
+
 .acct_type label {
   display: block;
   width: 10px;

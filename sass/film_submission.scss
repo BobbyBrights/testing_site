@@ -66,6 +66,13 @@
     float: left;
 }
 
+#please_list input[type="text"] {
+    background-color: #000;
+    border: 0px solid;
+    //height: 20px;
+    //width: 160px;
+}
+
 .acct_type label {
     display: block;
     width: 10px;
