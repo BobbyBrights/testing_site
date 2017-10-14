@@ -737,7 +737,12 @@ function check_distributor(entry_count) {
 }
 
 function check_distribution_handler(e) {
-    alert($(this).val());
+    if ($(this).val() === 'yes') {
+        $(this).parent().parent().find("#please_list").show()
+    }
+    else {
+        $(this).parent().parent().find("#please_list").hide()
+    }
 }
 
 function is_cfmdc_member(user_name) {
