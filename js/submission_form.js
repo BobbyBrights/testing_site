@@ -1326,7 +1326,6 @@ function check_distribution_form(form_number) {
         $("#distri_heading_" + form_number.toString()).addClass("make_red")
     }
 
-    alert(checked)
 
     return checked
 }
