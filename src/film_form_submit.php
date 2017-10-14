@@ -87,7 +87,7 @@ if ($captchaCheck) {
         	return;
         }
 
-        $stmt = $mysqli->prepare("INSERT INTO `film_submission`(`cid`, `film_title`, `length`, `year`, `country`, `language`, `colour`, `sound`, `synopsis`, `firstname`, `lastname`, `email`, `bio`, `secondary_filmmaker`, `self_identification`, `screening_history_link`, `web_still_link`, `preview_format`, `original_format`, `exhibition_format`, `genre`, `keywords`, `copyright`, `vimeo_link`, `vimeo_password`, `screening_history_alternate_url`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $mysqli->prepare("INSERT INTO `film_submission`(`cid`, `film_title`, `length`, `year`, `country`, `language`, `colour`, `sound`, `synopsis`, `firstname`, `lastname`, `email`, `bio`, `secondary_filmmaker`, `self_identification`, `screening_history_link`, `web_still_link`, `preview_format`, `original_format`, `exhibition_format`, `genre`, `keywords`, `copyright`, `vimeo_link`, `vimeo_password`, `screening_history_alternate_url`, `has_distrib`, `distrib_list`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         
 		for ($i=1; $i<=$number_of_forms; $i++) {
 
@@ -113,6 +113,16 @@ if ($captchaCheck) {
 			else {
 				$screening_history_link = "";
 			}
+
+			// distribution
+			if ($_POST["distri_" . $i] == 'yes') {
+				$has_distrib = 1;
+			}
+			else {
+				$has_distrib = 0;
+			}
+
+			$distrib_list = $_POST["distribution_list_" . $i];
 
 			// copyright
 			if ($_POST["rights_" . $i] == 'yes') {
@@ -156,7 +166,7 @@ if ($captchaCheck) {
 			$vimeo_password = $_POST["vimeo_password_" . $i];
 			$screening_history_alternate_url = $_POST["screening_url_" . $i];
 
-			$stmt->bind_param("isssssssssssssssssssssisss", $current_id, $film_title, $length, $year, $country, $language, $colour, $sound, $synopsis, $firstname, $lastname, $email, $bio, $secondary_filmmaker, $self_identification, $screening_history_link, $web_still_link, $preview_format, $original_format, $exhibition_format, $genre, $keywords, $copyright, $vimeo_link, $vimeo_password, $screening_history_alternate_url);
+			$stmt->bind_param("isssssssssssssssssssssisssis", $current_id, $film_title, $length, $year, $country, $language, $colour, $sound, $synopsis, $firstname, $lastname, $email, $bio, $secondary_filmmaker, $self_identification, $screening_history_link, $web_still_link, $preview_format, $original_format, $exhibition_format, $genre, $keywords, $copyright, $vimeo_link, $vimeo_password, $screening_history_alternate_url, $has_distrib, $distrib_list);
 
 			$stmt->execute();
 
