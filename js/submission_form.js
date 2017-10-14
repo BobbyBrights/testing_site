@@ -673,6 +673,8 @@ function make_film_entry(entry_count) {
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>") 
 
+    $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
+
     // Note on copyrights
     $(".film_form_table").last().append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
