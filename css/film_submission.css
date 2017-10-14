@@ -27,9 +27,24 @@
   left: 0px;
   z-index: 1; }
 
+.distrib label {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1; }
+
 input[type="radio"] {
   visibility: hidden;
   position: absolute; }
+
+.distrib input[type=radio]:checked + label {
+  background: #FFC300; }
 
 .acct_type input[type=radio]:checked + label {
   background: #FFC300; }
