@@ -679,6 +679,7 @@ function make_film_entry(entry_count) {
     $(".note_content_table_content").last().append("<div id='please_list'><b>Please list:</b><br/></div>")
     $("#please_list").last().append("<div class='note_content_horz_spacer'></div><input type='text' name='distribution_list_" + entry_count.toString() + "'/>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $("#please_list").hide()
     $(".note_table").last().append("<div class='note_right_spacer'></div>") 
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
