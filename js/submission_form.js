@@ -670,8 +670,8 @@ function make_film_entry(entry_count) {
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
     $(".note_content_table_content").last().append("<b>Is your title in distribution with any other organizations?</b><br/>")
-    $(".note_content_table_content").last().append("<div class='distribution'><input type='radio' value='yes' id='yes_distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><label for='yes_distri_" + entry_count.toString() + "'></label><b>Yes</b></div>")
-    $(".note_content_table_content").last().append("<div class='distribution'><input type='radio' value='no' id='no_distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><label for='no_distri_" + entry_count.toString() + "'></label><b>No</b></div>")
+    $(".note_content_table_content").last().append("<div><div class='distribution'><input type='radio' value='yes' id='yes_distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><label for='yes_distri_" + entry_count.toString() + "'></label></div><b>Yes</b></div>")
+    $(".note_content_table_content").last().append("<div><div class='distribution'><input type='radio' value='no' id='no_distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><label for='no_distri_" + entry_count.toString() + "'></label></div><b>No</b></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_table").last().append("<div class='note_right_spacer'></div>") 
 
