@@ -737,7 +737,7 @@ function check_distributor(entry_count) {
 }
 
 function check_distribution_handler(e) {
-    alert("here");
+    alert($(this).val());
 }
 
 function is_cfmdc_member(user_name) {
