@@ -25,7 +25,8 @@
 
 #please_list input[type="text"] {
   background-color: #fff;
-  border: 0px solid; }
+  border: 0px solid;
+  outline: none; }
 
 .acct_type label {
   display: block;
