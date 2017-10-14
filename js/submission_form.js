@@ -298,6 +298,8 @@ function change_id_count(old_count, new_count) {
 
     check_filmmaker_section(old_count, new_count)
 
+    check_distributor_(old_count, new_count);
+
     $("#form_entry_" + old_count.toString()).attr("id", "form_entry_" + new_count.toString())
 
     $("#form_entry_" + new_count.toString()).find('.subtitle').html("Film Entry #" + new_count.toString())
@@ -732,6 +734,11 @@ function make_film_entry(entry_count) {
     }
 }
 
+function check_distributor_(old_count, new_count) {
+    $("input[type=radio][name=distri_" + old_count.toString() + "]").off('change');
+    check_distributor(new_count);
+}
+
 function check_distributor(entry_count) {
     $("input[type=radio][name=distri_" + entry_count.toString() + "]").on('change', {entry_count: entry_count}, check_distribution_handler) 
 }
@@ -795,6 +802,7 @@ function remove_film_form(button_obj) {
         $("#film-screening-history-file_" + form_number).off("change");
         $("#film-still-file_" + form_number).off("change");
         $("input[type=radio][name=preview_format_" + form_number + "]").off('change');
+        $("input[type=radio][name=distri_" + form_number + "]").off('change');
 
         $("#form_entry_" + form_number).remove();
 
