@@ -15,7 +15,7 @@
   border: 1px solid #000;
   float: left; }
 
-.distrib {
+.distribution {
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -35,7 +35,7 @@
   left: 0px;
   z-index: 1; }
 
-.distrib label {
+.distribution label {
   display: block;
   width: 10px;
   height: 10px;
@@ -51,7 +51,7 @@ input[type="radio"] {
   visibility: hidden;
   position: absolute; }
 
-.distrib input[type=radio]:checked + label {
+.distribution input[type=radio]:checked + label {
   background: #FFC300; }
 
 .acct_type input[type=radio]:checked + label {
