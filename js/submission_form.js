@@ -1291,6 +1291,9 @@ function check_form (form_number) {
         }
     }
 
+    // distribution list
+    is_complete_ = check_distribution_form(form_number) && is_complete_
+
     return is_complete_;
 }
 
@@ -1303,11 +1306,23 @@ function check_distribution_form(form_number) {
     })
 
     if (checked) {
+        $("#distri_heading_" + form_number.toString()).removeClass(".make_red")
 
+        checked = checked && $("distribution_list_" + form_number.toString()).val()
+
+        if ($("distribution_list_" + form_number.toString()).val()) {
+            $("#distribution_list_" + form_number.toString()).addClass(".make_red")
+        }
+
+        else {
+            $("#distribution_list_" + form_number.toString()).addClass(".make_red")
+        }
     }
     else {
-
+        $("#distri_heading_" + form_number.toString()).addClass(".make_red")
     }
+
+    return checked
 }
 
 function check_checkbox_form (name, form_number) {
