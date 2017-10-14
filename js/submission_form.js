@@ -1308,16 +1308,18 @@ function check_distribution_form(form_number) {
     if (checked) {
         $("#distri_heading_" + form_number.toString()).removeClass("make_red")
 
-        alert($("input:radio[name='distri_" + form_number.toString() + "']").val())
+        if($("input:radio[name='yes_distri_" + form_number.toString() + "']").is(":checked")) {
 
-        if (!$("#distribution_list_" + form_number.toString()).val()) {
-            $("#please_list_heading_" + form_number.toString()).addClass("make_red")
-            checked = false
-        }
+            if (!$("#distribution_list_" + form_number.toString()).val()) {
+                $("#please_list_heading_" + form_number.toString()).addClass("make_red")
+                checked = false
+            }
 
-        else {
-            $("#please_list_heading_" + form_number.toString()).removeClass("make_red")
-            checked = true
+            else {
+                $("#please_list_heading_" + form_number.toString()).removeClass("make_red")
+                checked = true
+            }
+
         }
     }
     else {
