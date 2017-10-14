@@ -252,8 +252,6 @@ function change_id_count(old_count, new_count) {
         cur_id = $(this).attr("id");
         cur_name = $(this).attr("name");
 
-        console.log(cur_id)
-
         // switch numbers
         if (cur_id.slice(-1).match(/^\d+$/)) {
             lastIndex = cur_id.lastIndexOf("_");
@@ -673,14 +671,14 @@ function make_film_entry(entry_count) {
     $(".note_content").last().append("<div class='note_content_table'></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("<b>Is your title in distribution with any other organizations?</b><br/>")
+    $(".note_content_table_content").last().append("<div index='distri_heading_" + entry_count.toString() +"'><b>Is your title in distribution with any other organizations?</b></div><br/>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
     $(".note_content_table_content").last().append("<div><div class='distribution'><input type='radio' value='yes' id='yes_distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><label for='yes_distri_" + entry_count.toString() + "'></label></div>&nbsp;<b>Yes</b></div>")
     $(".note_content_table_content").last().append("<div><div class='distribution'><input type='radio' value='no' id='no_distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><label for='no_distri_" + entry_count.toString() + "'></label></div>&nbsp;<b>No</b></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("<div class='please_list'><b>Please list:</b><br/></div>")
+    $(".note_content_table_content").last().append("<div index='please_list_heading_" + entry_count.toString() +"'class='please_list'><b>Please list:</b><br/></div>")
     $(".please_list").last().append("<div class='note_content_horz_spacer'></div><input type='text' id='distribution_list_" + entry_count.toString() + "' name='distribution_list_" + entry_count.toString() + "'/><div class='note_content_horz_spacer'></div>")
     $(".please_list").last().hide()
     $(".note_table").last().append("<div class='note_right_spacer'></div>") 
@@ -1293,6 +1291,22 @@ function check_form (form_number) {
 
     return is_complete_;
 }
+
+// function check_distribution(form_number) {
+//     checked = false
+//     $("input:radio[name='distri_" + form_number.toString() + "']").each(function() {
+//         if ($(this).is(":checked")) {
+//             checked = true;
+//         }
+//     })
+
+//     if (checked) {
+
+//     }
+//     else {
+
+//     }
+// }
 
 function check_checkbox_form (name, form_number) {
     checked = false;
