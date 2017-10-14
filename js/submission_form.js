@@ -1106,7 +1106,7 @@ function fill_acct_request(with_opt=true) {
 
 function checkFields() {
 
-    if (logged_in == 1) {
+    if (logged_in != 1) {
 
         // check acct request area
         acct_request_fields = ["firstname", "address", "lastname", 
@@ -1130,7 +1130,10 @@ function checkFields() {
 
     }
 
-    is_complete = true;
+    else {
+
+        is_complete = true;
+    }
 
     //check form
 
