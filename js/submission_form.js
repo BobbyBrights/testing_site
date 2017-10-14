@@ -391,8 +391,8 @@ function make_film_entry(entry_count) {
     entry_form_textbox(entry_count, "film_synopsis", "Film Synopsis")
 
     // Self Identification
-    $(".filmmaker_section").last().append("<div class='spacer'></div>")
-    $(".filmmaker_section").last().append("<div class='note_table'></div>")
+    $(".film_form_table").last().append("<div class='spacer'></div>")
+    $(".film_form_table").last().append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
     $(".note_table").last().append("<div class='note_content'></div>")
     $(".note_content").last().append("<div class='note_content_table'></div>")
