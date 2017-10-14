@@ -1311,11 +1311,11 @@ function check_distribution_form(form_number) {
         checked = checked && $("distribution_list_" + form_number.toString()).val()
 
         if ($("#distribution_list_" + form_number.toString()).val()) {
-            $("#distribution_list_" + form_number.toString()).addClass("make_red")
+            $("#please_list_heading_" + form_number.toString()).addClass("make_red")
         }
 
         else {
-            $("#distribution_list_" + form_number.toString()).addClass("make_red")
+            $("#please_list_heading_" + form_number.toString()).addClass("make_red")
         }
     }
     else {
