@@ -390,18 +390,6 @@ function make_film_entry(entry_count) {
     // Film Synopsis
     entry_form_textbox(entry_count, "film_synopsis", "Film Synopsis")
 
-    // Self Identification
-    $(".film_form_table").last().append("<div class='spacer'></div>")
-    $(".film_form_table").last().append("<div class='note_table'></div>")
-    $(".note_table").last().append("<div class='note_left_spacer'></div>")
-    $(".note_table").last().append("<div class='note_content'></div>")
-    $(".note_content").last().append("<div class='note_content_table'></div>")
-    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
-    $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("This space is for voluntary self-identification. Please note this information will not be posted on our website, it is confidential and for internal use only to aide programmers and researchers in finding works relevant to their festival, programs, classes, research etc. The CFMDC aims also to support work that may not in content explicitly reflect the identities or communities of the filmmaker(s). Self Identification is one of the tools we use to give these works the opportunity to be screened and discussed alongside works that are more explicit in their content.")
-    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
-    $(".note_table").last().append("<div class='note_right_spacer'></div>")
-
     $(".film_form_table").last().append("<div class='request_acct_row_row_sm_spacer'></div>")
 
     if (entry_count > 1) {
@@ -673,6 +661,19 @@ function make_film_entry(entry_count) {
 
     $(".film_form_table").last().append("<div class='request_acct_row_row_spacer'></div>")
 
+    // Already being distributed
+    $(".film_form_table").last().append("<div class='spacer'></div>")
+    $(".film_form_table").last().append("<div class='note_table'></div>")
+    $(".note_table").last().append("<div class='note_left_spacer'></div>")
+    $(".note_table").last().append("<div class='note_content'></div>")
+    $(".note_content").last().append("<div class='note_content_table'></div>")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
+    $(".note_content_table_content").last().append("This space is for voluntary self-identification. Please note this information will not be posted on our website, it is confidential and for internal use only to aide programmers and researchers in finding works relevant to their festival, programs, classes, research etc. The CFMDC aims also to support work that may not in content explicitly reflect the identities or communities of the filmmaker(s). Self Identification is one of the tools we use to give these works the opportunity to be screened and discussed alongside works that are more explicit in their content.")
+    $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
+    $(".note_table").last().append("<div class='note_right_spacer'></div>") 
+
+    // Note on copyrights
     $(".film_form_table").last().append("<div class='note_table'></div>")
     $(".note_table").last().append("<div class='note_left_spacer'></div>")
     $(".note_table").last().append("<div class='note_content'></div>")
