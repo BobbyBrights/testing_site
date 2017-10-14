@@ -252,6 +252,8 @@ function change_id_count(old_count, new_count) {
         cur_id = $(this).attr("id");
         cur_name = $(this).attr("name");
 
+        console.log(cur_id)
+
         // switch numbers
         if (cur_id.slice(-1).match(/^\d+$/)) {
             lastIndex = cur_id.lastIndexOf("_");
