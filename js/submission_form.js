@@ -1306,20 +1306,20 @@ function check_distribution_form(form_number) {
     })
 
     if (checked) {
-        $("#distri_heading_" + form_number.toString()).removeClass(".make_red")
+        $("#distri_heading_" + form_number.toString()).removeClass("make_red")
 
         checked = checked && $("distribution_list_" + form_number.toString()).val()
 
-        if ($("distribution_list_" + form_number.toString()).val()) {
-            $("#distribution_list_" + form_number.toString()).addClass(".make_red")
+        if ($("#distribution_list_" + form_number.toString()).val()) {
+            $("#distribution_list_" + form_number.toString()).addClass("make_red")
         }
 
         else {
-            $("#distribution_list_" + form_number.toString()).addClass(".make_red")
+            $("#distribution_list_" + form_number.toString()).addClass("make_red")
         }
     }
     else {
-        $("#distri_heading_" + form_number.toString()).addClass(".make_red")
+        $("#distri_heading_" + form_number.toString()).addClass("make_red")
     }
 
     alert(checked)
