@@ -680,7 +680,7 @@ function make_film_entry(entry_count) {
     $(".note_content_table_content").last().append("<div><div class='distribution'><input type='radio' value='no' id='no_distri_" + entry_count.toString() +"' name='distri_" + entry_count.toString() +"'/><label for='no_distri_" + entry_count.toString() + "'></label></div>&nbsp;<b>No</b></div>")
     $(".note_content_table").last().append("<div class='note_content_horz_spacer'></div>")
     $(".note_content_table").last().append("<div class='note_content_table_content'></div>")
-    $(".note_content_table_content").last().append("<div id='please_list_heading_" + entry_count.toString() +"'class='please_list'><b>Please list:</b><br/></div>")
+    $(".note_content_table_content").last().append("<div class='please_list'><div id='please_list_heading_" + entry_count.toString() +"'><b>Please list:</b></div><br/></div>")
     $(".please_list").last().append("<div class='note_content_horz_spacer'></div><input type='text' id='distribution_list_" + entry_count.toString() + "' name='distribution_list_" + entry_count.toString() + "'/><div class='note_content_horz_spacer'></div>")
     $(".please_list").last().hide()
     $(".note_table").last().append("<div class='note_right_spacer'></div>") 
