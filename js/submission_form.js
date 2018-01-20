@@ -552,7 +552,7 @@ function make_film_entry(entry_count) {
 
     // vimeo link
     $(".film_form_table").last().append("<div class='request_acct_row_row' id='vimeo_link_section_" + entry_count.toString() + "'></div>")
-    $("#vimeo_link_section_" + entry_count.toString()).hide()
+    // $("#vimeo_link_section_" + entry_count.toString()).hide()
     $(".request_acct_row_row").last().append("<div class='request_acct_cell_left'></div>")
     $(".request_acct_cell_left").last().append("<div class='request_acct_label'></div>")
     $(".request_acct_label").last().append("<div class='request_acct_label_text'><b>Vimeo Link</b></div>")
