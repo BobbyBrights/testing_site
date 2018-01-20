@@ -1262,7 +1262,7 @@ function check_form (form_number) {
     highlight_field_file("film-still-file_" + form_number.toString(), web_still)
 
     // preview format
-    is_complete_ = check_radio_form("preview_format_", form_number) && is_complete_
+    // is_complete_ = check_radio_form("preview_format_", form_number) && is_complete_
 
     // original format
     is_complete_ = check_checkbox_form("search-org-format_", form_number) && is_complete_
@@ -1276,20 +1276,20 @@ function check_form (form_number) {
     // keywords
     is_complete_ = check_checkbox_form("search-category_", form_number) && is_complete_
 
-    if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
-        form_text_fields = ["vimeo_link_", "vimeo_password_"]
-        for(j=0; j<form_text_fields.length; j++) {
-            field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
-            is_complete_ = is_complete_ && field_value;
-            highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
-        }
-    }
-    else {
-        form_text_fields = ["vimeo_link_", "vimeo_password_"]
-        for(j=0; j<form_text_fields.length; j++) {
-            $("input[name='" + form_text_fields[j] + form_number.toString() + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
-        }
-    }
+    // if ($("input[id='vimeo_" + form_number.toString() + "']").is(":checked")) {
+    form_text_fields = ["vimeo_link_", "vimeo_password_"]
+    for(j=0; j<form_text_fields.length; j++) {
+        field_value = $("input[name='" + form_text_fields[j] + form_number.toString() + "']").val();
+        is_complete_ = is_complete_ && field_value;
+        highlight_field_text(form_text_fields[j] + form_number.toString(), field_value)
+    //     }
+    // }
+    // else {
+    //     form_text_fields = ["vimeo_link_", "vimeo_password_"]
+    //     for(j=0; j<form_text_fields.length; j++) {
+    //         $("input[name='" + form_text_fields[j] + form_number.toString() + "']").parent().parent().parent().find('.request_acct_label_text').removeClass("request_acct_label_text_alert");
+    //     }
+    // }
 
     // distribution list
     is_complete_ = check_distribution_form(form_number) && is_complete_
