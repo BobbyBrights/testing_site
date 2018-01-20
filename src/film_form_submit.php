@@ -66,6 +66,8 @@ if ($captchaCheck) {
 
     $mysqli = new mysqli($servername, $username, $password, $database);
 
+    $mysqli->set_charset("utf8");
+
     if ($mysqli->connect_errno) {
         $outcome = 1;
     }
@@ -157,7 +159,7 @@ if ($captchaCheck) {
 			}
 
 			$self_identification = $_POST["self_identification_" . $i];
-			$preview_format = $_POST["preview_format_" . $i];
+			$preview_format = "";//$_POST["preview_format_" . $i];
 			$original_format = implode(',', $_POST['search-org-format_' . $i]);
 			$exhibition_format = implode(',', $_POST['search-ex-format_' . $i]);
 			$genre = implode(',', $_POST['search-genre_' . $i]);
